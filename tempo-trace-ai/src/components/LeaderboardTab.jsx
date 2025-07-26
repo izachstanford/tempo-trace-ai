@@ -34,7 +34,7 @@ const TopListCard = ({ title, items, icon: Icon }) => (
   <div className="cyber-card p-6">
     <div className="flex items-center gap-3 mb-4">
       <Icon className="w-5 h-5 text-cyber-blue" />
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
     </div>
     <div className="space-y-3">
       {items.slice(0, 10).map((item, index) => (
@@ -96,7 +96,11 @@ const LeaderboardTab = ({ data }) => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">Annual Leaderboards</h1>
+        <h1 className="text-4xl font-bold font-cyber mb-2">
+          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
+            Annual Leaderboards
+          </span>
+        </h1>
         <p className="text-gray-400">
           Explore your musical evolution year by year • {years.length} years of data
         </p>
@@ -211,7 +215,7 @@ const LeaderboardTab = ({ data }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Trophy className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Historical Context</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Historical Context</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
@@ -273,7 +277,7 @@ const LeaderboardTab = ({ data }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Music className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Streaming Providers</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Streaming Providers</h3>
         </div>
         <div className="space-y-4">
           {Object.entries(currentData.year_stats.provider_breakdown).map(([provider, plays]) => (

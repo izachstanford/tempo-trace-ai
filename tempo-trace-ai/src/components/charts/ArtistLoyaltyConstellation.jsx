@@ -427,8 +427,8 @@ const ArtistLoyaltyConstellation = ({ data, artistSummary, concertData }) => {
       </svg>
 
       {/* Controls */}
-      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3">
-        <div className="text-white text-xs font-semibold mb-2">Navigation</div>
+      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3 hidden md:block">
+        <div className="text-cyber-blue text-xs font-semibold mb-2">Navigation</div>
         <button
           onClick={() => setSelectedArtist(null)}
           className={`px-2 py-1 text-xs rounded transition-colors ${
@@ -442,8 +442,8 @@ const ArtistLoyaltyConstellation = ({ data, artistSummary, concertData }) => {
       </div>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Artist Loyalty Constellation</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Artist Loyalty Constellation</h4>
         <p className="text-gray-400 text-xs">
           Each star represents an artist. Size shows popularity, brightness shows play count. 
           Click any star to see detailed loyalty metrics in radar form.

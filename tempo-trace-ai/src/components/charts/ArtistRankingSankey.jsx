@@ -467,10 +467,10 @@ const ArtistRankingSankey = ({ data, recapData, artistSummary }) => {
       </svg>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Artist Rankings Evolution</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Artist Rankings Evolution</h4>
         <p className="text-gray-400 text-xs">
-          Sankey diagram showing how your top 5 artists have changed ranks over the past 6 years. 
+          Sankey diagram showing how your top 5 artists have changed ranks over the past 6 years.
           Follow the flowing paths to see artist trajectories, rises, and falls in your personal charts.
         </p>
       </div>

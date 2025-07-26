@@ -85,7 +85,7 @@ const HoursListenedChart = ({ data }) => {
     <div className="cyber-card p-6">
       <div className="flex items-center gap-3 mb-4">
         <TrendingUp className="w-5 h-5 text-cyber-blue" />
-        <h3 className="text-lg font-semibold text-white">Hours Listened by Year</h3>
+        <h3 className="text-lg font-bold text-cyber-blue">Hours Listened by Year</h3>
       </div>
       <div className="chart-container" style={{ height: '300px' }}>
         <Line data={chartData} options={chartOptions} />

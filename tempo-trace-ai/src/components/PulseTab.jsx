@@ -36,7 +36,7 @@ const TopListCard = ({ title, items, icon: Icon, showIndex = true }) => (
   <div className="cyber-card p-6">
     <div className="flex items-center gap-3 mb-4">
       <Icon className="w-5 h-5 text-cyber-blue" />
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
     </div>
     <div className="space-y-3">
       {items.slice(0, 10).map((item, index) => (
@@ -66,7 +66,7 @@ const TimelineCard = ({ title, data, icon: Icon }) => (
   <div className="cyber-card p-6">
     <div className="flex items-center gap-3 mb-4">
       <Icon className="w-5 h-5 text-cyber-blue" />
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
     </div>
     <div className="space-y-3 max-h-96 overflow-y-auto">
       {Object.entries(data).map(([key, value]) => (
@@ -159,7 +159,11 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">Your Musical Pulse</h1>
+        <h1 className="text-4xl font-bold font-cyber mb-2">
+          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
+            Your Musical Pulse
+          </span>
+        </h1>
         <p className="text-gray-400">
           {trackingYears} years of musical evolution • {(data.metadata?.total_records || 0).toLocaleString()} total streams
         </p>
@@ -262,7 +266,7 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Star className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">New Discoveries</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">New Discoveries</h3>
         </div>
         <div className="space-y-3">
           {getNewDiscoveries().map(([artist, artistData], index) => (
@@ -300,7 +304,7 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Award className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Musical Milestones</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Musical Milestones</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="space-y-4">
@@ -347,7 +351,7 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
         <div className="cyber-card p-6">
           <div className="flex items-center gap-3 mb-4">
             <Trophy className="w-5 h-5 text-cyber-blue" />
-            <h3 className="text-lg font-semibold text-white">Historical Context</h3>
+            <h3 className="text-lg font-bold text-cyber-blue">Historical Context</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-4">
@@ -412,7 +416,7 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-6">
           <BarChart3 className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Music Providers</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Music Providers</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Object.entries(data.provider_stats.distribution).map(([provider, plays]) => (

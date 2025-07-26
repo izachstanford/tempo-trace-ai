@@ -197,8 +197,8 @@ const MusicalJourneyTimeline = ({ data }) => {
       </svg>
 
       {/* Legend */}
-      <div className="absolute bottom-2 left-2 bg-black/70 rounded-lg p-3 max-w-xs">
-        <h4 className="text-white text-xs font-semibold mb-2">Musical Evolution</h4>
+      <div className="absolute bottom-2 left-2 bg-black/70 rounded-lg p-3 max-w-xs hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Musical Evolution</h4>
         <p className="text-gray-400 text-xs">
           Stream thickness shows listening intensity. Hover over streams to highlight individual artists.
         </p>

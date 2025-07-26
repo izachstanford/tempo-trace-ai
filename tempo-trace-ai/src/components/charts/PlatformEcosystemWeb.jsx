@@ -117,38 +117,6 @@ const PlatformEcosystemWeb = ({ data }) => {
       });
     });
 
-    // Add context nodes (listening contexts)
-    const contexts = [
-      { name: 'Work', plays: totalPlays * 0.4, color: '#60a5fa' },
-      { name: 'Commute', plays: totalPlays * 0.25, color: '#34d399' },
-      { name: 'Exercise', plays: totalPlays * 0.15, color: '#fbbf24' },
-      { name: 'Relaxation', plays: totalPlays * 0.2, color: '#a78bfa' }
-    ];
-
-    contexts.forEach((context, index) => {
-      const angle = (index / contexts.length) * 2 * Math.PI + Math.PI/8;
-      const radius = 80;
-      
-      nodeData.push({
-        id: `context-${context.name}`,
-        type: 'context',
-        name: context.name,
-        plays: context.plays,
-        size: 10,
-        color: context.color,
-        x: 300 + Math.cos(angle) * radius,
-        y: 200 + Math.sin(angle) * radius
-      });
-
-      // Link context to user
-      linkData.push({
-        source: 'user',
-        target: `context-${context.name}`,
-        strength: 0.3,
-        plays: context.plays,
-        type: 'context-connection'
-      });
-    });
 
     const stats = {
       totalPlatforms: Object.keys(platforms).length,
@@ -268,9 +236,6 @@ const PlatformEcosystemWeb = ({ data }) => {
           } else if (link.type === 'cross-connection') {
             strokeColor = '#8b5cf6';
             strokeWidth = 1 + link.strength * 2;
-          } else if (link.type === 'context-connection') {
-            strokeColor = '#fbbf24';
-            strokeWidth = 1.5;
           }
 
           return (
@@ -410,9 +375,6 @@ const PlatformEcosystemWeb = ({ data }) => {
           <circle cx="23" cy="62" r="2" fill="#ff0080" />
           <text x="35" y="69" fill="#ffffff" fontSize="9">Music Services</text>
           
-          <circle cx="20" cy="80" r="5" fill="#fbbf24" />
-          <circle cx="23" cy="77" r="2" fill="#fbbf24" />
-          <text x="35" y="84" fill="#ffffff" fontSize="9">Contexts</text>
 
           {/* Connection types */}
           <text x="10" y="105" fill="#ffffff" fontSize="10" fontWeight="semibold">
@@ -453,8 +415,8 @@ const PlatformEcosystemWeb = ({ data }) => {
       </svg>
 
       {/* Controls */}
-      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3">
-        <div className="text-white text-xs font-semibold mb-2">Interaction</div>
+      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3 hidden md:block">
+        <div className="text-cyber-blue text-xs font-semibold mb-2">Interaction</div>
         <div className="text-gray-400 text-xs">
           <div>Click nodes to explore connections</div>
           <div className="mt-1">Node size = usage volume</div>
@@ -463,10 +425,10 @@ const PlatformEcosystemWeb = ({ data }) => {
       </div>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Platform Network Analysis</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Platform Network Analysis</h4>
         <p className="text-gray-400 text-xs">
-          Interactive network showing your music listening ecosystem. Platforms, services, and contexts
+          Interactive network showing your music listening ecosystem. Platforms and services
           are connected based on usage patterns. Click any node to highlight its connections.
         </p>
       </div>

@@ -418,8 +418,8 @@ const DiscoveryNostalgiaFlow = ({ data, artistSummary }) => {
       </svg>
 
       {/* Controls */}
-      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3">
-        <div className="text-white text-xs font-semibold mb-2">Timeline View</div>
+      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3 hidden md:block">
+        <div className="text-cyber-blue text-xs font-semibold mb-2">Timeline View</div>
         <div className="text-gray-400 text-xs">
           <div>Years tracked: {processedData.years.length}</div>
           <div className="mt-1">
@@ -429,10 +429,10 @@ const DiscoveryNostalgiaFlow = ({ data, artistSummary }) => {
       </div>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Discovery vs. Nostalgia Balance</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Discovery vs. Nostalgia Balance</h4>
         <p className="text-gray-400 text-xs">
-          The flowing path shows your balance between discovering new music (top) and revisiting 
+          The flowing path shows your balance between discovering new music (top) and revisiting
           favorites (bottom). Particles represent the actual flow of musical exploration over time.
         </p>
       </div>

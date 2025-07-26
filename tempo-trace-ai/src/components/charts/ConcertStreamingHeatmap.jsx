@@ -309,10 +309,10 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
       )}
 
       {/* Info panel */}
-      <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Concert Streaming Correlation</h4>
+      <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Concert Streaming Correlation</h4>
         <p className="text-gray-400 text-xs">
-          Heatmap showing how concerts since 2023 affect streaming activity. Red = high correlation, blue = low correlation. 
+          Heatmap showing how concerts since 2023 affect streaming activity. Red = high correlation, blue = low correlation.
           White circles indicate concert years. Hover for detailed stats.
         </p>
       </div>
