@@ -208,34 +208,7 @@ const ArtistStatsTab = ({ data }) => {
         </p>
       </div>
 
-      {/* Overview Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <StatCard
-          icon={Users}
-          label="Total Artists"
-          value={totalArtists.toLocaleString()}
-          subtitle="in your library"
-          gradient={true}
-        />
-        <StatCard
-          icon={Play}
-          label="Total Streams"
-          value={totalStreams.toLocaleString()}
-          subtitle="across all artists"
-        />
-        <StatCard
-          icon={Clock}
-          label="Total Hours"
-          value={Math.round(totalHours).toLocaleString()}
-          subtitle="of music"
-        />
-        <StatCard
-          icon={TrendingUp}
-          label="Avg per Artist"
-          value={Math.round(avgStreamsPerArtist)}
-          subtitle="streams per artist"
-        />
-      </div>
+
 
 
 
