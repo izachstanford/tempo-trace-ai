@@ -425,8 +425,8 @@ const EmotionalListeningLandscape = ({ data, artistSummary }) => {
       </svg>
 
       {/* Controls */}
-      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3">
-        <div className="text-white text-xs font-semibold mb-2">View Controls</div>
+      <div className="absolute top-4 right-4 bg-black/70 rounded-lg p-3 hidden md:block">
+        <div className="text-cyber-blue text-xs font-semibold mb-2">View Controls</div>
         
         <div className="mb-3">
           <label className="block text-xs text-gray-300 mb-1">Elevation Metric:</label>
@@ -456,10 +456,10 @@ const EmotionalListeningLandscape = ({ data, artistSummary }) => {
       </div>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm">
-        <h4 className="text-white text-xs font-semibold mb-2">Emotional Listening Landscape</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Emotional Listening Landscape</h4>
         <p className="text-gray-400 text-xs">
-          3D topographic view of your emotional listening patterns across time. Peaks show high-activity 
+          3D topographic view of your emotional listening patterns across time. Peaks show high-activity
           periods, valleys show quiet times. Hover over points for detailed mood analysis.
         </p>
       </div>

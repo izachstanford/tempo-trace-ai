@@ -198,40 +198,17 @@ const ArtistStatsTab = ({ data }) => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">Artist Stats</h1>
+        <h1 className="text-4xl font-bold font-cyber mb-2">
+          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
+            Artist Stats
+          </span>
+        </h1>
         <p className="text-gray-400">
           Navigate your musical universe • {totalArtists} artists discovered
         </p>
       </div>
 
-      {/* Overview Stats */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <StatCard
-          icon={Users}
-          label="Total Artists"
-          value={totalArtists.toLocaleString()}
-          subtitle="in your library"
-          gradient={true}
-        />
-        <StatCard
-          icon={Play}
-          label="Total Streams"
-          value={totalStreams.toLocaleString()}
-          subtitle="across all artists"
-        />
-        <StatCard
-          icon={Clock}
-          label="Total Hours"
-          value={Math.round(totalHours).toLocaleString()}
-          subtitle="of music"
-        />
-        <StatCard
-          icon={TrendingUp}
-          label="Avg per Artist"
-          value={Math.round(avgStreamsPerArtist)}
-          subtitle="streams per artist"
-        />
-      </div>
+
 
 
 
@@ -239,7 +216,7 @@ const ArtistStatsTab = ({ data }) => {
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Filter className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Explore Artists</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Explore Artists</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           <div className="relative">

@@ -300,8 +300,8 @@ const GlobalMusicMap = ({ data }) => {
       </svg>
 
       {/* Controls */}
-      <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3">
-        <div className="text-white text-xs font-semibold mb-2">Time Zones</div>
+      <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3 hidden md:block">
+        <div className="text-cyber-blue text-xs font-semibold mb-2">Time Zones</div>
         <div className="text-gray-400 text-xs">
           <div>Most active: {data?.geographical_stats?.top_countries?.[0]?.[0]} timezone</div>
           <div className="mt-1">
@@ -311,10 +311,10 @@ const GlobalMusicMap = ({ data }) => {
       </div>
 
       {/* Info panel */}
-      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-xs">
-        <h4 className="text-white text-xs font-semibold mb-2">Global Music Journey</h4>
+      <div className="absolute bottom-4 left-4 bg-black/70 rounded-lg p-3 max-w-xs hidden md:block">
+        <h4 className="text-cyber-blue text-xs font-semibold mb-2">Global Music Journey</h4>
         <p className="text-gray-400 text-xs">
-          Circle size represents play count. Particles flow between listening locations. 
+          Circle size represents play count. Particles flow between listening locations.
           Hover over countries for detailed statistics.
         </p>
       </div>

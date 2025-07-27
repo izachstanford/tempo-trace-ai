@@ -108,9 +108,10 @@ if [ $? -eq 0 ]; then
         
         echo ""
         echo -e "${YELLOW}📝 Next steps:${NC}"
-        echo -e "${BLUE}1. Test locally: npm run preview${NC}"
-        echo -e "${BLUE}2. Commit and push changes in website-ai-with-zach${NC}"
-        echo -e "${BLUE}3. Deploy to production via Netlify${NC}"
+        echo -e "${BLUE}1. Rebuild Astro site: npm run build${NC}"
+        echo -e "${BLUE}2. Test locally: npm run preview${NC}"
+        echo -e "${BLUE}3. Commit and push changes in website-ai-with-zach${NC}"
+        echo -e "${BLUE}4. Deploy to production via Netlify${NC}"
         
     else
         echo -e "${RED}❌ Deployment failed!${NC}"

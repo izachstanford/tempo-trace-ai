@@ -34,7 +34,7 @@ const TopListCard = ({ title, items, icon: Icon }) => (
   <div className="cyber-card p-6">
     <div className="flex items-center gap-3 mb-4">
       <Icon className="w-5 h-5 text-cyber-blue" />
-      <h3 className="text-lg font-semibold text-white">{title}</h3>
+      <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
     </div>
     <div className="space-y-3">
       {items.slice(0, 10).map((item, index) => (
@@ -96,7 +96,11 @@ const LeaderboardTab = ({ data }) => {
     <div className="space-y-8">
       {/* Header */}
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-white mb-2">Annual Leaderboards</h1>
+        <h1 className="text-4xl font-bold font-cyber mb-2">
+          <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
+            Annual Leaderboards
+          </span>
+        </h1>
         <p className="text-gray-400">
           Explore your musical evolution year by year • {years.length} years of data
         </p>
@@ -130,7 +134,29 @@ const LeaderboardTab = ({ data }) => {
         </div>
       </div>
 
-      {/* Key Stats for Selected Year */}
+
+
+
+      {/* Top Lists for Selected Year */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <TopListCard
+          title="Top Artists"
+          items={currentData.top_artists}
+          icon={Users}
+        />
+        <TopListCard
+          title="Top Tracks"
+          items={currentData.top_tracks}
+          icon={Music}
+        />
+        <TopListCard
+          title="Top Albums"
+          items={currentData.top_albums}
+          icon={Award}
+        />
+      </div>
+
+      {/* Year Recap Stats */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatCard
           icon={Play}
@@ -187,93 +213,11 @@ const LeaderboardTab = ({ data }) => {
         />
       </div>
 
-
-      {/* Top Lists for Selected Year */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <TopListCard
-          title="Top Artists"
-          items={currentData.top_artists}
-          icon={Users}
-        />
-        <TopListCard
-          title="Top Tracks"
-          items={currentData.top_tracks}
-          icon={Music}
-        />
-        <TopListCard
-          title="Top Albums"
-          items={currentData.top_albums}
-          icon={Award}
-        />
-      </div>
-
-      {/* Historical Context */}
-      <div className="cyber-card p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <Trophy className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Historical Context</h3>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="space-y-4">
-            <div className="p-4 bg-card-bg/50 rounded-lg">
-              <p className="text-sm text-gray-400">Peak Listening Year</p>
-              <p className="text-white font-medium">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.total_plays - a.year_stats.total_plays)[0][0]}
-              </p>
-              <p className="text-cyber-blue text-sm">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.total_plays - a.year_stats.total_plays)[0][1]
-                  .year_stats.total_plays.toLocaleString()} plays
-              </p>
-            </div>
-            <div className="p-4 bg-card-bg/50 rounded-lg">
-              <p className="text-sm text-gray-400">Most Diverse Year</p>
-              <p className="text-white font-medium">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.unique_artists - a.year_stats.unique_artists)[0][0]}
-              </p>
-              <p className="text-cyber-blue text-sm">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.unique_artists - a.year_stats.unique_artists)[0][1]
-                  .year_stats.unique_artists} unique artists
-              </p>
-            </div>
-          </div>
-          <div className="space-y-4">
-            <div className="p-4 bg-card-bg/50 rounded-lg">
-              <p className="text-sm text-gray-400">Highest Completion Rate</p>
-              <p className="text-white font-medium">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.completion_rate_percentage - a.year_stats.completion_rate_percentage)[0][0]}
-              </p>
-              <p className="text-cyber-blue text-sm">
-                {Math.round(Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.completion_rate_percentage - a.year_stats.completion_rate_percentage)[0][1]
-                  .year_stats.completion_rate_percentage)}% completion rate
-              </p>
-            </div>
-            <div className="p-4 bg-card-bg/50 rounded-lg">
-              <p className="text-sm text-gray-400">Most Consistent Year</p>
-              <p className="text-white font-medium">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.unique_days_with_listening - a.year_stats.unique_days_with_listening)[0][0]}
-              </p>
-              <p className="text-cyber-blue text-sm">
-                {Object.entries(data)
-                  .sort(([,a], [,b]) => b.year_stats.unique_days_with_listening - a.year_stats.unique_days_with_listening)[0][1]
-                  .year_stats.unique_days_with_listening} days with music
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* Provider Breakdown */}
       <div className="cyber-card p-6">
         <div className="flex items-center gap-3 mb-4">
           <Music className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-semibold text-white">Streaming Providers</h3>
+          <h3 className="text-lg font-bold text-cyber-blue">Streaming Providers</h3>
         </div>
         <div className="space-y-4">
           {Object.entries(currentData.year_stats.provider_breakdown).map(([provider, plays]) => (
