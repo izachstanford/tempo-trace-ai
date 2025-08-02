@@ -4,6 +4,7 @@ import { Activity } from 'lucide-react';
 // Import real data charts
 import GlobalMusicMap from './charts/GlobalMusicMap';
 import ConcertStreamingHeatmap from './charts/ConcertStreamingHeatmap';
+import ConcertTrendsMultiChart from './charts/ConcertTrendsMultiChart';
 import ArtistLoyaltyConstellation from './charts/ArtistLoyaltyConstellation';
 import PlatformEcosystemWeb from './charts/PlatformEcosystemWeb';
 import DiscoveryNostalgiaFlow from './charts/DiscoveryNostalgiaFlow';
@@ -42,16 +43,20 @@ const AdvancedInsightsTab = ({ data, artistSummary, concertData, recapData }) =>
       </div>
       
       <div className="flex flex-col gap-12">
+        <ChartCard title="Concert Impact Trends">
+          <ConcertTrendsMultiChart streamingData={data} concertData={concertData} artistSummary={artistSummary} />
+        </ChartCard>
+        
+        <ChartCard title="Concert Streaming Correlation">
+          <ConcertStreamingHeatmap data={data} concertData={concertData} artistSummary={artistSummary} />
+        </ChartCard>
+        
         <ChartCard title="Artist Rankings Evolution">
           <ArtistRankingSankey data={data} recapData={recapData} artistSummary={artistSummary} />
         </ChartCard>
         
         <ChartCard title="Global Music Map">
           <GlobalMusicMap data={data} />
-        </ChartCard>
-        
-        <ChartCard title="Concert Streaming Correlation">
-          <ConcertStreamingHeatmap data={data} concertData={concertData} artistSummary={artistSummary} />
         </ChartCard>
         
         <ChartCard title="Artist Loyalty Constellation">

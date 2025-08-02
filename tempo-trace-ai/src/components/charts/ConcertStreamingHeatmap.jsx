@@ -15,8 +15,8 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
     const yearlyData = data.temporal_patterns.yearly_breakdown;
     const allYears = [...new Set([...Object.keys(yearlyData), ...concertYears])].sort();
     
-    // Filter to only show concerts since 2023, but keep all years for average calculation
-    const recentConcerts = concertData.filter(c => new Date(c.date).getFullYear() >= 2023);
+    // Filter to only show concerts since 2016, but keep all years for average calculation
+    const recentConcerts = concertData.filter(c => new Date(c.date).getFullYear() >= 2016);
     const recentConcertYears = [...new Set(recentConcerts.map(c => new Date(c.date).getFullYear()))].sort();
     
     // Get all artists that have both concert data and streaming data
@@ -55,11 +55,15 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
           ? nonConcertYears.reduce((sum, y) => sum + (artistData.yearly_breakdown[y]?.streams || 0), 0) / nonConcertYears.length
           : 0;
         
-        // Calculate correlation strength
+        // Calculate correlation strength and percentage change for all years
         let correlationStrength = 0;
-        if (hasConcert && avgNonConcertStreams > 0) {
-          const increase = (yearStreams - avgNonConcertStreams) / avgNonConcertStreams;
-          correlationStrength = Math.max(0, Math.min(1, increase)); // Normalize to 0-1
+        let percentageChange = 0;
+        
+        if (avgNonConcertStreams > 0) {
+          percentageChange = ((yearStreams - avgNonConcertStreams) / avgNonConcertStreams * 100);
+          if (hasConcert) {
+            correlationStrength = Math.max(0, Math.min(1, percentageChange / 100)); // Normalize to 0-1
+          }
         }
         
         heatmapData.push({
@@ -70,7 +74,7 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
           concertCount,
           avgNonConcertStreams,
           correlationStrength,
-          increase: hasConcert ? ((yearStreams - avgNonConcertStreams) / avgNonConcertStreams * 100) : 0
+          increase: percentageChange
         });
         
         if (hasConcert) {
@@ -233,18 +237,19 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
                 onMouseLeave={handleCellLeave}
               />
               
-              {/* Concert indicator */}
-              {cell.hasConcert && (
-                <circle
-                  cx={x + width / 2}
-                  cy={y + height / 2}
-                  r={Math.min(width, height) / 4}
-                  fill="none"
-                  stroke="#ffffff"
-                  strokeWidth="2"
-                  opacity={0.8}
-                />
-              )}
+              {/* Percentage change indicator for all cells */}
+              <text
+                x={x + width / 2}
+                y={y + height / 2}
+                fill={cell.hasConcert ? "#ffffff" : "#888888"}
+                fontSize={Math.max(8, Math.min(width, height) / 6)}
+                fontWeight={cell.hasConcert ? "bold" : "normal"}
+                textAnchor="middle"
+                dominantBaseline="middle"
+                opacity={cell.hasConcert ? 0.9 : 0.6}
+                              >
+                  {cell.increase > 0 ? '+' : cell.increase < 0 ? '-' : ''}{Math.abs(cell.increase).toFixed(0)}%
+                </text>
             </g>
           );
         })}
@@ -312,8 +317,8 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
       <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
         <h4 className="text-cyber-blue text-xs font-semibold mb-2">Concert Streaming Correlation</h4>
         <p className="text-gray-400 text-xs">
-          Heatmap showing how concerts since 2023 affect streaming activity. Red = high correlation, blue = low correlation.
-          White circles indicate concert years. Hover for detailed stats.
+          Heatmap showing how concerts since 2016 affect streaming activity. Red = low correlation, blue = high correlation.
+          Bold white text indicates concert years. Baseline includes full streaming history (2016-present). Hover for detailed stats.
         </p>
       </div>
     </div>
