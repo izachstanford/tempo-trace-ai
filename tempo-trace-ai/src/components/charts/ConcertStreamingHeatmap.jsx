@@ -15,8 +15,8 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
     const yearlyData = data.temporal_patterns.yearly_breakdown;
     const allYears = [...new Set([...Object.keys(yearlyData), ...concertYears])].sort();
     
-    // Filter to only show concerts since 2023, but keep all years for average calculation
-    const recentConcerts = concertData.filter(c => new Date(c.date).getFullYear() >= 2023);
+    // Filter to only show concerts since 2016, but keep all years for average calculation
+    const recentConcerts = concertData.filter(c => new Date(c.date).getFullYear() >= 2016);
     const recentConcertYears = [...new Set(recentConcerts.map(c => new Date(c.date).getFullYear()))].sort();
     
     // Get all artists that have both concert data and streaming data
@@ -317,7 +317,7 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
       <div className="absolute bottom-4 right-4 bg-black/70 rounded-lg p-3 max-w-sm hidden md:block">
         <h4 className="text-cyber-blue text-xs font-semibold mb-2">Concert Streaming Correlation</h4>
         <p className="text-gray-400 text-xs">
-          Heatmap showing how concerts since 2023 affect streaming activity. Red = low correlation, blue = high correlation.
+          Heatmap showing how concerts since 2016 affect streaming activity. Red = low correlation, blue = high correlation.
           Bold white text indicates concert years. Baseline includes full streaming history (2016-present). Hover for detailed stats.
         </p>
       </div>

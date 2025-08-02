@@ -121,14 +121,20 @@ const ConcertCompassTab = ({ streamingData, concertData, artistSummary }) => {
     return [];
   }, [processedStreamingData, artistSummary]);
 
-  // Get artists with concerts (filter out null dates)
+  // Get artists with concerts since 2016 (filter out null dates and pre-2016 concerts)
   const concertArtists = useMemo(() => {
     if (!concertData) return [];
-    return concertData.filter(concert => concert.date && concert.artist);
+    return concertData.filter(concert => 
+      concert.date && 
+      concert.artist && 
+      parseISO(concert.date).getFullYear() >= 2016
+    );
   }, [concertData]);
 
-  // Get unique artists from concerts for the dropdown
-  const uniqueConcertArtists = [...new Set(concertArtists.map(c => c.artist))].sort();
+  // Get unique artists from concerts for the dropdown (only those with streaming data)
+  const uniqueConcertArtists = [...new Set(concertArtists.map(c => c.artist))]
+    .filter(artist => artistSummary && artistSummary[artist] && artistSummary[artist].yearly_breakdown)
+    .sort();
 
   // Default to Fall Out Boy when tab is activated
   React.useEffect(() => {
