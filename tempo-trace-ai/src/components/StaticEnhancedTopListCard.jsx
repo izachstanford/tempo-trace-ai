@@ -12,9 +12,9 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
         setLoading(true);
         setError(null);
 
-        const response = await fetch('/data/spotify_enriched_lifetime.json');
+        const response = await fetch('/data/lifetime_data.json');
         if (!response.ok) {
-          throw new Error(`Failed to load Spotify data: ${response.status}`);
+          throw new Error(`Failed to load lifetime data: ${response.status}`);
         }
 
         const data = await response.json();
@@ -58,11 +58,11 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
 
     let enrichedItems = [];
     if (title === 'Top Artists') {
-      enrichedItems = enrichedData.lifetime?.artists || [];
+      enrichedItems = enrichedData.spotify?.artists || [];
     } else if (title === 'Top Tracks') {
-      enrichedItems = enrichedData.lifetime?.tracks || [];
+      enrichedItems = enrichedData.spotify?.tracks || [];
     } else if (title === 'Top Albums') {
-      enrichedItems = enrichedData.lifetime?.albums || [];
+      enrichedItems = enrichedData.spotify?.albums || [];
     }
 
     // Handle both old format [name, plays] and new format [name, plays, artist]

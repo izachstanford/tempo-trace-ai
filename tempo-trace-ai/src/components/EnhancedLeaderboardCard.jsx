@@ -8,7 +8,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
   useEffect(() => {
     const fetchEnrichedData = async () => {
       try {
-        const response = await fetch('/data/spotify_enriched_yearly.json');
+        const response = await fetch('/data/yearly_data.json');
         if (!response.ok) {
           throw new Error('Failed to fetch enriched data');
         }
@@ -30,10 +30,10 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
 
     try {
       // Try to find in yearly data if year is provided
-      if (year && enrichedData.yearly && enrichedData.yearly[year]) {
-        const yearData = enrichedData.yearly[year];
-        if (yearData[type]) {
-          const found = yearData[type].find(item => 
+      if (year && enrichedData[year]) {
+        const yearData = enrichedData[year];
+        if (yearData.spotify && yearData.spotify[type]) {
+          const found = yearData.spotify[type].find(item => 
             item.name.toLowerCase() === itemName.toLowerCase()
           );
           if (found) return found;
