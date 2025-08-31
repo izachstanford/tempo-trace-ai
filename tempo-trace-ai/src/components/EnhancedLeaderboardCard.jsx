@@ -8,7 +8,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
   useEffect(() => {
     const fetchEnrichedData = async () => {
       try {
-        const response = await fetch('/data/spotify_enriched_data.json');
+        const response = await fetch('/data/spotify_enriched_yearly.json');
         if (!response.ok) {
           throw new Error('Failed to fetch enriched data');
         }
@@ -29,7 +29,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
     if (!enrichedData) return null;
 
     try {
-      // Try to find in yearly data first if year is provided
+      // Try to find in yearly data if year is provided
       if (year && enrichedData.yearly && enrichedData.yearly[year]) {
         const yearData = enrichedData.yearly[year];
         if (yearData[type]) {
@@ -38,13 +38,6 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
           );
           if (found) return found;
         }
-      }
-
-      // Fall back to lifetime data
-      if (enrichedData.lifetime && enrichedData.lifetime[type]) {
-        return enrichedData.lifetime[type].find(item => 
-          item.name.toLowerCase() === itemName.toLowerCase()
-        );
       }
     } catch (error) {
       console.error('Error finding enriched item:', error);
