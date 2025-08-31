@@ -58,11 +58,11 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
 
     let enrichedItems = [];
     if (title === 'Top Artists') {
-      enrichedItems = enrichedData.artists || [];
+      enrichedItems = enrichedData.lifetime?.artists || enrichedData.artists || [];
     } else if (title === 'Top Tracks') {
-      enrichedItems = enrichedData.tracks || [];
+      enrichedItems = enrichedData.lifetime?.tracks || enrichedData.tracks || [];
     } else if (title === 'Top Albums') {
-      enrichedItems = enrichedData.albums || [];
+      enrichedItems = enrichedData.lifetime?.albums || enrichedData.albums || [];
     }
 
     // Handle both old format [name, plays] and new format [name, plays, artist]

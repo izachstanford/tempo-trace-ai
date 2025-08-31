@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { ExternalLink } from 'lucide-react';
 
 const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
   const [enrichedData, setEnrichedData] = useState(null);
@@ -100,7 +99,18 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
       </div>
       <div className="space-y-3">
         {items.slice(0, 10).map((item, index) => {
-          const [itemName, playCount] = item;
+          // Handle both old format [name, plays] and new format [name, plays, artist]
+          let itemName, playCount, artist;
+          if (Array.isArray(item)) {
+            itemName = item[0];
+            playCount = item[1];
+            artist = item[2] || null;
+          } else {
+            itemName = item.name;
+            playCount = item.plays;
+            artist = item.artist;
+          }
+          
           const enrichedItem = getEnrichedItem(itemName);
           const hasSpotifyData = enrichedItem && enrichedItem.spotifyUrl;
           
@@ -144,26 +154,20 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
               {/* Content */}
               <div className="flex-1 min-w-0">
                 <p className="text-white font-medium truncate">{itemName}</p>
-                <p className="text-sm text-gray-400">{playCount.toLocaleString()} plays</p>
-                {enrichedItem?.artist && (
-                  <p className="text-xs text-gray-500 truncate">by {enrichedItem.artist}</p>
+                {title === 'Top Artists' ? (
+                  <p className="text-xs text-gray-500 truncate">&nbsp;</p>
+                ) : (
+                  (artist || enrichedItem?.artist) && (
+                    <p className="text-xs text-gray-500 truncate">by {artist || enrichedItem.artist}</p>
+                  )
                 )}
               </div>
               
-              {/* Progress bar */}
-              <div className="w-16 bg-gray-700 rounded-full h-2 flex-shrink-0">
-                <div 
-                  className="bg-gradient-to-r from-cyber-blue to-cyber-purple h-2 rounded-full" 
-                  style={{ width: `${(playCount / items[0][1]) * 100}%` }}
-                />
+              {/* Play Count */}
+              <div className="text-right">
+                <p className="text-cyber-blue font-bold text-sm">{playCount.toLocaleString()}</p>
+                <p className="text-xs text-gray-400">plays</p>
               </div>
-              
-              {/* Spotify link icon */}
-              {hasSpotifyData && (
-                <div className="flex-shrink-0 ml-2">
-                  <ExternalLink className="w-4 h-4 text-cyber-blue" />
-                </div>
-              )}
             </ItemComponent>
           );
         })}

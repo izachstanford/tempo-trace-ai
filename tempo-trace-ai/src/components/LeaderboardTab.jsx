@@ -149,7 +149,7 @@ const LeaderboardTab = ({ data }) => {
         />
         <EnhancedLeaderboardCard
           title="Top Tracks"
-          items={currentData.top_tracks}
+          items={currentData.top_track_artists || currentData.top_tracks}
           icon={Music}
           type="tracks"
           year={currentYear}

@@ -339,9 +339,10 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     const token = await getToken();
     console.log('✅ Got Spotify access token');
     
-    // Read the lifetime data
+    // Read the lifetime and annual data
     const dataPath = path.join(process.cwd(), 'public/data');
     const lifetimeData = JSON.parse(fs.readFileSync(path.join(dataPath, 'lifetime_streaming_stats.json'), 'utf8'));
+    const annualRecaps = JSON.parse(fs.readFileSync(path.join(dataPath, 'annual_recaps.json'), 'utf8'));
     
     // Build maps from raw Spotify files
     const { trackMap, albumMap } = buildRawSpotifyMaps();
@@ -376,23 +377,70 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     console.log(`\n🏆 Processing Pulse tab data (top ${CONFIG.ITEMS_PER_CATEGORY} each)`);
     console.log(`  📊 Found ${topArtists.length} artists, ${topTracks.length} tracks, ${topAlbums.length} albums`);
     
-    // Enrich the data
+    // Enrich the lifetime data
     const enrichedArtists = await enrichArtists(topArtists, token);
     const enrichedTracks = await enrichTracksWithRawData(topTracks, trackMap, token);
     const enrichedAlbums = await enrichAlbumsWithRawData(topAlbums, albumMap, trackMap, token);
     
-    // Create the enriched data object (Pulse tab format)
+    // Process yearly data for Leaderboard tab
+    console.log(`\n📅 Processing yearly data for Leaderboard tab...`);
+    const yearlyData = {};
+    const years = Object.keys(annualRecaps).sort().reverse();
+    
+    for (const year of years) {
+      console.log(`  📊 Processing ${year}...`);
+      const yearData = annualRecaps[year];
+      
+      // Get top items for this year (top 10 each)
+      const yearArtists = yearData.top_artists.slice(0, 10);
+      const yearAlbums = yearData.top_albums.slice(0, 10);
+      
+      // Handle tracks - use top_track_artists if available, otherwise top_tracks
+      let yearTracks;
+      if (yearData.top_track_artists) {
+        yearTracks = yearData.top_track_artists.slice(0, 10).map(item => ({
+          name: item[0],
+          playCount: item[1],
+          artist: item[2]
+        }));
+      } else {
+        yearTracks = yearData.top_tracks.slice(0, 10).map(item => ({
+          name: item[0],
+          playCount: item[1],
+          artist: null
+        }));
+      }
+      
+      // Enrich yearly data
+      const yearEnrichedArtists = await enrichArtists(yearArtists, token);
+      const yearEnrichedTracks = await enrichTracksWithRawData(yearTracks, trackMap, token);
+      const yearEnrichedAlbums = await enrichAlbumsWithRawData(yearAlbums, albumMap, trackMap, token);
+      
+      yearlyData[year] = {
+        artists: yearEnrichedArtists,
+        tracks: yearEnrichedTracks,
+        albums: yearEnrichedAlbums
+      };
+      
+      console.log(`    ✅ ${year}: ${yearEnrichedArtists.length} artists, ${yearEnrichedTracks.length} tracks, ${yearEnrichedAlbums.length} albums`);
+    }
+    
+    // Create the enriched data object with both lifetime and yearly data
     const enrichedData = {
-      artists: enrichedArtists,
-      tracks: enrichedTracks,
-      albums: enrichedAlbums,
+      lifetime: {
+        artists: enrichedArtists,
+        tracks: enrichedTracks,
+        albums: enrichedAlbums
+      },
+      yearly: yearlyData,
       lastUpdated: new Date().toISOString(),
       config: {
         itemsPerCategory: CONFIG.ITEMS_PER_CATEGORY,
         apiDelay: CONFIG.API_DELAY,
         rawSpotifyMatching: true,
         trackMapCount: trackMap.size,
-        albumMapCount: albumMap.size
+        albumMapCount: albumMap.size,
+        yearsProcessed: years.length
       }
     };
     
@@ -404,13 +452,28 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     console.log(`💾 Saved to: ${outputPath}`);
     
     // Print summary with match statistics
-    const rawMatches = enrichedTracks.filter(t => t.matchSource === 'raw_uri').length + 
-                      enrichedAlbums.filter(a => a.matchSource === 'raw_uri').length;
-    const totalItems = enrichedTracks.length + enrichedAlbums.length;
+    const lifetimeRawMatches = enrichedTracks.filter(t => t.matchSource === 'raw_uri').length + 
+                              enrichedAlbums.filter(a => a.matchSource === 'raw_uri').length;
+    const lifetimeTotalItems = enrichedTracks.length + enrichedAlbums.length;
     
-    console.log(`📊 Total enriched: ${enrichedArtists.length} artists, ${enrichedTracks.length} tracks, ${enrichedAlbums.length} albums`);
-    console.log(`🎯 Raw URI matches: ${rawMatches} items`);
-    console.log(`📈 Match rate: ${Math.round((rawMatches / totalItems) * 100)}%`);
+    // Calculate yearly statistics
+    let yearlyRawMatches = 0;
+    let yearlyTotalItems = 0;
+    for (const year of years) {
+      const yearData = yearlyData[year];
+      yearlyRawMatches += yearData.tracks.filter(t => t.matchSource === 'raw_uri').length + 
+                         yearData.albums.filter(a => a.matchSource === 'raw_uri').length;
+      yearlyTotalItems += yearData.tracks.length + yearData.albums.length;
+    }
+    
+    const totalRawMatches = lifetimeRawMatches + yearlyRawMatches;
+    const totalItems = lifetimeTotalItems + yearlyTotalItems;
+    
+    console.log(`📊 Total enriched:`);
+    console.log(`  🏆 Lifetime: ${enrichedArtists.length} artists, ${enrichedTracks.length} tracks, ${enrichedAlbums.length} albums`);
+    console.log(`  📅 Years processed: ${years.length}`);
+    console.log(`🎯 Raw URI matches: ${totalRawMatches} items`);
+    console.log(`📈 Match rate: ${Math.round((totalRawMatches / totalItems) * 100)}%`);
     
   } catch (error) {
     console.error('❌ Error enriching Spotify data:', error.message);
