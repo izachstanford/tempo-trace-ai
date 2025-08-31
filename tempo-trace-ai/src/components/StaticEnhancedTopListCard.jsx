@@ -157,7 +157,7 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
               <div className="flex-1 min-w-0">
                 <p className="text-white font-medium truncate">{item.name}</p>
                 <p className="text-sm text-gray-400">{item.plays.toLocaleString()} plays</p>
-                {item.artist && item.artist !== item.name && (
+                {item.artist && (
                   <p className="text-xs text-gray-500 truncate">by {item.artist}</p>
                 )}
               </div>

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-07-17T13:27:01.118887",
+    "generated_at": "2025-08-31T15:21:15.713841",
     "total_records": 49891,
     "data_sources": [
       "Spotify",
@@ -26,10 +26,12 @@
   "content_stats": {
     "unique_artists": 3946,
     "unique_tracks": 12520,
+    "unique_track_artists": 14247,
     "unique_albums": 4476,
     "total_plays": 49891,
     "average_plays_per_artist": 12.643436391282311,
     "average_plays_per_track": 3.9849041533546328,
+    "average_plays_per_track_artist": 3.501860040710325,
     "average_plays_per_album": 11.14633601429848
   },
   "platform_stats": {
@@ -715,11 +717,13 @@
     "artist_diversity_score": 0.07909242147882384,
     "unique_artists": 3946,
     "unique_tracks": 12520,
+    "unique_track_artists": 14247,
     "top_1_artist_concentration": 2.9724800064139822,
     "top_5_artist_concentration": 10.396664729109458,
     "top_10_artist_concentration": 17.373875047603775,
     "plays_per_artist": 12.643436391282311,
-    "plays_per_track": 3.9849041533546328
+    "plays_per_track": 3.9849041533546328,
+    "plays_per_track_artist": 3.501860040710325
   },
   "top_lists": {
     "top_artists": [
@@ -1124,6 +1128,258 @@
       [
         "Same Mistakes",
         45
+      ]
+    ],
+    "top_track_artists": [
+      [
+        "High Hopes",
+        85,
+        "Panic! At The Disco"
+      ],
+      [
+        "Chlorine",
+        70,
+        "Twenty One Pilots"
+      ],
+      [
+        "Turn",
+        62,
+        "The Wombats"
+      ],
+      [
+        "Ghosts",
+        62,
+        "The National Parks"
+      ],
+      [
+        "Inspired",
+        60,
+        "888"
+      ],
+      [
+        "Sure and Certain",
+        59,
+        "Jimmy Eat World"
+      ],
+      [
+        "Champion",
+        59,
+        "Fall Out Boy"
+      ],
+      [
+        "Feel It Still",
+        58,
+        "Portugal. The Man"
+      ],
+      [
+        "As Young As We Are",
+        57,
+        "Tokio Hotel"
+      ],
+      [
+        "&Run",
+        55,
+        "Sir Sly"
+      ],
+      [
+        "Cautious",
+        54,
+        "Emarosa"
+      ],
+      [
+        "Quarter Past Midnight",
+        52,
+        "Bastille"
+      ],
+      [
+        "Victorious",
+        51,
+        "Panic! At The Disco"
+      ],
+      [
+        "The Last of the Real Ones",
+        51,
+        "Fall Out Boy"
+      ],
+      [
+        "Lying",
+        51,
+        "Foreign Air"
+      ],
+      [
+        "Dragon (feat. Skybourne)",
+        51,
+        "Built By Titan"
+      ],
+      [
+        "Shape of You",
+        50,
+        "Ed Sheeran"
+      ],
+      [
+        "Black Butterflies and Déjà Vu",
+        50,
+        "The Maine"
+      ],
+      [
+        "Electrified",
+        50,
+        "Just Loud"
+      ],
+      [
+        "Paris",
+        49,
+        "The Chainsmokers"
+      ],
+      [
+        "Wherever I Go",
+        48,
+        "OneRepublic"
+      ],
+      [
+        "At the Heart",
+        48,
+        "The National Parks"
+      ],
+      [
+        "Whatever It Takes",
+        47,
+        "Imagine Dragons"
+      ],
+      [
+        "The Sound of Reverie (Remix)",
+        47,
+        "The Maine"
+      ],
+      [
+        "Walls",
+        47,
+        "Stokeswood"
+      ],
+      [
+        "Vignette",
+        47,
+        "Twenty One Pilots"
+      ],
+      [
+        "Feel Invincible",
+        46,
+        "Skillet"
+      ],
+      [
+        "Glimmer",
+        46,
+        "Marianas Trench"
+      ],
+      [
+        "joy.",
+        45,
+        "for KING & COUNTRY"
+      ],
+      [
+        "American Nights",
+        45,
+        "The Night Game"
+      ],
+      [
+        "Same Mistakes",
+        45,
+        "FUTURE FEATS"
+      ],
+      [
+        "Haven't Had Enough",
+        45,
+        "Marianas Trench"
+      ],
+      [
+        "Cold Rain",
+        44,
+        "Fitness"
+      ],
+      [
+        "Love From The Other Side",
+        44,
+        "Fall Out Boy"
+      ],
+      [
+        "Can't Deny My Love",
+        43,
+        "Brandon Flowers"
+      ],
+      [
+        "Burn It Down",
+        43,
+        "Fitz and The Tantrums"
+      ],
+      [
+        "HOLD ME TIGHT OR DON’T",
+        43,
+        "Fall Out Boy"
+      ],
+      [
+        "Ghost",
+        43,
+        "Jacob Kulick"
+      ],
+      [
+        "My Blood",
+        43,
+        "Twenty One Pilots"
+      ],
+      [
+        "Rhythm of Your Heart",
+        42,
+        "Marianas Trench"
+      ],
+      [
+        "Navigating",
+        41,
+        "Twenty One Pilots"
+      ],
+      [
+        "Someone Anyone",
+        40,
+        "Anberlin"
+      ],
+      [
+        "Get Right",
+        40,
+        "Jimmy Eat World"
+      ],
+      [
+        "Your Love Could Start a War",
+        40,
+        "The Unlikely Candidates"
+      ],
+      [
+        "Tidal Wave",
+        39,
+        "Taking Back Sunday"
+      ],
+      [
+        "Legends",
+        39,
+        "Sleeping With Sirens"
+      ],
+      [
+        "Fireflies",
+        39,
+        "Owl City"
+      ],
+      [
+        "Might Love Myself",
+        39,
+        "Beartooth"
+      ],
+      [
+        "Why Did You Run?",
+        38,
+        "Judah & the Lion"
+      ],
+      [
+        "Uma Thurman",
+        37,
+        "Fall Out Boy"
       ]
     ],
     "top_albums": [

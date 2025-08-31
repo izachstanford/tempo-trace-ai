@@ -13,6 +13,7 @@ import {
   Smartphone,
   Play
 } from 'lucide-react';
+import EnhancedLeaderboardCard from './EnhancedLeaderboardCard';
 
 
 const StatCard = ({ icon: Icon, label, value, subtitle, gradient = false }) => (
@@ -139,20 +140,26 @@ const LeaderboardTab = ({ data }) => {
 
       {/* Top Lists for Selected Year */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <TopListCard
+        <EnhancedLeaderboardCard
           title="Top Artists"
           items={currentData.top_artists}
           icon={Users}
+          type="artists"
+          year={currentYear}
         />
-        <TopListCard
+        <EnhancedLeaderboardCard
           title="Top Tracks"
           items={currentData.top_tracks}
           icon={Music}
+          type="tracks"
+          year={currentYear}
         />
-        <TopListCard
+        <EnhancedLeaderboardCard
           title="Top Albums"
           items={currentData.top_albums}
           icon={Award}
+          type="albums"
+          year={currentYear}
         />
       </div>
 
