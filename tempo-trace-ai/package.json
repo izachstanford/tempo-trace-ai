@@ -8,14 +8,9 @@
     "build": "vite build",
     "preview": "vite preview",
     "serve": "http-server dist -p 3000",
-    "fetch-spotify": "node scripts/fetch-spotify-data.mjs",
-    "fetch-spotify-enhanced": "node scripts/enhanced-spotify-fetcher.mjs",
-    "fetch-spotify-smart": "node scripts/smart-spotify-fetcher.mjs",
-    "fetch-spotify-uri": "node scripts/uri-based-spotify-fetcher.mjs",
-    "fetch-spotify-pulse": "node scripts/pulse-spotify-fetcher.mjs",
-    "fetch-spotify-raw": "node scripts/raw-spotify-fetcher.mjs",
-    "fix-top-tracks": "node scripts/fix-top-tracks.mjs",
-    "process-and-enrich": "node scripts/process-and-enrich.mjs"
+    "process-music": "node scripts/process-music-data.mjs",
+    "enrich-spotify": "node scripts/spotify-enricher.mjs",
+    "process-and-enrich": "node scripts/process-music-data.mjs -- --with-spotify"
   },
   "dependencies": {
     "@visx/visx": "^3.12.0",
