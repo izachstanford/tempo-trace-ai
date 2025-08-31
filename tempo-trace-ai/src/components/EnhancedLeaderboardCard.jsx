@@ -111,7 +111,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
             artist = item.artist;
           }
           
-          const enrichedItem = getEnrichedItem(itemName);
+          const enrichedItem = getEnrichedItem(itemName, year);
           const hasSpotifyData = enrichedItem && enrichedItem.spotifyUrl;
           
           const ItemComponent = hasSpotifyData ? 'a' : 'div';
