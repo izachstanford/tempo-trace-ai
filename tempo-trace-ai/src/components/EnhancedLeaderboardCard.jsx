@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type }) => {
+const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
   const [enrichedData, setEnrichedData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
