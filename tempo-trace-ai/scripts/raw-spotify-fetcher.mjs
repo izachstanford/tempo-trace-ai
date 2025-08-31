@@ -29,6 +29,57 @@ async function getToken() {
   return json.access_token;
 }
 
+function cleanSpotifyData(data, type) {
+  if (!data) return null;
+  
+  const cleaned = {
+    id: data.id,
+    name: data.name,
+    type: data.type,
+    uri: data.uri,
+    external_urls: data.external_urls,
+    images: data.images,
+    popularity: data.popularity
+  };
+  
+  if (type === 'track') {
+    cleaned.artists = data.artists?.map(artist => ({
+      id: artist.id,
+      name: artist.name,
+      type: artist.type,
+      uri: artist.uri,
+      external_urls: artist.external_urls
+    }));
+    cleaned.album = data.album ? {
+      id: data.album.id,
+      name: data.album.name,
+      type: data.album.type,
+      uri: data.album.uri,
+      external_urls: data.album.external_urls,
+      images: data.album.images,
+      album_type: data.album.album_type,
+      total_tracks: data.album.total_tracks
+    } : null;
+  } else if (type === 'album') {
+    cleaned.artists = data.artists?.map(artist => ({
+      id: artist.id,
+      name: artist.name,
+      type: artist.type,
+      uri: artist.uri,
+      external_urls: artist.external_urls
+    }));
+    cleaned.album_type = data.album_type;
+    cleaned.total_tracks = data.total_tracks;
+    cleaned.label = data.label;
+    cleaned.genres = data.genres;
+  } else if (type === 'artist') {
+    cleaned.genres = data.genres;
+    cleaned.followers = data.followers;
+  }
+  
+  return cleaned;
+}
+
 async function searchArtist(name, token) {
   const url = new URL('https://api.spotify.com/v1/search');
   url.searchParams.set('q', name);
@@ -251,7 +302,7 @@ async function enrichTracksWithRawData(tracks, trackMap, token) {
       enriched.push({
         name: trackName,
         plays: playCount,
-        spotifyData: trackData,
+        spotifyData: cleanSpotifyData(trackData, 'track'),
         image: trackData?.album?.images?.[0]?.url || null,
         spotifyUrl: trackData?.external_urls?.spotify || null,
         artist: trackData?.artists?.[0]?.name || trackInfo?.artist || expectedArtist || null,
@@ -307,7 +358,7 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       enriched.push({
         name: albumName,
         plays: playCount,
-        spotifyData: albumData,
+        spotifyData: cleanSpotifyData(albumData, 'album'),
         image: albumData?.images?.[0]?.url || null,
         spotifyUrl: albumData?.external_urls?.spotify || null,
         artist: albumData?.artists?.[0]?.name || albumInfo?.artist || null,
