@@ -1,79 +1,114 @@
 [
   {
-    "date": "2012-09-17",
-    "artist": "The Killers",
+    "date": "2025-09-06",
+    "artist": "The Offspring",
     "type": "headliner",
-    "venue": "UCCU Center",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-09-06",
+    "artist": "Jimmy Eat World",
+    "type": "headliner",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-03-24",
+    "artist": "The Rocket Summer",
+    "type": "headliner",
+    "venue": "Soundwell",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-03-24",
+    "artist": "Mae",
+    "type": "opener",
+    "venue": "Soundwell",
     "vibe_rating": 3.5
   },
   {
-    "date": "2013-08-20",
-    "artist": "Pharrell Williams",
+    "date": "2024-10-15",
+    "artist": "Dashboard Confessional",
     "type": "headliner",
-    "venue": "Pure Night Club (Vegas)",
+    "venue": "The Complex",
     "vibe_rating": 4.0
   },
   {
-    "date": "2013-11-02",
-    "artist": "Twenty One Pilots",
+    "date": "2024-10-15",
+    "artist": "Boys Like Girls",
+    "type": "opener",
+    "venue": "The Complex",
+    "vibe_rating": 4.0
+  },
+  {
+    "date": "2024-10-08",
+    "artist": "Judah & the Lion",
     "type": "headliner",
-    "venue": "Club Sound (SLC)",
+    "venue": "The Union",
     "vibe_rating": 5.0
   },
   {
-    "date": "2016-04-08",
-    "artist": "The Rocket Summer",
+    "date": "2024-10-08",
+    "artist": "Abe Parker",
+    "type": "opener",
+    "venue": "The Union",
+    "vibe_rating": 3.5
+  },
+  {
+    "date": "2024-09-24",
+    "artist": "The National Parks",
     "type": "headliner",
-    "venue": "Barracuda Bar (Austin)",
+    "venue": "Sandy Amphitheatre",
     "vibe_rating": 4.5
   },
   {
-    "date": "2017-03-11",
-    "artist": "The Unlikely Candidates",
-    "type": "opener",
-    "venue": "Energy Square",
-    "vibe_rating": null
-  },
-  {
-    "date": "2018-09-22",
-    "artist": "Fall Out Boy",
-    "type": "headliner",
-    "venue": "Chesapeake Arena (OKC)",
-    "vibe_rating": 4.5
-  },
-  {
-    "date": "2018-09-22",
-    "artist": "Machine Gun Kelly",
-    "type": "opener",
-    "venue": "Chesapeake Arena (OKC)",
-    "vibe_rating": 4.5
-  },
-  {
-    "date": "2018-10-05",
-    "artist": "Taylor Swift",
-    "type": "headliner",
-    "venue": "AT&T Stadium (Dallas)",
-    "vibe_rating": 4.0
-  },
-  {
-    "date": "2018-10-05",
-    "artist": "Charli xcx",
-    "type": "opener",
-    "venue": "AT&T Stadium (Dallas)",
-    "vibe_rating": 4.0
-  },
-  {
-    "date": "2022-09-20",
+    "date": "2024-08-18",
     "artist": "Twenty One Pilots",
     "type": "headliner",
     "venue": "Delta Center",
     "vibe_rating": 5.0
   },
   {
-    "date": "2023-03-24",
-    "artist": "Taylor Swift",
+    "date": "2024-07-30",
+    "artist": "Thirty Seconds To Mars",
     "type": "headliner",
-    "venue": "Allegiant Stadium (Vegas)",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2024-07-30",
+    "artist": "AFI",
+    "type": "opener",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4.0
+  },
+  {
+    "date": "2024-07-04",
+    "artist": "Jonas Brothers",
+    "type": "headliner",
+    "venue": "BYU",
+    "vibe_rating": 3.0
+  },
+  {
+    "date": "2024-06-25",
+    "artist": "Yellowcard",
+    "type": "headliner",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4.0
+  },
+  {
+    "date": "2024-06-25",
+    "artist": "A R I Z O N A",
+    "type": "opener",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 3.5
+  },
+  {
+    "date": "2023-11-30",
+    "artist": "for KING & COUNTRY",
+    "type": "headliner",
+    "venue": "Maverik Center",
     "vibe_rating": 4.5
   },
   {
@@ -91,102 +126,81 @@
     "vibe_rating": 5.0
   },
   {
-    "date": "2023-11-30",
-    "artist": "for KING & COUNTRY",
+    "date": "2023-03-24",
+    "artist": "Taylor Swift",
     "type": "headliner",
-    "venue": "Maverik Center",
+    "venue": "Allegiant Stadium (Vegas)",
     "vibe_rating": 4.5
   },
   {
-    "date": "2024-06-25",
-    "artist": "Yellowcard",
-    "type": "headliner",
-    "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.0
-  },
-  {
-    "date": "2024-06-25",
-    "artist": "A R I Z O N A",
-    "type": "opener",
-    "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.0
-  },
-  {
-    "date": "2024-07-04",
-    "artist": "Jonas Brothers",
-    "type": "headliner",
-    "venue": "BYU",
-    "vibe_rating": 3.0
-  },
-  {
-    "date": "2024-07-30",
-    "artist": "Thirty Seconds To Mars",
-    "type": "headliner",
-    "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.5
-  },
-  {
-    "date": "2024-07-30",
-    "artist": "AFI",
-    "type": "opener",
-    "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.5
-  },
-  {
-    "date": "2024-08-18",
+    "date": "2022-09-20",
     "artist": "Twenty One Pilots",
     "type": "headliner",
     "venue": "Delta Center",
     "vibe_rating": 5.0
   },
   {
-    "date": "2024-09-24",
-    "artist": "The National Parks",
+    "date": "2018-10-05",
+    "artist": "Taylor Swift",
     "type": "headliner",
-    "venue": "Sandy Amphitheatre",
-    "vibe_rating": 4.5
+    "venue": "AT&T Stadium (Dallas)",
+    "vibe_rating": 4.0
   },
   {
-    "date": "2024-10-08",
-    "artist": "Judah & the Lion",
-    "type": "headliner",
-    "venue": "The Union",
-    "vibe_rating": 5.0
-  },
-  {
-    "date": "2024-10-08",
-    "artist": "Abe Parker",
+    "date": "2018-10-05",
+    "artist": "Charli xcx",
     "type": "opener",
-    "venue": "The Union",
-    "vibe_rating": 5.0
+    "venue": "AT&T Stadium (Dallas)",
+    "vibe_rating": 3.0
   },
   {
-    "date": "2024-10-15",
-    "artist": "Dashboard Confessional",
+    "date": "2018-09-22",
+    "artist": "Fall Out Boy",
     "type": "headliner",
-    "venue": "The Complex",
+    "venue": "Chesapeake Arena (OKC)",
     "vibe_rating": 4.5
   },
   {
-    "date": "2024-10-15",
-    "artist": "Boys Like Girls",
+    "date": "2018-09-22",
+    "artist": "Machine Gun Kelly",
     "type": "opener",
-    "venue": "The Complex",
-    "vibe_rating": 4.5
+    "venue": "Chesapeake Arena (OKC)",
+    "vibe_rating": 2.0
   },
   {
-    "date": "2025-03-24",
+    "date": "2017-03-11",
+    "artist": "The Unlikely Candidates",
+    "type": "opener",
+    "venue": "Energy Square",
+    "vibe_rating": 4.0
+  },
+  {
+    "date": "2016-04-08",
     "artist": "The Rocket Summer",
     "type": "headliner",
-    "venue": "Soundwell",
+    "venue": "Barracuda Bar (Austin)",
     "vibe_rating": 4.5
   },
   {
-    "date": "2025-03-24",
-    "artist": "Mae",
-    "type": "opener",
-    "venue": "Soundwell",
-    "vibe_rating": 4.5
+    "date": "2013-11-02",
+    "artist": "Twenty One Pilots",
+    "type": "headliner",
+    "venue": "Club Sound (SLC)",
+    "vibe_rating": 5.0
+  },
+  {
+    "date": "2013-08-20",
+    "artist": "Pharrell Williams",
+    "type": "headliner",
+    "venue": "Pure Night Club (Vegas)",
+    "vibe_rating": 4.0
+  },
+  {
+    "date": "2012-09-17",
+    "artist": "The Killers",
+    "type": "headliner",
+    "venue": "UCCU Center",
+    "vibe_rating": 3.5
   },
   {
     "date": "2010-01-01",
@@ -258,5 +272,4 @@
     "venue": null,
     "vibe_rating": null
   }
-  
 ]

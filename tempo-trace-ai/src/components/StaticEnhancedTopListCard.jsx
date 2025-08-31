@@ -40,7 +40,21 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
   const DefaultIcon = getDefaultIcon();
 
   const getEnrichedItems = () => {
-    if (!enrichedData) return items.map(([name, plays]) => ({ name, plays, image: null, spotifyUrl: null, artist: null }));
+    if (!enrichedData) {
+      // Handle both old format [name, plays] and new format [name, plays, artist]
+      return items.map(item => {
+        if (Array.isArray(item)) {
+          return { 
+            name: item[0], 
+            plays: item[1], 
+            artist: item[2] || null,
+            image: null, 
+            spotifyUrl: null 
+          };
+        }
+        return item;
+      });
+    }
 
     let enrichedItems = [];
     if (title === 'Top Artists') {
@@ -51,10 +65,21 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
       enrichedItems = enrichedData.albums || [];
     }
 
-    // Merge with original items to ensure we have all the data
-    const mergedItems = items.map(([name, plays]) => {
-      const enriched = enrichedItems.find(item => item.name === name);
-      return enriched || { name, plays, image: null, spotifyUrl: null, artist: null };
+    // Handle both old format [name, plays] and new format [name, plays, artist]
+    const mergedItems = items.map(item => {
+      let name, plays, artist;
+      if (Array.isArray(item)) {
+        name = item[0];
+        plays = item[1];
+        artist = item[2] || null;
+      } else {
+        name = item.name;
+        plays = item.plays;
+        artist = item.artist;
+      }
+      
+      const enriched = enrichedItems.find(enrichedItem => enrichedItem.name === name);
+      return enriched || { name, plays, artist, image: null, spotifyUrl: null };
     });
 
     return mergedItems;
@@ -156,25 +181,19 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
               {/* Content */}
               <div className="flex-1 min-w-0">
                 <p className="text-white font-medium truncate">{item.name}</p>
-                <p className="text-sm text-gray-400">{item.plays.toLocaleString()} plays</p>
-                {item.artist && (
-                  <p className="text-xs text-gray-500 truncate">by {item.artist}</p>
+                {title === 'Top Artists' ? (
+                  <p className="text-xs text-gray-500 truncate">&nbsp;</p>
+                ) : (
+                  item.artist && (
+                    <p className="text-xs text-gray-500 truncate">by {item.artist}</p>
+                  )
                 )}
               </div>
 
-              {/* Spotify Link - Persistent */}
-              {item.spotifyUrl && (
-                <div className="flex items-center justify-center w-6 h-6">
-                  <ExternalLink className="w-4 h-4 text-cyber-blue" />
-                </div>
-              )}
-
-              {/* Progress Bar */}
-              <div className="w-12 bg-gray-700 rounded-full h-2">
-                <div 
-                  className="bg-gradient-to-r from-cyber-blue to-cyber-purple h-2 rounded-full" 
-                  style={{ width: `${(item.plays / enrichedItems[0].plays) * 100}%` }}
-                />
+              {/* Play Count */}
+              <div className="text-right">
+                <p className="text-cyber-blue font-bold text-sm">{item.plays.toLocaleString()}</p>
+                <p className="text-xs text-gray-400">plays</p>
               </div>
             </ItemWrapper>
           );

@@ -18192,8 +18192,8 @@
       "name": "Wild Spirit",
       "plays": 198,
       "spotifyData": {
-        "album_type": "single",
-        "total_tracks": 1,
+        "album_type": "album",
+        "total_tracks": 12,
         "available_markets": [
           "AR",
           "AU",
@@ -18388,17 +18388,17 @@
         "id": "6uRqR9oIdKcdOeW3xNtIUf",
         "images": [
           {
-            "url": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
+            "url": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
             "height": 640,
             "width": 640
           },
           {
-            "url": "https://i.scdn.co/image/ab67616d00001e02d9fe8ec0932dd802bd93e4ec",
+            "url": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
             "height": 300,
             "width": 300
           },
           {
-            "url": "https://i.scdn.co/image/ab67616d00004851d9fe8ec0932dd802bd93e4ec",
+            "url": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
             "height": 64,
             "width": 64
           }
@@ -18407,7 +18407,7 @@
         "release_date": "2024-05-17",
         "release_date_precision": "day",
         "type": "album",
-        "uri": "spotify:album:6uRqR9oIdKcdOeW3xNtIUf",
+        "uri": "spotify:album:6dLSL5RbIw2qv5413Df5Zy",
         "artists": [
           {
             "external_urls": {
@@ -18662,8 +18662,8 @@
         "label": "The National Parks",
         "popularity": 22
       },
-      "image": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
-      "spotifyUrl": "https://open.spotify.com/album/6uRqR9oIdKcdOeW3xNtIUf",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
+      "spotifyUrl": "https://open.spotify.com/album/6dLSL5RbIw2qv5413Df5Zy",
       "artist": "The National Parks",
       "matchSource": "raw_uri"
     },
