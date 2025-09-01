@@ -52,27 +52,116 @@
         {
           "name": "Automatic",
           "plays": 21,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "7dXY4oHP51599HTGQJHJJT",
+            "name": "Automatic",
+            "type": "track",
+            "uri": "spotify:track:7dXY4oHP51599HTGQJHJJT",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7dXY4oHP51599HTGQJHJJT"
+            },
+            "popularity": 54,
+            "artists": [
+              {
+                "id": "7sOR7gk6XUlGnxj3p9F54k",
+                "name": "half•alive",
+                "type": "artist",
+                "uri": "spotify:artist:7sOR7gk6XUlGnxj3p9F54k",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7sOR7gk6XUlGnxj3p9F54k"
+                }
+              }
+            ],
+            "album": {
+              "id": "5jPS8sVcP89icU78a5XHNt",
+              "name": "Persona",
+              "type": "album",
+              "uri": "spotify:album:5jPS8sVcP89icU78a5XHNt",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5jPS8sVcP89icU78a5XHNt"
+              },
+              "images": [
+                {
+                  "url": "https://i.scdn.co/image/ab67616d0000b27357c746bd0664cdc248f8e340",
+                  "width": 640,
+                  "height": 640
+                },
+                {
+                  "url": "https://i.scdn.co/image/ab67616d00001e0257c746bd0664cdc248f8e340",
+                  "width": 300,
+                  "height": 300
+                },
+                {
+                  "url": "https://i.scdn.co/image/ab67616d0000485157c746bd0664cdc248f8e340",
+                  "width": 64,
+                  "height": 64
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 11
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27357c746bd0664cdc248f8e340",
+          "spotifyUrl": "https://open.spotify.com/track/7dXY4oHP51599HTGQJHJJT",
           "artist": "half•alive",
-          "matchSource": "none"
+          "matchSource": "raw_uri"
         }
       ],
       "albums": [
         {
           "name": "The Hart",
           "plays": 103,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "1Z6lchat5qLy21WkX31mr4",
+            "name": "The Hart",
+            "type": "album",
+            "uri": "spotify:album:1Z6lchat5qLy21WkX31mr4",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/1Z6lchat5qLy21WkX31mr4"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab67616d0000b27374552ad5bf781618e2e29461",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616d00001e0274552ad5bf781618e2e29461",
+                "height": 300,
+                "width": 300
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616d0000485174552ad5bf781618e2e29461",
+                "height": 64,
+                "width": 64
+              }
+            ],
+            "popularity": 44,
+            "artists": [
+              {
+                "id": "6Xq9CIMYWK4RCrMVtfEOM0",
+                "name": "Grayscale",
+                "type": "artist",
+                "uri": "spotify:artist:6Xq9CIMYWK4RCrMVtfEOM0",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6Xq9CIMYWK4RCrMVtfEOM0"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 12,
+            "label": "Infield",
+            "genres": []
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27374552ad5bf781618e2e29461",
+          "spotifyUrl": "https://open.spotify.com/album/1Z6lchat5qLy21WkX31mr4",
           "artist": "Grayscale",
-          "matchSource": "none"
+          "matchSource": "raw_uri"
         }
       ]
     }
   },
-  "lastUpdated": "2025-09-01T02:42:13.983Z",
+  "lastUpdated": "2025-09-01T02:49:22.530Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 2000,
