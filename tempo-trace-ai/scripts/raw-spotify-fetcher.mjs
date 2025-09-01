@@ -560,31 +560,11 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       }
     };
     
-    // Save lifetime data to separate file
-    const lifetimeFileData = {
-      lifetime: enrichedData.lifetime,
-      lastUpdated: enrichedData.lastUpdated,
-      config: enrichedData.config
-    };
-    const lifetimePath = path.join(process.cwd(), 'public/data/spotify_enriched_lifetime.json');
-    fs.writeFileSync(lifetimePath, JSON.stringify(lifetimeFileData, null, 2));
-    
-    // Save yearly data to separate file
-    const yearlyFileData = {
-      yearly: enrichedData.yearly,
-      lastUpdated: enrichedData.lastUpdated,
-      config: enrichedData.config
-    };
-    const yearlyPath = path.join(process.cwd(), 'public/data/spotify_enriched_yearly.json');
-    fs.writeFileSync(yearlyPath, JSON.stringify(yearlyFileData, null, 2));
-    
-    // Also save combined file for backward compatibility
+    // Save combined file (contains both lifetime and yearly data)
     const combinedPath = path.join(process.cwd(), 'public/data/spotify_enriched_data.json');
     fs.writeFileSync(combinedPath, JSON.stringify(enrichedData, null, 2));
     
     console.log('\n✅ Raw Spotify data enrichment completed!');
-    console.log(`💾 Saved lifetime data to: ${lifetimePath}`);
-    console.log(`💾 Saved yearly data to: ${yearlyPath}`);
     console.log(`💾 Saved combined data to: ${combinedPath}`);
     
     // Print summary with match statistics

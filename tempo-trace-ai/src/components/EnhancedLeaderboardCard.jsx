@@ -8,7 +8,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
   useEffect(() => {
     const fetchEnrichedData = async () => {
       try {
-        const response = await fetch('/data/spotify_enriched_yearly.json');
+        const response = await fetch('/data/spotify_enriched_data.json');
         if (!response.ok) {
           throw new Error('Failed to fetch enriched data');
         }

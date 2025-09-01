@@ -3114,17 +3114,17 @@
             "id": "46aNfN89JrOQTCy97GoCHa",
             "images": [
               {
-                "url": "https://i.scdn.co/image/ab6761610000e5eb1bb213762bb8cc8c51802648",
+                "url": "https://i.scdn.co/image/ab6761610000e5eb70e2003eac14234422238fc9",
                 "height": 640,
                 "width": 640
               },
               {
-                "url": "https://i.scdn.co/image/ab676161000051741bb213762bb8cc8c51802648",
+                "url": "https://i.scdn.co/image/ab6761610000517470e2003eac14234422238fc9",
                 "height": 320,
                 "width": 320
               },
               {
-                "url": "https://i.scdn.co/image/ab6761610000f1781bb213762bb8cc8c51802648",
+                "url": "https://i.scdn.co/image/ab6761610000f17870e2003eac14234422238fc9",
                 "height": 160,
                 "width": 160
               }
@@ -3134,7 +3134,7 @@
             "type": "artist",
             "uri": "spotify:artist:46aNfN89JrOQTCy97GoCHa"
           },
-          "image": "https://i.scdn.co/image/ab6761610000e5eb1bb213762bb8cc8c51802648",
+          "image": "https://i.scdn.co/image/ab6761610000e5eb70e2003eac14234422238fc9",
           "spotifyUrl": "https://open.spotify.com/artist/46aNfN89JrOQTCy97GoCHa",
           "artist": "Tokio Hotel"
         },
@@ -6565,7 +6565,7 @@
       ]
     }
   },
-  "lastUpdated": "2025-09-01T02:27:30.679Z",
+  "lastUpdated": "2025-09-01T02:30:59.746Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,

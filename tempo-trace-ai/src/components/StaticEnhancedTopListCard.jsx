@@ -12,7 +12,7 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
         setLoading(true);
         setError(null);
 
-        const response = await fetch('/data/spotify_enriched_lifetime.json');
+        const response = await fetch('/data/spotify_enriched_data.json');
         if (!response.ok) {
           throw new Error(`Failed to load Spotify data: ${response.status}`);
         }
