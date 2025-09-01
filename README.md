@@ -75,8 +75,7 @@ npm run process-and-enrich
 - `annual_recaps.json` (142KB) - Year-by-year insights  
 - `artist_summary.json` (9.2MB) - Detailed per-artist analytics
 - `concerts.json` (5.6KB) - Concert attendance data (optional)
-- `spotify_enriched_lifetime.json` (51KB) - Spotify images/links for lifetime data
-- `spotify_enriched_yearly.json` (498KB) - Spotify images/links for yearly data
+- `spotify_enriched_data.json` (213KB) - Combined Spotify images/links for all data
 
 ### Step 3: Launch the Dashboard
 ```bash
