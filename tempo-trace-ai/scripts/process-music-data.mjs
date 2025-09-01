@@ -93,8 +93,7 @@ function copyProcessedData() {
   
   const filesToCopy = [
     'lifetime_streaming_stats.json',
-    'annual_recaps.json',
-    'consolidated_full_streaming_data_clean.json'
+    'annual_recaps.json'
   ];
   
   let successCount = 0;

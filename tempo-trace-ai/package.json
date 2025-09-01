@@ -10,7 +10,6 @@
     "serve": "http-server dist -p 3000",
     "process-music": "node scripts/process-music-data.mjs",
     "enrich-spotify": "node scripts/spotify-enricher.mjs",
-    "consolidate-data": "node scripts/consolidate-data.mjs",
     "process-and-enrich": "node scripts/process-music-data.mjs -- --with-spotify"
   },
   "dependencies": {

@@ -295,10 +295,6 @@ async function enrichSpotifyData() {
       }
     };
     
-    // Save combined file
-    const combinedPath = path.join(process.cwd(), CONFIG.OUTPUT_DIR, 'spotify_enriched_data.json');
-    fs.writeFileSync(combinedPath, JSON.stringify(outputData, null, 2));
-    
     // Save separate files for better performance
     const lifetimePath = path.join(process.cwd(), CONFIG.OUTPUT_DIR, 'spotify_enriched_lifetime.json');
     fs.writeFileSync(lifetimePath, JSON.stringify({ lifetime: lifetimeEnriched, lastUpdated: outputData.lastUpdated, config: outputData.config }, null, 2));
@@ -315,7 +311,7 @@ async function enrichSpotifyData() {
     console.log(`📊 Lifetime items enriched: ${totalItems}`);
     console.log(`📊 Yearly items enriched: ${totalYearlyItems}`);
     console.log(`📊 Years processed: ${Object.keys(yearlyEnriched).length}`);
-    console.log(`💾 Files saved: spotify_enriched_data.json, spotify_enriched_lifetime.json, spotify_enriched_yearly.json`);
+    console.log(`💾 Files saved: spotify_enriched_lifetime.json, spotify_enriched_yearly.json`);
     
   } catch (error) {
     console.error('❌ Spotify enrichment failed:', error.message);
