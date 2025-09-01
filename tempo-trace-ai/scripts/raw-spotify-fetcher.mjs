@@ -6,7 +6,7 @@ import path from 'path';
 // Configuration
 const CONFIG = {
   ITEMS_PER_CATEGORY: 10, // Just top 10 for Pulse tab
-  API_DELAY: 100,
+  API_DELAY: 2000, // 2 second delay to avoid rate limits
   MAX_RETRIES: 3
 };
 
@@ -444,44 +444,15 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     // Build maps from raw Spotify files
     const { trackMap, albumMap } = buildRawSpotifyMaps();
     
-    // Get top items for lifetime (Pulse tab)
-    const topArtists = lifetimeData.top_lists.top_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY);
+    // TEST: Skip lifetime data processing to focus on 2025 yearly data
+    console.log('⏭️  Skipping lifetime data processing (test mode)');
+    const topArtists = [];
     
-    // Use the new track+artist combinations if available, otherwise fall back to legacy format
-    let topTracks;
-    if (lifetimeData.top_lists.top_track_artists) {
-      console.log('✅ Using new top_track_artists data');
-      // New format: [track, playCount, artist]
-      topTracks = lifetimeData.top_lists.top_track_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
-        name: item[0],
-        playCount: item[1],
-        artist: item[2]
-      }));
-      console.log('Top tracks from new format:', topTracks.map(t => `${t.name} by ${t.artist} (${t.playCount} plays)`));
-    } else {
-      console.log('⚠️  Using legacy top_tracks data');
-      // Legacy format: [track, playCount]
-      topTracks = lifetimeData.top_lists.top_tracks.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
-        name: item[0],
-        playCount: item[1],
-        artist: null
-      }));
-      console.log('Top tracks from legacy format:', topTracks.map(t => `${t.name} (${t.playCount} plays)`));
-    }
+    // TEST: Skip lifetime tracks processing
+    const topTracks = [];
     
-    // Use the new album+artist combinations if available, otherwise fall back to legacy format
-    let topAlbums;
-    if (lifetimeData.top_lists.top_album_artists) {
-      console.log('✅ Using new top_album_artists data');
-      // New format: [album, playCount, artist]
-      topAlbums = lifetimeData.top_lists.top_album_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY);
-      console.log('Top albums from new format:', topAlbums.map(a => `${a[0]} by ${a[2]} (${a[1]} plays)`));
-    } else {
-      console.log('⚠️  Using legacy top_albums data');
-      // Legacy format: [album, playCount]
-      topAlbums = lifetimeData.top_lists.top_albums.slice(0, CONFIG.ITEMS_PER_CATEGORY);
-      console.log('Top albums from legacy format:', topAlbums.map(a => `${a[0]} (${a[1]} plays)`));
-    }
+    // TEST: Skip lifetime albums processing
+    const topAlbums = [];
     
     console.log(`\n🏆 Processing Pulse tab data (top ${CONFIG.ITEMS_PER_CATEGORY} each)`);
     console.log(`  📊 Found ${topArtists.length} artists, ${topTracks.length} tracks, ${topAlbums.length} albums`);
@@ -500,27 +471,33 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       console.log(`  📊 Processing ${year}...`);
       const yearData = annualRecaps[year];
       
-      // Get top items for this year (top 10 each)
-      const yearArtists = yearData.top_artists.slice(0, 10);
+      // TEST: Only process 2025 and only first artist and first album
+      if (year !== '2025') {
+        console.log(`  ⏭️  Skipping ${year} (test mode)`);
+        continue;
+      }
+      
+      // Get top items for this year (TEST: only first 1 each)
+      const yearArtists = yearData.top_artists.slice(0, 1); // Only first artist
       
       // Handle albums - use top_album_artists if available, otherwise top_albums
       let yearAlbums;
       if (yearData.top_album_artists) {
-        yearAlbums = yearData.top_album_artists.slice(0, 10);
+        yearAlbums = yearData.top_album_artists.slice(0, 1); // Only first album
       } else {
-        yearAlbums = yearData.top_albums.slice(0, 10);
+        yearAlbums = yearData.top_albums.slice(0, 1); // Only first album
       }
       
       // Handle tracks - use top_track_artists if available, otherwise top_tracks
       let yearTracks;
       if (yearData.top_track_artists) {
-        yearTracks = yearData.top_track_artists.slice(0, 10).map(item => ({
+        yearTracks = yearData.top_track_artists.slice(0, 1).map(item => ({ // TEST: Only first track
           name: item[0],
           playCount: item[1],
           artist: item[2]
         }));
       } else {
-        yearTracks = yearData.top_tracks.slice(0, 10).map(item => ({
+        yearTracks = yearData.top_tracks.slice(0, 1).map(item => ({ // TEST: Only first track
           name: item[0],
           playCount: item[1],
           artist: null
@@ -541,6 +518,9 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       console.log(`    ✅ ${year}: ${yearEnrichedArtists.length} artists, ${yearEnrichedTracks.length} tracks, ${yearEnrichedAlbums.length} albums`);
     }
     
+    // Get processed years for statistics
+    const processedYears = Object.keys(yearlyData);
+    
     // Create the enriched data object with both lifetime and yearly data
     const enrichedData = {
       lifetime: {
@@ -556,7 +536,7 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
         rawSpotifyMatching: true,
         trackMapCount: trackMap.size,
         albumMapCount: albumMap.size,
-        yearsProcessed: years.length
+        yearsProcessed: processedYears.length
       }
     };
     
@@ -572,10 +552,10 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
                               enrichedAlbums.filter(a => a.matchSource === 'raw_uri').length;
     const lifetimeTotalItems = enrichedTracks.length + enrichedAlbums.length;
     
-    // Calculate yearly statistics
+    // Calculate yearly statistics (only for processed years)
     let yearlyRawMatches = 0;
     let yearlyTotalItems = 0;
-    for (const year of years) {
+    for (const year of processedYears) {
       const yearData = yearlyData[year];
       yearlyRawMatches += yearData.tracks.filter(t => t.matchSource === 'raw_uri').length + 
                          yearData.albums.filter(a => a.matchSource === 'raw_uri').length;
@@ -587,7 +567,7 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     
     console.log(`📊 Total enriched:`);
     console.log(`  🏆 Lifetime: ${enrichedArtists.length} artists, ${enrichedTracks.length} tracks, ${enrichedAlbums.length} albums`);
-    console.log(`  📅 Years processed: ${years.length}`);
+    console.log(`  📅 Years processed: ${processedYears.length}`);
     console.log(`🎯 Raw URI matches: ${totalRawMatches} items`);
     console.log(`📈 Match rate: ${Math.round((totalRawMatches / totalItems) * 100)}%`);
     
