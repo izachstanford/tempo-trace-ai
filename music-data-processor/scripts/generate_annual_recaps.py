@@ -89,7 +89,9 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
     yearly_data = defaultdict(lambda: {
         'artists': defaultdict(int),
         'tracks': defaultdict(int),
+        'track_artists': defaultdict(int),  # track+artist combinations
         'albums': defaultdict(int),
+        'album_artists': defaultdict(int),  # album+artist combinations
         'platforms': defaultdict(int),
         'providers': defaultdict(int),
         'countries': defaultdict(int),
@@ -142,8 +144,16 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
             year_data['artists'][artist] += 1
         if track:
             year_data['tracks'][track] += 1
+            # Track+artist combinations for accurate aggregation
+            if artist:
+                track_artist_key = f"{track}|{artist}"
+                year_data['track_artists'][track_artist_key] += 1
         if album:
             year_data['albums'][album] += 1
+            # Album+artist combinations for accurate aggregation
+            if artist:
+                album_artist_key = f"{album}|{artist}"
+                year_data['album_artists'][album_artist_key] += 1
         
         year_data['providers'][provider] += 1
         year_data['platforms'][platform] += 1
@@ -234,12 +244,26 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
             }
         year_stats['monthly_breakdown'] = monthly_breakdown
         
+        # Create top track+artist combinations
+        top_track_artists = []
+        for track_artist_key, play_count in sorted(data['track_artists'].items(), key=lambda x: x[1], reverse=True)[:50]:
+            track_name, artist_name = track_artist_key.split('|', 1)
+            top_track_artists.append([track_name, play_count, artist_name])
+        
+        # Create top album+artist combinations
+        top_album_artists = []
+        for album_artist_key, play_count in sorted(data['album_artists'].items(), key=lambda x: x[1], reverse=True)[:50]:
+            album_name, artist_name = album_artist_key.split('|', 1)
+            top_album_artists.append([album_name, play_count, artist_name])
+        
         # Create the annual recap entry
         annual_recaps[year_str] = {
             'year': year,
             'top_artists': sorted(data['artists'].items(), key=lambda x: x[1], reverse=True)[:50],
             'top_tracks': sorted(data['tracks'].items(), key=lambda x: x[1], reverse=True)[:50],
+            'top_track_artists': top_track_artists,  # New format with track+artist combinations
             'top_albums': sorted(data['albums'].items(), key=lambda x: x[1], reverse=True)[:50],
+            'top_album_artists': top_album_artists,  # New format with album+artist combinations
             'year_stats': year_stats
         }
     

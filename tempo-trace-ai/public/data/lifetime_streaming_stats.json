@@ -1,45 +1,47 @@
 {
   "metadata": {
-    "generated_at": "2025-07-17T13:27:01.118887",
-    "total_records": 49891,
+    "generated_at": "2025-08-31T20:58:37.121218",
+    "total_records": 50662,
     "data_sources": [
       "Spotify",
       "Apple Music"
     ]
   },
   "time_stats": {
-    "total_milliseconds": 9251106155,
-    "total_seconds": 9251106.155,
-    "total_minutes": 154185.10258333333,
-    "total_hours": 2569.751709722222,
-    "total_days": 107.07298790509259,
-    "total_weeks": 15.296141129298942,
-    "total_months": 3.517509458117365,
-    "total_years": 0.2931498642165437,
-    "average_track_length_ms": 185426.35254855585,
-    "average_track_length_seconds": 185.42635254855583,
-    "average_track_length_minutes": 3.0904392091425974,
+    "total_milliseconds": 9376582986,
+    "total_seconds": 9376582.986,
+    "total_minutes": 156276.3831,
+    "total_hours": 2604.606385,
+    "total_days": 108.52526604166667,
+    "total_weeks": 15.50360943452381,
+    "total_months": 3.565218989542269,
+    "total_years": 0.29712598505589777,
+    "average_track_length_ms": 185081.18483281354,
+    "average_track_length_seconds": 185.08118483281353,
+    "average_track_length_minutes": 3.084686413880226,
     "earliest_play": "2016-03-30T12:00:00",
-    "latest_play": "2025-07-09T16:29:55",
-    "tracking_span_days": 3388
+    "latest_play": "2025-08-30T17:05:32",
+    "tracking_span_days": 3440
   },
   "content_stats": {
-    "unique_artists": 3946,
-    "unique_tracks": 12520,
-    "unique_albums": 4476,
-    "total_plays": 49891,
-    "average_plays_per_artist": 12.643436391282311,
-    "average_plays_per_track": 3.9849041533546328,
-    "average_plays_per_album": 11.14633601429848
+    "unique_artists": 3965,
+    "unique_tracks": 12680,
+    "unique_track_artists": 14442,
+    "unique_albums": 4594,
+    "total_plays": 50662,
+    "average_plays_per_artist": 12.777301387137452,
+    "average_plays_per_track": 3.9954258675078864,
+    "average_plays_per_track_artist": 3.507962886026866,
+    "average_plays_per_album": 11.027862429255551
   },
   "platform_stats": {
     "distribution": {
-      "iOS": 44785,
+      "iOS": 45254,
       "Windows": 383,
       "Web Player": 35,
       "Watch": 974,
-      "Other": 1305,
-      "macOS": 2206,
+      "Other": 1429,
+      "macOS": 2384,
       "Garmin": 203
     },
     "total_platforms": 7,
@@ -48,11 +50,11 @@
   "provider_stats": {
     "distribution": {
       "Apple Music": 28818,
-      "Spotify": 21073
+      "Spotify": 21844
     },
     "total_providers": 2,
-    "spotify_percentage": 42.2380790122467,
-    "apple_music_percentage": 57.7619209877533
+    "spotify_percentage": 43.11712920926927,
+    "apple_music_percentage": 56.88287079073072
   },
   "temporal_patterns": {
     "yearly_breakdown": {
@@ -93,8 +95,8 @@
         "ms_played": 910952974
       },
       "2025": {
-        "plays": 2268,
-        "ms_played": 392162235
+        "plays": 3039,
+        "ms_played": 517639066
       }
     },
     "monthly_breakdown": {
@@ -547,102 +549,106 @@
         "ms_played": 40718889
       },
       "2025-07": {
-        "plays": 105,
-        "ms_played": 16963312
+        "plays": 423,
+        "ms_played": 69891946
+      },
+      "2025-08": {
+        "plays": 453,
+        "ms_played": 72548197
       }
     },
     "hourly_breakdown": {
       "12": {
-        "plays": 1475,
-        "ms_played": 293155865
+        "plays": 1517,
+        "ms_played": 299830439
       },
       "13": {
-        "plays": 4124,
-        "ms_played": 825202618
+        "plays": 4240,
+        "ms_played": 843114724
       },
       "14": {
-        "plays": 5004,
-        "ms_played": 952187195
+        "plays": 5110,
+        "ms_played": 971382353
       },
       "23": {
-        "plays": 2577,
-        "ms_played": 445863893
+        "plays": 2616,
+        "ms_played": 452332423
       },
       "0": {
-        "plays": 2410,
-        "ms_played": 460476249
+        "plays": 2476,
+        "ms_played": 471792043
       },
       "18": {
-        "plays": 2462,
-        "ms_played": 445551994
+        "plays": 2472,
+        "ms_played": 447010236
       },
       "1": {
-        "plays": 2404,
-        "ms_played": 420533111
+        "plays": 2439,
+        "ms_played": 426772362
       },
       "2": {
-        "plays": 2262,
-        "ms_played": 431513741
+        "plays": 2314,
+        "ms_played": 439668398
       },
       "21": {
-        "plays": 2733,
-        "ms_played": 509106535
+        "plays": 2764,
+        "ms_played": 514324049
       },
       "22": {
-        "plays": 2955,
-        "ms_played": 540806257
+        "plays": 2986,
+        "ms_played": 546231042
       },
       "19": {
-        "plays": 3020,
-        "ms_played": 561357842
+        "plays": 3031,
+        "ms_played": 563322259
       },
       "11": {
-        "plays": 728,
-        "ms_played": 122637566
+        "plays": 730,
+        "ms_played": 122691548
       },
       "20": {
-        "plays": 2859,
-        "ms_played": 540310989
+        "plays": 2877,
+        "ms_played": 543135265
       },
       "17": {
-        "plays": 3007,
-        "ms_played": 541384669
+        "plays": 3032,
+        "ms_played": 545342839
       },
       "3": {
-        "plays": 1410,
-        "ms_played": 240625957
+        "plays": 1447,
+        "ms_played": 244991106
       },
       "4": {
-        "plays": 646,
-        "ms_played": 102595912
+        "plays": 672,
+        "ms_played": 106801429
       },
       "15": {
-        "plays": 4143,
-        "ms_played": 801430485
+        "plays": 4198,
+        "ms_played": 809812164
       },
       "16": {
-        "plays": 3588,
-        "ms_played": 691740019
+        "plays": 3644,
+        "ms_played": 701315441
       },
       "5": {
-        "plays": 280,
-        "ms_played": 46624728
+        "plays": 291,
+        "ms_played": 48463927
       },
       "7": {
         "plays": 227,
         "ms_played": 35507170
       },
       "6": {
-        "plays": 246,
-        "ms_played": 42245893
+        "plays": 247,
+        "ms_played": 42387209
       },
       "10": {
         "plays": 616,
         "ms_played": 90280158
       },
       "8": {
-        "plays": 295,
-        "ms_played": 41708163
+        "plays": 296,
+        "ms_played": 41815256
       },
       "9": {
         "plays": 420,
@@ -651,32 +657,32 @@
     },
     "weekday_breakdown": {
       "Wednesday": {
-        "plays": 7378,
-        "ms_played": 1401235274
+        "plays": 7496,
+        "ms_played": 1421710492
       },
       "Thursday": {
-        "plays": 8015,
-        "ms_played": 1460550873
+        "plays": 8107,
+        "ms_played": 1475509957
       },
       "Friday": {
-        "plays": 9537,
-        "ms_played": 1757103950
+        "plays": 9609,
+        "ms_played": 1768803192
       },
       "Saturday": {
-        "plays": 7954,
-        "ms_played": 1457546277
+        "plays": 8111,
+        "ms_played": 1482186560
       },
       "Sunday": {
-        "plays": 3912,
-        "ms_played": 693363694
+        "plays": 3982,
+        "ms_played": 704149593
       },
       "Monday": {
-        "plays": 6613,
-        "ms_played": 1255902406
+        "plays": 6729,
+        "ms_played": 1273164520
       },
       "Tuesday": {
-        "plays": 6482,
-        "ms_played": 1225403681
+        "plays": 6628,
+        "ms_played": 1251058672
       }
     },
     "seasonal_breakdown": {
@@ -685,8 +691,8 @@
         "ms_played": 2406293278
       },
       "Summer": {
-        "plays": 13600,
-        "ms_played": 2512436817
+        "plays": 14371,
+        "ms_played": 2637913648
       },
       "Fall": {
         "plays": 11446,
@@ -702,49 +708,55 @@
     "peak_listening_season": "Summer"
   },
   "listening_behavior": {
-    "skip_rate_percentage": 18.410134092321258,
-    "completion_rate_percentage": 67.02812130444369,
-    "offline_listening_percentage": 4.748351406065223,
-    "shuffle_usage_percentage": 3.118798981780281,
-    "total_skips": 9185,
-    "total_completions": 33441,
-    "total_offline_plays": 2369,
-    "total_shuffle_plays": 1556
+    "skip_rate_percentage": 18.380640322134933,
+    "completion_rate_percentage": 67.10157514507915,
+    "offline_listening_percentage": 4.9445343650073035,
+    "shuffle_usage_percentage": 3.1108128380245548,
+    "total_skips": 9312,
+    "total_completions": 33995,
+    "total_offline_plays": 2505,
+    "total_shuffle_plays": 1576
   },
   "diversity_metrics": {
-    "artist_diversity_score": 0.07909242147882384,
-    "unique_artists": 3946,
-    "unique_tracks": 12520,
-    "top_1_artist_concentration": 2.9724800064139822,
-    "top_5_artist_concentration": 10.396664729109458,
-    "top_10_artist_concentration": 17.373875047603775,
-    "plays_per_artist": 12.643436391282311,
-    "plays_per_track": 3.9849041533546328
+    "artist_diversity_score": 0.07826378745410761,
+    "unique_artists": 3965,
+    "unique_tracks": 12680,
+    "unique_track_artists": 14442,
+    "top_1_artist_concentration": 2.9410603608227075,
+    "top_5_artist_concentration": 10.4180648217599,
+    "top_10_artist_concentration": 17.320674272630374,
+    "plays_per_artist": 12.777301387137452,
+    "plays_per_track": 3.9954258675078864,
+    "plays_per_track_artist": 3.507962886026866
   },
   "top_lists": {
     "top_artists": [
       [
         "Fall Out Boy",
-        1483
+        1490
       ],
       [
         "Twenty One Pilots",
-        1325
+        1341
       ],
       [
         "Judah & the Lion",
-        855
+        856
+      ],
+      [
+        "Jimmy Eat World",
+        819
       ],
       [
         "Anberlin",
         772
       ],
       [
-        "Jimmy Eat World",
-        752
+        "Panic! At The Disco",
+        717
       ],
       [
-        "Panic! At The Disco",
+        "OneRepublic",
         709
       ],
       [
@@ -752,36 +764,32 @@
         705
       ],
       [
-        "OneRepublic",
-        704
-      ],
-      [
         "The National Parks",
-        698
+        701
       ],
       [
         "Marianas Trench",
         665
       ],
       [
-        "for KING & COUNTRY",
-        612
+        "Yellowcard",
+        619
       ],
       [
-        "Yellowcard",
-        609
+        "for KING & COUNTRY",
+        613
       ],
       [
         "Bastille",
-        574
+        575
       ],
       [
         "Enter Shikari",
-        549
+        551
       ],
       [
         "The Rocket Summer",
-        548
+        550
       ],
       [
         "Skillet",
@@ -789,19 +797,19 @@
       ],
       [
         "The Maine",
-        478
+        481
       ],
       [
         "The Chainsmokers",
-        463
+        469
       ],
       [
         "Angels & Airwaves",
-        411
+        413
       ],
       [
         "Bleachers",
-        408
+        409
       ],
       [
         "Thousand Foot Krutch",
@@ -809,15 +817,15 @@
       ],
       [
         "Tokio Hotel",
-        380
-      ],
-      [
-        "Taking Back Sunday",
-        364
+        381
       ],
       [
         "Good Charlotte",
-        362
+        376
+      ],
+      [
+        "Taking Back Sunday",
+        370
       ],
       [
         "Taylor Swift",
@@ -825,7 +833,7 @@
       ],
       [
         "Coldplay",
-        343
+        344
       ],
       [
         "Capital Kings",
@@ -836,12 +844,12 @@
         327
       ],
       [
-        "NEEDTOBREATHE",
-        313
+        "blink-182",
+        322
       ],
       [
-        "blink-182",
-        312
+        "NEEDTOBREATHE",
+        314
       ],
       [
         "The Classic Crime",
@@ -853,7 +861,7 @@
       ],
       [
         "Maroon 5",
-        292
+        294
       ],
       [
         "The Wombats",
@@ -865,7 +873,11 @@
       ],
       [
         "Beartooth",
-        276
+        279
+      ],
+      [
+        "Ed Sheeran",
+        272
       ],
       [
         "Switchfoot",
@@ -873,7 +885,7 @@
       ],
       [
         "Smash Into Pieces",
-        263
+        266
       ],
       [
         "Thirty Seconds To Mars",
@@ -884,16 +896,12 @@
         255
       ],
       [
-        "Ed Sheeran",
-        244
-      ],
-      [
         "Emarosa",
-        237
+        239
       ],
       [
         "AJR",
-        230
+        232
       ],
       [
         "Hawk Nelson",
@@ -901,27 +909,27 @@
       ],
       [
         "Portugal. The Man",
-        226
+        227
+      ],
+      [
+        "Foreign Air",
+        225
+      ],
+      [
+        "The Score",
+        223
       ],
       [
         "NF",
         222
       ],
       [
-        "The Score",
+        "The Summer Set",
         222
       ],
       [
         "Colton Dixon",
         220
-      ],
-      [
-        "Anthem Lights",
-        218
-      ],
-      [
-        "The Afters",
-        217
       ]
     ],
     "top_tracks": [
@@ -931,7 +939,7 @@
       ],
       [
         "Ghosts",
-        73
+        74
       ],
       [
         "Champion",
@@ -950,12 +958,12 @@
         68
       ],
       [
-        "Ghost",
+        "Anything",
         66
       ],
       [
-        "Anything",
-        65
+        "Ghost",
+        66
       ],
       [
         "Walls",
@@ -1002,6 +1010,10 @@
         57
       ],
       [
+        "Automatic",
+        56
+      ],
+      [
         "Run",
         55
       ],
@@ -1010,7 +1022,7 @@
         55
       ],
       [
-        "Automatic",
+        "Boomerang",
         55
       ],
       [
@@ -1018,27 +1030,27 @@
         55
       ],
       [
+        "Cautious",
+        55
+      ],
+      [
         "Wherever I Go",
         54
       ],
       [
-        "Cautious",
-        54
-      ],
-      [
         "Hallelujah",
-        52
-      ],
-      [
-        "Boomerang",
-        52
-      ],
-      [
-        "Paris",
-        52
+        53
       ],
       [
         "Stay",
+        53
+      ],
+      [
+        "Black Butterflies and Déjà Vu",
+        53
+      ],
+      [
+        "Paris",
         52
       ],
       [
@@ -1063,10 +1075,6 @@
       ],
       [
         "Shape of You",
-        50
-      ],
-      [
-        "Black Butterflies and Déjà Vu",
         50
       ],
       [
@@ -1126,6 +1134,258 @@
         45
       ]
     ],
+    "top_track_artists": [
+      [
+        "High Hopes",
+        85,
+        "Panic! At The Disco"
+      ],
+      [
+        "Chlorine",
+        70,
+        "Twenty One Pilots"
+      ],
+      [
+        "Turn",
+        62,
+        "The Wombats"
+      ],
+      [
+        "Ghosts",
+        62,
+        "The National Parks"
+      ],
+      [
+        "Inspired",
+        60,
+        "888"
+      ],
+      [
+        "Sure and Certain",
+        59,
+        "Jimmy Eat World"
+      ],
+      [
+        "Champion",
+        59,
+        "Fall Out Boy"
+      ],
+      [
+        "Feel It Still",
+        58,
+        "Portugal. The Man"
+      ],
+      [
+        "As Young As We Are",
+        57,
+        "Tokio Hotel"
+      ],
+      [
+        "&Run",
+        55,
+        "Sir Sly"
+      ],
+      [
+        "Cautious",
+        55,
+        "Emarosa"
+      ],
+      [
+        "Black Butterflies and Déjà Vu",
+        53,
+        "The Maine"
+      ],
+      [
+        "Quarter Past Midnight",
+        52,
+        "Bastille"
+      ],
+      [
+        "Victorious",
+        51,
+        "Panic! At The Disco"
+      ],
+      [
+        "The Last of the Real Ones",
+        51,
+        "Fall Out Boy"
+      ],
+      [
+        "Lying",
+        51,
+        "Foreign Air"
+      ],
+      [
+        "Dragon (feat. Skybourne)",
+        51,
+        "Built By Titan"
+      ],
+      [
+        "Shape of You",
+        50,
+        "Ed Sheeran"
+      ],
+      [
+        "Electrified",
+        50,
+        "Just Loud"
+      ],
+      [
+        "Paris",
+        49,
+        "The Chainsmokers"
+      ],
+      [
+        "Wherever I Go",
+        48,
+        "OneRepublic"
+      ],
+      [
+        "At the Heart",
+        48,
+        "The National Parks"
+      ],
+      [
+        "Whatever It Takes",
+        47,
+        "Imagine Dragons"
+      ],
+      [
+        "The Sound of Reverie (Remix)",
+        47,
+        "The Maine"
+      ],
+      [
+        "Walls",
+        47,
+        "Stokeswood"
+      ],
+      [
+        "Vignette",
+        47,
+        "Twenty One Pilots"
+      ],
+      [
+        "Feel Invincible",
+        46,
+        "Skillet"
+      ],
+      [
+        "Glimmer",
+        46,
+        "Marianas Trench"
+      ],
+      [
+        "joy.",
+        45,
+        "for KING & COUNTRY"
+      ],
+      [
+        "American Nights",
+        45,
+        "The Night Game"
+      ],
+      [
+        "Same Mistakes",
+        45,
+        "FUTURE FEATS"
+      ],
+      [
+        "Haven't Had Enough",
+        45,
+        "Marianas Trench"
+      ],
+      [
+        "Love From The Other Side",
+        45,
+        "Fall Out Boy"
+      ],
+      [
+        "Cold Rain",
+        44,
+        "Fitness"
+      ],
+      [
+        "Can't Deny My Love",
+        43,
+        "Brandon Flowers"
+      ],
+      [
+        "Burn It Down",
+        43,
+        "Fitz and The Tantrums"
+      ],
+      [
+        "HOLD ME TIGHT OR DON’T",
+        43,
+        "Fall Out Boy"
+      ],
+      [
+        "Ghost",
+        43,
+        "Jacob Kulick"
+      ],
+      [
+        "My Blood",
+        43,
+        "Twenty One Pilots"
+      ],
+      [
+        "Rhythm of Your Heart",
+        42,
+        "Marianas Trench"
+      ],
+      [
+        "Might Love Myself",
+        41,
+        "Beartooth"
+      ],
+      [
+        "Navigating",
+        41,
+        "Twenty One Pilots"
+      ],
+      [
+        "Someone Anyone",
+        40,
+        "Anberlin"
+      ],
+      [
+        "Get Right",
+        40,
+        "Jimmy Eat World"
+      ],
+      [
+        "Your Love Could Start a War",
+        40,
+        "The Unlikely Candidates"
+      ],
+      [
+        "Tidal Wave",
+        39,
+        "Taking Back Sunday"
+      ],
+      [
+        "Legends",
+        39,
+        "Sleeping With Sirens"
+      ],
+      [
+        "Fireflies",
+        39,
+        "Owl City"
+      ],
+      [
+        "The Sights",
+        38,
+        "Enter Shikari"
+      ],
+      [
+        "Why Did You Run?",
+        38,
+        "Judah & the Lion"
+      ]
+    ],
     "top_albums": [
       [
         "Clancy",
@@ -1137,11 +1397,11 @@
       ],
       [
         "The Process",
-        256
+        257
       ],
       [
         "The Surface",
-        236
+        239
       ],
       [
         "Wild Spirit",
@@ -1149,11 +1409,11 @@
       ],
       [
         "Lovely Little Lonely",
-        186
+        189
       ],
       [
         "So Much (For) Stardust",
-        172
+        177
       ],
       [
         "Pray for the Wicked",
@@ -1168,11 +1428,19 @@
         137
       ],
       [
+        "Persona",
+        121
+      ],
+      [
         "Burn The Ships",
-        109
+        110
       ],
       [
         "Secrets",
+        103
+      ],
+      [
+        "The Hart",
         103
       ],
       [
@@ -1182,14 +1450,6 @@
       [
         "It’s The End Of The World But It’s A Beautiful Day",
         100
-      ],
-      [
-        "Persona",
-        99
-      ],
-      [
-        "The Hart",
-        94
       ],
       [
         "Everybody Can't Complain",
@@ -1205,7 +1465,7 @@
       ],
       [
         "Vessel",
-        82
+        83
       ],
       [
         "Beautiful People Will Ruin Your Life",
@@ -1229,6 +1489,10 @@
       ],
       [
         "Moon Music",
+        70
+      ],
+      [
+        "ONE MORE TIME...",
         69
       ],
       [
@@ -1236,8 +1500,8 @@
         68
       ],
       [
-        "ONE MORE TIME...",
-        68
+        "Sunrise City",
+        67
       ],
       [
         "Phantoms",
@@ -1260,6 +1524,10 @@
         60
       ],
       [
+        "Going, Going, Gone",
+        60
+      ],
+      [
         "SUNDAY AT FOXWOODS",
         59
       ],
@@ -1268,24 +1536,24 @@
         58
       ],
       [
+        "Ocean Avenue",
+        57
+      ],
+      [
         "AMERICA",
         57
       ],
       [
-        "Ocean Avenue",
-        55
+        "Sting",
+        54
       ],
       [
-        "Sting",
-        53
+        "Woodstock",
+        51
       ],
       [
         "Childhood Eyes",
         51
-      ],
-      [
-        "Woodstock",
-        50
       ],
       [
         "Karate",
@@ -1296,11 +1564,11 @@
         49
       ],
       [
-        "Sunrise City",
-        49
+        "NATIVE TONGUE",
+        48
       ],
       [
-        "NATIVE TONGUE",
+        "Futures",
         48
       ],
       [
@@ -1316,30 +1584,22 @@
         46
       ],
       [
-        "I'm So Good At Being Alone?",
-        46
-      ],
-      [
         "Lift A Sail",
-        45
-      ],
-      [
-        "Blurryface",
-        45
+        46
       ]
     ],
     "top_platforms": [
       [
         "iOS",
-        44785
+        45254
       ],
       [
         "macOS",
-        2206
+        2384
       ],
       [
         "Other",
-        1305
+        1429
       ],
       [
         "Watch",
@@ -1361,7 +1621,7 @@
     "top_countries": [
       [
         "US",
-        46516
+        47287
       ],
       [
         "BE",
@@ -1428,9 +1688,9 @@
       "track": "So Much Love"
     },
     "most_recent_track": {
-      "timestamp": "2025-07-09T16:29:55",
-      "artist": "Sub-Radio",
-      "track": "Spin"
+      "timestamp": "2025-08-30T17:05:32",
+      "artist": "Jon Bellion",
+      "track": "FATHER FIGURE"
     },
     "longest_track_played": {
       "ts": "2021-09-08T15:00:00Z",
@@ -1458,15 +1718,15 @@
       "incognito_mode": false,
       "provider": "Apple Music"
     },
-    "days_with_listening": 2999,
-    "average_daily_listening_minutes": 51.41217158497277
+    "days_with_listening": 3047,
+    "average_daily_listening_minutes": 51.28860620282245
   },
   "geographical_stats": {
     "countries_streamed_from": 15,
     "top_countries": [
       [
         "US",
-        46516
+        47287
       ],
       [
         "BE",
@@ -1506,7 +1766,7 @@
       ]
     ],
     "distribution": {
-      "US": 46516,
+      "US": 47287,
       "BE": 3097,
       "IE": 1,
       "FR": 1,
@@ -1525,12 +1785,12 @@
   },
   "technical_stats": {
     "data_quality": {
-      "records_with_timestamps": 49891,
-      "records_with_artists": 49891,
-      "records_with_tracks": 49891,
-      "records_with_duration": 49636
+      "records_with_timestamps": 50662,
+      "records_with_artists": 50662,
+      "records_with_tracks": 50662,
+      "records_with_duration": 50397
     },
-    "average_daily_tracks": 14.72145175568014,
-    "tracks_per_hour_of_listening": 19.414716142126032
+    "average_daily_tracks": 14.723045626271432,
+    "tracks_per_hour_of_listening": 19.45092367574765
   }
 }

@@ -196,10 +196,8 @@ cython_debug/
 .DS_Store
 
 # Personal music data files (exclude from public repo)
-music-data-processor/input/*.json
-music-data-processor/input/*.csv
-music-data-processor/output/*.json
-music-data-processor/output/*.csv
+music-data-processor/input/
+music-data-processor/output/
 
 # Ignore processed data but keep README placeholders
 !music-data-processor/input/README.md

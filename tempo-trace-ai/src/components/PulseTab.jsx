@@ -16,6 +16,7 @@ import {
 } from 'lucide-react';
 
 import HoursListenedChart from './HoursListenedChart';
+import StaticEnhancedTopListCard from './StaticEnhancedTopListCard';
 
 const StatCard = ({ icon: Icon, label, value, subtitle, gradient = false }) => (
   <div className="cyber-card p-6 hover:scale-105 transition-transform duration-300">
@@ -289,17 +290,17 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
 
       {/* Top Lists */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        <TopListCard
+        <StaticEnhancedTopListCard
           title="Top Artists"
           items={data.top_lists.top_artists}
           icon={Users}
         />
-        <TopListCard
+        <StaticEnhancedTopListCard
           title="Top Tracks"
-          items={data.top_lists.top_tracks}
+          items={data.top_lists.top_track_artists || data.top_lists.top_tracks}
           icon={Music}
         />
-        <TopListCard
+        <StaticEnhancedTopListCard
           title="Top Albums"
           items={data.top_lists.top_albums}
           icon={Award}

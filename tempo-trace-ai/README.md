@@ -1,116 +1,92 @@
-# TempoTraceAI 🎵
+# 🎵 TempoTraceAI
 
-A sleek, futuristic music analytics dashboard that transforms your listening history into deep insights. Built with React, TailwindCSS, and Chart.js.
+**AI-powered music listening insights dashboard** that analyzes your streaming data from Spotify and Apple Music to provide beautiful visualizations and insights about your musical journey.
 
-## Features
+🌐 **Live Site:** [https://aiwithzach.com/tempo-trace-ai/](https://aiwithzach.com/tempo-trace-ai/)
 
-### 🎯 The Pulse
-- **Lifetime Overview**: Total streams, hours listened, unique artists/albums/tracks
-- **Smart Analytics**: Skip rate, discovery rate, listening patterns
-- **Performance Metrics**: Peak listening hours, platform usage, session analytics
+## 🚀 **Quick Start**
 
-### 🏆 Leaderboard  
-- **Top Artists/Albums/Tracks**: Ranked by plays or listening time
-- **Time Range Filters**: 7 days, 30 days, 90 days, 6 months, 12 months, lifetime
-- **Dynamic Switching**: Toggle between "Most Played" and "Most Time" metrics
+### **Development**
+```bash
+npm install
+npm run dev
+```
+Visit `http://localhost:3000`
 
-### 🧭 Concert Compass
-- **Concert Impact Analysis**: Visualize how live shows affect your listening patterns
-- **Bucket List Progress**: Track your top 20 artists and see which ones you've seen live
-- **Concert History**: Complete timeline of your live music experiences
-- **Interactive Charts**: Monthly listening volume plotted against concert dates
+### **Adding New Spotify Data**
+```bash
+# 1. Add your new Spotify files to music-data-processor/input/
+# 2. Process and enrich data
+npm run process-and-enrich
 
-## Tech Stack
+# 3. Consolidate data files
+npm run consolidate-data
 
-- **React 18** - Modern UI framework
-- **Vite** - Lightning-fast build tool
-- **TailwindCSS** - Utility-first CSS framework
-- **Chart.js + react-chartjs-2** - Beautiful, interactive charts
-- **Lucide React** - Stunning icons
-- **date-fns** - Date manipulation utilities
-
-## Quick Start
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Start development server**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Build for production**:
-   ```bash
-   npm run build
-   ```
-
-4. **Preview production build**:
-   ```bash
-   npm run preview
-   ```
-
-## Data Format
-
-### Streaming Data (`consolidated_streaming_history.json`)
-```json
-{
-  "ts": "2022-11-30T22:44:26Z",
-  "ms_played": 1702,
-  "skip": true,
-  "track_name": "Track Name",
-  "album_name": "Album Name", 
-  "artist_name": "Artist Name",
-  "provider": "Spotify",
-  "platform": "ios",
-  "spotify_track_uri": "spotify:track:..."
-}
+# 4. Test locally
+npm run dev
 ```
 
-### Concert Data (`concerts.json`)
-```json
-{
-  "date": "2022-09-20",
-  "artist": "Artist Name",
-  "type": "headliner",
-  "venue": "Venue Name",
-  "vibe_rating": 5.0
-}
+### **Deployment to Live Site**
+```bash
+# 1. Build and deploy to website
+npm run build
+./deploy.sh
+
+# 2. Build main website
+cd /Users/zachstanford/Development/website-ai-with-zach/
+npm run build
+
+# 3. Deploy to production
+git add .
+git commit -m "Update tempo-trace-ai"
+git push origin main
 ```
 
-## Design Philosophy
+## 📚 **Documentation**
 
-**Futuristic Cyber Aesthetic**:
-- Dark backgrounds with neon accents
-- Glowing borders and hover effects
-- Animated particles and smooth transitions
-- Orbitron font for headers, Inter for body text
-- Cyber-blue (#00f5ff) and cyber-purple (#8b5cf6) color scheme
+For detailed information, see the [docs folder](../docs/):
 
-**Performance Focused**:
-- Efficient data processing and caching
-- Smooth animations and transitions
-- Responsive design for all screen sizes
-- Lazy loading and optimization
+- **[🚀 Deployment Guide](../docs/DEPLOYMENT_EXPLAINED.md)** - Complete deployment workflow
+- **[🎵 Spotify Workflow](../docs/SPOTIFY_WORKFLOW.md)** - Adding new Spotify data
+- **[📊 Data Optimization](../docs/DATA_OPTIMIZATION.md)** - Optimized data structure
+- **[🔧 Technical Docs](../docs/README.md)** - Complete documentation index
 
-## Key Features
+## 🛠 **Available Scripts**
 
-- **Real-time Analytics**: Process thousands of streams instantly
-- **Interactive Visualizations**: Hover, click, and explore your data
-- **Smart Insights**: Discover patterns you never knew existed
-- **Concert Integration**: See how live music influences your listening
-- **Responsive Design**: Perfect on desktop, tablet, and mobile
-- **Futuristic UI**: Feel like you're in a sci-fi movie
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run process-music` - Process music data only
+- `npm run enrich-spotify` - Enrich with Spotify data
+- `npm run consolidate-data` - Consolidate data files
+- `npm run process-and-enrich` - Complete workflow (music + Spotify)
 
-## Contributing
+## 🏗 **Architecture**
 
-Feel free to submit issues and enhancement requests! This project is built with love for music data nerds.
+- **Frontend:** React + Vite + Tailwind CSS
+- **Data Processing:** Python music-data-processor pipeline
+- **Spotify Integration:** Node.js scripts with Spotify Web API
+- **Deployment:** Automated deployment to [aiwithzach.com](https://aiwithzach.com)
 
-## License
+## 📊 **Features**
 
-MIT License - feel free to use this for your own music analytics projects!
+- **The Pulse** - Lifetime listening statistics with Spotify integration
+- **Leaderboard** - Yearly breakdowns with historical data
+- **Concert Compass** - Concert attendance tracking and analysis
+- **Advanced Insights** - Deep analytics and visualizations
+
+## 🎯 **Project Status**
+
+✅ **Complete Spotify Integration** - Full enrichment for all years (2016-2025)  
+✅ **Optimized Data Structure** - 3 consolidated files instead of 7 separate files  
+✅ **Simplified Workflow** - Single-command processes for common tasks  
+✅ **Clean Deployment** - Automated deployment to live website  
+✅ **Comprehensive Documentation** - Complete guides for all workflows  
+
+## 🔗 **Related Projects**
+
+- **[website-ai-with-zach](https://github.com/izachstanford/website-ai-with-zach)** - Main website repository
+- **[music-data-processor](../music-data-processor/)** - Python data processing pipeline
 
 ---
 
-*Powered by your musical journey • Built with ❤️ and AI*
+**Built with ❤️ by [Zach Stanford](https://aiwithzach.com)**

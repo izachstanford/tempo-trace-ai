@@ -139,6 +139,7 @@ def calculate_diversity_metrics(records: List[Dict[str, Any]]) -> Dict[str, Any]
     """Calculate music diversity and discovery metrics."""
     artists = set()
     tracks = set()
+    track_artists = set()
     artist_play_counts = defaultdict(int)
     
     for record in records:
@@ -150,11 +151,15 @@ def calculate_diversity_metrics(records: List[Dict[str, Any]]) -> Dict[str, Any]
             artist_play_counts[artist] += 1
         if track:
             tracks.add(track)
+            # Also track track+artist combinations
+            if artist:
+                track_artists.add(f"{track}|{artist}")
     
     # Calculate diversity metrics
     total_plays = len(records)
     unique_artists = len(artists)
     unique_tracks = len(tracks)
+    unique_track_artists = len(track_artists)
     
     # Artist diversity (higher = more diverse)
     artist_diversity = unique_artists / total_plays if total_plays > 0 else 0
@@ -168,12 +173,14 @@ def calculate_diversity_metrics(records: List[Dict[str, Any]]) -> Dict[str, Any]
     return {
         'artist_diversity_score': artist_diversity,
         'unique_artists': unique_artists,
-        'unique_tracks': unique_tracks,
+        'unique_tracks': unique_tracks,  # Legacy: track names only
+        'unique_track_artists': unique_track_artists,  # New: track+artist combinations
         'top_1_artist_concentration': top_1_percent,
         'top_5_artist_concentration': top_5_percent,
         'top_10_artist_concentration': top_10_percent,
         'plays_per_artist': total_plays / unique_artists if unique_artists > 0 else 0,
-        'plays_per_track': total_plays / unique_tracks if unique_tracks > 0 else 0
+        'plays_per_track': total_plays / unique_tracks if unique_tracks > 0 else 0,
+        'plays_per_track_artist': total_plays / unique_track_artists if unique_track_artists > 0 else 0
     }
 
 
@@ -219,7 +226,8 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     platforms = defaultdict(int)
     countries = defaultdict(int)
     artists = defaultdict(int)
-    tracks = defaultdict(int)
+    tracks = defaultdict(int)  # track name only (for backward compatibility)
+    track_artists = defaultdict(int)  # track+artist combinations
     albums = defaultdict(int)
     
     # Time-based analysis
@@ -262,6 +270,10 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
             artists[artist] += 1
         if track and track != 'Unknown':
             tracks[track] += 1
+            # Also track track+artist combinations
+            if artist and artist != 'Unknown':
+                track_artist_key = f"{track}|{artist}"
+                track_artists[track_artist_key] += 1
         if album and album != 'Unknown':
             albums[album] += 1
         
@@ -337,11 +349,13 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     # Content statistics
     stats['content_stats'] = {
         'unique_artists': len(artists),
-        'unique_tracks': len(tracks),
+        'unique_tracks': len(tracks),  # Legacy: track names only
+        'unique_track_artists': len(track_artists),  # New: track+artist combinations
         'unique_albums': len(albums),
         'total_plays': total_records,
         'average_plays_per_artist': total_records / len(artists) if artists else 0,
         'average_plays_per_track': total_records / len(tracks) if tracks else 0,
+        'average_plays_per_track_artist': total_records / len(track_artists) if track_artists else 0,
         'average_plays_per_album': total_records / len(albums) if albums else 0
     }
     
@@ -394,9 +408,16 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     stats['diversity_metrics'] = calculate_diversity_metrics(records)
     
     # Top lists
+    # Convert track+artist combinations back to readable format
+    top_track_artists = []
+    for track_artist_key, play_count in sorted(track_artists.items(), key=lambda x: x[1], reverse=True)[:50]:
+        track, artist = track_artist_key.split('|', 1)
+        top_track_artists.append([track, play_count, artist])
+    
     stats['top_lists'] = {
         'top_artists': sorted(artists.items(), key=lambda x: x[1], reverse=True)[:50],
-        'top_tracks': sorted(tracks.items(), key=lambda x: x[1], reverse=True)[:50],
+        'top_tracks': sorted(tracks.items(), key=lambda x: x[1], reverse=True)[:50],  # Legacy format
+        'top_track_artists': top_track_artists,  # New format with proper track+artist combinations
         'top_albums': sorted(albums.items(), key=lambda x: x[1], reverse=True)[:50] if albums else [],
         'top_platforms': sorted(platforms.items(), key=lambda x: x[1], reverse=True),
         'top_countries': sorted(countries.items(), key=lambda x: x[1], reverse=True)
@@ -465,7 +486,8 @@ def main():
         
         if 'content_stats' in stats:
             print(f"Unique artists: {stats['content_stats']['unique_artists']:,}")
-            print(f"Unique tracks: {stats['content_stats']['unique_tracks']:,}")
+            print(f"Unique tracks (names only): {stats['content_stats']['unique_tracks']:,}")
+            print(f"Unique track+artist combinations: {stats['content_stats']['unique_track_artists']:,}")
             print(f"Total plays: {stats['content_stats']['total_plays']:,}")
         
         if 'top_lists' in stats and stats['top_lists']['top_artists']:
