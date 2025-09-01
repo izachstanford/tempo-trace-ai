@@ -444,15 +444,52 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
     // Build maps from raw Spotify files
     const { trackMap, albumMap } = buildRawSpotifyMaps();
     
-    // TEST: Skip lifetime data processing to focus on 2025 yearly data
-    console.log('⏭️  Skipping lifetime data processing (test mode)');
-    const topArtists = [];
+    // Get top items for lifetime (Pulse tab)
+    const topArtists = lifetimeData.top_lists.top_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY);
     
-    // TEST: Skip lifetime tracks processing
-    const topTracks = [];
+    // Use the new track+artist combinations if available, otherwise fall back to legacy format
+    let topTracks;
+    if (lifetimeData.top_lists.top_track_artists) {
+      console.log('✅ Using new top_track_artists data');
+      // New format: [track, playCount, artist]
+      topTracks = lifetimeData.top_lists.top_track_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
+        name: item[0],
+        playCount: item[1],
+        artist: item[2]
+      }));
+      console.log('Top tracks from new format:', topTracks.map(t => `${t.name} by ${t.artist} (${t.playCount} plays)`));
+    } else {
+      console.log('⚠️  Using legacy top_tracks data');
+      // Legacy format: [track, playCount]
+      topTracks = lifetimeData.top_lists.top_tracks.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
+        name: item[0],
+        playCount: item[1],
+        artist: null
+      }));
+      console.log('Top tracks from legacy format:', topTracks.map(t => `${t.name} (${t.playCount} plays)`));
+    }
     
-    // TEST: Skip lifetime albums processing
-    const topAlbums = [];
+    // Use the new album+artist combinations if available, otherwise fall back to legacy format
+    let topAlbums;
+    if (lifetimeData.top_lists.top_album_artists) {
+      console.log('✅ Using new top_album_artists data');
+      // New format: [album, playCount, artist]
+      topAlbums = lifetimeData.top_lists.top_album_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
+        name: item[0],
+        playCount: item[1],
+        artist: item[2]
+      }));
+      console.log('Top albums from new format:', topAlbums.map(a => `${a.name} by ${a.artist} (${a.playCount} plays)`));
+    } else {
+      console.log('⚠️  Using legacy top_albums data');
+      // Legacy format: [album, playCount]
+      topAlbums = lifetimeData.top_lists.top_albums.slice(0, CONFIG.ITEMS_PER_CATEGORY).map(item => ({
+        name: item[0],
+        playCount: item[1],
+        artist: null
+      }));
+      console.log('Top albums from legacy format:', topAlbums.map(a => `${a.name} (${a.playCount} plays)`));
+    }
     
     console.log(`\n🏆 Processing Pulse tab data (top ${CONFIG.ITEMS_PER_CATEGORY} each)`);
     console.log(`  📊 Found ${topArtists.length} artists, ${topTracks.length} tracks, ${topAlbums.length} albums`);
@@ -471,33 +508,27 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       console.log(`  📊 Processing ${year}...`);
       const yearData = annualRecaps[year];
       
-      // TEST: Only process 2025 and only first artist and first album
-      if (year !== '2025') {
-        console.log(`  ⏭️  Skipping ${year} (test mode)`);
-        continue;
-      }
-      
-      // Get top items for this year (TEST: only first 1 each)
-      const yearArtists = yearData.top_artists.slice(0, 1); // Only first artist
+      // Get top items for this year (top 10 each)
+      const yearArtists = yearData.top_artists.slice(0, 10);
       
       // Handle albums - use top_album_artists if available, otherwise top_albums
       let yearAlbums;
       if (yearData.top_album_artists) {
-        yearAlbums = yearData.top_album_artists.slice(0, 1); // Only first album
+        yearAlbums = yearData.top_album_artists.slice(0, 10);
       } else {
-        yearAlbums = yearData.top_albums.slice(0, 1); // Only first album
+        yearAlbums = yearData.top_albums.slice(0, 10);
       }
       
       // Handle tracks - use top_track_artists if available, otherwise top_tracks
       let yearTracks;
       if (yearData.top_track_artists) {
-        yearTracks = yearData.top_track_artists.slice(0, 1).map(item => ({ // TEST: Only first track
+        yearTracks = yearData.top_track_artists.slice(0, 10).map(item => ({
           name: item[0],
           playCount: item[1],
           artist: item[2]
         }));
       } else {
-        yearTracks = yearData.top_tracks.slice(0, 1).map(item => ({ // TEST: Only first track
+        yearTracks = yearData.top_tracks.slice(0, 10).map(item => ({
           name: item[0],
           playCount: item[1],
           artist: null
