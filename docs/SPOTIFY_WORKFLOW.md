@@ -66,9 +66,7 @@ public/data/
 ├── annual_recaps.json                 # Yearly breakdowns (used by Leaderboard tab)
 ├── artist_summary.json                # Artist data (used by Concert Compass tab)
 ├── concerts.json                      # Concert data (used by Concert Compass tab)
-├── consolidated_full_streaming_data_clean.json  # Raw processed data
-├── spotify_enriched_lifetime.json     # Lifetime Spotify data (used by Pulse tab)
-└── spotify_enriched_yearly.json       # Yearly Spotify data (used by Leaderboard tab)
+└── spotify_enriched_data.json         # Combined Spotify data (used by both Pulse and Leaderboard tabs)
 ```
 
 ## ⚙️ **Setup Requirements**
@@ -115,7 +113,7 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
 ## 📊 **Performance Notes**
 
 - **File sizes optimized** - Removed `available_markets` field (92% size reduction)
-- **Separate files** - Lifetime and yearly data split for faster loading
+- **Combined file** - Single Spotify enriched data file for simplicity
 - **Rate limiting** - Built-in delays to respect Spotify API limits
 - **Caching** - Access tokens cached to avoid repeated authentication
 
@@ -128,7 +126,7 @@ SPOTIFY_CLIENT_SECRET=your_client_secret
 - ❌ Multiple redundant approaches
 
 ### **After (Simplified):**
-- ✅ 2 core scripts (`spotify-enricher.mjs`, `process-music-data.mjs`)
+- ✅ 2 core scripts (`raw-spotify-fetcher.mjs`, `process-music-data.mjs`)
 - ✅ 3 npm scripts (process-music, enrich-spotify, process-and-enrich)
 - ✅ Single, clear workflow
 - ✅ One standardized approach

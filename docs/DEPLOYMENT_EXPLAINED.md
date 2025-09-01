@@ -67,10 +67,11 @@ git push origin main
 ## 📊 **Current Optimized Data Files**
 
 ### **In `public/data/` (Development):**
-- `lifetime_data.json` (270KB) - Pulse tab data + Spotify enrichment
-- `yearly_data.json` (2.9MB) - Leaderboard data + Spotify enrichment
-- `concert_data.json` (9.4MB) - Concert Compass data + artist summary
-- `consolidated_full_streaming_data_clean.json` (39.5MB) - Raw data (not used by frontend)
+- `lifetime_streaming_stats.json` (30KB) - Core lifetime data
+- `annual_recaps.json` (142KB) - Yearly breakdowns
+- `spotify_enriched_data.json` (213KB) - Combined Spotify enrichment data
+- `artist_summary.json` (9.2MB) - Artist analytics
+- `concerts.json` (5.6KB) - Concert data
 
 ### **In `dist/data/` (Built):**
 - Same files as `public/data/` (automatically copied by Vite)
@@ -80,19 +81,17 @@ git push origin main
 
 ## 🧹 **Cleanup Completed**
 
-### **Removed Redundant Files:**
-- ❌ `spotify_enriched_data.json` (was just a combination)
-- ❌ `spotify_enriched_lifetime.json` (consolidated into lifetime_data.json)
-- ❌ `spotify_enriched_yearly.json` (consolidated into yearly_data.json)
-- ❌ `lifetime_streaming_stats.json` (consolidated into lifetime_data.json)
-- ❌ `annual_recaps.json` (consolidated into yearly_data.json)
-- ❌ `artist_summary.json` (consolidated into concert_data.json)
-- ❌ `concerts.json` (consolidated into concert_data.json)
+### **Current Data Files:**
+- ✅ `lifetime_streaming_stats.json` - Core lifetime data
+- ✅ `annual_recaps.json` - Yearly breakdowns
+- ✅ `spotify_enriched_data.json` - Combined Spotify enrichment data
+- ✅ `artist_summary.json` - Artist analytics
+- ✅ `concerts.json` - Concert data
 
 ### **Result:**
-- ✅ **3 consolidated files** instead of 7 separate files
-- ✅ **No redundant data** across folders
-- ✅ **Clean deployment process**
+- ✅ **5 separate files** with clear purposes
+- ✅ **Simple, reliable structure**
+- ✅ **Easy to debug and maintain**
 
 ## 🎯 **For Adding New Spotify Data**
 

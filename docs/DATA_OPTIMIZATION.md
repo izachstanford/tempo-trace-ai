@@ -9,11 +9,11 @@ The application uses a **simple, reliable data structure** with separate files f
 ## 📈 **Current Data Structure**
 
 ### **✅ Current (Simple & Reliable):**
-- **7 separate data files** with clear, single purposes
+- **5 separate data files** with clear, single purposes
 - **One network request** per component
 - **No data consolidation complexity**
 - **Simple loading patterns** - each file has one job
-- **Total size: ~15MB** across all files
+- **Total size: ~10MB** across all files
 - **Easy to debug and maintain**
 
 ## 📁 **Current Data Structure**
@@ -25,55 +25,42 @@ The application uses a **simple, reliable data structure** with separate files f
 - Time stats, content stats, top lists
 - **Base data** for lifetime statistics
 
-### **2. `spotify_enriched_lifetime.json` (51KB)**
-**Used by:** Pulse Tab (Spotify data)
-**Contains:**
-- Spotify images, links, and metadata
-- Enriched data for lifetime top artists/tracks/albums
-- **Spotify enrichment** for lifetime data
-
-### **3. `annual_recaps.json` (142KB)**
+### **2. `annual_recaps.json` (142KB)**
 **Used by:** Leaderboard Tab (base data)
 **Contains:**
 - All annual recaps (2016-2025)
 - Year-by-year breakdowns with stats
 - **Base data** for yearly statistics
 
-### **4. `spotify_enriched_yearly.json` (498KB)**
-**Used by:** Leaderboard Tab (Spotify data)
+### **3. `spotify_enriched_data.json` (213KB)**
+**Used by:** Both Pulse Tab and Leaderboard Tab (Spotify data)
 **Contains:**
 - Spotify images, links, and metadata
-- Enriched data for yearly top artists/tracks/albums
-- **Spotify enrichment** for yearly data
+- Enriched data for both lifetime and yearly top artists/tracks/albums
+- **Combined Spotify enrichment** for all data
 
-### **5. `artist_summary.json` (9.2MB)**
+### **4. `artist_summary.json` (9.2MB)**
 **Used by:** Concert Compass Tab
 **Contains:**
 - Detailed artist information
 - **Artist data** for concert planning
 
-### **6. `concerts.json` (5.6KB)**
+### **5. `concerts.json` (5.6KB)**
 **Used by:** Concert Compass Tab
 **Contains:**
 - Concert information and dates
 - **Concert data** for planning
 
-### **7. `consolidated_full_streaming_data_clean.json` (39MB)**
-**Used by:** Spotify enrichment scripts
-**Contains:**
-- Raw processed streaming data
-- **Source data** for Spotify enrichment
-
 ## 🔄 **Data Flow**
 
 ### **Pulse Tab:**
 1. Loads `lifetime_streaming_stats.json` for base data
-2. Loads `spotify_enriched_lifetime.json` for Spotify images/links
+2. Loads `spotify_enriched_data.json` for Spotify images/links (lifetime section)
 3. Components merge the data for display
 
 ### **Leaderboard Tab:**
 1. Loads `annual_recaps.json` for base yearly data
-2. Loads `spotify_enriched_yearly.json` for Spotify images/links
+2. Loads `spotify_enriched_data.json` for Spotify images/links (yearly section)
 3. Components merge the data for display
 
 ### **Concert Compass Tab:**

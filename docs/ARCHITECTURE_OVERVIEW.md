@@ -63,7 +63,7 @@ python wrapped_reimagined.py
 # Outputs:
 # - lifetime_streaming_stats.json
 # - annual_recaps.json
-# - consolidated_full_streaming_data_clean.json
+# - artist_summary.json
 ```
 
 ### **3. Spotify Enrichment**
@@ -72,8 +72,7 @@ python wrapped_reimagined.py
 npm run enrich-spotify
 
 # Outputs:
-# - spotify_enriched_lifetime.json
-# - spotify_enriched_yearly.json
+# - spotify_enriched_data.json
 ```
 
 ### **4. Data Consolidation**
