@@ -113,7 +113,7 @@ function consolidateYearlyData() {
     const yearSpotifyData = spotifyData.yearly?.[year];
     
     consolidatedData[year] = {
-      ...yearBaseData,
+      ...yearBaseData,  // This includes year_stats, top_artists, top_tracks, etc.
       spotify: {
         artists: yearSpotifyData?.artists || [],
         tracks: yearSpotifyData?.tracks || [],
