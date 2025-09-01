@@ -79,7 +79,38 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
       }
       
       const enriched = enrichedItems.find(enrichedItem => enrichedItem.name === name);
-      return enriched || { name, plays, artist, image: null, spotifyUrl: null };
+      if (enriched) {
+        // Extract image URL based on type
+        let imageUrl = null;
+        if (enriched.spotifyData) {
+          if (title === 'Top Artists') {
+            // For artists, use spotifyData.images[0].url
+            imageUrl = enriched.spotifyData.images?.[0]?.url;
+          } else if (title === 'Top Tracks') {
+            // For tracks, use spotifyData.album.images[0].url
+            imageUrl = enriched.spotifyData.album?.images?.[0]?.url;
+          } else if (title === 'Top Albums') {
+            // For albums, use spotifyData.images[0].url
+            imageUrl = enriched.spotifyData.images?.[0]?.url;
+          }
+        }
+        
+        // For albums, extract artist from Spotify data if not already present
+        let finalArtist = artist;
+        if (title === 'Top Albums' && !finalArtist && enriched.spotifyData?.artists?.[0]?.name) {
+          finalArtist = enriched.spotifyData.artists[0].name;
+        }
+        
+        return {
+          name,
+          plays,
+          artist: finalArtist,
+          image: imageUrl,
+          spotifyUrl: enriched.spotifyUrl
+        };
+      }
+      
+      return { name, plays, artist, image: null, spotifyUrl: null };
     });
 
     return mergedItems;

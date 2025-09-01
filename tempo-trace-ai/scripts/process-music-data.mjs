@@ -69,7 +69,7 @@ function processMusicData() {
   }
   
   // Run the main processor
-  const success = runCommand('python wrapped_reimagined.py', processorPath);
+  const success = runCommand('python wrapped_reimagined.py process-all', processorPath);
   
   if (success) {
     log('✅ Music data processing completed', 'success');
@@ -93,7 +93,8 @@ function copyProcessedData() {
   
   const filesToCopy = [
     'lifetime_streaming_stats.json',
-    'annual_recaps.json'
+    'annual_recaps.json',
+    'artist_summary.json'
   ];
   
   let successCount = 0;
@@ -117,7 +118,7 @@ function copyProcessedData() {
 function runSpotifyEnrichment() {
   log('🎵 Running Spotify enrichment...', 'info');
   
-  const success = runCommand('node scripts/spotify-enricher.mjs');
+  const success = runCommand('node scripts/raw-spotify-fetcher.mjs');
   
   if (success) {
     log('✅ Spotify enrichment completed', 'success');

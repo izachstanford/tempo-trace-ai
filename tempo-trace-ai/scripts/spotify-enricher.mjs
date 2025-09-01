@@ -9,7 +9,9 @@
  * 3. Enriches both lifetime and yearly data
  * 4. Outputs optimized JSON files
  * 
- * Usage: npm run enrich-spotify
+ * Usage: 
+ *   npm run enrich-spotify          # Incremental update (only null/broken links)
+ *   npm run enrich-spotify -- --force  # Full refresh (overwrite all data)
  */
 
 import fs from 'fs';
@@ -19,6 +21,10 @@ import dotenv from 'dotenv';
 
 // Load environment variables
 dotenv.config();
+
+// Parse command line arguments
+const args = process.argv.slice(2);
+const FORCE_REFRESH = args.includes('--force');
 
 const CONFIG = {
   SPOTIFY_API_BASE: 'https://api.spotify.com/v1',
@@ -73,13 +79,32 @@ async function getSpotifyToken() {
 function cleanSpotifyData(data, type) {
   if (!data) return null;
   
-  const cleaned = { ...data };
+  let cleaned = { ...data };
   
-  // Remove large unnecessary fields
-  delete cleaned.available_markets;
-  delete cleaned.external_urls;
-  delete cleaned.href;
-  delete cleaned.uri;
+  // Remove large unnecessary fields recursively
+  function removeUnnecessaryFields(obj) {
+    if (typeof obj !== 'object' || obj === null) return obj;
+    
+    if (Array.isArray(obj)) {
+      return obj.map(removeUnnecessaryFields);
+    }
+    
+    const cleaned = { ...obj };
+    delete cleaned.available_markets;
+    delete cleaned.href;
+    delete cleaned.uri;
+    
+    // Recursively clean nested objects
+    for (const key in cleaned) {
+      if (typeof cleaned[key] === 'object' && cleaned[key] !== null) {
+        cleaned[key] = removeUnnecessaryFields(cleaned[key]);
+      }
+    }
+    
+    return cleaned;
+  }
+  
+  cleaned = removeUnnecessaryFields(cleaned);
   
   // Keep only essential fields
   const essentialFields = {
@@ -113,6 +138,36 @@ async function searchSpotifyTrack(trackName, artistName, token) {
   
   const data = await response.json();
   return data.tracks?.items?.[0] || null;
+}
+
+/**
+ * Search for Spotify artist
+ */
+async function searchSpotifyArtist(artistName, token) {
+  const query = `artist:"${artistName}"`;
+  const response = await fetch(`${CONFIG.SPOTIFY_API_BASE}/search?q=${encodeURIComponent(query)}&type=artist&limit=1`, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
+
+  if (!response.ok) return null;
+  
+  const data = await response.json();
+  return data.artists?.items?.[0] || null;
+}
+
+/**
+ * Search for Spotify album
+ */
+async function searchSpotifyAlbum(albumName, artistName, token) {
+  const query = `album:"${albumName}" artist:"${artistName}"`;
+  const response = await fetch(`${CONFIG.SPOTIFY_API_BASE}/search?q=${encodeURIComponent(query)}&type=album&limit=1`, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
+
+  if (!response.ok) return null;
+  
+  const data = await response.json();
+  return data.albums?.items?.[0] || null;
 }
 
 /**
@@ -174,10 +229,32 @@ function buildTrackArtistMap() {
 }
 
 /**
+ * Check if an item needs Spotify enrichment
+ */
+function needsEnrichment(item, type, forceRefresh = false) {
+  if (forceRefresh) return true;
+  
+  // Check if item has no Spotify data
+  if (!item.spotifyData) return true;
+  
+  // Check if Spotify URL is missing or broken
+  if (!item.spotifyUrl) return true;
+  
+  // Check if image is missing (for visual feedback)
+  if (type === 'artist' && !item.spotifyData.images?.[0]?.url) return true;
+  if (type === 'track' && !item.spotifyData.album?.images?.[0]?.url) return true;
+  if (type === 'album' && !item.spotifyData.images?.[0]?.url) return true;
+  
+  return false;
+}
+
+/**
  * Enrich a list of items with Spotify data
  */
-async function enrichItems(items, type, trackArtistMap, token) {
+async function enrichItems(items, type, trackArtistMap, token, existingEnriched = []) {
   const enriched = [];
+  let skipped = 0;
+  let updated = 0;
   
   for (const item of items) {
     let trackName, artistName, playCount;
@@ -196,6 +273,14 @@ async function enrichItems(items, type, trackArtistMap, token) {
     
     if (!trackName) continue;
     
+    // Check if we already have valid Spotify data (incremental update)
+    const existingItem = existingEnriched.find(existing => existing.name === trackName);
+    if (existingItem && !needsEnrichment(existingItem, type, FORCE_REFRESH)) {
+      enriched.push(existingItem);
+      skipped++;
+      continue;
+    }
+    
     let spotifyData = null;
     let spotifyUrl = null;
     
@@ -205,15 +290,29 @@ async function enrichItems(items, type, trackArtistMap, token) {
     
     if (mapEntry?.uri) {
       // Use URI for exact match
-      spotifyData = await getSpotifyByUri(mapEntry.uri, token);
-      if (spotifyData) {
-        spotifyUrl = spotifyData.external_urls?.spotify;
+      try {
+        spotifyData = await getSpotifyByUri(mapEntry.uri, token);
+        if (spotifyData) {
+          spotifyUrl = spotifyData.external_urls?.spotify;
+        } else {
+          console.log(`❌ URI lookup failed for: ${trackName} by ${artistName} (${mapEntry.uri})`);
+        }
+      } catch (error) {
+        console.log(`❌ URI lookup error for: ${trackName} by ${artistName}: ${error.message}`);
       }
     }
     
     // Fallback to search if URI lookup failed
     if (!spotifyData && artistName) {
-      spotifyData = await searchSpotifyTrack(trackName, artistName, token);
+      if (type === 'artist') {
+        spotifyData = await searchSpotifyArtist(artistName, token);
+      } else if (type === 'track') {
+        spotifyData = await searchSpotifyTrack(trackName, artistName, token);
+      } else if (type === 'album') {
+        // For albums, search by album name and artist
+        spotifyData = await searchSpotifyAlbum(trackName, artistName, token);
+      }
+      
       if (spotifyData) {
         spotifyUrl = spotifyData.external_urls?.spotify;
       }
@@ -231,9 +330,17 @@ async function enrichItems(items, type, trackArtistMap, token) {
       spotifyData,
       spotifyUrl
     });
+    updated++;
     
     // Small delay to avoid rate limiting
     await new Promise(resolve => setTimeout(resolve, 100));
+  }
+  
+  if (skipped > 0) {
+    console.log(`⏭️  Skipped ${skipped} items (already have valid Spotify data)`);
+  }
+  if (updated > 0) {
+    console.log(`🔄 Updated ${updated} items with new Spotify data`);
   }
   
   return enriched;
@@ -264,23 +371,49 @@ async function enrichSpotifyData() {
     const lifetimeData = JSON.parse(fs.readFileSync(lifetimeDataPath, 'utf8'));
     const annualData = JSON.parse(fs.readFileSync(annualDataPath, 'utf8'));
     
-    // Enrich lifetime data
-    console.log('📊 Enriching lifetime data...');
+    // Load existing enriched data for incremental updates
+    let existingLifetimeEnriched = { artists: [], tracks: [], albums: [] };
+    let existingYearlyEnriched = {};
+    
+    if (!FORCE_REFRESH) {
+      try {
+        const lifetimeEnrichedPath = path.join(process.cwd(), CONFIG.OUTPUT_DIR, 'spotify_enriched_lifetime.json');
+        if (fs.existsSync(lifetimeEnrichedPath)) {
+          const existingLifetime = JSON.parse(fs.readFileSync(lifetimeEnrichedPath, 'utf8'));
+          existingLifetimeEnriched = existingLifetime.lifetime || existingLifetimeEnriched;
+        }
+        
+        const yearlyEnrichedPath = path.join(process.cwd(), CONFIG.OUTPUT_DIR, 'spotify_enriched_yearly.json');
+        if (fs.existsSync(yearlyEnrichedPath)) {
+          const existingYearly = JSON.parse(fs.readFileSync(yearlyEnrichedPath, 'utf8'));
+          existingYearlyEnriched = existingYearly.yearly || existingYearlyEnriched;
+        }
+        
+        console.log('📂 Loaded existing enriched data for incremental updates');
+      } catch (error) {
+        console.log('⚠️  Could not load existing enriched data, will perform full refresh');
+      }
+    }
+    
+    // Enrich lifetime data (only top 10 items that are displayed)
+    console.log(`📊 Enriching lifetime data${FORCE_REFRESH ? ' (full refresh)' : ' (incremental)'}...`);
     const lifetimeEnriched = {
-      artists: await enrichItems(lifetimeData.top_lists.top_artists, 'artist', trackArtistMap, token),
-      tracks: await enrichItems(lifetimeData.top_lists.top_track_artists || lifetimeData.top_lists.top_tracks, 'track', trackArtistMap, token),
-      albums: await enrichItems(lifetimeData.top_lists.top_albums, 'album', trackArtistMap, token)
+      artists: await enrichItems(lifetimeData.top_lists.top_artists.slice(0, 10), 'artist', trackArtistMap, token, existingLifetimeEnriched.artists),
+      tracks: await enrichItems((lifetimeData.top_lists.top_track_artists || lifetimeData.top_lists.top_tracks).slice(0, 10), 'track', trackArtistMap, token, existingLifetimeEnriched.tracks),
+      albums: await enrichItems(lifetimeData.top_lists.top_albums.slice(0, 10), 'album', trackArtistMap, token, existingLifetimeEnriched.albums)
     };
     
     // Enrich yearly data
-    console.log('📊 Enriching yearly data...');
+    console.log(`📊 Enriching yearly data${FORCE_REFRESH ? ' (full refresh)' : ' (incremental)'}...`);
     const yearlyEnriched = {};
     
     for (const [year, yearData] of Object.entries(annualData)) {
+      const existingYearData = existingYearlyEnriched[year] || { artists: [], tracks: [], albums: [] };
+      
       yearlyEnriched[year] = {
-        artists: await enrichItems(yearData.top_artists, 'artist', trackArtistMap, token),
-        tracks: await enrichItems(yearData.top_track_artists || yearData.top_tracks, 'track', trackArtistMap, token),
-        albums: await enrichItems(yearData.top_albums, 'album', trackArtistMap, token)
+        artists: await enrichItems(yearData.top_artists.slice(0, 10), 'artist', trackArtistMap, token, existingYearData.artists),
+        tracks: await enrichItems((yearData.top_track_artists || yearData.top_tracks).slice(0, 10), 'track', trackArtistMap, token, existingYearData.tracks),
+        albums: await enrichItems(yearData.top_albums.slice(0, 10), 'album', trackArtistMap, token, existingYearData.albums)
       };
     }
     
@@ -312,6 +445,12 @@ async function enrichSpotifyData() {
     console.log(`📊 Yearly items enriched: ${totalYearlyItems}`);
     console.log(`📊 Years processed: ${Object.keys(yearlyEnriched).length}`);
     console.log(`💾 Files saved: spotify_enriched_lifetime.json, spotify_enriched_yearly.json`);
+    
+    if (FORCE_REFRESH) {
+      console.log('🔄 Full refresh completed - all data updated');
+    } else {
+      console.log('⚡ Incremental update completed - only missing/broken data updated');
+    }
     
   } catch (error) {
     console.error('❌ Spotify enrichment failed:', error.message);

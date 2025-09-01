@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "serve": "http-server dist -p 3000",
     "process-music": "node scripts/process-music-data.mjs",
-    "enrich-spotify": "node scripts/spotify-enricher.mjs",
+    "enrich-spotify": "node scripts/raw-spotify-fetcher.mjs",
+    "enrich-spotify-force": "node scripts/raw-spotify-fetcher.mjs",
     "process-and-enrich": "node scripts/process-music-data.mjs -- --with-spotify"
   },
   "dependencies": {

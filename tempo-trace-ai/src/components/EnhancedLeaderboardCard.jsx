@@ -36,7 +36,34 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
           const found = yearData[type].find(item => 
             item.name.toLowerCase() === itemName.toLowerCase()
           );
-          if (found) return found;
+          if (found) {
+            // Extract image URL based on type
+            let imageUrl = null;
+            if (found.spotifyData) {
+              if (type === 'artists') {
+                // For artists, use spotifyData.images[0].url
+                imageUrl = found.spotifyData.images?.[0]?.url;
+              } else if (type === 'tracks') {
+                // For tracks, use spotifyData.album.images[0].url
+                imageUrl = found.spotifyData.album?.images?.[0]?.url;
+              } else if (type === 'albums') {
+                // For albums, use spotifyData.images[0].url
+                imageUrl = found.spotifyData.images?.[0]?.url;
+              }
+            }
+            
+            // For albums, extract artist from Spotify data if not already present
+            let finalArtist = found.artist;
+            if (type === 'albums' && !finalArtist && found.spotifyData?.artists?.[0]?.name) {
+              finalArtist = found.spotifyData.artists[0].name;
+            }
+            
+            return {
+              ...found,
+              artist: finalArtist,
+              image: imageUrl
+            };
+          }
         }
       }
     } catch (error) {

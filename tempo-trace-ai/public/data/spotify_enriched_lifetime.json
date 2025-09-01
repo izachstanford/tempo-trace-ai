@@ -3,7 +3,7 @@
     "artists": [
       {
         "name": "Fall Out Boy",
-        "plays": 1483,
+        "plays": 1490,
         "spotifyData": {
           "external_urls": {
             "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
@@ -46,7 +46,7 @@
       },
       {
         "name": "Twenty One Pilots",
-        "plays": 1325,
+        "plays": 1341,
         "spotifyData": {
           "external_urls": {
             "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
@@ -86,7 +86,7 @@
       },
       {
         "name": "Judah & the Lion",
-        "plays": 855,
+        "plays": 856,
         "spotifyData": {
           "external_urls": {
             "spotify": "https://open.spotify.com/artist/3wWtfT7S2uVJJ3hGZlOLkZ"
@@ -126,6 +126,49 @@
         "image": "https://i.scdn.co/image/ab6761610000e5ebe623db0c897f7c323802b8f0",
         "spotifyUrl": "https://open.spotify.com/artist/3wWtfT7S2uVJJ3hGZlOLkZ",
         "artist": "Judah & the Lion"
+      },
+      {
+        "name": "Jimmy Eat World",
+        "plays": 819,
+        "spotifyData": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+          },
+          "followers": {
+            "href": null,
+            "total": 1770816
+          },
+          "genres": [
+            "emo",
+            "pop punk"
+          ],
+          "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+          "id": "3Ayl7mCk0nScecqOzvNp6s",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab676161000051740dc33cfd207772f8e2f6b46f",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://i.scdn.co/image/ab6761610000f1780dc33cfd207772f8e2f6b46f",
+              "height": 160,
+              "width": 160
+            }
+          ],
+          "name": "Jimmy Eat World",
+          "popularity": 70,
+          "type": "artist",
+          "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+        },
+        "image": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
+        "spotifyUrl": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s",
+        "artist": "Jimmy Eat World"
       },
       {
         "name": "Anberlin",
@@ -171,51 +214,8 @@
         "artist": "Anberlin"
       },
       {
-        "name": "Jimmy Eat World",
-        "plays": 752,
-        "spotifyData": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
-          },
-          "followers": {
-            "href": null,
-            "total": 1770816
-          },
-          "genres": [
-            "emo",
-            "pop punk"
-          ],
-          "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
-          "id": "3Ayl7mCk0nScecqOzvNp6s",
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab676161000051740dc33cfd207772f8e2f6b46f",
-              "height": 320,
-              "width": 320
-            },
-            {
-              "url": "https://i.scdn.co/image/ab6761610000f1780dc33cfd207772f8e2f6b46f",
-              "height": 160,
-              "width": 160
-            }
-          ],
-          "name": "Jimmy Eat World",
-          "popularity": 70,
-          "type": "artist",
-          "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
-        },
-        "image": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
-        "spotifyUrl": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s",
-        "artist": "Jimmy Eat World"
-      },
-      {
         "name": "Panic! At The Disco",
-        "plays": 709,
+        "plays": 717,
         "spotifyData": {
           "external_urls": {
             "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
@@ -254,6 +254,48 @@
         "image": "https://i.scdn.co/image/ab6761610000e5ebb256ae9a4b82bfff97776ae2",
         "spotifyUrl": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK",
         "artist": "Panic! At The Disco"
+      },
+      {
+        "name": "OneRepublic",
+        "plays": 709,
+        "spotifyData": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ"
+          },
+          "followers": {
+            "href": null,
+            "total": 18522717
+          },
+          "genres": [
+            "soft pop"
+          ],
+          "href": "https://api.spotify.com/v1/artists/5Pwc4xIPtQLFEnJriah9YJ",
+          "id": "5Pwc4xIPtQLFEnJriah9YJ",
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab6761610000e5eb587687df50a967731901fcc2",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab67616100005174587687df50a967731901fcc2",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://i.scdn.co/image/ab6761610000f178587687df50a967731901fcc2",
+              "height": 160,
+              "width": 160
+            }
+          ],
+          "name": "OneRepublic",
+          "popularity": 85,
+          "type": "artist",
+          "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
+        },
+        "image": "https://i.scdn.co/image/ab6761610000e5eb587687df50a967731901fcc2",
+        "spotifyUrl": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ",
+        "artist": "OneRepublic"
       },
       {
         "name": "Imagine Dragons",
@@ -296,50 +338,8 @@
         "artist": "Imagine Dragons"
       },
       {
-        "name": "OneRepublic",
-        "plays": 704,
-        "spotifyData": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ"
-          },
-          "followers": {
-            "href": null,
-            "total": 18522717
-          },
-          "genres": [
-            "soft pop"
-          ],
-          "href": "https://api.spotify.com/v1/artists/5Pwc4xIPtQLFEnJriah9YJ",
-          "id": "5Pwc4xIPtQLFEnJriah9YJ",
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab6761610000e5eb587687df50a967731901fcc2",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616100005174587687df50a967731901fcc2",
-              "height": 320,
-              "width": 320
-            },
-            {
-              "url": "https://i.scdn.co/image/ab6761610000f178587687df50a967731901fcc2",
-              "height": 160,
-              "width": 160
-            }
-          ],
-          "name": "OneRepublic",
-          "popularity": 85,
-          "type": "artist",
-          "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
-        },
-        "image": "https://i.scdn.co/image/ab6761610000e5eb587687df50a967731901fcc2",
-        "spotifyUrl": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ",
-        "artist": "OneRepublic"
-      },
-      {
         "name": "The National Parks",
-        "plays": 698,
+        "plays": 701,
         "spotifyData": {
           "external_urls": {
             "spotify": "https://open.spotify.com/artist/2JMtxA2S9SNUlqBlkDtXm6"
@@ -625,19 +625,19 @@
             },
             "images": [
               {
-                "url": "https://i.scdn.co/image/ab67616d0000b273049be01ed0a5cb2fad9f097a",
+                "height": 640,
                 "width": 640,
-                "height": 640
+                "url": "https://i.scdn.co/image/ab67616d0000b273049be01ed0a5cb2fad9f097a"
               },
               {
-                "url": "https://i.scdn.co/image/ab67616d00001e02049be01ed0a5cb2fad9f097a",
+                "height": 300,
                 "width": 300,
-                "height": 300
+                "url": "https://i.scdn.co/image/ab67616d00001e02049be01ed0a5cb2fad9f097a"
               },
               {
-                "url": "https://i.scdn.co/image/ab67616d00004851049be01ed0a5cb2fad9f097a",
+                "height": 64,
                 "width": 64,
-                "height": 64
+                "url": "https://i.scdn.co/image/ab67616d00004851049be01ed0a5cb2fad9f097a"
               }
             ],
             "album_type": "album",
@@ -647,7 +647,7 @@
         "image": "https://i.scdn.co/image/ab67616d0000b273049be01ed0a5cb2fad9f097a",
         "spotifyUrl": "https://open.spotify.com/track/6npwqC5RmypTPYuNShrQCf",
         "artist": "The National Parks",
-        "matchSource": "raw_uri"
+        "matchSource": "search_corrected"
       },
       {
         "name": "Inspired",
@@ -1095,7 +1095,7 @@
       },
       {
         "name": "The Process",
-        "plays": 256,
+        "plays": 257,
         "spotifyData": {
           "id": "2sJMzA3LuOW1u3UEKbF6J3",
           "name": "The Process",
@@ -1145,7 +1145,7 @@
       },
       {
         "name": "The Surface",
-        "plays": 236,
+        "plays": 239,
         "spotifyData": {
           "id": "5WmbnLQhy8ndx8S7puEolG",
           "name": "The Surface",
@@ -1245,7 +1245,7 @@
       },
       {
         "name": "Lovely Little Lonely",
-        "plays": 186,
+        "plays": 189,
         "spotifyData": {
           "id": "2jStuYeaRty1cwxjoxfo9K",
           "name": "Lovely Little Lonely",
@@ -1295,7 +1295,7 @@
       },
       {
         "name": "So Much (For) Stardust",
-        "plays": 172,
+        "plays": 177,
         "spotifyData": {
           "id": "5mWnMYLnfcnkDOCojHW6O1",
           "name": "So Much (For) Stardust",
@@ -1495,13 +1495,13 @@
       }
     ]
   },
-  "lastUpdated": "2025-08-31T22:34:38.554Z",
+  "lastUpdated": "2025-09-01T02:08:19.314Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
     "rawSpotifyMatching": true,
-    "trackMapCount": 7344,
-    "albumMapCount": 4900,
+    "trackMapCount": 7536,
+    "albumMapCount": 5023,
     "yearsProcessed": 10
   }
 }
