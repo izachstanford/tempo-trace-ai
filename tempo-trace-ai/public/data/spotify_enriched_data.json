@@ -13926,6 +13926,132 @@
           "artist": "half•alive"
         },
         {
+          "name": "The Offspring",
+          "plays": 84,
+          "spotifyData": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ"
+            },
+            "followers": {
+              "href": null,
+              "total": 6513810
+            },
+            "genres": [
+              "punk",
+              "skate punk"
+            ],
+            "href": "https://api.spotify.com/v1/artists/5LfGQac0EIXyAN8aUwmNAQ",
+            "id": "5LfGQac0EIXyAN8aUwmNAQ",
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebffb1ffb7c417745cdad67b88",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174ffb1ffb7c417745cdad67b88",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178ffb1ffb7c417745cdad67b88",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "name": "The Offspring",
+            "popularity": 80,
+            "type": "artist",
+            "uri": "spotify:artist:5LfGQac0EIXyAN8aUwmNAQ"
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebffb1ffb7c417745cdad67b88",
+          "spotifyUrl": "https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ",
+          "artist": "The Offspring"
+        },
+        {
+          "name": "Knox",
+          "plays": 77,
+          "spotifyData": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/61S5H9Lxn1PDUvu1TV0kCX"
+            },
+            "followers": {
+              "href": null,
+              "total": 155460
+            },
+            "genres": [],
+            "href": "https://api.spotify.com/v1/artists/61S5H9Lxn1PDUvu1TV0kCX",
+            "id": "61S5H9Lxn1PDUvu1TV0kCX",
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb943c2329b4a19091898abd95",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174943c2329b4a19091898abd95",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178943c2329b4a19091898abd95",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "name": "Knox",
+            "popularity": 59,
+            "type": "artist",
+            "uri": "spotify:artist:61S5H9Lxn1PDUvu1TV0kCX"
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb943c2329b4a19091898abd95",
+          "spotifyUrl": "https://open.spotify.com/artist/61S5H9Lxn1PDUvu1TV0kCX",
+          "artist": "Knox"
+        },
+        {
+          "name": "Jimmy Eat World",
+          "plays": 71,
+          "spotifyData": {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+            },
+            "followers": {
+              "href": null,
+              "total": 1770816
+            },
+            "genres": [
+              "emo",
+              "pop punk"
+            ],
+            "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+            "id": "3Ayl7mCk0nScecqOzvNp6s",
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab676161000051740dc33cfd207772f8e2f6b46f",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f1780dc33cfd207772f8e2f6b46f",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "name": "Jimmy Eat World",
+            "popularity": 70,
+            "type": "artist",
+            "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb0dc33cfd207772f8e2f6b46f",
+          "spotifyUrl": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s",
+          "artist": "Jimmy Eat World"
+        },
+        {
           "name": "Sub-Radio",
           "plays": 64,
           "spotifyData": {
@@ -14948,6 +15074,15 @@
           "matchSource": "raw_uri"
         },
         {
+          "name": "Going, Going, Gone",
+          "plays": 60,
+          "spotifyData": null,
+          "image": null,
+          "spotifyUrl": null,
+          "artist": "Knox",
+          "matchSource": "none"
+        },
+        {
           "name": "Sunrise City",
           "plays": 49,
           "spotifyData": {
@@ -15096,6 +15231,24 @@
           "spotifyUrl": "https://open.spotify.com/album/2xg4RizRNsewZ3ZzYsBmrm",
           "artist": "Slow Talk",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "SUPERCHARGED",
+          "plays": 40,
+          "spotifyData": null,
+          "image": null,
+          "spotifyUrl": null,
+          "artist": "The Offspring",
+          "matchSource": "none"
+        },
+        {
+          "name": "Futures",
+          "plays": 40,
+          "spotifyData": null,
+          "image": null,
+          "spotifyUrl": null,
+          "artist": "Jimmy Eat World",
+          "matchSource": "none"
         },
         {
           "name": "A Kiss for the Whole World",
@@ -15250,7 +15403,7 @@
       ]
     }
   },
-  "lastUpdated": "2025-09-01T03:08:48.718Z",
+  "lastUpdated": "2025-09-01T03:12:31.806Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
