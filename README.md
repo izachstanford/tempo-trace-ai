@@ -2,11 +2,11 @@
 
 A complete end-to-end system for transforming your personal music streaming data into rich, interactive insights. This project combines a powerful Python data processor with a sleek React web dashboard to create your own personalized music analytics experience.
 
-> **Live Demo**: [Try the dashboard →](https://tempo-trace-ai.vercel.app) _(coming soon)_
+> **Live Demo**: [Try the dashboard →](https://aiwithzach.com/tempo-trace-ai/)
 
 ---
 
-## 🚀 What This Project Does
+## What This Project Does
 
 Transform your raw Spotify and Apple Music data into beautiful, interactive visualizations that reveal insights about your listening habits, favorite artists, and musical journey over time. 
 
@@ -59,42 +59,35 @@ tempo-trace-ai/
 
 ### Step 2: Process Your Data
 ```bash
-# Navigate to the data processor
-cd music-data-processor
+# Navigate to the web app directory
+cd tempo-trace-ai
 
-# Place your data files in the input/ directory
-cp /path/to/spotify/files/*.json input/
-cp /path/to/apple/music/*.csv input/
+# Place your data files in the music-data-processor input/ directory
+cp /path/to/spotify/files/*.json ../music-data-processor/input/
+cp /path/to/apple/music/*.csv ../music-data-processor/input/
 
-# Run the complete processing pipeline
-python wrapped_reimagined.py process-all
+# Run the complete processing and Spotify enrichment pipeline
+npm run process-and-enrich
 ```
 
 **Output Files Generated:**
-- `lifetime_streaming_stats.json` (27KB) - Overview statistics
-- `annual_recaps.json` (110KB) - Year-by-year insights  
-- `artist_summary.json` (9MB) - Detailed per-artist analytics
-- `concerts.json` - Concert attendance data (optional)
+- `lifetime_streaming_stats.json` (30KB) - Overview statistics
+- `annual_recaps.json` (142KB) - Year-by-year insights  
+- `artist_summary.json` (9.2MB) - Detailed per-artist analytics
+- `concerts.json` (5.6KB) - Concert attendance data (optional)
+- `spotify_enriched_lifetime.json` (51KB) - Spotify images/links for lifetime data
+- `spotify_enriched_yearly.json` (498KB) - Spotify images/links for yearly data
 
-### Step 3: Copy Data to Web App
+### Step 3: Launch the Dashboard
 ```bash
-# Copy processed files to the web dashboard
-cp output/*.json ../tempo-trace-ai/public/data/
-```
-
-### Step 4: Launch the Dashboard
-```bash
-# Navigate to the web app
-cd ../tempo-trace-ai
-
-# Install dependencies
+# Install dependencies (if not already done)
 npm install
 
 # Start the development server
 npm run dev
 ```
 
-Visit `http://localhost:5173` to explore your music analytics!
+Visit `http://localhost:3000` to explore your music analytics!
 
 ---
 
@@ -241,42 +234,9 @@ Key features:
 
 ---
 
-## 🤝 Contributing
-
-This project is open source and welcomes contributions! Whether you want to:
-
-- Add support for additional streaming platforms
-- Improve the UI/UX design
-- Add new analytics and insights
-- Optimize performance
-- Fix bugs or add features
-
-**Getting Started:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-**Development Setup:**
-```bash
-# For Python development
-cd music-data-processor
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-# For React development
-cd tempo-trace-ai
-npm install
-npm run dev
-```
-
----
-
 ## 📧 About the Author
 
-**Zach Stanford** — Data engineer, AI enthusiast, and music lover with 10+ years of experience building analytics platforms at companies like Block, DoorDash, and Goldman Sachs.
+**Zach Stanford** — Data engineer, AI enthusiast, and music lover with 10+ years of experience building analytics platforms.
 
 - 🔗 [LinkedIn](https://www.linkedin.com/in/zachstanford1/)
 - 🌐 [Personal Website & Blog](https://aiwithzach.com/)
@@ -289,17 +249,3 @@ npm run dev
 MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-## 🙏 Acknowledgments
-
-- **Spotify** for providing extended streaming history data
-- **Apple Music** for comprehensive play history exports
-- **The open-source community** for inspiration and tools
-- **Chart.js** for beautiful, interactive visualizations
-- **TailwindCSS** for making CSS enjoyable again
-
----
-
-**🌟 Star this repo if you found it helpful!**
-
-*Built with ❤️ for music data nerds and AI enthusiasts*
