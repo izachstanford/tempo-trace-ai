@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 
 export const useData = () => {
-  const [lifetimeData, setLifetimeData] = useState(null);
-  const [yearlyData, setYearlyData] = useState(null);
+  const [lifetimeStats, setLifetimeStats] = useState(null);
+  const [annualRecaps, setAnnualRecaps] = useState(null);
+  const [artistSummary, setArtistSummary] = useState(null);
   const [concertData, setConcertData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,24 +13,32 @@ export const useData = () => {
       try {
         setLoading(true);
         
-        // Load consolidated lifetime data (includes Spotify enrichment)
-        let lifetimeResponse = await fetch('./data/lifetime_data.json');
+        // Load lifetime streaming stats (for The Pulse tab)
+        let lifetimeResponse = await fetch('./data/lifetime_streaming_stats.json');
         if (!lifetimeResponse.ok) {
-          throw new Error('Failed to load lifetime data');
+          throw new Error('Failed to load lifetime streaming stats');
         }
         const lifetimeJson = await lifetimeResponse.json();
-        setLifetimeData(lifetimeJson);
+        setLifetimeStats(lifetimeJson);
         
-        // Load consolidated yearly data (includes Spotify enrichment)
-        let yearlyResponse = await fetch('./data/yearly_data.json');
-        if (!yearlyResponse.ok) {
-          throw new Error('Failed to load yearly data');
+        // Load annual recaps (for Leaderboard tab)
+        let recapsResponse = await fetch('./data/annual_recaps.json');
+        if (!recapsResponse.ok) {
+          throw new Error('Failed to load annual recaps');
         }
-        const yearlyJson = await yearlyResponse.json();
-        setYearlyData(yearlyJson);
+        const recapsJson = await recapsResponse.json();
+        setAnnualRecaps(recapsJson);
         
-        // Load consolidated concert data (includes artist summary)
-        let concertResponse = await fetch('./data/concert_data.json');
+        // Load artist summary (for Concert Compass tab)
+        let artistResponse = await fetch('./data/artist_summary.json');
+        if (!artistResponse.ok) {
+          throw new Error('Failed to load artist summary');
+        }
+        const artistJson = await artistResponse.json();
+        setArtistSummary(artistJson);
+        
+        // Load concert data (for Concert Compass tab)
+        let concertResponse = await fetch('./data/concerts.json');
         if (!concertResponse.ok) {
           throw new Error('Failed to load concert data');
         }
@@ -47,22 +56,5 @@ export const useData = () => {
     loadData();
   }, []);
 
-  // Extract individual components for backward compatibility
-  const lifetimeStats = lifetimeData;
-  const annualRecaps = yearlyData;
-  const artistSummary = concertData?.artists;
-  const concertDataOnly = concertData?.concerts;
-
-  return { 
-    lifetimeStats, 
-    annualRecaps, 
-    artistSummary, 
-    concertData: concertDataOnly,
-    // New consolidated data
-    lifetimeData,
-    yearlyData,
-    concertData: concertData,
-    loading, 
-    error 
-  };
+  return { lifetimeStats, annualRecaps, artistSummary, concertData, loading, error };
 };
