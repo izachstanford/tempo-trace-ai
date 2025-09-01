@@ -424,1084 +424,194 @@
       {
         "name": "High Hopes",
         "plays": 85,
-        "spotifyData": {
-          "id": "1rqqCSm0Qe4I9rUvWncaom",
-          "name": "High Hopes",
-          "type": "track",
-          "uri": "spotify:track:1rqqCSm0Qe4I9rUvWncaom",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/1rqqCSm0Qe4I9rUvWncaom"
-          },
-          "popularity": 79,
-          "artists": [
-            {
-              "id": "20JZFwl6HVl6yg8a4H3ZqK",
-              "name": "Panic! At The Disco",
-              "type": "artist",
-              "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
-              }
-            }
-          ],
-          "album": {
-            "id": "6ApYSpXF8GxZAgBTHDzYge",
-            "name": "Pray for the Wicked",
-            "type": "album",
-            "uri": "spotify:album:6ApYSpXF8GxZAgBTHDzYge",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 11
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
-        "spotifyUrl": "https://open.spotify.com/track/1rqqCSm0Qe4I9rUvWncaom",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Panic! At The Disco",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Chlorine",
         "plays": 70,
-        "spotifyData": {
-          "id": "23OXdR7YuUBVWh5hSnYJau",
-          "name": "Chlorine",
-          "type": "track",
-          "uri": "spotify:track:23OXdR7YuUBVWh5hSnYJau",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/23OXdR7YuUBVWh5hSnYJau"
-          },
-          "popularity": 75,
-          "artists": [
-            {
-              "id": "3YQKmKGau1PzlVlkL1iodx",
-              "name": "Twenty One Pilots",
-              "type": "artist",
-              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
-              }
-            }
-          ],
-          "album": {
-            "id": "621cXqrTSSJi1WqDMSLmbL",
-            "name": "Trench",
-            "type": "album",
-            "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 14
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
-        "spotifyUrl": "https://open.spotify.com/track/23OXdR7YuUBVWh5hSnYJau",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Twenty One Pilots",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Turn",
         "plays": 62,
-        "spotifyData": {
-          "id": "2PL9IBLQvJjE7hqCQyJl2g",
-          "name": "Turn",
-          "type": "track",
-          "uri": "spotify:track:2PL9IBLQvJjE7hqCQyJl2g",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/2PL9IBLQvJjE7hqCQyJl2g"
-          },
-          "popularity": 60,
-          "artists": [
-            {
-              "id": "0Ya43ZKWHTKkAbkoJJkwIB",
-              "name": "The Wombats",
-              "type": "artist",
-              "uri": "spotify:artist:0Ya43ZKWHTKkAbkoJJkwIB",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/0Ya43ZKWHTKkAbkoJJkwIB"
-              }
-            }
-          ],
-          "album": {
-            "id": "6APrFw7uAsqi0vXaQTtSYi",
-            "name": "Beautiful People Will Ruin Your Life",
-            "type": "album",
-            "uri": "spotify:album:6APrFw7uAsqi0vXaQTtSYi",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/6APrFw7uAsqi0vXaQTtSYi"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b27337e64f029d5f8c136eb5057f",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e0237e64f029d5f8c136eb5057f",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000485137e64f029d5f8c136eb5057f",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 11
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b27337e64f029d5f8c136eb5057f",
-        "spotifyUrl": "https://open.spotify.com/track/2PL9IBLQvJjE7hqCQyJl2g",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "The Wombats",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Ghosts",
         "plays": 62,
-        "spotifyData": {
-          "id": "6npwqC5RmypTPYuNShrQCf",
-          "name": "Ghosts",
-          "type": "track",
-          "uri": "spotify:track:6npwqC5RmypTPYuNShrQCf",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/6npwqC5RmypTPYuNShrQCf"
-          },
-          "popularity": 25,
-          "artists": [
-            {
-              "id": "2JMtxA2S9SNUlqBlkDtXm6",
-              "name": "The National Parks",
-              "type": "artist",
-              "uri": "spotify:artist:2JMtxA2S9SNUlqBlkDtXm6",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2JMtxA2S9SNUlqBlkDtXm6"
-              }
-            }
-          ],
-          "album": {
-            "id": "1l7efW8h9JlIqxC7BNqgYF",
-            "name": "Young",
-            "type": "album",
-            "uri": "spotify:album:1l7efW8h9JlIqxC7BNqgYF",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/1l7efW8h9JlIqxC7BNqgYF"
-            },
-            "images": [
-              {
-                "height": 640,
-                "width": 640,
-                "url": "https://i.scdn.co/image/ab67616d0000b273049be01ed0a5cb2fad9f097a"
-              },
-              {
-                "height": 300,
-                "width": 300,
-                "url": "https://i.scdn.co/image/ab67616d00001e02049be01ed0a5cb2fad9f097a"
-              },
-              {
-                "height": 64,
-                "width": 64,
-                "url": "https://i.scdn.co/image/ab67616d00004851049be01ed0a5cb2fad9f097a"
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 11
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273049be01ed0a5cb2fad9f097a",
-        "spotifyUrl": "https://open.spotify.com/track/6npwqC5RmypTPYuNShrQCf",
-        "artist": "The National Parks",
-        "matchSource": "search_corrected"
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
+        "artist": "YUNGBLUD",
+        "matchSource": "none"
       },
       {
         "name": "Inspired",
         "plays": 60,
-        "spotifyData": {
-          "id": "4aOP9KsWjtVELBAzr7wl8j",
-          "name": "Inspired",
-          "type": "track",
-          "uri": "spotify:track:4aOP9KsWjtVELBAzr7wl8j",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/4aOP9KsWjtVELBAzr7wl8j"
-          },
-          "popularity": 9,
-          "artists": [
-            {
-              "id": "2KOCXIEmkM6K82nL9fovWf",
-              "name": "888",
-              "type": "artist",
-              "uri": "spotify:artist:2KOCXIEmkM6K82nL9fovWf",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2KOCXIEmkM6K82nL9fovWf"
-              }
-            }
-          ],
-          "album": {
-            "id": "7iPCntUumAuEMaLshoAy9R",
-            "name": "Everybody Can't Complain",
-            "type": "album",
-            "uri": "spotify:album:7iPCntUumAuEMaLshoAy9R",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/7iPCntUumAuEMaLshoAy9R"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273dcb9c3aa54ba828bde00b30e",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02dcb9c3aa54ba828bde00b30e",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851dcb9c3aa54ba828bde00b30e",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 7
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273dcb9c3aa54ba828bde00b30e",
-        "spotifyUrl": "https://open.spotify.com/track/4aOP9KsWjtVELBAzr7wl8j",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "888",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Sure and Certain",
         "plays": 59,
-        "spotifyData": {
-          "id": "48nnqkmwmjZ7ohyShSyKAm",
-          "name": "Sure and Certain",
-          "type": "track",
-          "uri": "spotify:track:48nnqkmwmjZ7ohyShSyKAm",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/48nnqkmwmjZ7ohyShSyKAm"
-          },
-          "popularity": 37,
-          "artists": [
-            {
-              "id": "3Ayl7mCk0nScecqOzvNp6s",
-              "name": "Jimmy Eat World",
-              "type": "artist",
-              "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
-              }
-            }
-          ],
-          "album": {
-            "id": "03hVtUfmQW3fhMbYoliIod",
-            "name": "Integrity Blues",
-            "type": "album",
-            "uri": "spotify:album:03hVtUfmQW3fhMbYoliIod",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/03hVtUfmQW3fhMbYoliIod"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b27361cd0a32631e2e0a92a15784",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e0261cd0a32631e2e0a92a15784",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000485161cd0a32631e2e0a92a15784",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 11
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b27361cd0a32631e2e0a92a15784",
-        "spotifyUrl": "https://open.spotify.com/track/48nnqkmwmjZ7ohyShSyKAm",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Jimmy Eat World",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Champion",
         "plays": 59,
-        "spotifyData": {
-          "id": "1DRUwJSt2YOUUEz965OJ66",
-          "name": "Champion",
-          "type": "track",
-          "uri": "spotify:track:1DRUwJSt2YOUUEz965OJ66",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/1DRUwJSt2YOUUEz965OJ66"
-          },
-          "popularity": 54,
-          "artists": [
-            {
-              "id": "4UXqAaa6dQYAk18Lv7PEgX",
-              "name": "Fall Out Boy",
-              "type": "artist",
-              "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
-              }
-            }
-          ],
-          "album": {
-            "id": "16xtTZvPH6PXcwSqYqJHHG",
-            "name": "MANIA",
-            "type": "album",
-            "uri": "spotify:album:16xtTZvPH6PXcwSqYqJHHG",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/16xtTZvPH6PXcwSqYqJHHG"
-            },
-            "images": [
-              {
-                "height": 640,
-                "width": 640,
-                "url": "https://i.scdn.co/image/ab67616d0000b27350bd47cf6d44bddcd546a951"
-              },
-              {
-                "height": 300,
-                "width": 300,
-                "url": "https://i.scdn.co/image/ab67616d00001e0250bd47cf6d44bddcd546a951"
-              },
-              {
-                "height": 64,
-                "width": 64,
-                "url": "https://i.scdn.co/image/ab67616d0000485150bd47cf6d44bddcd546a951"
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 10
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b27350bd47cf6d44bddcd546a951",
-        "spotifyUrl": "https://open.spotify.com/track/1DRUwJSt2YOUUEz965OJ66",
-        "artist": "Fall Out Boy",
-        "matchSource": "search_corrected"
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
+        "artist": "Falling In Reverse",
+        "matchSource": "none"
       },
       {
         "name": "Feel It Still",
         "plays": 58,
-        "spotifyData": {
-          "id": "6QgjcU0zLnzq5OrUoSZ3OK",
-          "name": "Feel It Still",
-          "type": "track",
-          "uri": "spotify:track:6QgjcU0zLnzq5OrUoSZ3OK",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK"
-          },
-          "popularity": 83,
-          "artists": [
-            {
-              "id": "4kI8Ie27vjvonwaB2ePh8T",
-              "name": "Portugal. The Man",
-              "type": "artist",
-              "uri": "spotify:artist:4kI8Ie27vjvonwaB2ePh8T",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4kI8Ie27vjvonwaB2ePh8T"
-              }
-            }
-          ],
-          "album": {
-            "id": "4VzzEviJGYUtAeSsJlI9QB",
-            "name": "Woodstock",
-            "type": "album",
-            "uri": "spotify:album:4VzzEviJGYUtAeSsJlI9QB",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/4VzzEviJGYUtAeSsJlI9QB"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273af52c228c9619ff6298b08cd",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02af52c228c9619ff6298b08cd",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851af52c228c9619ff6298b08cd",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 10
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273af52c228c9619ff6298b08cd",
-        "spotifyUrl": "https://open.spotify.com/track/6QgjcU0zLnzq5OrUoSZ3OK",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Portugal. The Man",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "As Young As We Are",
         "plays": 57,
-        "spotifyData": {
-          "id": "73TscchVguMhSP6r4MdQXw",
-          "name": "As Young As We Are",
-          "type": "track",
-          "uri": "spotify:track:73TscchVguMhSP6r4MdQXw",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/73TscchVguMhSP6r4MdQXw"
-          },
-          "popularity": 23,
-          "artists": [
-            {
-              "id": "46aNfN89JrOQTCy97GoCHa",
-              "name": "Tokio Hotel",
-              "type": "artist",
-              "uri": "spotify:artist:46aNfN89JrOQTCy97GoCHa",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/46aNfN89JrOQTCy97GoCHa"
-              }
-            }
-          ],
-          "album": {
-            "id": "7C6qrrlEbLZBLqJ56TW66A",
-            "name": "Dream Machine",
-            "type": "album",
-            "uri": "spotify:album:7C6qrrlEbLZBLqJ56TW66A",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/7C6qrrlEbLZBLqJ56TW66A"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273493180b7799151c788063bd8",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02493180b7799151c788063bd8",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851493180b7799151c788063bd8",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 10
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273493180b7799151c788063bd8",
-        "spotifyUrl": "https://open.spotify.com/track/73TscchVguMhSP6r4MdQXw",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Tokio Hotel",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "&Run",
         "plays": 55,
-        "spotifyData": {
-          "id": "0w4m3Xp4svlIoyL94Zjlyd",
-          "name": "&Run",
-          "type": "track",
-          "uri": "spotify:track:0w4m3Xp4svlIoyL94Zjlyd",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/track/0w4m3Xp4svlIoyL94Zjlyd"
-          },
-          "popularity": 58,
-          "artists": [
-            {
-              "id": "3DFoVPonoAAt4EZ1FEI8ue",
-              "name": "Sir Sly",
-              "type": "artist",
-              "uri": "spotify:artist:3DFoVPonoAAt4EZ1FEI8ue",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3DFoVPonoAAt4EZ1FEI8ue"
-              }
-            }
-          ],
-          "album": {
-            "id": "5VvCD7gVffRgdPfExxLfF4",
-            "name": "Don't You Worry, Honey",
-            "type": "album",
-            "uri": "spotify:album:5VvCD7gVffRgdPfExxLfF4",
-            "external_urls": {
-              "spotify": "https://open.spotify.com/album/5VvCD7gVffRgdPfExxLfF4"
-            },
-            "images": [
-              {
-                "url": "https://i.scdn.co/image/ab67616d0000b273afffc8aea37762b4daa91e8b",
-                "width": 640,
-                "height": 640
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00001e02afffc8aea37762b4daa91e8b",
-                "width": 300,
-                "height": 300
-              },
-              {
-                "url": "https://i.scdn.co/image/ab67616d00004851afffc8aea37762b4daa91e8b",
-                "width": 64,
-                "height": 64
-              }
-            ],
-            "album_type": "album",
-            "total_tracks": 10
-          }
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273afffc8aea37762b4daa91e8b",
-        "spotifyUrl": "https://open.spotify.com/track/0w4m3Xp4svlIoyL94Zjlyd",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Sir Sly",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       }
     ],
     "albums": [
       {
         "name": "Clancy",
         "plays": 330,
-        "spotifyData": {
-          "id": "1KFWgQTw3EMTQebaaepVBI",
-          "name": "Clancy",
-          "type": "album",
-          "uri": "spotify:album:1KFWgQTw3EMTQebaaepVBI",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 73,
-          "artists": [
-            {
-              "id": "3YQKmKGau1PzlVlkL1iodx",
-              "name": "Twenty One Pilots",
-              "type": "artist",
-              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 13,
-          "label": "Fueled By Ramen",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
-        "spotifyUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Twenty One Pilots",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Trench",
         "plays": 294,
-        "spotifyData": {
-          "id": "621cXqrTSSJi1WqDMSLmbL",
-          "name": "Trench",
-          "type": "album",
-          "uri": "spotify:album:621cXqrTSSJi1WqDMSLmbL",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 73,
-          "artists": [
-            {
-              "id": "3YQKmKGau1PzlVlkL1iodx",
-              "name": "Twenty One Pilots",
-              "type": "artist",
-              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 14,
-          "label": "Fueled By Ramen",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
-        "spotifyUrl": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Twenty One Pilots",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "The Process",
         "plays": 257,
-        "spotifyData": {
-          "id": "2sJMzA3LuOW1u3UEKbF6J3",
-          "name": "The Process",
-          "type": "album",
-          "uri": "spotify:album:2sJMzA3LuOW1u3UEKbF6J3",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/2sJMzA3LuOW1u3UEKbF6J3"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e023e46e233307192920f60f16a",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d000048513e46e233307192920f60f16a",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 40,
-          "artists": [
-            {
-              "id": "3wWtfT7S2uVJJ3hGZlOLkZ",
-              "name": "Judah & the Lion",
-              "type": "artist",
-              "uri": "spotify:artist:3wWtfT7S2uVJJ3hGZlOLkZ",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3wWtfT7S2uVJJ3hGZlOLkZ"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 19,
-          "label": "Cletus the Van Records",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
-        "spotifyUrl": "https://open.spotify.com/album/2sJMzA3LuOW1u3UEKbF6J3",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Judah & the Lion",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "The Surface",
         "plays": 239,
-        "spotifyData": {
-          "id": "5WmbnLQhy8ndx8S7puEolG",
-          "name": "The Surface",
-          "type": "album",
-          "uri": "spotify:album:5WmbnLQhy8ndx8S7puEolG",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e0218e8a8ba2fc255d33d29c25b",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000485118e8a8ba2fc255d33d29c25b",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 58,
-          "artists": [
-            {
-              "id": "6vwjIs0tbIiseJMR3pqwiL",
-              "name": "Beartooth",
-              "type": "artist",
-              "uri": "spotify:artist:6vwjIs0tbIiseJMR3pqwiL",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/6vwjIs0tbIiseJMR3pqwiL"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 11,
-          "label": "Red Bull Records",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
-        "spotifyUrl": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Beartooth",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Wild Spirit",
         "plays": 198,
-        "spotifyData": {
-          "id": "6uRqR9oIdKcdOeW3xNtIUf",
-          "name": "Wild Spirit",
-          "type": "album",
-          "uri": "spotify:album:6uRqR9oIdKcdOeW3xNtIUf",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/6uRqR9oIdKcdOeW3xNtIUf"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02d9fe8ec0932dd802bd93e4ec",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851d9fe8ec0932dd802bd93e4ec",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 22,
-          "artists": [
-            {
-              "id": "2JMtxA2S9SNUlqBlkDtXm6",
-              "name": "The National Parks",
-              "type": "artist",
-              "uri": "spotify:artist:2JMtxA2S9SNUlqBlkDtXm6",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2JMtxA2S9SNUlqBlkDtXm6"
-              }
-            }
-          ],
-          "album_type": "single",
-          "total_tracks": 1,
-          "label": "The National Parks",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
-        "spotifyUrl": "https://open.spotify.com/album/6uRqR9oIdKcdOeW3xNtIUf",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "The National Parks",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Lovely Little Lonely",
         "plays": 189,
-        "spotifyData": {
-          "id": "2jStuYeaRty1cwxjoxfo9K",
-          "name": "Lovely Little Lonely",
-          "type": "album",
-          "uri": "spotify:album:2jStuYeaRty1cwxjoxfo9K",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/2jStuYeaRty1cwxjoxfo9K"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273dc0cb47f6cee440cf6221a76",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02dc0cb47f6cee440cf6221a76",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851dc0cb47f6cee440cf6221a76",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 49,
-          "artists": [
-            {
-              "id": "4o0pNHbyj36LPvukNqEug0",
-              "name": "The Maine",
-              "type": "artist",
-              "uri": "spotify:artist:4o0pNHbyj36LPvukNqEug0",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4o0pNHbyj36LPvukNqEug0"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 12,
-          "label": "8123",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273dc0cb47f6cee440cf6221a76",
-        "spotifyUrl": "https://open.spotify.com/album/2jStuYeaRty1cwxjoxfo9K",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "The Maine",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "So Much (For) Stardust",
         "plays": 177,
-        "spotifyData": {
-          "id": "5mWnMYLnfcnkDOCojHW6O1",
-          "name": "So Much (For) Stardust",
-          "type": "album",
-          "uri": "spotify:album:5mWnMYLnfcnkDOCojHW6O1",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/5mWnMYLnfcnkDOCojHW6O1"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b2739f7c2d95765994f5dddb4cc4",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e029f7c2d95765994f5dddb4cc4",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d000048519f7c2d95765994f5dddb4cc4",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 0,
-          "artists": [
-            {
-              "id": "4UXqAaa6dQYAk18Lv7PEgX",
-              "name": "Fall Out Boy",
-              "type": "artist",
-              "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 13,
-          "label": "Fueled By Ramen",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b2739f7c2d95765994f5dddb4cc4",
-        "spotifyUrl": "https://open.spotify.com/album/5mWnMYLnfcnkDOCojHW6O1",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Fall Out Boy",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Pray for the Wicked",
         "plays": 170,
-        "spotifyData": {
-          "id": "6ApYSpXF8GxZAgBTHDzYge",
-          "name": "Pray for the Wicked",
-          "type": "album",
-          "uri": "spotify:album:6ApYSpXF8GxZAgBTHDzYge",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 70,
-          "artists": [
-            {
-              "id": "20JZFwl6HVl6yg8a4H3ZqK",
-              "name": "Panic! At The Disco",
-              "type": "artist",
-              "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 11,
-          "label": "DCD2 / Fueled By Ramen",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
-        "spotifyUrl": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Panic! At The Disco",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Origins",
         "plays": 153,
-        "spotifyData": {
-          "id": "3JfSxDfmwS5OeHPwLSkrfr",
-          "name": "Origins (Deluxe)",
-          "type": "album",
-          "uri": "spotify:album:3JfSxDfmwS5OeHPwLSkrfr",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/3JfSxDfmwS5OeHPwLSkrfr"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273da6f73a25f4c79d0e6b4a8bd",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851da6f73a25f4c79d0e6b4a8bd",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 77,
-          "artists": [
-            {
-              "id": "53XhwfbYqKCa1cC15pYq2q",
-              "name": "Imagine Dragons",
-              "type": "artist",
-              "uri": "spotify:artist:53XhwfbYqKCa1cC15pYq2q",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 15,
-          "label": "Kid Ina Korner / Interscope",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273da6f73a25f4c79d0e6b4a8bd",
-        "spotifyUrl": "https://open.spotify.com/album/3JfSxDfmwS5OeHPwLSkrfr",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Imagine Dragons",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       },
       {
         "name": "Haven",
         "plays": 137,
-        "spotifyData": {
-          "id": "4aceLbAPwp99QOIA0o7Hfy",
-          "name": "Haven",
-          "type": "album",
-          "uri": "spotify:album:4aceLbAPwp99QOIA0o7Hfy",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/4aceLbAPwp99QOIA0o7Hfy"
-          },
-          "images": [
-            {
-              "url": "https://i.scdn.co/image/ab67616d0000b273862665243d24e63ba02cca43",
-              "height": 640,
-              "width": 640
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00001e02862665243d24e63ba02cca43",
-              "height": 300,
-              "width": 300
-            },
-            {
-              "url": "https://i.scdn.co/image/ab67616d00004851862665243d24e63ba02cca43",
-              "height": 64,
-              "width": 64
-            }
-          ],
-          "popularity": 0,
-          "artists": [
-            {
-              "id": "68EB3QvNdVLkC7SAgDbHIR",
-              "name": "Marianas Trench",
-              "type": "artist",
-              "uri": "spotify:artist:68EB3QvNdVLkC7SAgDbHIR",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/68EB3QvNdVLkC7SAgDbHIR"
-              }
-            }
-          ],
-          "album_type": "album",
-          "total_tracks": 13,
-          "label": "604 Records Inc.",
-          "genres": []
-        },
-        "image": "https://i.scdn.co/image/ab67616d0000b273862665243d24e63ba02cca43",
-        "spotifyUrl": "https://open.spotify.com/album/4aceLbAPwp99QOIA0o7Hfy",
+        "spotifyData": null,
+        "image": null,
+        "spotifyUrl": null,
         "artist": "Marianas Trench",
-        "matchSource": "raw_uri"
+        "matchSource": "none"
       }
     ]
   },
-  "lastUpdated": "2025-09-01T02:08:19.314Z",
+  "lastUpdated": "2025-09-01T02:27:30.679Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
     "rawSpotifyMatching": true,
     "trackMapCount": 7536,
-    "albumMapCount": 5023,
+    "albumMapCount": 5355,
     "yearsProcessed": 10
   }
 }

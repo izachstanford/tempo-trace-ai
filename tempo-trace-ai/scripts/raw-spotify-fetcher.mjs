@@ -205,6 +205,18 @@ function buildRawSpotifyMaps() {
               artist: artistName,
               trackUri: record.spotify_track_uri // We'll use this to get album URI
             });
+          } else {
+            // If we already have this album, check if the artist matches
+            // If not, we might have a different album with the same name
+            const existing = albumMap.get(albumName);
+            if (existing.artist !== artistName) {
+              // Store both versions with artist-specific keys
+              const albumKey = `${albumName}|${artistName}`;
+              albumMap.set(albumKey, {
+                artist: artistName,
+                trackUri: record.spotify_track_uri
+              });
+            }
           }
         }
       });
@@ -330,14 +342,48 @@ async function enrichTracksWithRawData(tracks, trackMap, token) {
 async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
   const enriched = [];
   
-  for (const [albumName, playCount] of albums) {
-    console.log(`💿 Fetching data for album: ${albumName}`);
+  for (const albumItem of albums) {
+    // Handle both old format [name, plays] and new format [name, plays, artist]
+    const albumName = albumItem[0];
+    const playCount = albumItem[1];
+    const expectedArtist = albumItem[2] || null;
+    
+    console.log(`💿 Fetching data for album: ${albumName}${expectedArtist ? ` by ${expectedArtist}` : ''}`);
     try {
       let albumData = null;
       let matchSource = 'none';
       
       // Get exact data from raw Spotify files
-      const albumInfo = albumMap.get(albumName);
+      let albumInfo = null;
+      
+      // First try to find by album|artist combination if we have artist info
+      if (expectedArtist) {
+        const albumKey = `${albumName}|${expectedArtist}`;
+        albumInfo = albumMap.get(albumKey);
+        if (albumInfo) {
+          console.log(`  🎯 Found exact match: ${albumName} by ${expectedArtist}`);
+        }
+      }
+      
+      // If not found, try to find by album name only
+      if (!albumInfo) {
+        albumInfo = albumMap.get(albumName);
+        if (albumInfo) {
+          console.log(`  📝 Found by name only: ${albumName} by ${albumInfo.artist}`);
+        }
+      }
+      
+      // If still not found, try to find by album|artist combination for any artist
+      if (!albumInfo) {
+        for (const [key, value] of albumMap.entries()) {
+          if (key.startsWith(`${albumName}|`)) {
+            albumInfo = value;
+            console.log(`  🔍 Found by partial match: ${albumName} by ${albumInfo.artist}`);
+            break;
+          }
+        }
+      }
+      
       if (albumInfo && albumInfo.trackUri) {
         // First get the track to extract album URI
         const trackData = await getTrackByUri(albumInfo.trackUri, token);
@@ -361,7 +407,7 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
         spotifyData: cleanSpotifyData(albumData, 'album'),
         image: albumData?.images?.[0]?.url || null,
         spotifyUrl: albumData?.external_urls?.spotify || null,
-        artist: albumData?.artists?.[0]?.name || albumInfo?.artist || null,
+        artist: albumData?.artists?.[0]?.name || albumInfo?.artist || expectedArtist || null,
         matchSource: matchSource
       });
     } catch (error) {
@@ -372,7 +418,7 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
         spotifyData: null,
         image: null,
         spotifyUrl: null,
-        artist: albumMap.get(albumName)?.artist || null,
+        artist: albumInfo?.artist || expectedArtist || null,
         matchSource: 'error'
       });
     }
@@ -423,7 +469,19 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       console.log('Top tracks from legacy format:', topTracks.map(t => `${t.name} (${t.playCount} plays)`));
     }
     
-    const topAlbums = lifetimeData.top_lists.top_albums.slice(0, CONFIG.ITEMS_PER_CATEGORY);
+    // Use the new album+artist combinations if available, otherwise fall back to legacy format
+    let topAlbums;
+    if (lifetimeData.top_lists.top_album_artists) {
+      console.log('✅ Using new top_album_artists data');
+      // New format: [album, playCount, artist]
+      topAlbums = lifetimeData.top_lists.top_album_artists.slice(0, CONFIG.ITEMS_PER_CATEGORY);
+      console.log('Top albums from new format:', topAlbums.map(a => `${a[0]} by ${a[2]} (${a[1]} plays)`));
+    } else {
+      console.log('⚠️  Using legacy top_albums data');
+      // Legacy format: [album, playCount]
+      topAlbums = lifetimeData.top_lists.top_albums.slice(0, CONFIG.ITEMS_PER_CATEGORY);
+      console.log('Top albums from legacy format:', topAlbums.map(a => `${a[0]} (${a[1]} plays)`));
+    }
     
     console.log(`\n🏆 Processing Pulse tab data (top ${CONFIG.ITEMS_PER_CATEGORY} each)`);
     console.log(`  📊 Found ${topArtists.length} artists, ${topTracks.length} tracks, ${topAlbums.length} albums`);
@@ -444,7 +502,14 @@ async function enrichAlbumsWithRawData(albums, albumMap, trackMap, token) {
       
       // Get top items for this year (top 10 each)
       const yearArtists = yearData.top_artists.slice(0, 10);
-      const yearAlbums = yearData.top_albums.slice(0, 10);
+      
+      // Handle albums - use top_album_artists if available, otherwise top_albums
+      let yearAlbums;
+      if (yearData.top_album_artists) {
+        yearAlbums = yearData.top_album_artists.slice(0, 10);
+      } else {
+        yearAlbums = yearData.top_albums.slice(0, 10);
+      }
       
       // Handle tracks - use top_track_artists if available, otherwise top_tracks
       let yearTracks;
