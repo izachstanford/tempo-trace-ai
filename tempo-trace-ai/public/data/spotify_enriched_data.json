@@ -15076,11 +15076,51 @@
         {
           "name": "Going, Going, Gone",
           "plays": 60,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "09wq2K4RuML1nNbG93ubT8",
+            "name": "Going, Going, Gone",
+            "type": "album",
+            "uri": "spotify:album:09wq2K4RuML1nNbG93ubT8",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/09wq2K4RuML1nNbG93ubT8"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2735a02b16a6d35cd6ee655302b",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e025a02b16a6d35cd6ee655302b",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048515a02b16a6d35cd6ee655302b",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/61S5H9Lxn1PDUvu1TV0kCX"
+                },
+                "href": "https://api.spotify.com/v1/artists/61S5H9Lxn1PDUvu1TV0kCX",
+                "id": "61S5H9Lxn1PDUvu1TV0kCX",
+                "name": "Knox",
+                "type": "artist",
+                "uri": "spotify:artist:61S5H9Lxn1PDUvu1TV0kCX"
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 16,
+            "genres": []
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2735a02b16a6d35cd6ee655302b",
+          "spotifyUrl": "https://open.spotify.com/album/09wq2K4RuML1nNbG93ubT8",
           "artist": "Knox",
-          "matchSource": "none"
+          "matchSource": "manual_search"
         },
         {
           "name": "Sunrise City",
@@ -15235,20 +15275,100 @@
         {
           "name": "SUPERCHARGED",
           "plays": 40,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "5PDtsevGakWdIRZyeOZ83g",
+            "name": "SUPERCHARGED",
+            "type": "album",
+            "uri": "spotify:album:5PDtsevGakWdIRZyeOZ83g",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5PDtsevGakWdIRZyeOZ83g"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273cb978f4f085587476c600a8b",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02cb978f4f085587476c600a8b",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851cb978f4f085587476c600a8b",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ"
+                },
+                "href": "https://api.spotify.com/v1/artists/5LfGQac0EIXyAN8aUwmNAQ",
+                "id": "5LfGQac0EIXyAN8aUwmNAQ",
+                "name": "The Offspring",
+                "type": "artist",
+                "uri": "spotify:artist:5LfGQac0EIXyAN8aUwmNAQ"
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 10,
+            "genres": []
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273cb978f4f085587476c600a8b",
+          "spotifyUrl": "https://open.spotify.com/album/5PDtsevGakWdIRZyeOZ83g",
           "artist": "The Offspring",
-          "matchSource": "none"
+          "matchSource": "manual_search"
         },
         {
           "name": "Futures",
           "plays": 40,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "58EcHXCjDzwqHiXDo9523u",
+            "name": "Futures (Deluxe Edition)",
+            "type": "album",
+            "uri": "spotify:album:58EcHXCjDzwqHiXDo9523u",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/58EcHXCjDzwqHiXDo9523u"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273f7d76f56dcec489d92bcfffc",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02f7d76f56dcec489d92bcfffc",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851f7d76f56dcec489d92bcfffc",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3Ayl7mCk0nScecqOzvNp6s"
+                },
+                "href": "https://api.spotify.com/v1/artists/3Ayl7mCk0nScecqOzvNp6s",
+                "id": "3Ayl7mCk0nScecqOzvNp6s",
+                "name": "Jimmy Eat World",
+                "type": "artist",
+                "uri": "spotify:artist:3Ayl7mCk0nScecqOzvNp6s"
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 29,
+            "genres": []
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273f7d76f56dcec489d92bcfffc",
+          "spotifyUrl": "https://open.spotify.com/album/58EcHXCjDzwqHiXDo9523u",
           "artist": "Jimmy Eat World",
-          "matchSource": "none"
+          "matchSource": "manual_search"
         },
         {
           "name": "A Kiss for the Whole World",
@@ -15403,7 +15523,7 @@
       ]
     }
   },
-  "lastUpdated": "2025-09-01T03:12:31.806Z",
+  "lastUpdated": "2025-09-01T03:16:07.410Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
