@@ -15756,17 +15756,17 @@
             },
             "images": [
               {
-                "url": "https://i.scdn.co/image/ab67616d0000b273a267afeb7e277fa2c1a4dfd3",
+                "url": "https://i.scdn.co/image/ab67616d0000b273604ca096c9f6e39cf668ca49",
                 "height": 640,
                 "width": 640
               },
               {
-                "url": "https://i.scdn.co/image/ab67616d00001e02a267afeb7e277fa2c1a4dfd3",
+                "url": "https://i.scdn.co/image/ab67616d0000b273604ca096c9f6e39cf668ca49",
                 "height": 300,
                 "width": 300
               },
               {
-                "url": "https://i.scdn.co/image/ab67616d00004851a267afeb7e277fa2c1a4dfd3",
+                "url": "https://i.scdn.co/image/ab67616d0000b273604ca096c9f6e39cf668ca49",
                 "height": 64,
                 "width": 64
               }
@@ -15788,8 +15788,8 @@
             "label": "Slow Talk",
             "genres": []
           },
-          "image": "https://i.scdn.co/image/ab67616d0000b273a267afeb7e277fa2c1a4dfd3",
-          "spotifyUrl": "https://open.spotify.com/album/2xg4RizRNsewZ3ZzYsBmrm",
+          "image": "https://i.scdn.co/image/ab67616d0000b273604ca096c9f6e39cf668ca49",
+          "spotifyUrl": "https://open.spotify.com/artist/2Jsv2nBcTfKpM9dbZcBbk6",
           "artist": "HAPPY LANDING",
           "matchSource": "raw_uri"
         },
