@@ -1147,46 +1147,22 @@
         "name": "The Process",
         "plays": 256,
         "spotifyData": {
-          "id": "0t2Xi8RYL4d7iEuIbUE4zI",
-          "name": "The Process Of Belief",
-          "type": "album",
-          "uri": "spotify:album:0t2Xi8RYL4d7iEuIbUE4zI",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/0t2Xi8RYL4d7iEuIbUE4zI"
-          },
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b27335f1e8c8f603222e0e5505f9",
-              "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://i.scdn.co/image/ab67616d00001e0235f1e8c8f603222e0e5505f9",
-              "width": 300
-            },
-            {
-              "height": 64,
-              "url": "https://i.scdn.co/image/ab67616d0000485135f1e8c8f603222e0e5505f9",
-              "width": 64
-            }
-          ],
+          "name": "The Process",
           "artists": [
             {
-              "id": "2yJwXpWAQOOl5XFzbCxLs9",
-              "name": "Bad Religion",
-              "type": "artist",
-              "uri": "spotify:artist:2yJwXpWAQOOl5XFzbCxLs9",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/2yJwXpWAQOOl5XFzbCxLs9"
-              }
+              "name": "Judah & the Lion"
             }
           ],
-          "album_type": "album",
-          "total_tracks": 14
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
+              "height": 640,
+              "width": 640
+            }
+          ]
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b27335f1e8c8f603222e0e5505f9",
-        "spotifyUrl": "https://open.spotify.com/album/0t2Xi8RYL4d7iEuIbUE4zI",
+        "image": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
+        "spotifyUrl": "https://open.spotify.com/album/2sJMzA3LuOW1u3UEKbF6J3",
         "artist": "Judah & the Lion",
         "matchSource": "raw_uri"
       },
@@ -1194,46 +1170,22 @@
         "name": "The Surface",
         "plays": 236,
         "spotifyData": {
-          "id": "30O32KZJTfrFf7pvu9VpXt",
-          "name": "beneath the surface",
-          "type": "album",
-          "uri": "spotify:album:30O32KZJTfrFf7pvu9VpXt",
-          "external_urls": {
-            "spotify": "https://open.spotify.com/album/30O32KZJTfrFf7pvu9VpXt"
-          },
-          "images": [
-            {
-              "height": 640,
-              "url": "https://i.scdn.co/image/ab67616d0000b273e4d891b3f3864aaa2886bbd2",
-              "width": 640
-            },
-            {
-              "height": 300,
-              "url": "https://i.scdn.co/image/ab67616d00001e02e4d891b3f3864aaa2886bbd2",
-              "width": 300
-            },
-            {
-              "height": 64,
-              "url": "https://i.scdn.co/image/ab67616d00004851e4d891b3f3864aaa2886bbd2",
-              "width": 64
-            }
-          ],
+          "name": "The Surface",
           "artists": [
             {
-              "id": "6pUnNnSTbIgI6sUe9QhF7K",
-              "name": "Fred Russ",
-              "type": "artist",
-              "uri": "spotify:artist:6pUnNnSTbIgI6sUe9QhF7K",
-              "external_urls": {
-                "spotify": "https://open.spotify.com/artist/6pUnNnSTbIgI6sUe9QhF7K"
-              }
+              "name": "Beartooth"
             }
           ],
-          "album_type": "single",
-          "total_tracks": 1
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
+              "height": 640,
+              "width": 640
+            }
+          ]
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b273e4d891b3f3864aaa2886bbd2",
-        "spotifyUrl": "https://open.spotify.com/album/30O32KZJTfrFf7pvu9VpXt",
+        "image": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
+        "spotifyUrl": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG",
         "artist": "Beartooth",
         "matchSource": "raw_uri"
       },

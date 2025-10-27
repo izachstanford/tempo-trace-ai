@@ -36,21 +36,24 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
 
     artistsWithBoth.forEach(artist => {
       const artistData = artistSummary[artist];
-      const artistConcerts = recentConcerts.filter(c => c.artist === artist);
-      const concertYears = new Set(artistConcerts.map(c => new Date(c.date).getFullYear()));
+      const artistConcertsList = recentConcerts.filter(c => c.artist === artist);
+      const artistConcertYears = new Set(artistConcertsList.map(c => new Date(c.date).getFullYear()));
       
       // Use all years for average calculation, but only show recent concert years
       const displayYears = recentConcertYears.length > 0 ? recentConcertYears : allYears;
       
       displayYears.forEach(year => {
         const yearStreams = artistData.yearly_breakdown[year]?.streams || 0;
-        const hasConcert = concertYears.has(parseInt(year));
-        const concertCount = artistConcerts.filter(c => 
+        const hasConcert = artistConcertYears.has(parseInt(year));
+        const concertsInYear = artistConcertsList.filter(c => 
           new Date(c.date).getFullYear() === parseInt(year)
-        ).length;
+        );
+        
+        // Get concert info for this artist-year combination (if any concerts in this year)
+        const concertInfo = concertsInYear.length > 0 ? concertsInYear[0] : null;
         
         // Calculate average streams for non-concert years using ALL historical data
-        const nonConcertYears = allYears.filter(y => !concertYears.has(parseInt(y)));
+        const nonConcertYears = allYears.filter(y => !artistConcertYears.has(parseInt(y)));
         const avgNonConcertStreams = nonConcertYears.length > 0 
           ? nonConcertYears.reduce((sum, y) => sum + (artistData.yearly_breakdown[y]?.streams || 0), 0) / nonConcertYears.length
           : 0;
@@ -66,12 +69,14 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
           }
         }
         
+        
         heatmapData.push({
           artist,
+          concert: concertInfo?.concert || null,
           year,
           streams: yearStreams,
           hasConcert,
-          concertCount,
+          concertCount: concertsInYear.length,
           avgNonConcertStreams,
           correlationStrength,
           increase: percentageChange
@@ -291,6 +296,9 @@ const ConcertStreamingHeatmap = ({ data, concertData, artistSummary }) => {
           }}
         >
           <div className="font-bold mb-1">{tooltipData.data.artist}</div>
+          {tooltipData.data.concert && tooltipData.data.concert !== tooltipData.data.artist && (
+            <div className="text-gray-400 text-xs mb-1">{tooltipData.data.concert}</div>
+          )}
           <div>{tooltipData.data.year}</div>
           <div className="text-cyber-blue">
             {tooltipData.data.hasConcert ? (

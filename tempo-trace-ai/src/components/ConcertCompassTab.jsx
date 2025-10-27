@@ -411,44 +411,11 @@ const ConcertCompassTab = ({ streamingData, concertData, artistSummary }) => {
         </div>
       </div>
 
-      {/* Concert History */}
-      <div className="cyber-card p-6">
-        <h3 className="text-xl font-bold text-cyber-pink mb-6 flex items-center gap-2">
-          <Calendar className="w-5 h-5" />
-          Concert History
-        </h3>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {concertArtists
-            .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .map((concert, index) => (
-              <div key={index} className="bg-gradient-to-br from-card-bg to-border-glow p-4 rounded-lg border border-cyber-pink/20">
-                <div className="flex items-start justify-between mb-2">
-                  <div className="flex-1">
-                    <div className="font-semibold text-white">{concert.artist}</div>
-                    <div className="text-sm text-gray-400">{concert.venue}</div>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Star className="w-4 h-4 text-yellow-400" />
-                    <span className="text-sm text-gray-300">{concert.vibe_rating || 'N/A'}</span>
-                  </div>
-                </div>
-                <div className="text-sm text-cyber-pink">
-                  {format(parseISO(concert.date), 'MMM dd, yyyy')}
-                </div>
-                <div className="text-xs text-gray-500 mt-1 capitalize">
-                  {concert.type}
-                </div>
-              </div>
-            ))}
-        </div>
-      </div>
-
       {/* Stats Summary */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="cyber-card p-6 text-center">
           <div className="text-3xl font-bold text-cyber-blue mb-2">
-            {concertArtists.length}
+            {new Set(concertArtists.map(c => c.date)).size}
           </div>
           <div className="text-gray-400">Concerts Attended</div>
         </div>
@@ -474,6 +441,41 @@ const ConcertCompassTab = ({ streamingData, concertData, artistSummary }) => {
               : 'N/A'}
           </div>
           <div className="text-gray-400">Avg Vibe Rating</div>
+        </div>
+      </div>
+
+      {/* Concert History */}
+      <div className="cyber-card p-6">
+        <h3 className="text-xl font-bold text-cyber-pink mb-6 flex items-center gap-2">
+          <Calendar className="w-5 h-5" />
+          Concert History
+        </h3>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {concertArtists
+            .sort((a, b) => new Date(b.date) - new Date(a.date))
+            .map((concert, index) => (
+              <div key={index} className="bg-gradient-to-br from-card-bg to-border-glow p-4 rounded-lg border border-cyber-pink/20">
+                <div className="flex items-start justify-between mb-2">
+                  <div className="flex-1">
+                    <div className="font-semibold text-white">{concert.artist}</div>
+                    <div className="text-sm text-gray-400">{concert.venue}</div>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <Star className="w-4 h-4 text-yellow-400" />
+                    <span className="text-sm text-gray-300">{concert.vibe_rating || 'N/A'}</span>
+                  </div>
+                </div>
+                <div className="text-sm text-cyber-pink">
+                  {format(parseISO(concert.date), 'MMM dd, yyyy')}
+                </div>
+                {concert.concert && concert.concert !== concert.artist && (
+                  <div className="text-xs text-gray-500 mt-1">
+                    {concert.concert}
+                  </div>
+                )}
+              </div>
+            ))}
         </div>
       </div>
     </div>
