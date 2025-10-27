@@ -119,17 +119,31 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
       </div>
       <div className="space-y-3">
         {items.slice(0, 10).map((item, index) => {
-          // Handle both old format [name, plays] and new format [name, plays, artist]
-          let itemName, playCount, artist;
+          // New format: Artists [name, plays, ms], Albums [name, plays, ms], Track Artists [name, plays, artist, ms]
+          let itemName, playCount, artist, msPlayed;
           if (Array.isArray(item)) {
             itemName = item[0];
             playCount = item[1];
-            artist = item[2] || null;
+            
+            if (type === 'tracks') {
+              // Track Artists format: [name, plays, artist, ms]
+              artist = item[2] || null;
+              msPlayed = item[3] || 0;
+            } else {
+              // Artists/Albums format: [name, plays, ms]
+              artist = null;
+              msPlayed = item[2] || 0;
+            }
           } else {
             itemName = item.name;
             playCount = item.plays;
             artist = item.artist;
+            msPlayed = item.ms_played || 0;
           }
+          
+          // Display hours for artists/albums, plays for tracks
+          const displayValue = type === 'tracks' ? playCount : msPlayed / (1000 * 60 * 60);
+          const displayUnit = type === 'tracks' ? 'plays' : 'hours';
           
           const enrichedItem = getEnrichedItem(itemName, year);
           const hasSpotifyData = enrichedItem && enrichedItem.spotifyUrl;
@@ -183,10 +197,17 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
                 )}
               </div>
               
-              {/* Play Count */}
+              {/* Display Value */}
               <div className="text-right">
-                <p className="text-cyber-blue font-bold text-sm">{playCount.toLocaleString()}</p>
-                <p className="text-xs text-gray-400">plays</p>
+                <p className="text-cyber-blue font-bold text-sm">
+                  {type === 'tracks' 
+                    ? playCount.toLocaleString() 
+                    : displayValue > 1 
+                      ? displayValue.toFixed(1)
+                      : displayValue.toFixed(2)
+                  }
+                </p>
+                <p className="text-xs text-gray-400">{displayUnit}</p>
               </div>
             </ItemComponent>
           );

@@ -1,282 +1,331 @@
 [
   {
+    "date": "2025-10-29",
+    "artist": "The Summer Set",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "The Red Jumpsuit Apparatus",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "The Rocket Summer",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "The Amity Affliction",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Boys Like Girls",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Yellowcard",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Simple Plan",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "We Came As Romans",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "The Maine",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Story of the Year",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "All Time Low",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 3.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "The Used",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Chiodos",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Taking Back Sunday",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Beartooth",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Weezer",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 3.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Blink-182",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-10-29",
+    "artist": "Panic! At The Disco",
+    "concert": "When We Were Young Festival",
+    "venue": "Las Vegas Festival Grounds",
+    "vibe_rating": 5
+  },
+  {
     "date": "2025-09-20",
     "artist": "Twenty One Pilots",
-    "type": "headliner",
+    "concert": "Breach Tour",
     "venue": "Toronto Budweiser Stage",
-    "vibe_rating": null
-  },  
-  {
-    "date": "2025-09-06",
-    "artist": "The Offspring",
-    "type": "headliner",
-    "venue": "Utah First Amphitheatre",
-    "vibe_rating": null
+    "vibe_rating": 5
   },
   {
     "date": "2025-09-06",
     "artist": "Jimmy Eat World",
-    "type": "headliner",
+    "concert": "Supercharged Tour",
     "venue": "Utah First Amphitheatre",
-    "vibe_rating": null
+    "vibe_rating": 4.5
+  },
+  {
+    "date": "2025-09-06",
+    "artist": "The Offspring",
+    "concert": "Supercharged Tour",
+    "venue": "Utah First Amphitheatre",
+    "vibe_rating": 4
   },
   {
     "date": "2025-03-24",
     "artist": "The Rocket Summer",
-    "type": "headliner",
+    "concert": "Hello, Good Friend 20th Anniversary",
     "venue": "Soundwell",
     "vibe_rating": 4.5
   },
   {
     "date": "2025-03-24",
     "artist": "Mae",
-    "type": "opener",
+    "concert": "Hello, Good Friend 20th Anniversary",
     "venue": "Soundwell",
-    "vibe_rating": 3.5
+    "vibe_rating": 4
   },
   {
     "date": "2024-10-15",
     "artist": "Dashboard Confessional",
-    "type": "headliner",
+    "concert": "Fall Tour",
     "venue": "The Complex",
-    "vibe_rating": 4.0
+    "vibe_rating": 4
   },
   {
     "date": "2024-10-15",
     "artist": "Boys Like Girls",
-    "type": "opener",
+    "concert": "Fall Tour",
     "venue": "The Complex",
-    "vibe_rating": 4.0
+    "vibe_rating": 4.5
   },
   {
     "date": "2024-10-08",
     "artist": "Judah & the Lion",
-    "type": "headliner",
+    "concert": "The Process Tour",
     "venue": "The Union",
-    "vibe_rating": 5.0
+    "vibe_rating": 5
   },
   {
     "date": "2024-10-08",
     "artist": "Abe Parker",
-    "type": "opener",
+    "concert": "The Process Tour",
     "venue": "The Union",
     "vibe_rating": 3.5
   },
   {
     "date": "2024-09-24",
     "artist": "The National Parks",
-    "type": "headliner",
+    "concert": "Wild Spirit Tour",
     "venue": "Sandy Amphitheatre",
     "vibe_rating": 4.5
   },
   {
     "date": "2024-08-18",
     "artist": "Twenty One Pilots",
-    "type": "headliner",
+    "concert": "Clancy World Tour",
     "venue": "Delta Center",
-    "vibe_rating": 5.0
+    "vibe_rating": 5
   },
   {
     "date": "2024-07-30",
     "artist": "Thirty Seconds To Mars",
-    "type": "headliner",
+    "concert": "Seasons World Tour",
     "venue": "Utah First Amphitheatre",
     "vibe_rating": 4.5
   },
   {
     "date": "2024-07-30",
     "artist": "AFI",
-    "type": "opener",
+    "concert": "Seasons World Tour",
     "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.0
+    "vibe_rating": 4
   },
   {
     "date": "2024-07-04",
     "artist": "Jonas Brothers",
-    "type": "headliner",
+    "concert": "Stadium of Fire",
     "venue": "BYU",
-    "vibe_rating": 3.0
+    "vibe_rating": 3
   },
   {
     "date": "2024-06-25",
     "artist": "Yellowcard",
-    "type": "headliner",
+    "concert": "Summer Gods Tour",
     "venue": "Utah First Amphitheatre",
-    "vibe_rating": 4.0
+    "vibe_rating": 4
   },
   {
     "date": "2024-06-25",
     "artist": "A R I Z O N A",
-    "type": "opener",
+    "concert": "Summer Gods Tour",
     "venue": "Utah First Amphitheatre",
     "vibe_rating": 3.5
   },
   {
     "date": "2023-11-30",
     "artist": "for KING & COUNTRY",
-    "type": "headliner",
+    "concert": "Drummer Boy Christmas Tour",
     "venue": "Maverik Center",
     "vibe_rating": 4.5
   },
   {
     "date": "2023-06-07",
     "artist": "Fall Out Boy",
-    "type": "headliner",
+    "concert": "So Much For (Tour) Dust",
     "venue": "Utah First Amphitheatre",
-    "vibe_rating": 5.0
+    "vibe_rating": 5
   },
   {
     "date": "2023-06-07",
     "artist": "Bring Me The Horizon",
-    "type": "opener",
+    "concert": "So Much For (Tour) Dust",
     "venue": "Utah First Amphitheatre",
-    "vibe_rating": 5.0
+    "vibe_rating": 4.5
   },
   {
     "date": "2023-03-24",
     "artist": "Taylor Swift",
-    "type": "headliner",
+    "concert": "Eras Tour",
     "venue": "Allegiant Stadium (Vegas)",
     "vibe_rating": 4.5
   },
   {
     "date": "2022-09-20",
     "artist": "Twenty One Pilots",
-    "type": "headliner",
+    "concert": "The ICY Tour",
     "venue": "Delta Center",
-    "vibe_rating": 5.0
+    "vibe_rating": 4.5
   },
   {
     "date": "2018-10-05",
     "artist": "Taylor Swift",
-    "type": "headliner",
+    "concert": "Reputation Stadium Tour",
     "venue": "AT&T Stadium (Dallas)",
-    "vibe_rating": 4.0
-  },
-  {
-    "date": "2018-10-05",
-    "artist": "Charli xcx",
-    "type": "opener",
-    "venue": "AT&T Stadium (Dallas)",
-    "vibe_rating": 3.0
+    "vibe_rating": 4
   },
   {
     "date": "2018-09-22",
     "artist": "Fall Out Boy",
-    "type": "headliner",
+    "concert": "MANIA Tour",
     "venue": "Chesapeake Arena (OKC)",
     "vibe_rating": 4.5
   },
   {
     "date": "2018-09-22",
-    "artist": "Machine Gun Kelly",
-    "type": "opener",
+    "artist": "MGK",
+    "concert": "MANIA Tour",
     "venue": "Chesapeake Arena (OKC)",
-    "vibe_rating": 2.0
+    "vibe_rating": 2.5
   },
   {
     "date": "2017-03-11",
     "artist": "The Unlikely Candidates",
-    "type": "opener",
+    "concert": "Dallas St. Patrick's Day",
     "venue": "Energy Square",
-    "vibe_rating": 4.0
+    "vibe_rating": 5
   },
   {
     "date": "2016-04-08",
     "artist": "The Rocket Summer",
-    "type": "headliner",
+    "concert": "Zoetic Tour",
     "venue": "Barracuda Bar (Austin)",
     "vibe_rating": 4.5
   },
   {
     "date": "2013-11-02",
     "artist": "Twenty One Pilots",
-    "type": "headliner",
+    "concert": "Vessel Tour",
     "venue": "Club Sound (SLC)",
-    "vibe_rating": 5.0
+    "vibe_rating": 5
   },
   {
     "date": "2013-08-20",
     "artist": "Pharrell Williams",
-    "type": "headliner",
+    "concert": "Vegas Club",
     "venue": "Pure Night Club (Vegas)",
-    "vibe_rating": 4.0
+    "vibe_rating": 4
   },
   {
     "date": "2012-09-17",
     "artist": "The Killers",
-    "type": "headliner",
+    "concert": "Battle Born",
     "venue": "UCCU Center",
     "vibe_rating": 3.5
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Angels & Airwaves",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Enter Shikari",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Monty Are I",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Relient K",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Owl City",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "A Day To Remember",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Chiodos",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Anberlin",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Dashboard Confessional",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
-  },
-  {
-    "date": "2010-01-01",
-    "artist": "Silverstein",
-    "type": "headliner",
-    "venue": null,
-    "vibe_rating": null
   }
 ]

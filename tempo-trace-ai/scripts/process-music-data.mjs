@@ -116,9 +116,9 @@ function copyProcessedData() {
 }
 
 function runSpotifyEnrichment() {
-  log('🎵 Running Spotify enrichment...', 'info');
+  log('🎵 Running incremental Spotify enrichment...', 'info');
   
-  const success = runCommand('node scripts/raw-spotify-fetcher.mjs');
+  const success = runCommand('node scripts/incremental-spotify-enricher.mjs');
   
   if (success) {
     log('✅ Spotify enrichment completed', 'success');
