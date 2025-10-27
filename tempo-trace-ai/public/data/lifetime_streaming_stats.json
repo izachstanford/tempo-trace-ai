@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-10-26T20:47:25.454387",
+    "generated_at": "2025-10-26T21:50:38.407222",
     "total_records": 51295,
     "data_sources": [
       "Spotify",
@@ -27,12 +27,12 @@
     "unique_artists": 3974,
     "unique_tracks": 12775,
     "unique_track_artists": 14554,
-    "unique_albums": 4641,
+    "unique_albums": 4566,
     "total_plays": 51295,
     "average_plays_per_artist": 12.907649723200805,
     "average_plays_per_track": 4.0152641878669275,
     "average_plays_per_track_artist": 3.524460629380239,
-    "average_plays_per_album": 11.052574876104288
+    "average_plays_per_album": 11.234121769601401
   },
   "platform_stats": {
     "distribution": {
@@ -1509,7 +1509,7 @@
       ],
       [
         "RUN WILD. LIVE FREE. LOVE STRONG. (Deluxe Anniversary Edition)",
-        68
+        67
       ],
       [
         "Sunrise City",
@@ -1520,12 +1520,12 @@
         64
       ],
       [
-        "Don't You Worry, Honey",
+        "Fireworks & Rollerblades",
         63
       ],
       [
-        "Fireworks & Rollerblades",
-        63
+        "Don't You Worry, Honey",
+        62
       ],
       [
         "The Night Game",
@@ -1564,10 +1564,6 @@
         52
       ],
       [
-        "Woodstock",
-        51
-      ],
-      [
         "Childhood Eyes",
         51
       ],
@@ -1592,7 +1588,11 @@
         48
       ],
       [
-        "Lying",
+        "Woodstock",
+        46
+      ],
+      [
+        "Unleashed",
         46
       ]
     ],
