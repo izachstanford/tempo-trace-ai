@@ -65,17 +65,27 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
       enrichedItems = enrichedData.lifetime?.albums || [];
     }
 
-    // Handle both old format [name, plays] and new format [name, plays, artist]
+    // New format: Artists [name, plays, ms], Albums [name, plays, ms], Track Artists [name, plays, artist, ms]
     const mergedItems = items.map(item => {
-      let name, plays, artist;
+      let name, plays, artist, msPlayed;
       if (Array.isArray(item)) {
         name = item[0];
         plays = item[1];
-        artist = item[2] || null;
+        
+        if (title === 'Top Tracks') {
+          // Track Artists format: [name, plays, artist, ms]
+          artist = item[2] || null;
+          msPlayed = item[3] || 0;
+        } else {
+          // Artists/Albums format: [name, plays, ms]
+          artist = null;
+          msPlayed = item[2] || 0;
+        }
       } else {
         name = item.name;
         plays = item.plays;
         artist = item.artist;
+        msPlayed = item.ms_played || 0;
       }
       
       const enriched = enrichedItems.find(enrichedItem => enrichedItem.name === name);
@@ -106,11 +116,12 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
           plays,
           artist: finalArtist,
           image: imageUrl,
-          spotifyUrl: enriched.spotifyUrl
+          spotifyUrl: enriched.spotifyUrl,
+          msPlayed
         };
       }
       
-      return { name, plays, artist, image: null, spotifyUrl: null };
+      return { name, plays, artist, image: null, spotifyUrl: null, msPlayed };
     });
 
     return mergedItems;
@@ -221,10 +232,24 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
                 )}
               </div>
 
-              {/* Play Count */}
+              {/* Display Value */}
               <div className="text-right">
-                <p className="text-cyber-blue font-bold text-sm">{item.plays.toLocaleString()}</p>
-                <p className="text-xs text-gray-400">plays</p>
+                {title === 'Top Tracks' ? (
+                  <>
+                    <p className="text-cyber-blue font-bold text-sm">{item.plays.toLocaleString()}</p>
+                    <p className="text-xs text-gray-400">plays</p>
+                  </>
+                ) : (
+                  <>
+                    <p className="text-cyber-blue font-bold text-sm">
+                      {item.msPlayed / (1000 * 60 * 60) > 1 
+                        ? (item.msPlayed / (1000 * 60 * 60)).toFixed(1)
+                        : (item.msPlayed / (1000 * 60 * 60)).toFixed(2)
+                      }
+                    </p>
+                    <p className="text-xs text-gray-400">hours</p>
+                  </>
+                )}
               </div>
             </ItemWrapper>
           );

@@ -122,7 +122,7 @@ const StatCard = ({ icon: Icon, label, value, subtitle, gradient = false }) => (
 
 const ArtistStatsTab = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [sortBy, setSortBy] = useState('streams');
+  const [sortBy, setSortBy] = useState('hours'); // Default to sorting by hours
   const [sortOrder, setSortOrder] = useState('desc');
   const [filterMinStreams, setFilterMinStreams] = useState(0);
   const [expandedArtist, setExpandedArtist] = useState(null);
@@ -234,8 +234,8 @@ const ArtistStatsTab = ({ data }) => {
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
           >
-            <option value="streams">Sort by Streams</option>
             <option value="hours">Sort by Hours</option>
+            <option value="streams">Sort by Streams</option>
             <option value="tracks">Sort by Tracks</option>
             <option value="years">Sort by Years Active</option>
             <option value="alphabetical">Sort Alphabetically</option>

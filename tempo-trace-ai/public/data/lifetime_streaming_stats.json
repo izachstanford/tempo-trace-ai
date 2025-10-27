@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-10-26T21:50:38.407222",
+    "generated_at": "2025-10-26T22:11:54.273704",
     "total_records": 51295,
     "data_sources": [
       "Spotify",
@@ -741,859 +741,1059 @@
     "top_artists": [
       [
         "Twenty One Pilots",
-        1513
+        1513,
+        299044652
       ],
       [
         "Fall Out Boy",
-        1490
-      ],
-      [
-        "Judah & the Lion",
-        856
+        1490,
+        295980666
       ],
       [
         "Jimmy Eat World",
-        824
+        824,
+        186915044
+      ],
+      [
+        "Judah & the Lion",
+        856,
+        171017008
       ],
       [
         "Anberlin",
-        773
-      ],
-      [
-        "Panic! At The Disco",
-        721
-      ],
-      [
-        "OneRepublic",
-        710
-      ],
-      [
-        "Imagine Dragons",
-        705
-      ],
-      [
-        "The National Parks",
-        705
+        773,
+        162737787
       ],
       [
         "Marianas Trench",
-        680
+        680,
+        150759315
+      ],
+      [
+        "OneRepublic",
+        710,
+        138876949
+      ],
+      [
+        "The National Parks",
+        705,
+        135619756
+      ],
+      [
+        "Imagine Dragons",
+        705,
+        133180690
       ],
       [
         "Yellowcard",
-        641
+        641,
+        132168356
       ],
       [
-        "for KING & COUNTRY",
-        614
-      ],
-      [
-        "Bastille",
-        575
+        "Panic! At The Disco",
+        721,
+        123034400
       ],
       [
         "The Rocket Summer",
-        573
+        573,
+        115414076
       ],
       [
-        "Enter Shikari",
-        552
+        "for KING & COUNTRY",
+        614,
+        114693751
       ],
       [
-        "Skillet",
-        527
-      ],
-      [
-        "The Maine",
-        483
-      ],
-      [
-        "The Chainsmokers",
-        477
+        "Bastille",
+        575,
+        110012949
       ],
       [
         "Angels & Airwaves",
-        414
+        414,
+        104650486
       ],
       [
-        "Bleachers",
-        409
+        "Skillet",
+        527,
+        103327214
+      ],
+      [
+        "Enter Shikari",
+        552,
+        94470657
+      ],
+      [
+        "The Chainsmokers",
+        477,
+        93408209
       ],
       [
         "Tokio Hotel",
-        384
+        384,
+        84699041
       ],
       [
-        "Thousand Foot Krutch",
-        381
+        "The Maine",
+        483,
+        80502462
       ],
       [
-        "Good Charlotte",
-        378
+        "Bleachers",
+        409,
+        79496153
       ],
       [
         "Taking Back Sunday",
-        373
+        373,
+        77930630
       ],
       [
-        "Taylor Swift",
-        352
+        "Thousand Foot Krutch",
+        381,
+        76260636
       ],
       [
         "Coldplay",
-        344
+        344,
+        71854365
       ],
       [
-        "Capital Kings",
-        328
+        "Good Charlotte",
+        378,
+        71631592
+      ],
+      [
+        "Taylor Swift",
+        352,
+        70490094
       ],
       [
         "Andrew McMahon in the Wilderness",
-        327
-      ],
-      [
-        "blink-182",
-        327
-      ],
-      [
-        "NEEDTOBREATHE",
-        314
+        327,
+        69582998
       ],
       [
         "The Classic Crime",
-        310
+        310,
+        69164510
       ],
       [
         "The Killers",
-        306
+        306,
+        68931995
       ],
       [
-        "Ed Sheeran",
-        298
-      ],
-      [
-        "Beartooth",
-        295
-      ],
-      [
-        "Maroon 5",
-        294
-      ],
-      [
-        "The Wombats",
-        288
+        "NEEDTOBREATHE",
+        314,
+        63846436
       ],
       [
         "Written by Wolves",
-        282
+        282,
+        61480325
       ],
       [
-        "Smash Into Pieces",
-        279
+        "Ed Sheeran",
+        298,
+        61434348
       ],
       [
-        "Switchfoot",
-        267
-      ],
-      [
-        "The Summer Set",
-        264
-      ],
-      [
-        "Thirty Seconds To Mars",
-        259
+        "Capital Kings",
+        328,
+        58112283
       ],
       [
         "Owl City",
-        255
+        255,
+        57323601
+      ],
+      [
+        "blink-182",
+        327,
+        57214201
+      ],
+      [
+        "Beartooth",
+        295,
+        55902618
+      ],
+      [
+        "Maroon 5",
+        294,
+        55322206
+      ],
+      [
+        "Switchfoot",
+        267,
+        54368696
+      ],
+      [
+        "The Wombats",
+        288,
+        53399800
+      ],
+      [
+        "The Summer Set",
+        264,
+        49852246
+      ],
+      [
+        "Smash Into Pieces",
+        279,
+        49298284
       ],
       [
         "Emarosa",
-        245
-      ],
-      [
-        "Foreign Air",
-        241
+        245,
+        47724558
       ],
       [
         "AJR",
-        233
-      ],
-      [
-        "Hawk Nelson",
-        229
-      ],
-      [
-        "Portugal. The Man",
-        228
-      ],
-      [
-        "The Score",
-        223
+        233,
+        47189134
       ],
       [
         "NF",
-        222
+        222,
+        46305514
       ],
       [
         "Colton Dixon",
-        220
+        220,
+        46025718
+      ],
+      [
+        "Portugal. The Man",
+        228,
+        45623448
+      ],
+      [
+        "The Afters",
+        217,
+        44790235
+      ],
+      [
+        "Power Music Workout",
+        205,
+        44459324
+      ],
+      [
+        "Thirty Seconds To Mars",
+        259,
+        43920203
+      ],
+      [
+        "Hawk Nelson",
+        229,
+        43670642
       ]
     ],
     "top_tracks": [
       [
         "High Hopes",
-        89
+        89,
+        13255402
       ],
       [
         "Ghosts",
-        75
+        75,
+        19392996
       ],
       [
         "Chlorine",
-        73
+        73,
+        16075072
       ],
       [
         "Champion",
-        72
+        72,
+        14555052
       ],
       [
         "Waking Up",
-        69
+        69,
+        12086150
       ],
       [
         "Turn",
-        69
+        69,
+        10147916
       ],
       [
         "Anything",
-        66
+        66,
+        13921963
       ],
       [
         "Walls",
-        66
+        66,
+        12490206
       ],
       [
         "Ghost",
-        66
+        66,
+        11228373
       ],
       [
         "Breathe",
-        65
+        65,
+        13060535
       ],
       [
         "Victorious",
-        65
+        65,
+        10871551
       ],
       [
         "Tidal Wave",
-        63
+        63,
+        10962739
       ],
       [
         "Inspired",
-        62
+        62,
+        10296767
       ],
       [
         "Automatic",
-        61
+        61,
+        10625690
       ],
       [
         "Believer",
-        60
+        60,
+        11019530
       ],
       [
         "Sure and Certain",
-        60
+        60,
+        12020619
       ],
       [
         "Levitate",
-        60
+        60,
+        8443333
       ],
       [
         "Heaven",
-        58
+        58,
+        12147813
       ],
       [
         "Feel It Still",
-        58
+        58,
+        8383730
       ],
       [
         "As Young As We Are",
-        57
+        57,
+        13473671
       ],
       [
         "Boomerang",
-        56
+        56,
+        10281721
       ],
       [
         "Cautious",
-        56
+        56,
+        10452161
       ],
       [
         "Run",
-        55
+        55,
+        9553943
       ],
       [
         "Down",
-        55
+        55,
+        9803647
       ],
       [
         "&Run",
-        55
+        55,
+        9276639
       ],
       [
         "Black Butterflies and Déjà Vu",
-        55
+        55,
+        9644788
       ],
       [
         "Wherever I Go",
-        54
+        54,
+        10252551
       ],
       [
         "Hallelujah",
-        53
+        53,
+        9355121
       ],
       [
         "Stay",
-        53
+        53,
+        10584253
       ],
       [
         "Paris",
-        52
+        52,
+        10941612
       ],
       [
         "Quarter Past Midnight",
-        52
+        52,
+        6849022
       ],
       [
         "Burn It Down",
-        51
+        51,
+        9740729
       ],
       [
         "The Last of the Real Ones",
-        51
+        51,
+        12298380
       ],
       [
         "Lying",
-        51
+        51,
+        7516594
       ],
       [
         "Dragon (feat. Skybourne)",
-        51
+        51,
+        9791935
       ],
       [
         "Shape of You",
-        50
+        50,
+        12191597
       ],
       [
         "Electrified",
-        50
+        50,
+        7110461
       ],
       [
         "Better",
-        48
+        48,
+        9249246
       ],
       [
         "At the Heart",
-        48
+        48,
+        8656615
       ],
       [
         "Legends",
-        47
+        47,
+        9004328
       ],
       [
         "Whatever It Takes",
-        47
+        47,
+        8797991
       ],
       [
         "The Sound of Reverie (Remix)",
-        47
+        47,
+        8273951
       ],
       [
         "Vignette",
-        47
+        47,
+        8021217
       ],
       [
         "Feel Invincible",
-        46
+        46,
+        9627697
       ],
       [
         "Glimmer",
-        46
+        46,
+        9609306
       ],
       [
         "Forever",
-        45
+        45,
+        6956576
       ],
       [
         "Rise Up",
-        45
+        45,
+        11831844
       ],
       [
         "joy.",
-        45
+        45,
+        6595705
       ],
       [
         "American Nights",
-        45
+        45,
+        5280108
       ],
       [
         "Same Mistakes",
-        45
+        45,
+        7251226
       ]
     ],
     "top_track_artists": [
       [
         "High Hopes",
         86,
-        "Panic! At The Disco"
+        "Panic! At The Disco",
+        12939035
       ],
       [
         "Chlorine",
         72,
-        "Twenty One Pilots"
+        "Twenty One Pilots",
+        16072577
       ],
       [
         "Turn",
         63,
-        "The Wombats"
+        "The Wombats",
+        9202457
       ],
       [
         "Ghosts",
         63,
-        "The National Parks"
+        "The National Parks",
+        17037471
       ],
       [
         "Inspired",
         61,
-        "888"
+        "888",
+        10230892
       ],
       [
         "Sure and Certain",
         60,
-        "Jimmy Eat World"
+        "Jimmy Eat World",
+        12020619
       ],
       [
         "Champion",
         59,
-        "Fall Out Boy"
+        "Fall Out Boy",
+        11731709
       ],
       [
         "Feel It Still",
         58,
-        "Portugal. The Man"
+        "Portugal. The Man",
+        8383730
       ],
       [
         "As Young As We Are",
         57,
-        "Tokio Hotel"
+        "Tokio Hotel",
+        13473671
       ],
       [
         "Cautious",
         56,
-        "Emarosa"
+        "Emarosa",
+        10452161
       ],
       [
         "&Run",
         55,
-        "Sir Sly"
+        "Sir Sly",
+        9276639
       ],
       [
         "Black Butterflies and Déjà Vu",
         55,
-        "The Maine"
+        "The Maine",
+        9644788
       ],
       [
         "Quarter Past Midnight",
         52,
-        "Bastille"
+        "Bastille",
+        6849022
       ],
       [
         "Victorious",
         51,
-        "Panic! At The Disco"
+        "Panic! At The Disco",
+        8080181
       ],
       [
         "The Last of the Real Ones",
         51,
-        "Fall Out Boy"
+        "Fall Out Boy",
+        12298380
       ],
       [
         "Lying",
         51,
-        "Foreign Air"
+        "Foreign Air",
+        7516594
       ],
       [
         "Dragon (feat. Skybourne)",
         51,
-        "Built By Titan"
+        "Built By Titan",
+        9791935
       ],
       [
         "Shape of You",
         50,
-        "Ed Sheeran"
+        "Ed Sheeran",
+        12191597
       ],
       [
         "Electrified",
         50,
-        "Just Loud"
+        "Just Loud",
+        7110461
       ],
       [
         "Paris",
         49,
-        "The Chainsmokers"
+        "The Chainsmokers",
+        10408094
       ],
       [
         "Wherever I Go",
         48,
-        "OneRepublic"
+        "OneRepublic",
+        9280128
       ],
       [
         "At the Heart",
         48,
-        "The National Parks"
+        "The National Parks",
+        8656615
       ],
       [
         "Whatever It Takes",
         47,
-        "Imagine Dragons"
+        "Imagine Dragons",
+        8797991
       ],
       [
         "The Sound of Reverie (Remix)",
         47,
-        "The Maine"
+        "The Maine",
+        8273951
       ],
       [
         "Walls",
         47,
-        "Stokeswood"
+        "Stokeswood",
+        8024830
       ],
       [
         "Vignette",
         47,
-        "Twenty One Pilots"
+        "Twenty One Pilots",
+        8021217
       ],
       [
         "Feel Invincible",
         46,
-        "Skillet"
+        "Skillet",
+        9627697
       ],
       [
         "Glimmer",
         46,
-        "Marianas Trench"
+        "Marianas Trench",
+        9609306
       ],
       [
         "joy.",
         45,
-        "for KING & COUNTRY"
+        "for KING & COUNTRY",
+        6595705
       ],
       [
         "American Nights",
         45,
-        "The Night Game"
+        "The Night Game",
+        5280108
       ],
       [
         "Same Mistakes",
         45,
-        "FUTURE FEATS"
+        "FUTURE FEATS",
+        7251226
       ],
       [
         "Cold Rain",
         45,
-        "Fitness"
+        "Fitness",
+        6357896
       ],
       [
         "Haven't Had Enough",
         45,
-        "Marianas Trench"
+        "Marianas Trench",
+        9007409
       ],
       [
         "Love From The Other Side",
         45,
-        "Fall Out Boy"
+        "Fall Out Boy",
+        11830901
       ],
       [
         "Can't Deny My Love",
         43,
-        "Brandon Flowers"
+        "Brandon Flowers",
+        9329736
       ],
       [
         "Burn It Down",
         43,
-        "Fitz and The Tantrums"
+        "Fitz and The Tantrums",
+        8212999
       ],
       [
         "HOLD ME TIGHT OR DON’T",
         43,
-        "Fall Out Boy"
+        "Fall Out Boy",
+        8468752
       ],
       [
         "Ghost",
         43,
-        "Jacob Kulick"
+        "Jacob Kulick",
+        5851140
       ],
       [
         "My Blood",
         43,
-        "Twenty One Pilots"
+        "Twenty One Pilots",
+        8274655
       ],
       [
         "Might Love Myself",
         43,
-        "Beartooth"
+        "Beartooth",
+        8161810
       ],
       [
         "Automatic",
         43,
-        "half•alive"
+        "half•alive",
+        7079817
       ],
       [
         "Rhythm of Your Heart",
         42,
-        "Marianas Trench"
+        "Marianas Trench",
+        8259076
       ],
       [
         "Navigating",
         41,
-        "Twenty One Pilots"
+        "Twenty One Pilots",
+        7578608
       ],
       [
         "Someone Anyone",
         40,
-        "Anberlin"
+        "Anberlin",
+        7967733
       ],
       [
         "Tidal Wave",
         40,
-        "Taking Back Sunday"
+        "Taking Back Sunday",
+        6222693
       ],
       [
         "Get Right",
         40,
-        "Jimmy Eat World"
+        "Jimmy Eat World",
+        6830294
       ],
       [
         "Your Love Could Start a War",
         40,
-        "The Unlikely Candidates"
+        "The Unlikely Candidates",
+        8126081
       ],
       [
         "Legends",
         39,
-        "Sleeping With Sirens"
+        "Sleeping With Sirens",
+        7776936
       ],
       [
         "The Sights",
         39,
-        "Enter Shikari"
+        "Enter Shikari",
+        7613720
       ],
       [
         "Fireflies",
         39,
-        "Owl City"
+        "Owl City",
+        8471497
       ]
     ],
     "top_albums": [
       [
         "Clancy",
-        332
+        332,
+        64466949
       ],
       [
         "Trench",
-        303
-      ],
-      [
-        "The Process",
-        257
+        303,
+        56850470
       ],
       [
         "The Surface",
-        247
+        247,
+        46077415
       ],
       [
-        "Wild Spirit",
-        199
-      ],
-      [
-        "Lovely Little Lonely",
-        191
+        "The Process",
+        257,
+        43506907
       ],
       [
         "So Much (For) Stardust",
-        177
+        177,
+        36614206
       ],
       [
-        "Pray for the Wicked",
-        171
-      ],
-      [
-        "Origins",
-        153
+        "Wild Spirit",
+        199,
+        33970549
       ],
       [
         "Haven",
-        152
+        152,
+        29763488
+      ],
+      [
+        "Lovely Little Lonely",
+        191,
+        28296165
       ],
       [
         "Breach",
-        146
+        146,
+        28031189
       ],
       [
-        "Persona",
-        129
+        "Origins",
+        153,
+        25412644
       ],
       [
-        "Burn The Ships",
-        110
+        "Pray for the Wicked",
+        171,
+        24316940
       ],
       [
         "Secrets",
-        103
+        103,
+        21434507
+      ],
+      [
+        "Persona",
+        129,
+        20370050
+      ],
+      [
+        "Burn The Ships",
+        110,
+        18788573
       ],
       [
         "The Hart",
-        103
-      ],
-      [
-        "MANIA",
-        101
+        103,
+        18297613
       ],
       [
         "It’s The End Of The World But It’s A Beautiful Day",
-        100
-      ],
-      [
-        "Everybody Can't Complain",
-        92
-      ],
-      [
-        "Vessel",
-        87
-      ],
-      [
-        "A Kiss for the Whole World",
-        86
+        100,
+        16566344
       ],
       [
         "American Beauty/American Psycho",
-        84
-      ],
-      [
-        "Beautiful People Will Ruin Your Life",
-        80
-      ],
-      [
-        "Infinity On High",
-        79
-      ],
-      [
-        "Waking Up",
-        77
-      ],
-      [
-        "Nothing is True & Everything is Possible",
-        76
-      ],
-      [
-        "A Call To The Void",
-        76
-      ],
-      [
-        "ONE MORE TIME...",
-        71
+        84,
+        14970678
       ],
       [
         "Moon Music",
-        70
+        70,
+        14445975
       ],
       [
-        "RUN WILD. LIVE FREE. LOVE STRONG. (Deluxe Anniversary Edition)",
-        67
+        "Beautiful People Will Ruin Your Life",
+        80,
+        14188085
       ],
       [
-        "Sunrise City",
-        67
+        "MANIA",
+        101,
+        14022002
+      ],
+      [
+        "A Kiss for the Whole World",
+        86,
+        13886792
       ],
       [
         "Phantoms",
-        64
+        64,
+        13463725
       ],
       [
-        "Fireworks & Rollerblades",
-        63
+        "RUN WILD. LIVE FREE. LOVE STRONG. (Deluxe Anniversary Edition)",
+        67,
+        12961344
       ],
       [
-        "Don't You Worry, Honey",
-        62
+        "Vessel",
+        87,
+        12760341
       ],
       [
-        "The Night Game",
-        61
+        "Waking Up",
+        77,
+        12701498
       ],
       [
-        "Miracles",
-        60
+        "A Call To The Void",
+        76,
+        12549782
       ],
       [
-        "Going, Going, Gone",
-        60
+        "Everybody Can't Complain",
+        92,
+        12179300
       ],
       [
-        "Ocean Avenue",
-        59
-      ],
-      [
-        "SUNDAY AT FOXWOODS",
-        59
+        "Infinity On High",
+        79,
+        12134933
       ],
       [
         "I Love You So F***ing Much",
-        58
+        58,
+        11935107
       ],
       [
-        "AMERICA",
-        57
+        "Ocean Avenue",
+        59,
+        11887053
       ],
       [
-        "Sting",
-        54
+        "ONE MORE TIME...",
+        71,
+        11715037
       ],
       [
-        "Futures",
-        52
+        "Nothing is True & Everything is Possible",
+        76,
+        11686627
       ],
       [
-        "Childhood Eyes",
-        51
-      ],
-      [
-        "Karate",
-        50
-      ],
-      [
-        "Greatest Hits",
-        49
+        "Fireworks & Rollerblades",
+        63,
+        10936770
       ],
       [
         "Vega",
-        49
+        49,
+        10918680
       ],
       [
-        "NATIVE TONGUE",
-        48
+        "Childhood Eyes",
+        51,
+        10455723
       ],
       [
-        "Ghost Code",
-        48
+        "SUNDAY AT FOXWOODS",
+        59,
+        10350645
+      ],
+      [
+        "Convinced",
+        44,
+        10334448
+      ],
+      [
+        "Sunrise City",
+        67,
+        10202892
+      ],
+      [
+        "The Night Game",
+        61,
+        10072916
+      ],
+      [
+        "Sting",
+        54,
+        10030357
+      ],
+      [
+        "Going, Going, Gone",
+        60,
+        9585698
       ],
       [
         "Woodstock",
-        46
+        46,
+        9579588
       ],
       [
-        "Unleashed",
-        46
+        "Futures",
+        52,
+        9553365
+      ],
+      [
+        "Blurryface",
+        45,
+        9506448
+      ],
+      [
+        "Lift A Sail",
+        46,
+        9492400
+      ],
+      [
+        "Miracles",
+        60,
+        9360341
+      ],
+      [
+        "Golden",
+        45,
+        9291780
+      ],
+      [
+        "Don't You Worry, Honey",
+        62,
+        9119413
+      ],
+      [
+        "NATIVE TONGUE",
+        48,
+        9096354
+      ],
+      [
+        "Autumn Variations",
+        41,
+        8860200
       ]
     ],
     "top_platforms": [

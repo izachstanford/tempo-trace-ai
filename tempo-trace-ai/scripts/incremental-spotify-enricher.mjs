@@ -177,10 +177,10 @@ function findMissingArtists(currentEnriched, processedData) {
   const missing = [];
   const enrichedMap = new Map(currentEnriched.map(item => [item.name.toLowerCase(), item]));
   
-  processedData.forEach(([name, plays]) => {
+  processedData.forEach(([name, plays, msPlayed]) => {
     const existing = enrichedMap.get(name.toLowerCase());
     if (!existing || !existing.image || !existing.spotifyUrl) {
-      missing.push({ name, plays });
+      missing.push({ name, plays, msPlayed });
     }
   });
   
@@ -196,11 +196,11 @@ function findMissingTracks(currentEnriched, processedData) {
     enrichedMap.set(key, item);
   });
   
-  processedData.forEach(([name, plays, artist]) => {
+  processedData.forEach(([name, plays, artist, msPlayed]) => {
     const key = `${name.toLowerCase()}|${artist?.toLowerCase() || ''}`;
     const existing = enrichedMap.get(key);
     if (!existing || !existing.image || !existing.spotifyUrl) {
-      missing.push({ name, plays, artist });
+      missing.push({ name, plays, artist, msPlayed });
     }
   });
   
@@ -212,20 +212,20 @@ function findMissingAlbums(currentEnriched, processedData) {
   const enrichedMap = new Map();
   
   currentEnriched.forEach(item => {
-    const key = `${item.name.toLowerCase()}|${item.artist?.toLowerCase() || ''}`;
+    const key = item.name.toLowerCase();
     enrichedMap.set(key, item);
   });
   
   processedData.forEach(item => {
-    // Handle both [name, plays, artist] and [name, plays] formats
+    // Format is [name, plays, ms_played]
     const name = item[0];
     const plays = item[1];
-    const artist = item.length > 2 ? item[2] : null;
+    const msPlayed = item[2];
     
-    const key = `${name.toLowerCase()}|${artist?.toLowerCase() || ''}`;
+    const key = name.toLowerCase();
     const existing = enrichedMap.get(key);
     if (!existing || !existing.image || !existing.spotifyUrl) {
-      missing.push({ name, plays, artist });
+      missing.push({ name, plays, msPlayed });
     }
   });
   
@@ -275,7 +275,7 @@ async function main() {
           if (existing) {
             Object.assign(existing, enriched);
           } else {
-            enrichedData.lifetime.artists.push({ name: item.name, plays: item.plays, ...enriched, artist: item.name });
+            enrichedData.lifetime.artists.push({ name: item.name, plays: item.plays, msPlayed: item.msPlayed, ...enriched, artist: item.name });
           }
           totalEnriched++;
         } else {

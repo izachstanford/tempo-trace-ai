@@ -418,6 +418,50 @@
         "image": "https://i.scdn.co/image/ab6761610000e5ebe50a5e102d301a9ea0b8e330",
         "spotifyUrl": "https://open.spotify.com/artist/68EB3QvNdVLkC7SAgDbHIR",
         "artist": "Marianas Trench"
+      },
+      {
+        "name": "Yellowcard",
+        "plays": 641,
+        "msPlayed": 132168356,
+        "spotifyData": {
+          "id": "3zxKH0qp3nBCuPZCZT5Vaf",
+          "name": "Yellowcard",
+          "type": "artist",
+          "uri": "spotify:artist:3zxKH0qp3nBCuPZCZT5Vaf",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/artist/3zxKH0qp3nBCuPZCZT5Vaf"
+          },
+          "images": [
+            {
+              "url": "https://i.scdn.co/image/ab6761610000e5eb6b950048b4781d0e95bd9c2c",
+              "height": 640,
+              "width": 640
+            },
+            {
+              "url": "https://i.scdn.co/image/ab676161000051746b950048b4781d0e95bd9c2c",
+              "height": 320,
+              "width": 320
+            },
+            {
+              "url": "https://i.scdn.co/image/ab6761610000f1786b950048b4781d0e95bd9c2c",
+              "height": 160,
+              "width": 160
+            }
+          ],
+          "popularity": 64,
+          "genres": [
+            "pop punk",
+            "punk",
+            "emo"
+          ],
+          "followers": {
+            "href": null,
+            "total": 1651368
+          }
+        },
+        "image": "https://i.scdn.co/image/ab6761610000e5eb6b950048b4781d0e95bd9c2c",
+        "spotifyUrl": "https://open.spotify.com/artist/3zxKH0qp3nBCuPZCZT5Vaf",
+        "artist": "Yellowcard"
       }
     ],
     "tracks": [
@@ -1469,6 +1513,51 @@
         "spotifyUrl": "https://open.spotify.com/album/6d9dALaOwguRopn9otGiNc",
         "artist": "Marianas Trench",
         "matchSource": "raw_uri"
+      },
+      {
+        "name": "Breach",
+        "plays": 146,
+        "spotifyData": {
+          "id": "1El3k8dU3sKyoGUeuyrolH",
+          "name": "Breach",
+          "type": "album",
+          "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+          },
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0278cba6a1edfe4235def632ed",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485178cba6a1edfe4235def632ed",
+              "width": 64
+            }
+          ],
+          "artists": [
+            {
+              "id": "3YQKmKGau1PzlVlkL1iodx",
+              "name": "Twenty One Pilots",
+              "type": "artist",
+              "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+              }
+            }
+          ],
+          "album_type": "album",
+          "total_tracks": 13
+        },
+        "image": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+        "spotifyUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
       }
     ]
   },
@@ -3414,6 +3503,89 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebf8349dfb619a7f842242de77",
           "spotifyUrl": "https://open.spotify.com/artist/04gDigrS5kc9YWfZHwBETP",
           "artist": "Maroon 5"
+        },
+        {
+          "name": "The Classic Crime",
+          "plays": 99,
+          "spotifyData": {
+            "id": "4Y2ImQoh83EyhkbaJXmJr1",
+            "name": "The Classic Crime",
+            "type": "artist",
+            "uri": "spotify:artist:4Y2ImQoh83EyhkbaJXmJr1",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4Y2ImQoh83EyhkbaJXmJr1"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebd4a5c1e7ec2f48fab7b94e79",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174d4a5c1e7ec2f48fab7b94e79",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178d4a5c1e7ec2f48fab7b94e79",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 33,
+            "genres": [
+              "christian rock",
+              "christian alternative rock"
+            ],
+            "followers": {
+              "href": null,
+              "total": 62353
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebd4a5c1e7ec2f48fab7b94e79",
+          "spotifyUrl": "https://open.spotify.com/artist/4Y2ImQoh83EyhkbaJXmJr1",
+          "artist": "The Classic Crime"
+        },
+        {
+          "name": "The Killers",
+          "plays": 87,
+          "spotifyData": {
+            "id": "0C0XlULifJtAgn6ZNCW2eu",
+            "name": "The Killers",
+            "type": "artist",
+            "uri": "spotify:artist:0C0XlULifJtAgn6ZNCW2eu",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb207b21f3ed0ee96adce3166a",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174207b21f3ed0ee96adce3166a",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178207b21f3ed0ee96adce3166a",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 76,
+            "genres": [
+              "alternative rock"
+            ],
+            "followers": {
+              "href": null,
+              "total": 8001522
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb207b21f3ed0ee96adce3166a",
+          "spotifyUrl": "https://open.spotify.com/artist/0C0XlULifJtAgn6ZNCW2eu",
+          "artist": "The Killers"
         }
       ],
       "tracks": [
@@ -6421,6 +6593,45 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebb3359e39b0da9241573d6a19",
           "spotifyUrl": "https://open.spotify.com/artist/31jvzuB4ikftPQZJwrYfCF",
           "artist": "Enter Shikari"
+        },
+        {
+          "name": "Owl City",
+          "plays": 84,
+          "spotifyData": {
+            "id": "07QEuhtrNmmZ0zEcqE9SF6",
+            "name": "Owl City",
+            "type": "artist",
+            "uri": "spotify:artist:07QEuhtrNmmZ0zEcqE9SF6",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/07QEuhtrNmmZ0zEcqE9SF6"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebce3fbd73ae4f8b3ff54a0a5c",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174ce3fbd73ae4f8b3ff54a0a5c",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178ce3fbd73ae4f8b3ff54a0a5c",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 66,
+            "genres": [],
+            "followers": {
+              "href": null,
+              "total": 2502511
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebce3fbd73ae4f8b3ff54a0a5c",
+          "spotifyUrl": "https://open.spotify.com/artist/07QEuhtrNmmZ0zEcqE9SF6",
+          "artist": "Owl City"
         }
       ],
       "tracks": [
@@ -7559,6 +7770,141 @@
           },
           "image": "https://i.scdn.co/image/ab67616d0000b27352c650127729469292f1e575",
           "spotifyUrl": "https://open.spotify.com/album/2YFyBFGV7oBJpVRihSXnbf"
+        },
+        {
+          "name": "Broken Love (feat. Starxs)",
+          "plays": 11,
+          "spotifyData": {
+            "id": "19pb8jsMDEwzw5URlqwkdL",
+            "name": "Broken Love (feat. Starxs)",
+            "type": "album",
+            "uri": "spotify:album:19pb8jsMDEwzw5URlqwkdL",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/19pb8jsMDEwzw5URlqwkdL"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273e060d863ed0f73d548b5761b",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02e060d863ed0f73d548b5761b",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851e060d863ed0f73d548b5761b",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "0LmXoyW6K4zJ48lCRq7w3h",
+                "name": "Built By Titan",
+                "type": "artist",
+                "uri": "spotify:artist:0LmXoyW6K4zJ48lCRq7w3h",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0LmXoyW6K4zJ48lCRq7w3h"
+                }
+              }
+            ],
+            "album_type": "single",
+            "total_tracks": 1
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273e060d863ed0f73d548b5761b",
+          "spotifyUrl": "https://open.spotify.com/album/19pb8jsMDEwzw5URlqwkdL"
+        },
+        {
+          "name": "Pray for the Wicked",
+          "plays": 13,
+          "spotifyData": {
+            "id": "6ApYSpXF8GxZAgBTHDzYge",
+            "name": "Pray for the Wicked",
+            "type": "album",
+            "uri": "spotify:album:6ApYSpXF8GxZAgBTHDzYge",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "20JZFwl6HVl6yg8a4H3ZqK",
+                "name": "Panic! At The Disco",
+                "type": "artist",
+                "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 11
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
+          "spotifyUrl": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge"
+        },
+        {
+          "name": "Why Did You Run?",
+          "plays": 13,
+          "spotifyData": {
+            "id": "6nL63l4CT7u38VlATFkecA",
+            "name": "why did you lie",
+            "type": "album",
+            "uri": "spotify:album:6nL63l4CT7u38VlATFkecA",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/6nL63l4CT7u38VlATFkecA"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27380fc530b257d1ef05b99438e",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0280fc530b257d1ef05b99438e",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485180fc530b257d1ef05b99438e",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "3e4JAzb6CbKqYrhjdAycdo",
+                "name": "tawpie",
+                "type": "artist",
+                "uri": "spotify:artist:3e4JAzb6CbKqYrhjdAycdo",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3e4JAzb6CbKqYrhjdAycdo"
+                }
+              }
+            ],
+            "album_type": "single",
+            "total_tracks": 1
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27380fc530b257d1ef05b99438e",
+          "spotifyUrl": "https://open.spotify.com/album/6nL63l4CT7u38VlATFkecA"
         }
       ]
     },
@@ -7987,6 +8333,47 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebd4a5c1e7ec2f48fab7b94e79",
           "spotifyUrl": "https://open.spotify.com/artist/4Y2ImQoh83EyhkbaJXmJr1",
           "artist": "The Classic Crime"
+        },
+        {
+          "name": "Angels & Airwaves",
+          "plays": 52,
+          "spotifyData": {
+            "id": "7xklw3WodFZiNNmQt3DIgp",
+            "name": "Angels & Airwaves",
+            "type": "artist",
+            "uri": "spotify:artist:7xklw3WodFZiNNmQt3DIgp",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7xklw3WodFZiNNmQt3DIgp"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb9bf03fdd68eecd329f9fde6e",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab676161000051749bf03fdd68eecd329f9fde6e",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f1789bf03fdd68eecd329f9fde6e",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 53,
+            "genres": [
+              "pop punk"
+            ],
+            "followers": {
+              "href": null,
+              "total": 728428
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb9bf03fdd68eecd329f9fde6e",
+          "spotifyUrl": "https://open.spotify.com/artist/7xklw3WodFZiNNmQt3DIgp",
+          "artist": "Angels & Airwaves"
         }
       ],
       "tracks": [
@@ -10306,6 +10693,47 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebe623db0c897f7c323802b8f0",
           "spotifyUrl": "https://open.spotify.com/artist/3wWtfT7S2uVJJ3hGZlOLkZ",
           "artist": "Judah & the Lion"
+        },
+        {
+          "name": "Angels & Airwaves",
+          "plays": 58,
+          "spotifyData": {
+            "id": "7xklw3WodFZiNNmQt3DIgp",
+            "name": "Angels & Airwaves",
+            "type": "artist",
+            "uri": "spotify:artist:7xklw3WodFZiNNmQt3DIgp",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7xklw3WodFZiNNmQt3DIgp"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb9bf03fdd68eecd329f9fde6e",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab676161000051749bf03fdd68eecd329f9fde6e",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f1789bf03fdd68eecd329f9fde6e",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 53,
+            "genres": [
+              "pop punk"
+            ],
+            "followers": {
+              "href": null,
+              "total": 728428
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb9bf03fdd68eecd329f9fde6e",
+          "spotifyUrl": "https://open.spotify.com/artist/7xklw3WodFZiNNmQt3DIgp",
+          "artist": "Angels & Airwaves"
         }
       ],
       "tracks": [
@@ -11380,6 +11808,96 @@
           "spotifyUrl": "https://open.spotify.com/album/24IBCzEJlHBI0ioxlSuSPA",
           "artist": "Yellowcard",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "Silverline",
+          "plays": 5,
+          "spotifyData": {
+            "id": "12uaJCZZmXmie6NlHPU5oZ",
+            "name": "Silverline",
+            "type": "album",
+            "uri": "spotify:album:12uaJCZZmXmie6NlHPU5oZ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/12uaJCZZmXmie6NlHPU5oZ"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273139de431ec4d5b27347658e1",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02139de431ec4d5b27347658e1",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851139de431ec4d5b27347658e1",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "2C6lUj5YhSzG58170BdHkw",
+                "name": "Xael",
+                "type": "artist",
+                "uri": "spotify:artist:2C6lUj5YhSzG58170BdHkw",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2C6lUj5YhSzG58170BdHkw"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 10
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273139de431ec4d5b27347658e1",
+          "spotifyUrl": "https://open.spotify.com/album/12uaJCZZmXmie6NlHPU5oZ"
+        },
+        {
+          "name": "Lies for the Liars",
+          "plays": 5,
+          "spotifyData": {
+            "id": "2UTLJA4Rxsth81uNh4Q6ox",
+            "name": "Lies for the Liars",
+            "type": "album",
+            "uri": "spotify:album:2UTLJA4Rxsth81uNh4Q6ox",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/2UTLJA4Rxsth81uNh4Q6ox"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27361edd52cf2ab75bfb867f9c2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0261edd52cf2ab75bfb867f9c2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485161edd52cf2ab75bfb867f9c2",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "55VydwMyCuGcavwPuhutPL",
+                "name": "The Used",
+                "type": "artist",
+                "uri": "spotify:artist:55VydwMyCuGcavwPuhutPL",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/55VydwMyCuGcavwPuhutPL"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 11
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27361edd52cf2ab75bfb867f9c2",
+          "spotifyUrl": "https://open.spotify.com/album/2UTLJA4Rxsth81uNh4Q6ox"
         }
       ]
     },
@@ -11812,6 +12330,87 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebc7f04a5b4bdfd68e31816fc2",
           "spotifyUrl": "https://open.spotify.com/artist/0vWCyXMrrvMlCcepuOJaGI",
           "artist": "BOYS LIKE GIRLS"
+        },
+        {
+          "name": "The Classic Crime",
+          "plays": 80,
+          "spotifyData": {
+            "id": "4Y2ImQoh83EyhkbaJXmJr1",
+            "name": "The Classic Crime",
+            "type": "artist",
+            "uri": "spotify:artist:4Y2ImQoh83EyhkbaJXmJr1",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4Y2ImQoh83EyhkbaJXmJr1"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebd4a5c1e7ec2f48fab7b94e79",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174d4a5c1e7ec2f48fab7b94e79",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178d4a5c1e7ec2f48fab7b94e79",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 33,
+            "genres": [
+              "christian rock",
+              "christian alternative rock"
+            ],
+            "followers": {
+              "href": null,
+              "total": 62353
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebd4a5c1e7ec2f48fab7b94e79",
+          "spotifyUrl": "https://open.spotify.com/artist/4Y2ImQoh83EyhkbaJXmJr1",
+          "artist": "The Classic Crime"
+        },
+        {
+          "name": "Taylor Swift",
+          "plays": 82,
+          "spotifyData": {
+            "id": "06HL4z0CvFAxyc27GXpf02",
+            "name": "Taylor Swift",
+            "type": "artist",
+            "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebe2e8e7ff002a4afda1c7147e",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174e2e8e7ff002a4afda1c7147e",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178e2e8e7ff002a4afda1c7147e",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 100,
+            "genres": [],
+            "followers": {
+              "href": null,
+              "total": 145254602
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebe2e8e7ff002a4afda1c7147e",
+          "spotifyUrl": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02",
+          "artist": "Taylor Swift"
         }
       ],
       "tracks": [
@@ -12886,6 +13485,51 @@
           "spotifyUrl": "https://open.spotify.com/album/5bTSXCOLlIH6gsOvuI3PCI",
           "artist": "Enter Shikari",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "amo",
+          "plays": 33,
+          "spotifyData": {
+            "id": "4sfr7ausWUynywGdlT1C6p",
+            "name": "AMOR",
+            "type": "album",
+            "uri": "spotify:album:4sfr7ausWUynywGdlT1C6p",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/4sfr7ausWUynywGdlT1C6p"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273bd274fe87484a159a37afb52",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02bd274fe87484a159a37afb52",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851bd274fe87484a159a37afb52",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "1mXD3HVrObKWyjMvRjfsXp",
+                "name": "Los Parras",
+                "type": "artist",
+                "uri": "spotify:artist:1mXD3HVrObKWyjMvRjfsXp",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1mXD3HVrObKWyjMvRjfsXp"
+                }
+              }
+            ],
+            "album_type": "single",
+            "total_tracks": 1
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273bd274fe87484a159a37afb52",
+          "spotifyUrl": "https://open.spotify.com/album/4sfr7ausWUynywGdlT1C6p"
         }
       ]
     },
@@ -13307,6 +13951,48 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebf2eb3412cca69c62be9ffb15",
           "spotifyUrl": "https://open.spotify.com/artist/1koutXdSFq2PHqtxSWj9tK",
           "artist": "Hot Milk"
+        },
+        {
+          "name": "Anberlin",
+          "plays": 85,
+          "spotifyData": {
+            "id": "5v61OSg53KaQxGMpErkBNp",
+            "name": "Anberlin",
+            "type": "artist",
+            "uri": "spotify:artist:5v61OSg53KaQxGMpErkBNp",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5v61OSg53KaQxGMpErkBNp"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebf61b58fe48e3a30b72fbc1d5",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174f61b58fe48e3a30b72fbc1d5",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178f61b58fe48e3a30b72fbc1d5",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 51,
+            "genres": [
+              "christian rock",
+              "christian alternative rock"
+            ],
+            "followers": {
+              "href": null,
+              "total": 334365
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebf61b58fe48e3a30b72fbc1d5",
+          "spotifyUrl": "https://open.spotify.com/artist/5v61OSg53KaQxGMpErkBNp",
+          "artist": "Anberlin"
         }
       ],
       "tracks": [
@@ -14381,6 +15067,105 @@
           "spotifyUrl": "https://open.spotify.com/album/6dzYaK7sILnlTTVxVQ7pEZ",
           "artist": "Written by Wolves",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "Vega",
+          "plays": 49,
+          "spotifyData": {
+            "id": "1UipsejbT67IizPimBSxN3",
+            "name": "Vegas - A COLORS SHOW",
+            "type": "album",
+            "uri": "spotify:album:1UipsejbT67IizPimBSxN3",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/1UipsejbT67IizPimBSxN3"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ea04cd2e55a56e1dfe841682",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ea04cd2e55a56e1dfe841682",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ea04cd2e55a56e1dfe841682",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "3y2cIKLjiOlp1Np37WiUdH",
+                "name": "Shaboozey",
+                "type": "artist",
+                "uri": "spotify:artist:3y2cIKLjiOlp1Np37WiUdH",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3y2cIKLjiOlp1Np37WiUdH"
+                }
+              },
+              {
+                "id": "3FvwVFWRyvxmLyVBO9nBmM",
+                "name": "COLORS",
+                "type": "artist",
+                "uri": "spotify:artist:3FvwVFWRyvxmLyVBO9nBmM",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3FvwVFWRyvxmLyVBO9nBmM"
+                }
+              }
+            ],
+            "album_type": "single",
+            "total_tracks": 1
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273ea04cd2e55a56e1dfe841682",
+          "spotifyUrl": "https://open.spotify.com/album/1UipsejbT67IizPimBSxN3"
+        },
+        {
+          "name": "I Love You So F***ing Much",
+          "plays": 52,
+          "spotifyData": {
+            "id": "5i6LJyHq9wxLSecf0N2Iuw",
+            "name": "I Love You So F***ing Much",
+            "type": "album",
+            "uri": "spotify:album:5i6LJyHq9wxLSecf0N2Iuw",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5i6LJyHq9wxLSecf0N2Iuw"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2736dfbd2654e5c961d1126ad9c",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e026dfbd2654e5c961d1126ad9c",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048516dfbd2654e5c961d1126ad9c",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "4yvcSjfu4PC0CYQyLy4wSq",
+                "name": "Glass Animals",
+                "type": "artist",
+                "uri": "spotify:artist:4yvcSjfu4PC0CYQyLy4wSq",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4yvcSjfu4PC0CYQyLy4wSq"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 10
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2736dfbd2654e5c961d1126ad9c",
+          "spotifyUrl": "https://open.spotify.com/album/5i6LJyHq9wxLSecf0N2Iuw"
         }
       ]
     },
@@ -16868,7 +17653,7 @@
       ]
     }
   },
-  "lastUpdated": "2025-10-27T02:55:45.083Z",
+  "lastUpdated": "2025-10-27T04:23:39.938Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
