@@ -990,6 +990,62 @@
         "spotifyUrl": "https://open.spotify.com/track/0w4m3Xp4svlIoyL94Zjlyd",
         "artist": "Sir Sly",
         "matchSource": "raw_uri"
+      },
+      {
+        "name": "Cautious",
+        "plays": 56,
+        "artist": "Emarosa",
+        "spotifyData": {
+          "id": "1Z7DlH9AeV59TyD0LQTvNi",
+          "name": "Cautious",
+          "type": "track",
+          "uri": "spotify:track:1Z7DlH9AeV59TyD0LQTvNi",
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/1Z7DlH9AeV59TyD0LQTvNi"
+          },
+          "popularity": 48,
+          "artists": [
+            {
+              "id": "68tKVjVvcqUfKFFLr2j0Ek",
+              "name": "Emarosa",
+              "type": "artist",
+              "uri": "spotify:artist:68tKVjVvcqUfKFFLr2j0Ek",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/68tKVjVvcqUfKFFLr2j0Ek"
+              }
+            }
+          ],
+          "album": {
+            "id": "5QJllrmYgOY5k5qWegblAX",
+            "name": "Peach Club",
+            "type": "album",
+            "uri": "spotify:album:5QJllrmYgOY5k5qWegblAX",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5QJllrmYgOY5k5qWegblAX"
+            },
+            "images": [
+              {
+                "height": 640,
+                "width": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2739b99d9650530e72b042e4c31"
+              },
+              {
+                "height": 300,
+                "width": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e029b99d9650530e72b042e4c31"
+              },
+              {
+                "height": 64,
+                "width": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048519b99d9650530e72b042e4c31"
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 11
+          }
+        },
+        "image": "https://i.scdn.co/image/ab67616d0000b2739b99d9650530e72b042e4c31",
+        "spotifyUrl": "https://open.spotify.com/track/1Z7DlH9AeV59TyD0LQTvNi"
       }
     ],
     "albums": [
@@ -1006,22 +1062,21 @@
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e029cf15c7323fb85b7112197d5",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048519cf15c7323fb85b7112197d5",
               "width": 64
             }
           ],
-          "popularity": 73,
           "artists": [
             {
               "id": "3YQKmKGau1PzlVlkL1iodx",
@@ -1034,9 +1089,7 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 13,
-          "label": "Fueled By Ramen",
-          "genres": []
+          "total_tracks": 13
         },
         "image": "https://i.scdn.co/image/ab67616d0000b2739cf15c7323fb85b7112197d5",
         "spotifyUrl": "https://open.spotify.com/album/1KFWgQTw3EMTQebaaepVBI",
@@ -1056,22 +1109,21 @@
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02d1d301e737da4324479c6660",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851d1d301e737da4324479c6660",
               "width": 64
             }
           ],
-          "popularity": 73,
           "artists": [
             {
               "id": "3YQKmKGau1PzlVlkL1iodx",
@@ -1084,9 +1136,7 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 14,
-          "label": "Fueled By Ramen",
-          "genres": []
+          "total_tracks": 14
         },
         "image": "https://i.scdn.co/image/ab67616d0000b273d1d301e737da4324479c6660",
         "spotifyUrl": "https://open.spotify.com/album/621cXqrTSSJi1WqDMSLmbL",
@@ -1097,49 +1147,46 @@
         "name": "The Process",
         "plays": 256,
         "spotifyData": {
-          "id": "2sJMzA3LuOW1u3UEKbF6J3",
-          "name": "The Process",
+          "id": "0t2Xi8RYL4d7iEuIbUE4zI",
+          "name": "The Process Of Belief",
           "type": "album",
-          "uri": "spotify:album:2sJMzA3LuOW1u3UEKbF6J3",
+          "uri": "spotify:album:0t2Xi8RYL4d7iEuIbUE4zI",
           "external_urls": {
-            "spotify": "https://open.spotify.com/album/2sJMzA3LuOW1u3UEKbF6J3"
+            "spotify": "https://open.spotify.com/album/0t2Xi8RYL4d7iEuIbUE4zI"
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27335f1e8c8f603222e0e5505f9",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e023e46e233307192920f60f16a",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0235f1e8c8f603222e0e5505f9",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d000048513e46e233307192920f60f16a",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485135f1e8c8f603222e0e5505f9",
               "width": 64
             }
           ],
-          "popularity": 40,
           "artists": [
             {
-              "id": "3wWtfT7S2uVJJ3hGZlOLkZ",
-              "name": "Judah & the Lion",
+              "id": "2yJwXpWAQOOl5XFzbCxLs9",
+              "name": "Bad Religion",
               "type": "artist",
-              "uri": "spotify:artist:3wWtfT7S2uVJJ3hGZlOLkZ",
+              "uri": "spotify:artist:2yJwXpWAQOOl5XFzbCxLs9",
               "external_urls": {
-                "spotify": "https://open.spotify.com/artist/3wWtfT7S2uVJJ3hGZlOLkZ"
+                "spotify": "https://open.spotify.com/artist/2yJwXpWAQOOl5XFzbCxLs9"
               }
             }
           ],
           "album_type": "album",
-          "total_tracks": 19,
-          "label": "Cletus the Van Records",
-          "genres": []
+          "total_tracks": 14
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b2733e46e233307192920f60f16a",
-        "spotifyUrl": "https://open.spotify.com/album/2sJMzA3LuOW1u3UEKbF6J3",
+        "image": "https://i.scdn.co/image/ab67616d0000b27335f1e8c8f603222e0e5505f9",
+        "spotifyUrl": "https://open.spotify.com/album/0t2Xi8RYL4d7iEuIbUE4zI",
         "artist": "Judah & the Lion",
         "matchSource": "raw_uri"
       },
@@ -1147,49 +1194,46 @@
         "name": "The Surface",
         "plays": 236,
         "spotifyData": {
-          "id": "5WmbnLQhy8ndx8S7puEolG",
-          "name": "The Surface",
+          "id": "30O32KZJTfrFf7pvu9VpXt",
+          "name": "beneath the surface",
           "type": "album",
-          "uri": "spotify:album:5WmbnLQhy8ndx8S7puEolG",
+          "uri": "spotify:album:30O32KZJTfrFf7pvu9VpXt",
           "external_urls": {
-            "spotify": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG"
+            "spotify": "https://open.spotify.com/album/30O32KZJTfrFf7pvu9VpXt"
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273e4d891b3f3864aaa2886bbd2",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e0218e8a8ba2fc255d33d29c25b",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02e4d891b3f3864aaa2886bbd2",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d0000485118e8a8ba2fc255d33d29c25b",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851e4d891b3f3864aaa2886bbd2",
               "width": 64
             }
           ],
-          "popularity": 58,
           "artists": [
             {
-              "id": "6vwjIs0tbIiseJMR3pqwiL",
-              "name": "Beartooth",
+              "id": "6pUnNnSTbIgI6sUe9QhF7K",
+              "name": "Fred Russ",
               "type": "artist",
-              "uri": "spotify:artist:6vwjIs0tbIiseJMR3pqwiL",
+              "uri": "spotify:artist:6pUnNnSTbIgI6sUe9QhF7K",
               "external_urls": {
-                "spotify": "https://open.spotify.com/artist/6vwjIs0tbIiseJMR3pqwiL"
+                "spotify": "https://open.spotify.com/artist/6pUnNnSTbIgI6sUe9QhF7K"
               }
             }
           ],
-          "album_type": "album",
-          "total_tracks": 11,
-          "label": "Red Bull Records",
-          "genres": []
+          "album_type": "single",
+          "total_tracks": 1
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
-        "spotifyUrl": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG",
+        "image": "https://i.scdn.co/image/ab67616d0000b273e4d891b3f3864aaa2886bbd2",
+        "spotifyUrl": "https://open.spotify.com/album/30O32KZJTfrFf7pvu9VpXt",
         "artist": "Beartooth",
         "matchSource": "raw_uri"
       },
@@ -1197,31 +1241,30 @@
         "name": "Wild Spirit",
         "plays": 198,
         "spotifyData": {
-          "id": "6uRqR9oIdKcdOeW3xNtIUf",
+          "id": "6dLSL5RbIw2qv5413Df5Zy",
           "name": "Wild Spirit",
           "type": "album",
-          "uri": "spotify:album:6uRqR9oIdKcdOeW3xNtIUf",
+          "uri": "spotify:album:6dLSL5RbIw2qv5413Df5Zy",
           "external_urls": {
-            "spotify": "https://open.spotify.com/album/6uRqR9oIdKcdOeW3xNtIUf"
+            "spotify": "https://open.spotify.com/album/6dLSL5RbIw2qv5413Df5Zy"
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02d9fe8ec0932dd802bd93e4ec",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f3412de5bbbcbaa6e15ef36e",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851d9fe8ec0932dd802bd93e4ec",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f3412de5bbbcbaa6e15ef36e",
               "width": 64
             }
           ],
-          "popularity": 22,
           "artists": [
             {
               "id": "2JMtxA2S9SNUlqBlkDtXm6",
@@ -1233,13 +1276,11 @@
               }
             }
           ],
-          "album_type": "single",
-          "total_tracks": 1,
-          "label": "The National Parks",
-          "genres": []
+          "album_type": "album",
+          "total_tracks": 12
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b273d9fe8ec0932dd802bd93e4ec",
-        "spotifyUrl": "https://open.spotify.com/album/6uRqR9oIdKcdOeW3xNtIUf",
+        "image": "https://i.scdn.co/image/ab67616d0000b273f3412de5bbbcbaa6e15ef36e",
+        "spotifyUrl": "https://open.spotify.com/album/6dLSL5RbIw2qv5413Df5Zy",
         "artist": "The National Parks",
         "matchSource": "raw_uri"
       },
@@ -1256,22 +1297,21 @@
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273dc0cb47f6cee440cf6221a76",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273dc0cb47f6cee440cf6221a76",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02dc0cb47f6cee440cf6221a76",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02dc0cb47f6cee440cf6221a76",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851dc0cb47f6cee440cf6221a76",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851dc0cb47f6cee440cf6221a76",
               "width": 64
             }
           ],
-          "popularity": 49,
           "artists": [
             {
               "id": "4o0pNHbyj36LPvukNqEug0",
@@ -1284,9 +1324,7 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 12,
-          "label": "8123",
-          "genres": []
+          "total_tracks": 12
         },
         "image": "https://i.scdn.co/image/ab67616d0000b273dc0cb47f6cee440cf6221a76",
         "spotifyUrl": "https://open.spotify.com/album/2jStuYeaRty1cwxjoxfo9K",
@@ -1297,31 +1335,30 @@
         "name": "So Much (For) Stardust",
         "plays": 172,
         "spotifyData": {
-          "id": "5mWnMYLnfcnkDOCojHW6O1",
+          "id": "5rHd8n9uWIpq9w0PP5ZcI3",
           "name": "So Much (For) Stardust",
           "type": "album",
-          "uri": "spotify:album:5mWnMYLnfcnkDOCojHW6O1",
+          "uri": "spotify:album:5rHd8n9uWIpq9w0PP5ZcI3",
           "external_urls": {
-            "spotify": "https://open.spotify.com/album/5mWnMYLnfcnkDOCojHW6O1"
+            "spotify": "https://open.spotify.com/album/5rHd8n9uWIpq9w0PP5ZcI3"
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b2739f7c2d95765994f5dddb4cc4",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273fd0ad203a3d2a2343d889a95",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e029f7c2d95765994f5dddb4cc4",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02fd0ad203a3d2a2343d889a95",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d000048519f7c2d95765994f5dddb4cc4",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851fd0ad203a3d2a2343d889a95",
               "width": 64
             }
           ],
-          "popularity": 0,
           "artists": [
             {
               "id": "4UXqAaa6dQYAk18Lv7PEgX",
@@ -1334,12 +1371,10 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 13,
-          "label": "Fueled By Ramen",
-          "genres": []
+          "total_tracks": 14
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b2739f7c2d95765994f5dddb4cc4",
-        "spotifyUrl": "https://open.spotify.com/album/5mWnMYLnfcnkDOCojHW6O1",
+        "image": "https://i.scdn.co/image/ab67616d0000b273fd0ad203a3d2a2343d889a95",
+        "spotifyUrl": "https://open.spotify.com/album/5rHd8n9uWIpq9w0PP5ZcI3",
         "artist": "Fall Out Boy",
         "matchSource": "raw_uri"
       },
@@ -1356,22 +1391,21 @@
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02c5148520a59be191eea16989",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851c5148520a59be191eea16989",
               "width": 64
             }
           ],
-          "popularity": 70,
           "artists": [
             {
               "id": "20JZFwl6HVl6yg8a4H3ZqK",
@@ -1384,9 +1418,7 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 11,
-          "label": "DCD2 / Fueled By Ramen",
-          "genres": []
+          "total_tracks": 11
         },
         "image": "https://i.scdn.co/image/ab67616d0000b273c5148520a59be191eea16989",
         "spotifyUrl": "https://open.spotify.com/album/6ApYSpXF8GxZAgBTHDzYge",
@@ -1406,22 +1438,21 @@
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273da6f73a25f4c79d0e6b4a8bd",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273da6f73a25f4c79d0e6b4a8bd",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851da6f73a25f4c79d0e6b4a8bd",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851da6f73a25f4c79d0e6b4a8bd",
               "width": 64
             }
           ],
-          "popularity": 77,
           "artists": [
             {
               "id": "53XhwfbYqKCa1cC15pYq2q",
@@ -1434,9 +1465,7 @@
             }
           ],
           "album_type": "album",
-          "total_tracks": 15,
-          "label": "Kid Ina Korner / Interscope",
-          "genres": []
+          "total_tracks": 15
         },
         "image": "https://i.scdn.co/image/ab67616d0000b273da6f73a25f4c79d0e6b4a8bd",
         "spotifyUrl": "https://open.spotify.com/album/3JfSxDfmwS5OeHPwLSkrfr",
@@ -1447,31 +1476,30 @@
         "name": "Haven",
         "plays": 137,
         "spotifyData": {
-          "id": "4aceLbAPwp99QOIA0o7Hfy",
+          "id": "6d9dALaOwguRopn9otGiNc",
           "name": "Haven",
           "type": "album",
-          "uri": "spotify:album:4aceLbAPwp99QOIA0o7Hfy",
+          "uri": "spotify:album:6d9dALaOwguRopn9otGiNc",
           "external_urls": {
-            "spotify": "https://open.spotify.com/album/4aceLbAPwp99QOIA0o7Hfy"
+            "spotify": "https://open.spotify.com/album/6d9dALaOwguRopn9otGiNc"
           },
           "images": [
             {
-              "url": "https://i.scdn.co/image/ab67616d0000b273862665243d24e63ba02cca43",
               "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27372792fca1e9b2be09cec8b8d",
               "width": 640
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00001e02862665243d24e63ba02cca43",
               "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0272792fca1e9b2be09cec8b8d",
               "width": 300
             },
             {
-              "url": "https://i.scdn.co/image/ab67616d00004851862665243d24e63ba02cca43",
               "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485172792fca1e9b2be09cec8b8d",
               "width": 64
             }
           ],
-          "popularity": 0,
           "artists": [
             {
               "id": "68EB3QvNdVLkC7SAgDbHIR",
@@ -1483,13 +1511,10 @@
               }
             }
           ],
-          "album_type": "album",
-          "total_tracks": 13,
-          "label": "604 Records Inc.",
-          "genres": []
+          "total_tracks": 13
         },
-        "image": "https://i.scdn.co/image/ab67616d0000b273862665243d24e63ba02cca43",
-        "spotifyUrl": "https://open.spotify.com/album/4aceLbAPwp99QOIA0o7Hfy",
+        "image": "https://i.scdn.co/image/ab67616d0000b27372792fca1e9b2be09cec8b8d",
+        "spotifyUrl": "https://open.spotify.com/album/6d9dALaOwguRopn9otGiNc",
         "artist": "Marianas Trench",
         "matchSource": "raw_uri"
       }
@@ -2280,27 +2305,180 @@
         {
           "name": "Where the Light Is",
           "plays": 19,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "08LgfuJ0qSs8xaKNU9mNGX",
+            "name": "Where The Light Is",
+            "type": "track",
+            "uri": "spotify:track:08LgfuJ0qSs8xaKNU9mNGX",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/08LgfuJ0qSs8xaKNU9mNGX"
+            },
+            "popularity": 40,
+            "artists": [
+              {
+                "id": "235ZVf4thM2FFfyE4ACwB3",
+                "name": "Dan Bremnes",
+                "type": "artist",
+                "uri": "spotify:artist:235ZVf4thM2FFfyE4ACwB3",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/235ZVf4thM2FFfyE4ACwB3"
+                }
+              }
+            ],
+            "album": {
+              "id": "4k77QJtx2K2bAIOILs7i1B",
+              "name": "Where The Light Is",
+              "type": "album",
+              "uri": "spotify:album:4k77QJtx2K2bAIOILs7i1B",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/4k77QJtx2K2bAIOILs7i1B"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2733ff3bedf412ce171197e7b7a"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e023ff3bedf412ce171197e7b7a"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048513ff3bedf412ce171197e7b7a"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 11
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2733ff3bedf412ce171197e7b7a",
+          "spotifyUrl": "https://open.spotify.com/track/08LgfuJ0qSs8xaKNU9mNGX",
           "artist": "Dan Bremnes",
           "matchSource": "none"
         },
         {
           "name": "Wait For It",
           "plays": 19,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "7EqpEBPOohgk7NnKvBGFWo",
+            "name": "Wait for It",
+            "type": "track",
+            "uri": "spotify:track:7EqpEBPOohgk7NnKvBGFWo",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7EqpEBPOohgk7NnKvBGFWo"
+            },
+            "popularity": 75,
+            "artists": [
+              {
+                "id": "3cR4rhS2hBWqI7rJEBacvN",
+                "name": "Leslie Odom Jr.",
+                "type": "artist",
+                "uri": "spotify:artist:3cR4rhS2hBWqI7rJEBacvN",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3cR4rhS2hBWqI7rJEBacvN"
+                }
+              },
+              {
+                "id": "3UUJfRbrA2nTbcg4i0MOwu",
+                "name": "Original Broadway Cast of Hamilton",
+                "type": "artist",
+                "uri": "spotify:artist:3UUJfRbrA2nTbcg4i0MOwu",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3UUJfRbrA2nTbcg4i0MOwu"
+                }
+              }
+            ],
+            "album": {
+              "id": "1kCHru7uhxBUdzkm4gzRQc",
+              "name": "Hamilton (Original Broadway Cast Recording)",
+              "type": "album",
+              "uri": "spotify:album:1kCHru7uhxBUdzkm4gzRQc",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1kCHru7uhxBUdzkm4gzRQc"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273d72fb5571087bca0a2fed008"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02d72fb5571087bca0a2fed008"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851d72fb5571087bca0a2fed008"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 46
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273d72fb5571087bca0a2fed008",
+          "spotifyUrl": "https://open.spotify.com/track/7EqpEBPOohgk7NnKvBGFWo",
           "artist": "Leslie Odom, Jr. & Original Broadway Cast of \"Hamilton\"",
           "matchSource": "none"
         },
         {
           "name": "Cake by the Ocean",
           "plays": 19,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "76hfruVvmfQbw0eYn1nmeC",
+            "name": "Cake By The Ocean",
+            "type": "track",
+            "uri": "spotify:track:76hfruVvmfQbw0eYn1nmeC",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/76hfruVvmfQbw0eYn1nmeC"
+            },
+            "popularity": 81,
+            "artists": [
+              {
+                "id": "6T5tfhQCknKG4UnH90qGnz",
+                "name": "DNCE",
+                "type": "artist",
+                "uri": "spotify:artist:6T5tfhQCknKG4UnH90qGnz",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6T5tfhQCknKG4UnH90qGnz"
+                }
+              }
+            ],
+            "album": {
+              "id": "3Wv4X8OA65pGpFzBkuUgAh",
+              "name": "DNCE",
+              "type": "album",
+              "uri": "spotify:album:3Wv4X8OA65pGpFzBkuUgAh",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/3Wv4X8OA65pGpFzBkuUgAh"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2738d0a75346badc30c8b845be9"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e028d0a75346badc30c8b845be9"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048518d0a75346badc30c8b845be9"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 14
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2738d0a75346badc30c8b845be9",
+          "spotifyUrl": "https://open.spotify.com/track/76hfruVvmfQbw0eYn1nmeC",
           "artist": "DNCE",
           "matchSource": "none"
         },
@@ -3689,18 +3867,114 @@
         {
           "name": "The Last of the Real Ones",
           "plays": 26,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "6e13443Ve7RGcAUScTgYtl",
+            "name": "The Last Of The Real Ones",
+            "type": "track",
+            "uri": "spotify:track:6e13443Ve7RGcAUScTgYtl",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6e13443Ve7RGcAUScTgYtl"
+            },
+            "popularity": 66,
+            "artists": [
+              {
+                "id": "4UXqAaa6dQYAk18Lv7PEgX",
+                "name": "Fall Out Boy",
+                "type": "artist",
+                "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+                }
+              }
+            ],
+            "album": {
+              "id": "02s2F3XMnv9vr2syELbSsu",
+              "name": "MANIA",
+              "type": "album",
+              "uri": "spotify:album:02s2F3XMnv9vr2syELbSsu",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/02s2F3XMnv9vr2syELbSsu"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273bc8d2b3ac36be53be9a38fe1"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02bc8d2b3ac36be53be9a38fe1"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851bc8d2b3ac36be53be9a38fe1"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 10
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273bc8d2b3ac36be53be9a38fe1",
+          "spotifyUrl": "https://open.spotify.com/track/6e13443Ve7RGcAUScTgYtl",
           "artist": "Fall Out Boy",
           "matchSource": "none"
         },
         {
           "name": "Young and Menace",
           "plays": 25,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "6XEPmHllDGDaO4w84Xjtgi",
+            "name": "Young And Menace",
+            "type": "track",
+            "uri": "spotify:track:6XEPmHllDGDaO4w84Xjtgi",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6XEPmHllDGDaO4w84Xjtgi"
+            },
+            "popularity": 46,
+            "artists": [
+              {
+                "id": "4UXqAaa6dQYAk18Lv7PEgX",
+                "name": "Fall Out Boy",
+                "type": "artist",
+                "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+                }
+              }
+            ],
+            "album": {
+              "id": "02s2F3XMnv9vr2syELbSsu",
+              "name": "MANIA",
+              "type": "album",
+              "uri": "spotify:album:02s2F3XMnv9vr2syELbSsu",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/02s2F3XMnv9vr2syELbSsu"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273bc8d2b3ac36be53be9a38fe1"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02bc8d2b3ac36be53be9a38fe1"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851bc8d2b3ac36be53be9a38fe1"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 10
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273bc8d2b3ac36be53be9a38fe1",
+          "spotifyUrl": "https://open.spotify.com/track/6XEPmHllDGDaO4w84Xjtgi",
           "artist": "Fall Out Boy",
           "matchSource": "none"
         },
@@ -7287,6 +7561,52 @@
           "spotifyUrl": "https://open.spotify.com/album/4BoAPGojjrOtHbRvGP52PS",
           "artist": "Ottorino Respighi",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "Waking Up",
+          "plays": 39,
+          "artist": "Stokeswood",
+          "spotifyData": {
+            "id": "2YFyBFGV7oBJpVRihSXnbf",
+            "name": "Waking Up",
+            "type": "album",
+            "uri": "spotify:album:2YFyBFGV7oBJpVRihSXnbf",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/2YFyBFGV7oBJpVRihSXnbf"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27352c650127729469292f1e575",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0252c650127729469292f1e575",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485152c650127729469292f1e575",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "3oqqsDcgRuPE7jCHm3QGoA",
+                "name": "Stokeswood",
+                "type": "artist",
+                "uri": "spotify:artist:3oqqsDcgRuPE7jCHm3QGoA",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3oqqsDcgRuPE7jCHm3QGoA"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 9
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27352c650127729469292f1e575",
+          "spotifyUrl": "https://open.spotify.com/album/2YFyBFGV7oBJpVRihSXnbf"
         }
       ]
     },
@@ -8015,9 +8335,57 @@
         {
           "name": "Half Your Age",
           "plays": 11,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "7Fg0lX02VhiCEh8IfncbLz",
+            "name": "Half Your Age",
+            "type": "track",
+            "uri": "spotify:track:7Fg0lX02VhiCEh8IfncbLz",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7Fg0lX02VhiCEh8IfncbLz"
+            },
+            "popularity": 36,
+            "artists": [
+              {
+                "id": "1UfzhwcOR4yfX7yHTPfC9m",
+                "name": "Joywave",
+                "type": "artist",
+                "uri": "spotify:artist:1UfzhwcOR4yfX7yHTPfC9m",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1UfzhwcOR4yfX7yHTPfC9m"
+                }
+              }
+            ],
+            "album": {
+              "id": "6YpsVkMPd32CuKX0tJwJzr",
+              "name": "Possession",
+              "type": "album",
+              "uri": "spotify:album:6YpsVkMPd32CuKX0tJwJzr",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6YpsVkMPd32CuKX0tJwJzr"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27350c09bd4e66b9457789c7f72"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0250c09bd4e66b9457789c7f72"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485150c09bd4e66b9457789c7f72"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 12
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27350c09bd4e66b9457789c7f72",
+          "spotifyUrl": "https://open.spotify.com/track/7Fg0lX02VhiCEh8IfncbLz",
           "artist": "Joywave",
           "matchSource": "none"
         },
@@ -8081,9 +8449,57 @@
         {
           "name": "21 Years",
           "plays": 10,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "6mRX8XiGASA8YDO5B9DWeT",
+            "name": "21 Years",
+            "type": "track",
+            "uri": "spotify:track:6mRX8XiGASA8YDO5B9DWeT",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6mRX8XiGASA8YDO5B9DWeT"
+            },
+            "popularity": 39,
+            "artists": [
+              {
+                "id": "5VX8hxrcfJWwaTLiqGUHG3",
+                "name": "TobyMac",
+                "type": "artist",
+                "uri": "spotify:artist:5VX8hxrcfJWwaTLiqGUHG3",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5VX8hxrcfJWwaTLiqGUHG3"
+                }
+              }
+            ],
+            "album": {
+              "id": "1i7jVqwNKm3kjrdOz9QcMI",
+              "name": "TobyMac Collection",
+              "type": "album",
+              "uri": "spotify:album:1i7jVqwNKm3kjrdOz9QcMI",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1i7jVqwNKm3kjrdOz9QcMI"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273045db81dfafa83470425e92a"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02045db81dfafa83470425e92a"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851045db81dfafa83470425e92a"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 54
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273045db81dfafa83470425e92a",
+          "spotifyUrl": "https://open.spotify.com/track/6mRX8XiGASA8YDO5B9DWeT",
           "artist": "TobyMac",
           "matchSource": "none"
         },
@@ -8896,9 +9312,57 @@
         {
           "name": "Part Problem (Acoustic)",
           "plays": 13,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "5TRUS7b17NCyrlRNOUdVGJ",
+            "name": "Part Problem - Acoustic",
+            "type": "track",
+            "uri": "spotify:track:5TRUS7b17NCyrlRNOUdVGJ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5TRUS7b17NCyrlRNOUdVGJ"
+            },
+            "popularity": 14,
+            "artists": [
+              {
+                "id": "35fFUv2850L9CQjjNrLBpb",
+                "name": "Nahko And Medicine For The People",
+                "type": "artist",
+                "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                }
+              }
+            ],
+            "album": {
+              "id": "08xPv4Mg0f6r9120Z8mEcJ",
+              "name": "Take Your Power Back (Acoustic)",
+              "type": "album",
+              "uri": "spotify:album:08xPv4Mg0f6r9120Z8mEcJ",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/08xPv4Mg0f6r9120Z8mEcJ"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273c5b82811400693a1c764dede"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02c5b82811400693a1c764dede"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851c5b82811400693a1c764dede"
+                }
+              ],
+              "album_type": "single",
+              "total_tracks": 5
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273c5b82811400693a1c764dede",
+          "spotifyUrl": "https://open.spotify.com/track/5TRUS7b17NCyrlRNOUdVGJ",
           "artist": "Nahko And Medicine For The People",
           "matchSource": "none"
         },
@@ -9142,20 +9606,181 @@
         {
           "name": "Twisted (Acoustic)",
           "plays": 12,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "3czf7NvnhF9uOwYH949f2D",
+            "name": "Twisted - Acoustic",
+            "type": "track",
+            "uri": "spotify:track:3czf7NvnhF9uOwYH949f2D",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3czf7NvnhF9uOwYH949f2D"
+            },
+            "popularity": 12,
+            "artists": [
+              {
+                "id": "35fFUv2850L9CQjjNrLBpb",
+                "name": "Nahko And Medicine For The People",
+                "type": "artist",
+                "uri": "spotify:artist:35fFUv2850L9CQjjNrLBpb",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/35fFUv2850L9CQjjNrLBpb"
+                }
+              }
+            ],
+            "album": {
+              "id": "08xPv4Mg0f6r9120Z8mEcJ",
+              "name": "Take Your Power Back (Acoustic)",
+              "type": "album",
+              "uri": "spotify:album:08xPv4Mg0f6r9120Z8mEcJ",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/08xPv4Mg0f6r9120Z8mEcJ"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273c5b82811400693a1c764dede"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02c5b82811400693a1c764dede"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851c5b82811400693a1c764dede"
+                }
+              ],
+              "album_type": "single",
+              "total_tracks": 5
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273c5b82811400693a1c764dede",
+          "spotifyUrl": "https://open.spotify.com/track/3czf7NvnhF9uOwYH949f2D",
           "artist": "Nahko And Medicine For The People",
           "matchSource": "none"
         },
         {
           "name": "Cut You Off",
           "plays": 12,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "6x7PcZNPkYCYkN2fmZKPlz",
+            "name": "Cut You Off",
+            "type": "track",
+            "uri": "spotify:track:6x7PcZNPkYCYkN2fmZKPlz",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6x7PcZNPkYCYkN2fmZKPlz"
+            },
+            "popularity": 36,
+            "artists": [
+              {
+                "id": "2vhrwzjf9H3icunkVFi9tq",
+                "name": "Smash Into Pieces",
+                "type": "artist",
+                "uri": "spotify:artist:2vhrwzjf9H3icunkVFi9tq",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2vhrwzjf9H3icunkVFi9tq"
+                }
+              }
+            ],
+            "album": {
+              "id": "7fY3AgsW1hS5ZXIaUdrm4d",
+              "name": "A New Horizon",
+              "type": "album",
+              "uri": "spotify:album:7fY3AgsW1hS5ZXIaUdrm4d",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/7fY3AgsW1hS5ZXIaUdrm4d"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273119db6e538822a6b39386db0"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02119db6e538822a6b39386db0"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851119db6e538822a6b39386db0"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 11
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273119db6e538822a6b39386db0",
+          "spotifyUrl": "https://open.spotify.com/track/6x7PcZNPkYCYkN2fmZKPlz",
           "artist": "Smash Into Pieces",
           "matchSource": "none"
+        },
+        {
+          "name": "I Need a Dancefloor",
+          "plays": 14,
+          "artist": "FITZ & Fitz and The Tantrums",
+          "spotifyData": {
+            "id": "3eDtZ6XFEZLkNIEbNYYaho",
+            "name": "I Need a Dancefloor",
+            "type": "track",
+            "uri": "spotify:track:3eDtZ6XFEZLkNIEbNYYaho",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3eDtZ6XFEZLkNIEbNYYaho"
+            },
+            "popularity": 17,
+            "artists": [
+              {
+                "id": "7FgfVur1vT0yQyKIi0feNB",
+                "name": "FITZ",
+                "type": "artist",
+                "uri": "spotify:artist:7FgfVur1vT0yQyKIi0feNB",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7FgfVur1vT0yQyKIi0feNB"
+                }
+              },
+              {
+                "id": "4AcHt3JxKy59IX7JNNlZn4",
+                "name": "Fitz and The Tantrums",
+                "type": "artist",
+                "uri": "spotify:artist:4AcHt3JxKy59IX7JNNlZn4",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4AcHt3JxKy59IX7JNNlZn4"
+                }
+              }
+            ],
+            "album": {
+              "id": "0NcUgJYxrZwbrccKZLbmqD",
+              "name": "Head Up High",
+              "type": "album",
+              "uri": "spotify:album:0NcUgJYxrZwbrccKZLbmqD",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/0NcUgJYxrZwbrccKZLbmqD"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2735a6704ab24dea667e5f2af0a"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e025a6704ab24dea667e5f2af0a"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048515a6704ab24dea667e5f2af0a"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 14
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2735a6704ab24dea667e5f2af0a",
+          "spotifyUrl": "https://open.spotify.com/track/3eDtZ6XFEZLkNIEbNYYaho"
         }
       ],
       "albums": [
@@ -10248,9 +10873,57 @@
         {
           "name": "You Don't Even Know",
           "plays": 14,
-          "spotifyData": null,
-          "image": null,
-          "spotifyUrl": null,
+          "spotifyData": {
+            "id": "3koR9tFoF8PKjKcLRnF6ZZ",
+            "name": "You Don't Even Know",
+            "type": "track",
+            "uri": "spotify:track:3koR9tFoF8PKjKcLRnF6ZZ",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3koR9tFoF8PKjKcLRnF6ZZ"
+            },
+            "popularity": 0,
+            "artists": [
+              {
+                "id": "4yF9R6XUAJ6EFURuOzVYQg",
+                "name": "Kid Politics",
+                "type": "artist",
+                "uri": "spotify:artist:4yF9R6XUAJ6EFURuOzVYQg",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4yF9R6XUAJ6EFURuOzVYQg"
+                }
+              }
+            ],
+            "album": {
+              "id": "5CWjHSf1GVZdzvt3xOzrVN",
+              "name": "people should be nice",
+              "type": "album",
+              "uri": "spotify:album:5CWjHSf1GVZdzvt3xOzrVN",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5CWjHSf1GVZdzvt3xOzrVN"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273c6def3625729025bfb3ed836"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02c6def3625729025bfb3ed836"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851c6def3625729025bfb3ed836"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 12
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273c6def3625729025bfb3ed836",
+          "spotifyUrl": "https://open.spotify.com/track/3koR9tFoF8PKjKcLRnF6ZZ",
           "artist": "Kid Politics",
           "matchSource": "none"
         }
@@ -14298,6 +14971,47 @@
           "image": "https://i.scdn.co/image/ab6761610000e5ebb3359e39b0da9241573d6a19",
           "spotifyUrl": "https://open.spotify.com/artist/31jvzuB4ikftPQZJwrYfCF",
           "artist": "Enter Shikari"
+        },
+        {
+          "name": "The Summer Set",
+          "plays": 83,
+          "spotifyData": {
+            "id": "0pwyD6DhbFWn8uVSz2Fr0w",
+            "name": "The Summer Set",
+            "type": "artist",
+            "uri": "spotify:artist:0pwyD6DhbFWn8uVSz2Fr0w",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0pwyD6DhbFWn8uVSz2Fr0w"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb895fa42f3739a49a9d4b7d58",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174895fa42f3739a49a9d4b7d58",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178895fa42f3739a49a9d4b7d58",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 44,
+            "genres": [
+              "pop punk"
+            ],
+            "followers": {
+              "href": null,
+              "total": 299522
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb895fa42f3739a49a9d4b7d58",
+          "spotifyUrl": "https://open.spotify.com/artist/0pwyD6DhbFWn8uVSz2Fr0w",
+          "artist": "The Summer Set"
         }
       ],
       "tracks": [
@@ -15391,6 +16105,118 @@
           "spotifyUrl": "https://open.spotify.com/track/2uIDkSOzHjR0ap71JlebkX",
           "artist": "HAPPY LANDING",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "Robot Voices",
+          "plays": 17,
+          "artist": "Twenty One Pilots",
+          "spotifyData": {
+            "id": "0d2Ik5rp9Icd1oqn4178x2",
+            "name": "Robot Voices",
+            "type": "track",
+            "uri": "spotify:track:0d2Ik5rp9Icd1oqn4178x2",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0d2Ik5rp9Icd1oqn4178x2"
+            },
+            "popularity": 74,
+            "artists": [
+              {
+                "id": "3YQKmKGau1PzlVlkL1iodx",
+                "name": "Twenty One Pilots",
+                "type": "artist",
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+                }
+              }
+            ],
+            "album": {
+              "id": "1El3k8dU3sKyoGUeuyrolH",
+              "name": "Breach",
+              "type": "album",
+              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0278cba6a1edfe4235def632ed"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485178cba6a1edfe4235def632ed"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 13
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+          "spotifyUrl": "https://open.spotify.com/track/0d2Ik5rp9Icd1oqn4178x2"
+        },
+        {
+          "name": "Looking Out For #1",
+          "plays": 16,
+          "artist": "The Offspring",
+          "spotifyData": {
+            "id": "6fjO1ydi9dNB0nooAI2g3C",
+            "name": "Looking Out For #1",
+            "type": "track",
+            "uri": "spotify:track:6fjO1ydi9dNB0nooAI2g3C",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6fjO1ydi9dNB0nooAI2g3C"
+            },
+            "popularity": 51,
+            "artists": [
+              {
+                "id": "5LfGQac0EIXyAN8aUwmNAQ",
+                "name": "The Offspring",
+                "type": "artist",
+                "uri": "spotify:artist:5LfGQac0EIXyAN8aUwmNAQ",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5LfGQac0EIXyAN8aUwmNAQ"
+                }
+              }
+            ],
+            "album": {
+              "id": "5PDtsevGakWdIRZyeOZ83g",
+              "name": "SUPERCHARGED",
+              "type": "album",
+              "uri": "spotify:album:5PDtsevGakWdIRZyeOZ83g",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5PDtsevGakWdIRZyeOZ83g"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273cb978f4f085587476c600a8b"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02cb978f4f085587476c600a8b"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851cb978f4f085587476c600a8b"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 10
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273cb978f4f085587476c600a8b",
+          "spotifyUrl": "https://open.spotify.com/track/6fjO1ydi9dNB0nooAI2g3C"
         }
       ],
       "albums": [
@@ -16040,11 +16866,57 @@
           "spotifyUrl": "https://open.spotify.com/album/4aceLbAPwp99QOIA0o7Hfy",
           "artist": "Marianas Trench",
           "matchSource": "raw_uri"
+        },
+        {
+          "name": "Breach",
+          "plays": 146,
+          "artist": "Twenty One Pilots",
+          "spotifyData": {
+            "id": "1El3k8dU3sKyoGUeuyrolH",
+            "name": "Breach",
+            "type": "album",
+            "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0278cba6a1edfe4235def632ed",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485178cba6a1edfe4235def632ed",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "3YQKmKGau1PzlVlkL1iodx",
+                "name": "Twenty One Pilots",
+                "type": "artist",
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 13
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+          "spotifyUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
         }
       ]
     }
   },
-  "lastUpdated": "2025-09-01T03:19:38.957Z",
+  "lastUpdated": "2025-10-27T02:55:45.083Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,

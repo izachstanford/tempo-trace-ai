@@ -7108,11 +7108,11 @@
         5
       ],
       [
-        "Lift A Sail",
+        "Never Take Friendship Personal",
         5
       ],
       [
-        "Never Take Friendship Personal",
+        "Lift A Sail",
         5
       ],
       [
@@ -7132,11 +7132,11 @@
         5
       ],
       [
-        "Bleed American",
+        "What, Me Worry?",
         4
       ],
       [
-        "What, Me Worry?",
+        "Bleed American",
         4
       ],
       [
@@ -7152,10 +7152,6 @@
         4
       ],
       [
-        "By the Way",
-        4
-      ],
-      [
         "The Sunday EP",
         4
       ],
@@ -7165,6 +7161,10 @@
       ],
       [
         "Anomaly",
+        4
+      ],
+      [
+        "By the Way",
         4
       ],
       [
@@ -7192,7 +7192,7 @@
         3
       ],
       [
-        "Five Score and Seven Years Ago",
+        "Tidal Wave",
         3
       ],
       [
@@ -7200,11 +7200,11 @@
         3
       ],
       [
-        "Tidal Wave",
+        "Meteora",
         3
       ],
       [
-        "Meteora",
+        "Five Score and Seven Years Ago",
         3
       ],
       [
@@ -7212,11 +7212,11 @@
         3
       ],
       [
-        "Youth Authority",
+        "Chemical Warfare",
         3
       ],
       [
-        "Chemical Warfare",
+        "Youth Authority",
         3
       ],
       [
@@ -7322,14 +7322,14 @@
         "Adelitas Way"
       ],
       [
-        "Lift A Sail",
-        5,
-        "Yellowcard"
-      ],
-      [
         "Never Take Friendship Personal",
         5,
         "Anberlin"
+      ],
+      [
+        "Lift A Sail",
+        5,
+        "Yellowcard"
       ],
       [
         "Lies for the Liars",
@@ -7352,14 +7352,14 @@
         "Power Music Workout"
       ],
       [
-        "Bleed American",
-        4,
-        "Jimmy Eat World"
-      ],
-      [
         "What, Me Worry?",
         4,
         "Portugal. The Man"
+      ],
+      [
+        "Bleed American",
+        4,
+        "Jimmy Eat World"
       ],
       [
         "Strange Desire",
@@ -7377,11 +7377,6 @@
         "Angels & Airwaves"
       ],
       [
-        "By the Way",
-        4,
-        "Red Hot Chili Peppers"
-      ],
-      [
         "The Sunday EP",
         4,
         "NEEDTOBREATHE"
@@ -7395,6 +7390,11 @@
         "Anomaly",
         4,
         "Lecrae"
+      ],
+      [
+        "By the Way",
+        4,
+        "Red Hot Chili Peppers"
       ],
       [
         "Save Rock And Roll",
@@ -7427,9 +7427,9 @@
         "Thousand Foot Krutch"
       ],
       [
-        "Five Score and Seven Years Ago",
+        "Tidal Wave",
         3,
-        "Relient K"
+        "Taking Back Sunday"
       ],
       [
         "New Surrender",
@@ -7437,14 +7437,14 @@
         "Anberlin"
       ],
       [
-        "Tidal Wave",
-        3,
-        "Taking Back Sunday"
-      ],
-      [
         "Meteora",
         3,
         "Linkin Park"
+      ],
+      [
+        "Five Score and Seven Years Ago",
+        3,
+        "Relient K"
       ],
       [
         "Do You Feel",
@@ -7452,14 +7452,14 @@
         "The Rocket Summer"
       ],
       [
-        "Youth Authority",
-        3,
-        "Good Charlotte"
-      ],
-      [
         "Chemical Warfare",
         3,
         "Escape the Fate"
+      ],
+      [
+        "Youth Authority",
+        3,
+        "Good Charlotte"
       ],
       [
         "Peach Club",
@@ -10040,26 +10040,34 @@
     "top_artists": [
       [
         "Twenty One Pilots",
+        300
+      ],
+      [
+        "half•alive",
         128
       ],
       [
         "The National Parks",
-        124
-      ],
-      [
-        "half•alive",
-        120
+        128
       ],
       [
         "Grayscale",
-        108
+        110
       ],
       [
         "The Offspring",
-        84
+        100
+      ],
+      [
+        "Arrested Youth",
+        83
       ],
       [
         "Sub-Radio",
+        83
+      ],
+      [
+        "The Summer Set",
         83
       ],
       [
@@ -10067,20 +10075,40 @@
         77
       ],
       [
-        "Arrested Youth",
-        77
+        "Jimmy Eat World",
+        76
       ],
       [
-        "Jimmy Eat World",
-        71
+        "Marianas Trench",
+        60
+      ],
+      [
+        "Ed Sheeran",
+        60
+      ],
+      [
+        "The Rocket Summer",
+        59
       ],
       [
         "Hot Milk",
-        54
+        58
+      ],
+      [
+        "Beartooth",
+        53
+      ],
+      [
+        "The Chainsmokers",
+        52
       ],
       [
         "VOILÀ",
-        48
+        50
+      ],
+      [
+        "Yellowcard",
+        49
       ],
       [
         "Judah & the Lion",
@@ -10088,6 +10116,14 @@
       ],
       [
         "Enter Shikari",
+        47
+      ],
+      [
+        "blink-182",
+        47
+      ],
+      [
+        "HAPPY LANDING",
         46
       ],
       [
@@ -10095,80 +10131,56 @@
         46
       ],
       [
-        "Marianas Trench",
+        "We Came As Romans",
         45
       ],
       [
-        "HAPPY LANDING",
-        44
-      ],
-      [
-        "The Chainsmokers",
-        44
-      ],
-      [
-        "blink-182",
+        "Waterparks",
         42
       ],
       [
-        "The Summer Set",
-        41
+        "Smash Into Pieces",
+        42
       ],
       [
         "Cameron Whitcomb",
-        38
+        42
       ],
       [
-        "Beartooth",
-        37
-      ],
-      [
-        "We Came As Romans",
-        37
-      ],
-      [
-        "The Rocket Summer",
-        36
+        "Foreign Air",
+        39
       ],
       [
         "OneRepublic",
-        36
-      ],
-      [
-        "Waterparks",
-        34
-      ],
-      [
-        "Ed Sheeran",
-        34
+        37
       ],
       [
         "Panic! At The Disco",
-        31
+        35
       ],
       [
-        "Smash Into Pieces",
+        "mgk",
         29
+      ],
+      [
+        "for KING & COUNTRY",
+        29
+      ],
+      [
+        "Good Charlotte",
+        28
       ],
       [
         "Bleachers",
         28
       ],
       [
-        "for KING & COUNTRY",
-        28
-      ],
-      [
-        "Yellowcard",
+        "Jon Bellion",
         27
       ],
       [
-        "Good Charlotte",
+        "The Used",
         26
-      ],
-      [
-        "Jon Bellion",
-        24
       ],
       [
         "Ben Rector",
@@ -10179,23 +10191,31 @@
         24
       ],
       [
-        "The Used",
-        24
+        "Anberlin",
+        23
       ],
       [
         "Dean Lewis",
         23
       ],
       [
-        "Foreign Air",
+        "Taking Back Sunday",
         23
       ],
       [
-        "Anberlin",
-        22
+        "Emarosa",
+        23
       ],
       [
-        "Taking Back Sunday",
+        "Jack's Mannequin",
+        23
+      ],
+      [
+        "STARSET",
+        20
+      ],
+      [
+        "Breathe Carolina",
         20
       ],
       [
@@ -10203,11 +10223,11 @@
         19
       ],
       [
-        "Pacific",
-        18
+        "The Maine",
+        19
       ],
       [
-        "STARSET",
+        "Pacific",
         18
       ],
       [
@@ -10217,39 +10237,27 @@
       [
         "Windwaker",
         17
-      ],
-      [
-        "Sidewalk Prophets",
-        17
-      ],
-      [
-        "The Maine",
-        17
-      ],
-      [
-        "Emarosa",
-        17
-      ],
-      [
-        "Linkin Park",
-        17
-      ],
-      [
-        "Breathe Carolina",
-        17
       ]
     ],
     "top_tracks": [
       [
-        "Automatic",
-        21
+        "The Contract",
+        27
       ],
       [
-        "All My Love (Imperative)",
-        19
+        "Automatic",
+        26
       ],
       [
         "Numb",
+        23
+      ],
+      [
+        "Insubordinate Ingerland",
+        23
+      ],
+      [
+        "All My Love (Imperative)",
         19
       ],
       [
@@ -10257,28 +10265,48 @@
         19
       ],
       [
-        "Insubordinate Ingerland",
-        19
-      ],
-      [
-        "The Contract",
-        19
-      ],
-      [
         "Don't Leave Me In The Dark",
         18
+      ],
+      [
+        "Robot Voices",
+        17
       ],
       [
         "SIRENS",
         16
       ],
       [
+        "Looking Out For #1",
+        16
+      ],
+      [
+        "Let Me Out",
+        15
+      ],
+      [
         "Onto Me",
         15
       ],
       [
-        "Let Me Out",
-        14
+        "I Don't Wanna Party",
+        15
+      ],
+      [
+        "Black Hole",
+        15
+      ],
+      [
+        "Drum Show",
+        15
+      ],
+      [
+        "City Walls",
+        15
+      ],
+      [
+        "Tally",
+        15
       ],
       [
         "Roots",
@@ -10286,10 +10314,6 @@
       ],
       [
         "Wild Spirit",
-        14
-      ],
-      [
-        "Looking Out For #1",
         14
       ],
       [
@@ -10301,11 +10325,31 @@
         14
       ],
       [
+        "Sapphire",
+        14
+      ],
+      [
         "Pick Your Poison",
         13
       ],
       [
+        "Paradise",
+        13
+      ],
+      [
+        "Downstairs",
+        13
+      ],
+      [
         "The Time is Now",
+        12
+      ],
+      [
+        "Sophie's House",
+        12
+      ],
+      [
+        "Scenic Route",
         12
       ],
       [
@@ -10317,8 +10361,16 @@
         12
       ],
       [
-        "Sophie's House",
-        11
+        "Echo",
+        12
+      ],
+      [
+        "RAWFEAR",
+        12
+      ],
+      [
+        "Days Lie Dormant",
+        12
       ],
       [
         "Mountain Mama",
@@ -10329,19 +10381,19 @@
         11
       ],
       [
-        "Scenic Route",
-        11
-      ],
-      [
         "Through The Landslide",
         11
       ],
       [
-        "I Don't Wanna Party",
+        "Welcome to the Mountains",
         11
       ],
       [
-        "Paradise",
+        "Smile",
+        11
+      ],
+      [
+        "MakeDamnSure",
         11
       ],
       [
@@ -10350,6 +10402,22 @@
       ],
       [
         "Bara Bada Bastu",
+        11
+      ],
+      [
+        "Take What You Want",
+        11
+      ],
+      [
+        "Original Prankster",
+        11
+      ],
+      [
+        "Blackout",
+        11
+      ],
+      [
+        "Intentions",
         11
       ],
       [
@@ -10369,83 +10437,30 @@
         10
       ],
       [
-        "Fore(st)Shadow",
-        10
-      ],
-      [
-        "Timber!",
-        10
-      ],
-      [
-        "Welcome to the Mountains",
-        10
-      ],
-      [
-        "Bad Apple",
-        10
-      ],
-      [
-        "Mystical Magical",
-        10
-      ],
-      [
-        "Black Hole",
-        10
-      ],
-      [
-        "Echo",
-        10
-      ],
-      [
-        "The Point",
-        9
-      ],
-      [
         "Routines In The Night",
-        9
-      ],
-      [
-        "Whatever Comes",
-        9
-      ],
-      [
-        "Dance With Your Ghost",
-        9
-      ],
-      [
-        "Up From the Bottom",
-        9
-      ],
-      [
-        "Riptide",
-        9
-      ],
-      [
-        "One Foot Out The Door",
-        9
-      ],
-      [
-        "MakeDamnSure",
-        9
-      ],
-      [
-        "Lighter",
-        9
-      ],
-      [
-        "Sapphire",
-        9
-      ],
-      [
-        "Oldies Station",
-        8
+        10
       ]
     ],
     "top_track_artists": [
       [
+        "The Contract",
+        27,
+        "Twenty One Pilots"
+      ],
+      [
         "Automatic",
-        21,
+        26,
         "half•alive"
+      ],
+      [
+        "Numb",
+        23,
+        "Waterparks"
+      ],
+      [
+        "Insubordinate Ingerland",
+        23,
+        "Hot Milk"
       ],
       [
         "All My Love (Imperative)",
@@ -10453,24 +10468,9 @@
         "half•alive"
       ],
       [
-        "Numb",
-        19,
-        "Waterparks"
-      ],
-      [
         "Some Kind Of Magic",
         19,
         "Grayscale"
-      ],
-      [
-        "Insubordinate Ingerland",
-        19,
-        "Hot Milk"
-      ],
-      [
-        "The Contract",
-        19,
-        "Twenty One Pilots"
       ],
       [
         "Don't Leave Me In The Dark",
@@ -10478,9 +10478,24 @@
         "Grayscale"
       ],
       [
+        "Robot Voices",
+        17,
+        "Twenty One Pilots"
+      ],
+      [
         "SIRENS",
         16,
         "Windwaker"
+      ],
+      [
+        "Looking Out For #1",
+        16,
+        "The Offspring"
+      ],
+      [
+        "Let Me Out",
+        15,
+        "HAPPY LANDING"
       ],
       [
         "Onto Me",
@@ -10488,9 +10503,29 @@
         "Sub-Radio"
       ],
       [
-        "Let Me Out",
-        14,
-        "HAPPY LANDING"
+        "I Don't Wanna Party",
+        15,
+        "The Summer Set"
+      ],
+      [
+        "Black Hole",
+        15,
+        "We Came As Romans"
+      ],
+      [
+        "Drum Show",
+        15,
+        "Twenty One Pilots"
+      ],
+      [
+        "City Walls",
+        15,
+        "Twenty One Pilots"
+      ],
+      [
+        "Tally",
+        15,
+        "Twenty One Pilots"
       ],
       [
         "Roots",
@@ -10503,11 +10538,6 @@
         "The National Parks"
       ],
       [
-        "Looking Out For #1",
-        14,
-        "The Offspring"
-      ],
-      [
         "R.I.P.",
         14,
         "half•alive"
@@ -10518,14 +10548,39 @@
         "Sub-Radio"
       ],
       [
+        "Sapphire",
+        14,
+        "Ed Sheeran"
+      ],
+      [
         "Pick Your Poison",
         13,
         "Knox"
       ],
       [
+        "Paradise",
+        13,
+        "Smash Into Pieces"
+      ],
+      [
+        "Downstairs",
+        13,
+        "Twenty One Pilots"
+      ],
+      [
         "The Time is Now",
         12,
         "Zayde Wølf"
+      ],
+      [
+        "Sophie's House",
+        12,
+        "half•alive"
+      ],
+      [
+        "Scenic Route",
+        12,
+        "The National Parks"
       ],
       [
         "Kept Me Alive",
@@ -10538,9 +10593,14 @@
         "Cameron Whitcomb"
       ],
       [
-        "Sophie's House",
-        11,
-        "half•alive"
+        "RAWFEAR",
+        12,
+        "Twenty One Pilots"
+      ],
+      [
+        "Days Lie Dormant",
+        12,
+        "Twenty One Pilots"
       ],
       [
         "Mountain Mama",
@@ -10553,24 +10613,19 @@
         "The National Parks"
       ],
       [
-        "Scenic Route",
-        11,
-        "The National Parks"
-      ],
-      [
         "Through The Landslide",
         11,
         "Grayscale"
       ],
       [
-        "I Don't Wanna Party",
+        "Welcome to the Mountains",
         11,
-        "The Summer Set"
+        "The National Parks"
       ],
       [
-        "Paradise",
+        "MakeDamnSure",
         11,
-        "Smash Into Pieces"
+        "Taking Back Sunday"
       ],
       [
         "Sleep On The Beach",
@@ -10581,6 +10636,26 @@
         "Bara Bada Bastu",
         11,
         "KAJ"
+      ],
+      [
+        "Take What You Want",
+        11,
+        "Yellowcard"
+      ],
+      [
+        "Original Prankster",
+        11,
+        "The Offspring"
+      ],
+      [
+        "Blackout",
+        11,
+        "Breathe Carolina"
+      ],
+      [
+        "Intentions",
+        11,
+        "Twenty One Pilots"
       ],
       [
         "Vignette",
@@ -10603,6 +10678,11 @@
         "Ra Costelloe"
       ],
       [
+        "Routines In The Night",
+        10,
+        "Twenty One Pilots"
+      ],
+      [
         "Fore(st)Shadow",
         10,
         "The National Parks"
@@ -10611,104 +10691,28 @@
         "Timber!",
         10,
         "The National Parks"
-      ],
-      [
-        "Welcome to the Mountains",
-        10,
-        "The National Parks"
-      ],
-      [
-        "Bad Apple",
-        10,
-        "Cameron Whitcomb"
-      ],
-      [
-        "Mystical Magical",
-        10,
-        "Benson Boone"
-      ],
-      [
-        "Black Hole",
-        10,
-        "We Came As Romans"
-      ],
-      [
-        "The Point",
-        9,
-        "half•alive"
-      ],
-      [
-        "Routines In The Night",
-        9,
-        "Twenty One Pilots"
-      ],
-      [
-        "Whatever Comes",
-        9,
-        "The National Parks"
-      ],
-      [
-        "Dance With Your Ghost",
-        9,
-        "Grayscale"
-      ],
-      [
-        "Up From the Bottom",
-        9,
-        "Linkin Park"
-      ],
-      [
-        "One Foot Out The Door",
-        9,
-        "VOILÀ"
-      ],
-      [
-        "MakeDamnSure",
-        9,
-        "Taking Back Sunday"
-      ],
-      [
-        "Lighter",
-        9,
-        "Kyle Alessandro"
-      ],
-      [
-        "Sapphire",
-        9,
-        "Ed Sheeran"
-      ],
-      [
-        "Oldies Station",
-        8,
-        "Twenty One Pilots"
-      ],
-      [
-        "Long Drive",
-        8,
-        "half•alive"
-      ],
-      [
-        "Lie, Lie",
-        8,
-        "half•alive"
       ]
     ],
     "top_albums": [
+      [
+        "Breach",
+        146
+      ],
       [
         "The Hart",
         103
       ],
       [
         "Wild Spirit",
-        97
+        98
       ],
       [
         "Persona",
-        84
+        92
       ],
       [
         "Clancy",
-        70
+        72
       ],
       [
         "Sunrise City",
@@ -10719,19 +10723,31 @@
         60
       ],
       [
+        "Haven",
+        46
+      ],
+      [
+        "Golden",
+        44
+      ],
+      [
         "The Process",
         44
       ],
       [
-        "Golden",
-        43
+        "Futures",
+        44
+      ],
+      [
+        "Meet Me At The Record Store",
+        44
       ],
       [
         "SUPERCHARGED",
-        40
+        43
       ],
       [
-        "Futures",
+        "The Surface",
         40
       ],
       [
@@ -10743,20 +10759,24 @@
         37
       ],
       [
-        "The Surface",
-        32
-      ],
-      [
-        "Haven",
-        31
-      ],
-      [
         "Darkbloom",
+        34
+      ],
+      [
+        "Greatest Hits",
+        27
+      ],
+      [
+        "Insubordinate Ingerland",
         27
       ],
       [
         "A Fever You Can't Sweat Out",
-        26
+        27
+      ],
+      [
+        "Play",
+        25
       ],
       [
         "So Much (For) Stardust",
@@ -10767,19 +10787,31 @@
         24
       ],
       [
-        "Greatest Hits",
-        23
-      ],
-      [
         "Hello, Good Friend.",
         23
       ],
       [
-        "Insubordinate Ingerland",
+        "Better Days",
         23
       ],
       [
+        "FATHER FIGURE",
+        23
+      ],
+      [
+        "lost americana",
+        22
+      ],
+      [
         "The Epilogue",
+        21
+      ],
+      [
+        "Everything In Transit",
+        21
+      ],
+      [
+        "Trench",
         21
       ],
       [
@@ -10791,7 +10823,7 @@
         20
       ],
       [
-        "FATHER FIGURE",
+        "Such That I May Glow",
         20
       ],
       [
@@ -10799,7 +10831,15 @@
         19
       ],
       [
+        "The Contract",
+        19
+      ],
+      [
         "Too Late to Start Over (Deluxe)",
+        18
+      ],
+      [
+        "ONE MORE TIME...",
         18
       ],
       [
@@ -10811,7 +10851,7 @@
         17
       ],
       [
-        "The Contract",
+        "Life Will Write the Words",
         17
       ],
       [
@@ -10823,7 +10863,7 @@
         16
       ],
       [
-        "ONE MORE TIME...",
+        "Americana",
         16
       ],
       [
@@ -10832,6 +10872,10 @@
       ],
       [
         "Sting",
+        15
+      ],
+      [
+        "Scaled And Icy",
         15
       ],
       [
@@ -10847,55 +10891,16 @@
         14
       ],
       [
-        "Nevertake",
-        14
-      ],
-      [
-        "Persona (Extended)",
-        13
-      ],
-      [
-        "Americana",
-        13
-      ],
-      [
-        "Ever After",
-        12
-      ],
-      [
-        "Scaled And Icy",
-        12
-      ],
-      [
-        "Bad Apple",
-        12
-      ],
-      [
-        "Trench",
-        12
-      ],
-      [
-        "Meet Me At The Record Store",
-        12
-      ],
-      [
-        "Chase This Light",
-        11
-      ],
-      [
         "Human",
-        11
-      ],
-      [
-        "Louder Now",
-        11
-      ],
-      [
-        "Paradise",
-        11
+        14
       ]
     ],
     "top_album_artists": [
+      [
+        "Breach",
+        146,
+        "Twenty One Pilots"
+      ],
       [
         "The Hart",
         103,
@@ -10903,17 +10908,17 @@
       ],
       [
         "Wild Spirit",
-        97,
+        98,
         "The National Parks"
       ],
       [
         "Persona",
-        84,
+        92,
         "half•alive"
       ],
       [
         "Clancy",
-        70,
+        72,
         "Twenty One Pilots"
       ],
       [
@@ -10927,24 +10932,39 @@
         "Knox"
       ],
       [
+        "Haven",
+        46,
+        "Marianas Trench"
+      ],
+      [
+        "Golden",
+        44,
+        "HAPPY LANDING"
+      ],
+      [
         "The Process",
         44,
         "Judah & the Lion"
       ],
       [
-        "Golden",
-        43,
-        "HAPPY LANDING"
+        "Futures",
+        44,
+        "Jimmy Eat World"
+      ],
+      [
+        "Meet Me At The Record Store",
+        44,
+        "The Summer Set"
       ],
       [
         "SUPERCHARGED",
-        40,
+        43,
         "The Offspring"
       ],
       [
-        "Futures",
+        "The Surface",
         40,
-        "Jimmy Eat World"
+        "Beartooth"
       ],
       [
         "A Kiss for the Whole World",
@@ -10957,24 +10977,29 @@
         "The Chainsmokers"
       ],
       [
-        "The Surface",
-        32,
-        "Beartooth"
-      ],
-      [
-        "Haven",
-        31,
-        "Marianas Trench"
-      ],
-      [
         "Darkbloom",
-        27,
+        34,
         "We Came As Romans"
       ],
       [
+        "Insubordinate Ingerland",
+        27,
+        "Hot Milk"
+      ],
+      [
         "A Fever You Can't Sweat Out",
-        26,
+        27,
         "Panic! At The Disco"
+      ],
+      [
+        "Play",
+        25,
+        "Ed Sheeran"
+      ],
+      [
+        "Greatest Hits",
+        24,
+        "Waterparks"
       ],
       [
         "So Much (For) Stardust",
@@ -10992,9 +11017,19 @@
         "The Rocket Summer"
       ],
       [
-        "Insubordinate Ingerland",
+        "Better Days",
         23,
-        "Hot Milk"
+        "Yellowcard"
+      ],
+      [
+        "FATHER FIGURE",
+        23,
+        "Jon Bellion"
+      ],
+      [
+        "lost americana",
+        22,
+        "mgk"
       ],
       [
         "The Epilogue",
@@ -11002,14 +11037,19 @@
         "Dean Lewis"
       ],
       [
+        "Everything In Transit",
+        21,
+        "Jack's Mannequin"
+      ],
+      [
+        "Trench",
+        21,
+        "Twenty One Pilots"
+      ],
+      [
         "Corporation P.O.P",
         21,
         "Hot Milk"
-      ],
-      [
-        "Greatest Hits",
-        20,
-        "Waterparks"
       ],
       [
         "R.I.P.",
@@ -11017,9 +11057,9 @@
         "half•alive"
       ],
       [
-        "FATHER FIGURE",
+        "Such That I May Glow",
         20,
-        "Jon Bellion"
+        "Foreign Air"
       ],
       [
         "Too Late to Start Over",
@@ -11027,9 +11067,19 @@
         "Arrested Youth"
       ],
       [
+        "The Contract",
+        19,
+        "Twenty One Pilots"
+      ],
+      [
         "Too Late to Start Over (Deluxe)",
         18,
         "Arrested Youth"
+      ],
+      [
+        "ONE MORE TIME...",
+        18,
+        "blink-182"
       ],
       [
         "Cheat Codes, Pt. 2",
@@ -11042,9 +11092,9 @@
         "Windwaker"
       ],
       [
-        "The Contract",
+        "Life Will Write the Words",
         17,
-        "Twenty One Pilots"
+        "The Rocket Summer"
       ],
       [
         "Moon Music",
@@ -11057,9 +11107,9 @@
         "Fall Out Boy"
       ],
       [
-        "ONE MORE TIME...",
+        "Americana",
         16,
-        "blink-182"
+        "The Offspring"
       ],
       [
         "A Father's Lullaby",
@@ -11070,6 +11120,11 @@
         "Sting",
         15,
         "Emarosa"
+      ],
+      [
+        "Scaled And Icy",
+        15,
+        "Twenty One Pilots"
       ],
       [
         "Burn The Ships",
@@ -11090,96 +11145,41 @@
         "Nevertake",
         14,
         "Anberlin"
-      ],
-      [
-        "Persona (Extended)",
-        13,
-        "half•alive"
-      ],
-      [
-        "Americana",
-        13,
-        "The Offspring"
-      ],
-      [
-        "Ever After",
-        12,
-        "Marianas Trench"
-      ],
-      [
-        "Scaled And Icy",
-        12,
-        "Twenty One Pilots"
-      ],
-      [
-        "Bad Apple",
-        12,
-        "Cameron Whitcomb"
-      ],
-      [
-        "Trench",
-        12,
-        "Twenty One Pilots"
-      ],
-      [
-        "Meet Me At The Record Store",
-        12,
-        "The Summer Set"
-      ],
-      [
-        "Chase This Light",
-        11,
-        "Jimmy Eat World"
-      ],
-      [
-        "Louder Now",
-        11,
-        "Taking Back Sunday"
-      ],
-      [
-        "Paradise",
-        11,
-        "Smash Into Pieces"
-      ],
-      [
-        "Sapphire",
-        11,
-        "Ed Sheeran"
       ]
     ],
     "year_stats": {
-      "total_plays": 3039,
-      "total_minutes": 8627.317766666667,
-      "total_hours": 143.78862944444444,
-      "unique_artists": 377,
-      "unique_tracks": 1296,
-      "unique_albums": 769,
-      "unique_days_with_listening": 214,
-      "average_track_length_minutes": 2.8388673138093674,
-      "average_daily_minutes": 40.31456900311527,
-      "skip_rate_percentage": 15.399802566633761,
-      "completion_rate_percentage": 73.28068443566963,
-      "offline_percentage": 12.898979927607765,
-      "shuffle_percentage": 4.935834155972359,
+      "total_plays": 3672,
+      "total_minutes": 10456.808583333333,
+      "total_hours": 174.28014305555556,
+      "unique_artists": 398,
+      "unique_tracks": 1454,
+      "unique_albums": 847,
+      "unique_days_with_listening": 263,
+      "average_track_length_minutes": 2.8477147558097315,
+      "average_daily_minutes": 39.75972845373891,
+      "skip_rate_percentage": 15.005446623093682,
+      "completion_rate_percentage": 72.93028322440087,
+      "offline_percentage": 14.215686274509803,
+      "shuffle_percentage": 4.9564270152505445,
       "first_play": "2025-01-02T02:39:50",
-      "last_play": "2025-08-30T17:05:32",
+      "last_play": "2025-10-25T15:01:21",
       "peak_month": "January",
       "peak_month_plays": 552,
       "top_platform": [
         "iOS",
-        2233
+        2636
       ],
       "top_provider": [
         "Spotify",
-        3039
+        3672
       ],
       "provider_breakdown": {
-        "Spotify": 3039
+        "Spotify": 3672
       },
       "platform_breakdown": {
-        "macOS": 595,
-        "iOS": 2233,
-        "Other": 211
+        "macOS": 759,
+        "iOS": 2636,
+        "Other": 277
       },
       "monthly_breakdown": {
         "January": {
@@ -11218,9 +11218,19 @@
           "hours": 19.414429444444444
         },
         "August": {
-          "plays": 453,
-          "minutes": 1209.1366166666667,
-          "hours": 20.152276944444445
+          "plays": 456,
+          "minutes": 1212.0377166666667,
+          "hours": 20.20062861111111
+        },
+        "September": {
+          "plays": 300,
+          "minutes": 892.1118333333333,
+          "hours": 14.868530555555555
+        },
+        "October": {
+          "plays": 330,
+          "minutes": 934.4778833333334,
+          "hours": 15.57463138888889
         }
       }
     }

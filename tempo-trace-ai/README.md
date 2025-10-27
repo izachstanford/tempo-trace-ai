@@ -56,9 +56,9 @@ For detailed information, see the [docs folder](../docs/):
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run process-music` - Process music data only
-- `npm run enrich-spotify` - Enrich with Spotify data
-- `npm run consolidate-data` - Consolidate data files
-- `npm run process-and-enrich` - Complete workflow (music + Spotify)
+- `npm run enrich-spotify` - **Incremental** Spotify enrichment (fast!)
+- `npm run enrich-spotify-full` - Full Spotify enrichment (slow, re-fetches everything)
+- `npm run process-and-enrich` - Complete workflow (music + incremental Spotify)
 
 ## 🏗 **Architecture**
 
@@ -77,6 +77,7 @@ For detailed information, see the [docs folder](../docs/):
 ## 🎯 **Project Status**
 
 ✅ **Complete Spotify Integration** - Full enrichment for all years (2016-2025)  
+✅ **Incremental Enrichment** - Only updates missing data (fast & efficient!)  
 ✅ **Optimized Data Structure** - 3 consolidated files instead of 7 separate files  
 ✅ **Simplified Workflow** - Single-command processes for common tasks  
 ✅ **Clean Deployment** - Automated deployment to live website  
@@ -89,4 +90,4 @@ For detailed information, see the [docs folder](../docs/):
 
 ---
 
-**Built with ❤️ by [Zach Stanford](https://aiwithzach.com)**
+**Built with AI by [Zach Stanford](https://aiwithzach.com)**
