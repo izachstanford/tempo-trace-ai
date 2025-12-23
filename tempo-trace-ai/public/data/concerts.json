@@ -1,5 +1,26 @@
 [
   {
+    "date": "2025-12-07",
+    "artist": "Story of the Year",
+    "concert": "Scream Team Tour",
+    "venue": "The Complex",
+    "vibe_rating": 5
+  },
+  {
+    "date": "2025-12-07",
+    "artist": "Senses Fail",
+    "concert": "Scream Team Tour",
+    "venue": "The Complex",
+    "vibe_rating": 4
+  },
+  {
+    "date": "2025-12-07",
+    "artist": "Armor for Sleep",
+    "concert": "Scream Team Tour",
+    "venue": "The Complex",
+    "vibe_rating": 3.5
+  },
+  {
     "date": "2025-10-29",
     "artist": "The Summer Set",
     "concert": "When We Were Young Festival",
