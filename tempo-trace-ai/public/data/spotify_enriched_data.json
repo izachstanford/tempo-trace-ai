@@ -15749,6 +15749,176 @@
           "image": "https://i.scdn.co/image/ab6761610000e5eb895fa42f3739a49a9d4b7d58",
           "spotifyUrl": "https://open.spotify.com/artist/0pwyD6DhbFWn8uVSz2Fr0w",
           "artist": "The Summer Set"
+        },
+        {
+          "name": "Fall Out Boy",
+          "plays": 94,
+          "spotifyData": {
+            "id": "4UXqAaa6dQYAk18Lv7PEgX",
+            "name": "Fall Out Boy",
+            "type": "artist",
+            "uri": "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb362011ebe6064c38e97e9aac",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174362011ebe6064c38e97e9aac",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178362011ebe6064c38e97e9aac",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 81,
+            "genres": [
+              "emo",
+              "pop punk"
+            ],
+            "followers": {
+              "href": null,
+              "total": 11553163
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb362011ebe6064c38e97e9aac",
+          "spotifyUrl": "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX",
+          "artist": "Fall Out Boy"
+        },
+        {
+          "name": "Beartooth",
+          "plays": 93,
+          "spotifyData": {
+            "id": "6vwjIs0tbIiseJMR3pqwiL",
+            "name": "Beartooth",
+            "type": "artist",
+            "uri": "spotify:artist:6vwjIs0tbIiseJMR3pqwiL",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6vwjIs0tbIiseJMR3pqwiL"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebd2219c00e2fa1f2aaddcbf24",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174d2219c00e2fa1f2aaddcbf24",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178d2219c00e2fa1f2aaddcbf24",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 62,
+            "genres": [
+              "metalcore",
+              "post-hardcore"
+            ],
+            "followers": {
+              "href": null,
+              "total": 893727
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebd2219c00e2fa1f2aaddcbf24",
+          "spotifyUrl": "https://open.spotify.com/artist/6vwjIs0tbIiseJMR3pqwiL",
+          "artist": "Beartooth"
+        },
+        {
+          "name": "Panic! At The Disco",
+          "plays": 98,
+          "spotifyData": {
+            "id": "20JZFwl6HVl6yg8a4H3ZqK",
+            "name": "Panic! At The Disco",
+            "type": "artist",
+            "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5ebb256ae9a4b82bfff97776ae2",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab67616100005174b256ae9a4b82bfff97776ae2",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f178b256ae9a4b82bfff97776ae2",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 78,
+            "genres": [
+              "emo"
+            ],
+            "followers": {
+              "href": null,
+              "total": 12822446
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5ebb256ae9a4b82bfff97776ae2",
+          "spotifyUrl": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK",
+          "artist": "Panic! At The Disco"
+        },
+        {
+          "name": "A Day To Remember",
+          "plays": 93,
+          "spotifyData": {
+            "id": "4NiJW4q9ichVqL1aUsgGAN",
+            "name": "A Day To Remember",
+            "type": "artist",
+            "uri": "spotify:artist:4NiJW4q9ichVqL1aUsgGAN",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4NiJW4q9ichVqL1aUsgGAN"
+            },
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab6761610000e5eb6164f861e5e683c9067f4395",
+                "height": 640,
+                "width": 640
+              },
+              {
+                "url": "https://i.scdn.co/image/ab676161000051746164f861e5e683c9067f4395",
+                "height": 320,
+                "width": 320
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6761610000f1786164f861e5e683c9067f4395",
+                "height": 160,
+                "width": 160
+              }
+            ],
+            "popularity": 70,
+            "genres": [
+              "metalcore",
+              "post-hardcore",
+              "pop punk",
+              "screamo",
+              "emo"
+            ],
+            "followers": {
+              "href": null,
+              "total": 2546616
+            }
+          },
+          "image": "https://i.scdn.co/image/ab6761610000e5eb6164f861e5e683c9067f4395",
+          "spotifyUrl": "https://open.spotify.com/artist/4NiJW4q9ichVqL1aUsgGAN",
+          "artist": "A Day To Remember"
         }
       ],
       "tracks": [
@@ -16954,6 +17124,127 @@
           },
           "image": "https://i.scdn.co/image/ab67616d0000b273cb978f4f085587476c600a8b",
           "spotifyUrl": "https://open.spotify.com/track/6fjO1ydi9dNB0nooAI2g3C"
+        },
+        {
+          "name": "Black Hole",
+          "plays": 24,
+          "artist": "We Came As Romans",
+          "spotifyData": {
+            "id": "1g5Jqwo02PuitYfv19B6Jn",
+            "name": "Black Hole",
+            "type": "track",
+            "uri": "spotify:track:1g5Jqwo02PuitYfv19B6Jn",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1g5Jqwo02PuitYfv19B6Jn"
+            },
+            "popularity": 65,
+            "artists": [
+              {
+                "id": "6qO6LhD6FuXK5e2PtfAIMz",
+                "name": "We Came As Romans",
+                "type": "artist",
+                "uri": "spotify:artist:6qO6LhD6FuXK5e2PtfAIMz",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6qO6LhD6FuXK5e2PtfAIMz"
+                }
+              },
+              {
+                "id": "0YbrhcmTTHZbsXyqjsGCGD",
+                "name": "Caleb Shomo",
+                "type": "artist",
+                "uri": "spotify:artist:0YbrhcmTTHZbsXyqjsGCGD",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0YbrhcmTTHZbsXyqjsGCGD"
+                }
+              }
+            ],
+            "album": {
+              "id": "15q7078X1sRf9ivhEnv1tm",
+              "name": "Darkbloom",
+              "type": "album",
+              "uri": "spotify:album:15q7078X1sRf9ivhEnv1tm",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/15q7078X1sRf9ivhEnv1tm"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2732aaa9372a6922e6e3575d828"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e022aaa9372a6922e6e3575d828"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048512aaa9372a6922e6e3575d828"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 10
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2732aaa9372a6922e6e3575d828",
+          "spotifyUrl": "https://open.spotify.com/track/1g5Jqwo02PuitYfv19B6Jn"
+        },
+        {
+          "name": "City Walls",
+          "plays": 21,
+          "artist": "Twenty One Pilots",
+          "spotifyData": {
+            "id": "0Ji9UonfwC90rbZ4IaQhOb",
+            "name": "City Walls",
+            "type": "track",
+            "uri": "spotify:track:0Ji9UonfwC90rbZ4IaQhOb",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0Ji9UonfwC90rbZ4IaQhOb"
+            },
+            "popularity": 75,
+            "artists": [
+              {
+                "id": "3YQKmKGau1PzlVlkL1iodx",
+                "name": "Twenty One Pilots",
+                "type": "artist",
+                "uri": "spotify:artist:3YQKmKGau1PzlVlkL1iodx",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3YQKmKGau1PzlVlkL1iodx"
+                }
+              }
+            ],
+            "album": {
+              "id": "1El3k8dU3sKyoGUeuyrolH",
+              "name": "Breach",
+              "type": "album",
+              "uri": "spotify:album:1El3k8dU3sKyoGUeuyrolH",
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+              },
+              "images": [
+                {
+                  "height": 640,
+                  "width": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed"
+                },
+                {
+                  "height": 300,
+                  "width": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0278cba6a1edfe4235def632ed"
+                },
+                {
+                  "height": 64,
+                  "width": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485178cba6a1edfe4235def632ed"
+                }
+              ],
+              "album_type": "album",
+              "total_tracks": 13
+            }
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
+          "spotifyUrl": "https://open.spotify.com/track/0Ji9UonfwC90rbZ4IaQhOb"
         }
       ],
       "albums": [
@@ -17649,11 +17940,124 @@
           },
           "image": "https://i.scdn.co/image/ab67616d0000b27378cba6a1edfe4235def632ed",
           "spotifyUrl": "https://open.spotify.com/album/1El3k8dU3sKyoGUeuyrolH"
+        },
+        {
+          "name": "A Fever You Can't Sweat Out",
+          "plays": 77,
+          "spotifyData": {
+            "id": "2YeOhhJg3OWpN0F1VYPxtW",
+            "name": "A Fever You Can't Sweat Out",
+            "type": "album",
+            "uri": "spotify:album:2YeOhhJg3OWpN0F1VYPxtW",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/2YeOhhJg3OWpN0F1VYPxtW"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b2730a8881b0d247346c3c447bf3",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e020a8881b0d247346c3c447bf3",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d000048510a8881b0d247346c3c447bf3",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "20JZFwl6HVl6yg8a4H3ZqK",
+                "name": "Panic! At The Disco",
+                "type": "artist",
+                "uri": "spotify:artist:20JZFwl6HVl6yg8a4H3ZqK",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/20JZFwl6HVl6yg8a4H3ZqK"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 13
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b2730a8881b0d247346c3c447bf3",
+          "spotifyUrl": "https://open.spotify.com/album/2YeOhhJg3OWpN0F1VYPxtW"
+        },
+        {
+          "name": "The Surface",
+          "plays": 58,
+          "spotifyData": {
+            "name": "The Surface",
+            "artists": [
+              {
+                "name": "Beartooth"
+              }
+            ],
+            "images": [
+              {
+                "url": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
+                "height": 640,
+                "width": 640
+              }
+            ]
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b27318e8a8ba2fc255d33d29c25b",
+          "spotifyUrl": "https://open.spotify.com/album/5WmbnLQhy8ndx8S7puEolG",
+          "artist": "Beartooth",
+          "matchSource": "raw_uri"
+        },
+        {
+          "name": "Big Ole Album Vol. 1",
+          "plays": 61,
+          "spotifyData": {
+            "id": "1lAeYgoPZlOyPCudqqmSOg",
+            "name": "Big Ole Album Vol. 1",
+            "type": "album",
+            "uri": "spotify:album:1lAeYgoPZlOyPCudqqmSOg",
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/1lAeYgoPZlOyPCudqqmSOg"
+            },
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273ce1d39c7a2c9ddc81c1b65c0",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02ce1d39c7a2c9ddc81c1b65c0",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851ce1d39c7a2c9ddc81c1b65c0",
+                "width": 64
+              }
+            ],
+            "artists": [
+              {
+                "id": "4NiJW4q9ichVqL1aUsgGAN",
+                "name": "A Day To Remember",
+                "type": "artist",
+                "uri": "spotify:artist:4NiJW4q9ichVqL1aUsgGAN",
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4NiJW4q9ichVqL1aUsgGAN"
+                }
+              }
+            ],
+            "album_type": "album",
+            "total_tracks": 12
+          },
+          "image": "https://i.scdn.co/image/ab67616d0000b273ce1d39c7a2c9ddc81c1b65c0",
+          "spotifyUrl": "https://open.spotify.com/album/1lAeYgoPZlOyPCudqqmSOg"
         }
       ]
     }
   },
-  "lastUpdated": "2025-10-27T04:23:39.938Z",
+  "lastUpdated": "2026-01-08T21:48:22.117Z",
   "config": {
     "itemsPerCategory": 10,
     "apiDelay": 100,
