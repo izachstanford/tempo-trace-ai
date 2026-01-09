@@ -7364,7 +7364,7 @@
       [
         "Viva Las Vengeance",
         15,
-        5090839
+        5090838
       ],
       [
         "180 BPM Running Workout Mix Vol. 2 (60 Min Non-Stop Running Mix [180 BPM])",
@@ -7618,7 +7618,7 @@
         "Viva Las Vengeance",
         15,
         "Panic! At The Disco",
-        5090839
+        5090838
       ],
       [
         "180 BPM Running Workout Mix Vol. 2 (60 Min Non-Stop Running Mix [180 BPM])",
@@ -10513,7 +10513,7 @@
       [
         "Unleashed",
         16,
-        2963136
+        2963137
       ],
       [
         "Vessel",
@@ -10812,7 +10812,7 @@
         "Unleashed",
         16,
         "Skillet",
-        2963136
+        2963137
       ],
       [
         "Vessel",
@@ -10937,113 +10937,163 @@
     "top_artists": [
       [
         "Twenty One Pilots",
-        300,
-        57898196
-      ],
-      [
-        "The National Parks",
-        128,
-        21716887
+        367,
+        71342507
       ],
       [
         "half•alive",
-        128,
-        20676966
+        141,
+        22213376
+      ],
+      [
+        "The National Parks",
+        129,
+        21896261
       ],
       [
         "Grayscale",
-        110,
-        19741237
-      ],
-      [
-        "The Offspring",
-        100,
-        15726725
-      ],
-      [
-        "The Summer Set",
-        83,
-        13665915
-      ],
-      [
-        "Jimmy Eat World",
-        76,
-        13663098
-      ],
-      [
-        "Arrested Youth",
-        83,
-        13648770
-      ],
-      [
-        "Sub-Radio",
-        83,
-        13320293
-      ],
-      [
-        "Knox",
-        77,
-        11968959
-      ],
-      [
-        "The Rocket Summer",
-        59,
-        11470457
-      ],
-      [
-        "Ed Sheeran",
-        60,
-        11181989
-      ],
-      [
-        "Marianas Trench",
-        60,
-        10413300
-      ],
-      [
-        "Beartooth",
-        53,
-        10169444
-      ],
-      [
-        "Hot Milk",
-        58,
-        9953914
+        117,
+        20962160
       ],
       [
         "Fall Out Boy",
-        46,
-        9138811
+        94,
+        18322535
+      ],
+      [
+        "Beartooth",
+        93,
+        17317443
+      ],
+      [
+        "The Offspring",
+        107,
+        17017912
+      ],
+      [
+        "Panic! At The Disco",
+        98,
+        16446444
+      ],
+      [
+        "A Day To Remember",
+        93,
+        16060645
+      ],
+      [
+        "Sub-Radio",
+        97,
+        15694214
+      ],
+      [
+        "Arrested Youth",
+        89,
+        14605168
+      ],
+      [
+        "The Summer Set",
+        87,
+        14233646
+      ],
+      [
+        "Jimmy Eat World",
+        79,
+        14002581
+      ],
+      [
+        "Good Charlotte",
+        80,
+        13923515
+      ],
+      [
+        "Story Of The Year",
+        76,
+        12641438
+      ],
+      [
+        "Knox",
+        78,
+        11970376
+      ],
+      [
+        "The Rocket Summer",
+        61,
+        11925300
+      ],
+      [
+        "Ed Sheeran",
+        64,
+        11757930
+      ],
+      [
+        "Enter Shikari",
+        73,
+        11553578
+      ],
+      [
+        "Hot Milk",
+        64,
+        10620618
+      ],
+      [
+        "Marianas Trench",
+        61,
+        10561186
       ],
       [
         "HAPPY LANDING",
-        46,
-        9130558
-      ],
-      [
-        "Judah & the Lion",
-        48,
-        8933061
-      ],
-      [
-        "The Chainsmokers",
-        52,
-        8869634
-      ],
-      [
-        "Yellowcard",
-        49,
-        8481810
+        51,
+        9967507
       ],
       [
         "We Came As Romans",
-        45,
-        8238276
+        54,
+        9726387
+      ],
+      [
+        "The Chainsmokers",
+        54,
+        9271007
+      ],
+      [
+        "Judah & the Lion",
+        49,
+        9169586
+      ],
+      [
+        "Yellowcard",
+        53,
+        9091034
+      ],
+      [
+        "Emarosa",
+        50,
+        8563163
       ],
       [
         "VOILÀ",
-        50,
-        8176672
+        51,
+        8361200
+      ],
+      [
+        "DON BROCO",
+        44,
+        8218465
+      ],
+      [
+        "Waterparks",
+        55,
+        7875410
+      ],
+      [
+        "Foreign Air",
+        43,
+        7743137
+      ],
+      [
+        "Smash Into Pieces",
+        46,
+        7438736
       ],
       [
         "blink-182",
@@ -11051,49 +11101,44 @@
         7390869
       ],
       [
-        "Enter Shikari",
-        47,
-        7114480
-      ],
-      [
-        "Foreign Air",
-        39,
-        7010231
-      ],
-      [
-        "Smash Into Pieces",
-        42,
-        6823311
-      ],
-      [
-        "OneRepublic",
-        37,
-        6498949
+        "Jack's Mannequin",
+        36,
+        6895561
       ],
       [
         "for KING & COUNTRY",
-        29,
-        6280581
+        32,
+        6685734
       ],
       [
-        "Waterparks",
-        42,
-        5841951
+        "OneRepublic",
+        38,
+        6661739
       ],
       [
-        "Panic! At The Disco",
-        35,
-        5775434
+        "Written by Wolves",
+        28,
+        6187070
+      ],
+      [
+        "Coldplay",
+        28,
+        6053491
       ],
       [
         "Cameron Whitcomb",
-        42,
-        5418116
+        47,
+        5992664
+      ],
+      [
+        "Senses Fail",
+        29,
+        5413728
       ],
       [
         "mgk",
-        29,
-        5168673
+        30,
+        5344915
       ],
       [
         "Bleachers",
@@ -11102,205 +11147,240 @@
       ],
       [
         "The Used",
-        26,
-        4904436
+        27,
+        5113129
       ],
       [
-        "Good Charlotte",
-        28,
-        4804393
+        "Jon Bellion",
+        30,
+        5085125
       ],
       [
         "Anberlin",
-        23,
-        4434407
+        26,
+        4983166
+      ],
+      [
+        "Glass Animals",
+        25,
+        4882344
+      ],
+      [
+        "All Time Low",
+        35,
+        4547971
+      ],
+      [
+        "Taking Back Sunday",
+        26,
+        4518740
+      ],
+      [
+        "Dan Bremnes",
+        29,
+        4475544
       ],
       [
         "STARSET",
         20,
         4403465
-      ],
-      [
-        "Ben Rector",
-        24,
-        4395733
-      ],
-      [
-        "Jon Bellion",
-        27,
-        4391648
-      ],
-      [
-        "Coldplay",
-        19,
-        4314905
-      ],
-      [
-        "Jack's Mannequin",
-        23,
-        4153493
-      ],
-      [
-        "Taking Back Sunday",
-        23,
-        4058109
-      ],
-      [
-        "Emarosa",
-        23,
-        3945585
-      ],
-      [
-        "Benson Boone",
-        24,
-        3862277
-      ],
-      [
-        "Dean Lewis",
-        23,
-        3818720
-      ],
-      [
-        "Nick Lachey",
-        15,
-        3469686
-      ],
-      [
-        "Pacific",
-        18,
-        3399301
-      ],
-      [
-        "Sidewalk Prophets",
-        17,
-        3356029
-      ],
-      [
-        "The Maine",
-        19,
-        3333197
-      ],
-      [
-        "Breathe Carolina",
-        20,
-        3312407
       ]
     ],
     "top_tracks": [
       [
-        "The Contract",
-        27,
-        5003236
-      ],
-      [
         "Automatic",
-        26,
-        4415978
+        32,
+        5088388
       ],
       [
-        "Numb",
-        23,
-        2961336
+        "The Contract",
+        31,
+        5743017
       ],
       [
         "Insubordinate Ingerland",
-        23,
-        4227587
+        28,
+        4705389
       ],
       [
-        "All My Love (Imperative)",
-        19,
-        2399552
-      ],
-      [
-        "Some Kind Of Magic",
-        19,
-        2729447
-      ],
-      [
-        "Don't Leave Me In The Dark",
-        18,
-        3510259
+        "Numb",
+        27,
+        3475816
       ],
       [
         "Robot Voices",
-        17,
-        3356498
-      ],
-      [
-        "SIRENS",
-        16,
-        2506541
-      ],
-      [
-        "Looking Out For #1",
-        16,
-        2710030
-      ],
-      [
-        "Let Me Out",
-        15,
-        2699955
-      ],
-      [
-        "Onto Me",
-        15,
-        2705195
-      ],
-      [
-        "I Don't Wanna Party",
-        15,
-        2725140
+        25,
+        4762768
       ],
       [
         "Black Hole",
-        15,
-        2441437
+        24,
+        3929548
       ],
       [
-        "Drum Show",
-        15,
-        2597752
+        "All My Love (Imperative)",
+        23,
+        2913660
+      ],
+      [
+        "Some Kind Of Magic",
+        22,
+        3188590
       ],
       [
         "City Walls",
-        15,
-        4199957
+        21,
+        6122776
       ],
       [
-        "Tally",
-        15,
-        2967812
+        "Looking Out For #1",
+        20,
+        3496750
       ],
       [
-        "Roots",
-        14,
-        1991668
+        "Drum Show",
+        20,
+        3185763
       ],
       [
-        "Wild Spirit",
-        14,
-        2320254
+        "Don't Leave Me In The Dark",
+        19,
+        3742820
       ],
       [
-        "R.I.P.",
-        14,
-        2288760
+        "Let Me Out",
+        19,
+        3362451
       ],
       [
         "Nothing's Broken",
-        14,
-        3215385
+        19,
+        4046724
+      ],
+      [
+        "Downstairs",
+        19,
+        5352383
+      ],
+      [
+        "SIRENS",
+        18,
+        2938541
+      ],
+      [
+        "Onto Me",
+        18,
+        3299214
+      ],
+      [
+        "Tally",
+        18,
+        3604144
+      ],
+      [
+        "R.I.P.",
+        17,
+        2638651
+      ],
+      [
+        "Gasoline (All Rage Still Only Numb)",
+        17,
+        2324919
+      ],
+      [
+        "Roots",
+        16,
+        2318125
+      ],
+      [
+        "I Don't Wanna Party",
+        16,
+        2762965
       ],
       [
         "Sapphire",
+        16,
+        2575508
+      ],
+      [
+        "the few that remain",
+        16,
+        3058739
+      ],
+      [
+        "Wild Spirit",
+        15,
+        2499629
+      ],
+      [
+        "Make It Make Sense",
+        15,
+        2451264
+      ],
+      [
+        "Echo",
+        15,
+        2539994
+      ],
+      [
+        "CRASH BANDICOOT",
+        15,
+        2226349
+      ],
+      [
+        "RAWFEAR",
+        15,
+        2462509
+      ],
+      [
+        "Garbage",
+        15,
+        2569574
+      ],
+      [
+        "Days Lie Dormant",
+        15,
+        2713661
+      ],
+      [
+        "Intentions",
+        15,
+        1449532
+      ],
+      [
+        "The Time is Now",
         14,
-        2352833
+        2258570
       ],
       [
         "Pick Your Poison",
+        14,
+        1714624
+      ],
+      [
+        "Hurricane",
+        14,
+        2749331
+      ],
+      [
+        "The Heist (In The Middle)",
+        14,
+        2363596
+      ],
+      [
+        "Center Mass",
+        14,
+        2627138
+      ],
+      [
+        "Euphoria",
         13,
-        1713207
+        2452029
+      ],
+      [
+        "All My Friends",
+        13,
+        2173920
       ],
       [
         "Paradise",
@@ -11308,14 +11388,19 @@
         2216651
       ],
       [
-        "Downstairs",
+        "MakeDamnSure",
         13,
-        3552754
+        2286393
       ],
       [
-        "The Time is Now",
-        12,
-        2075350
+        "Blackout",
+        13,
+        2554000
+      ],
+      [
+        "One Way",
+        13,
+        2017385
       ],
       [
         "Sophie's House",
@@ -11323,9 +11408,19 @@
         2558093
       ],
       [
+        "Say Something",
+        12,
+        2538881
+      ],
+      [
         "Scenic Route",
         12,
         2475161
+      ],
+      [
+        "ATTN.",
+        12,
+        2231845
       ],
       [
         "Kept Me Alive",
@@ -11338,244 +11433,227 @@
         1076394
       ],
       [
-        "Echo",
-        12,
-        2093649
-      ],
-      [
-        "RAWFEAR",
-        12,
-        1856673
-      ],
-      [
-        "Days Lie Dormant",
-        12,
-        2266282
-      ],
-      [
-        "Mountain Mama",
-        11,
-        2565592
-      ],
-      [
-        "Caves",
-        11,
-        1861967
-      ],
-      [
-        "Through The Landslide",
-        11,
-        2221638
-      ],
-      [
-        "Welcome to the Mountains",
-        11,
-        1921573
-      ],
-      [
-        "Smile",
-        11,
-        1771504
-      ],
-      [
-        "MakeDamnSure",
-        11,
-        1869833
-      ],
-      [
         "Sleep On The Beach",
-        11,
-        1961061
-      ],
-      [
-        "Bara Bada Bastu",
-        11,
-        1410772
-      ],
-      [
-        "Take What You Want",
-        11,
-        1351879
-      ],
-      [
-        "Original Prankster",
-        11,
-        2163506
-      ],
-      [
-        "Blackout",
-        11,
-        2189153
-      ],
-      [
-        "Intentions",
-        11,
-        1042453
-      ],
-      [
-        "Vignette",
-        10,
-        1822322
-      ],
-      [
-        "Is It Too Late to Start Over",
-        10,
-        1688781
-      ],
-      [
-        "Say Something",
-        10,
-        2071272
-      ],
-      [
-        "Open Road",
-        10,
-        1688319
-      ],
-      [
-        "Routines In The Night",
-        10,
-        1949001
+        12,
+        2144382
       ]
     ],
     "top_track_artists": [
       [
-        "The Contract",
-        27,
-        "Twenty One Pilots",
-        5003236
-      ],
-      [
         "Automatic",
-        26,
+        32,
         "half•alive",
-        4415978
+        5088388
       ],
       [
-        "Numb",
-        23,
-        "Waterparks",
-        2961336
+        "The Contract",
+        31,
+        "Twenty One Pilots",
+        5743017
       ],
       [
         "Insubordinate Ingerland",
-        23,
+        28,
         "Hot Milk",
-        4227587
+        4705389
       ],
       [
-        "All My Love (Imperative)",
-        19,
-        "half•alive",
-        2399552
-      ],
-      [
-        "Some Kind Of Magic",
-        19,
-        "Grayscale",
-        2729447
-      ],
-      [
-        "Don't Leave Me In The Dark",
-        18,
-        "Grayscale",
-        3510259
+        "Numb",
+        27,
+        "Waterparks",
+        3475816
       ],
       [
         "Robot Voices",
-        17,
+        25,
         "Twenty One Pilots",
-        3356498
-      ],
-      [
-        "SIRENS",
-        16,
-        "Windwaker",
-        2506541
-      ],
-      [
-        "Looking Out For #1",
-        16,
-        "The Offspring",
-        2710030
-      ],
-      [
-        "Let Me Out",
-        15,
-        "HAPPY LANDING",
-        2699955
-      ],
-      [
-        "Onto Me",
-        15,
-        "Sub-Radio",
-        2705195
-      ],
-      [
-        "I Don't Wanna Party",
-        15,
-        "The Summer Set",
-        2725140
+        4762768
       ],
       [
         "Black Hole",
-        15,
+        24,
         "We Came As Romans",
-        2441437
+        3929548
       ],
       [
-        "Drum Show",
-        15,
-        "Twenty One Pilots",
-        2597752
+        "All My Love (Imperative)",
+        23,
+        "half•alive",
+        2913660
+      ],
+      [
+        "Some Kind Of Magic",
+        22,
+        "Grayscale",
+        3188590
       ],
       [
         "City Walls",
-        15,
+        21,
         "Twenty One Pilots",
-        4199957
+        6122776
       ],
       [
-        "Tally",
-        15,
+        "Looking Out For #1",
+        20,
+        "The Offspring",
+        3496750
+      ],
+      [
+        "Drum Show",
+        20,
         "Twenty One Pilots",
-        2967812
+        3185763
       ],
       [
-        "Roots",
-        14,
-        "Calum Scott",
-        1991668
+        "Don't Leave Me In The Dark",
+        19,
+        "Grayscale",
+        3742820
       ],
       [
-        "Wild Spirit",
-        14,
-        "The National Parks",
-        2320254
-      ],
-      [
-        "R.I.P.",
-        14,
-        "half•alive",
-        2288760
+        "Let Me Out",
+        19,
+        "HAPPY LANDING",
+        3362451
       ],
       [
         "Nothing's Broken",
-        14,
+        19,
         "Sub-Radio",
-        3215385
+        4046724
+      ],
+      [
+        "Downstairs",
+        19,
+        "Twenty One Pilots",
+        5352383
+      ],
+      [
+        "SIRENS",
+        18,
+        "Windwaker",
+        2938541
+      ],
+      [
+        "Onto Me",
+        18,
+        "Sub-Radio",
+        3299214
+      ],
+      [
+        "Tally",
+        18,
+        "Twenty One Pilots",
+        3604144
+      ],
+      [
+        "R.I.P.",
+        17,
+        "half•alive",
+        2638651
+      ],
+      [
+        "Gasoline (All Rage Still Only Numb)",
+        17,
+        "Story Of The Year",
+        2324919
+      ],
+      [
+        "Roots",
+        16,
+        "Calum Scott",
+        2318125
+      ],
+      [
+        "I Don't Wanna Party",
+        16,
+        "The Summer Set",
+        2762965
       ],
       [
         "Sapphire",
-        14,
+        16,
         "Ed Sheeran",
-        2352833
+        2575508
+      ],
+      [
+        "the few that remain",
+        16,
+        "Set Your Goals",
+        3058739
+      ],
+      [
+        "Wild Spirit",
+        15,
+        "The National Parks",
+        2499629
+      ],
+      [
+        "Make It Make Sense",
+        15,
+        "A Day To Remember",
+        2451264
+      ],
+      [
+        "CRASH BANDICOOT",
+        15,
+        "Two Year Break",
+        2226349
+      ],
+      [
+        "RAWFEAR",
+        15,
+        "Twenty One Pilots",
+        2462509
+      ],
+      [
+        "Garbage",
+        15,
+        "Twenty One Pilots",
+        2569574
+      ],
+      [
+        "Days Lie Dormant",
+        15,
+        "Twenty One Pilots",
+        2713661
+      ],
+      [
+        "Intentions",
+        15,
+        "Twenty One Pilots",
+        1449532
+      ],
+      [
+        "The Time is Now",
+        14,
+        "Zayde Wølf",
+        2258570
       ],
       [
         "Pick Your Poison",
-        13,
+        14,
         "Knox",
-        1713207
+        1714624
+      ],
+      [
+        "The Heist (In The Middle)",
+        14,
+        "Foreign Air",
+        2363596
+      ],
+      [
+        "Center Mass",
+        14,
+        "Twenty One Pilots",
+        2627138
+      ],
+      [
+        "All My Friends",
+        13,
+        "A Day To Remember",
+        2173920
       ],
       [
         "Paradise",
@@ -11584,16 +11662,34 @@
         2216651
       ],
       [
-        "Downstairs",
+        "MakeDamnSure",
         13,
-        "Twenty One Pilots",
-        3552754
+        "Taking Back Sunday",
+        2286393
       ],
       [
-        "The Time is Now",
-        12,
-        "Zayde Wølf",
-        2075350
+        "Echo",
+        13,
+        "Arrested Youth",
+        2100454
+      ],
+      [
+        "Hurricane",
+        13,
+        "I Prevail",
+        2540392
+      ],
+      [
+        "Blackout",
+        13,
+        "Breathe Carolina",
+        2554000
+      ],
+      [
+        "One Way",
+        13,
+        "Twenty One Pilots",
+        2017385
       ],
       [
         "Sophie's House",
@@ -11602,10 +11698,22 @@
         2558093
       ],
       [
+        "Say Something",
+        12,
+        "Arrested Youth",
+        2538881
+      ],
+      [
         "Scenic Route",
         12,
         "The National Parks",
         2475161
+      ],
+      [
+        "ATTN.",
+        12,
+        "Beartooth",
+        2231845
       ],
       [
         "Kept Me Alive",
@@ -11620,156 +11728,68 @@
         1076394
       ],
       [
-        "RAWFEAR",
-        12,
-        "Twenty One Pilots",
-        1856673
-      ],
-      [
-        "Days Lie Dormant",
-        12,
-        "Twenty One Pilots",
-        2266282
-      ],
-      [
-        "Mountain Mama",
-        11,
-        "HAPPY LANDING",
-        2565592
-      ],
-      [
-        "Caves",
-        11,
-        "The National Parks",
-        1861967
-      ],
-      [
-        "Through The Landslide",
-        11,
-        "Grayscale",
-        2221638
-      ],
-      [
-        "Welcome to the Mountains",
-        11,
-        "The National Parks",
-        1921573
-      ],
-      [
-        "MakeDamnSure",
-        11,
-        "Taking Back Sunday",
-        1869833
-      ],
-      [
         "Sleep On The Beach",
-        11,
+        12,
         "Sub-Radio",
-        1961061
+        2144382
       ],
       [
-        "Bara Bada Bastu",
-        11,
-        "KAJ",
-        1410772
-      ],
-      [
-        "Take What You Want",
-        11,
-        "Yellowcard",
-        1351879
-      ],
-      [
-        "Original Prankster",
-        11,
-        "The Offspring",
-        2163506
-      ],
-      [
-        "Blackout",
-        11,
-        "Breathe Carolina",
-        2189153
-      ],
-      [
-        "Intentions",
-        11,
-        "Twenty One Pilots",
-        1042453
-      ],
-      [
-        "Vignette",
-        10,
-        "Twenty One Pilots",
-        1822322
-      ],
-      [
-        "Is It Too Late to Start Over",
-        10,
-        "Arrested Youth",
-        1688781
-      ],
-      [
-        "Say Something",
-        10,
-        "Arrested Youth",
-        2071272
-      ],
-      [
-        "Open Road",
-        10,
-        "Ra Costelloe",
-        1688319
-      ],
-      [
-        "Routines In The Night",
-        10,
-        "Twenty One Pilots",
-        1949001
-      ],
-      [
-        "Fore(st)Shadow",
-        10,
-        "The National Parks",
-        609355
-      ],
-      [
-        "Timber!",
-        10,
-        "The National Parks",
-        1728726
+        "FATHER FIGURE",
+        12,
+        "Jon Bellion",
+        2101102
       ]
     ],
     "top_albums": [
       [
         "Breach",
-        146,
-        28031189
+        198,
+        38492323
       ],
       [
         "The Hart",
-        103,
-        18297613
+        107,
+        18989317
       ],
       [
         "Wild Spirit",
-        98,
-        16679551
+        99,
+        16858926
       ],
       [
         "Persona",
-        92,
-        14828528
+        102,
+        16015047
       ],
       [
         "Clancy",
-        72,
-        13997070
+        74,
+        14422310
+      ],
+      [
+        "A Fever You Can't Sweat Out",
+        77,
+        13138890
       ],
       [
         "Sunrise City",
-        67,
-        10202892
+        77,
+        11651675
+      ],
+      [
+        "The Surface",
+        58,
+        10993308
+      ],
+      [
+        "Big Ole Album Vol. 1",
+        61,
+        10234145
+      ],
+      [
+        "Golden",
+        48,
+        9735930
       ],
       [
         "Going, Going, Gone",
@@ -11777,14 +11797,19 @@
         9585698
       ],
       [
-        "Golden",
-        44,
-        9073434
+        "Motel Du Cap",
+        53,
+        9151619
       ],
       [
         "Haven",
-        46,
-        8193227
+        47,
+        8341113
+      ],
+      [
+        "The Process",
+        45,
+        8280956
       ],
       [
         "Futures",
@@ -11792,19 +11817,24 @@
         8174374
       ],
       [
-        "The Process",
-        44,
-        8044431
-      ],
-      [
-        "The Surface",
-        40,
-        7468265
-      ],
-      [
         "Meet Me At The Record Store",
-        44,
-        7445449
+        48,
+        8013180
+      ],
+      [
+        "A Kiss for the Whole World",
+        50,
+        7557137
+      ],
+      [
+        "Darkbloom",
+        43,
+        7532425
+      ],
+      [
+        "SUPERCHARGED",
+        47,
+        7165608
       ],
       [
         "So Far So Good",
@@ -11812,19 +11842,44 @@
         6480858
       ],
       [
-        "SUPERCHARGED",
-        43,
-        6378888
-      ],
-      [
-        "Darkbloom",
-        34,
-        6044313
-      ],
-      [
-        "A Kiss for the Whole World",
+        "Tear Me to Pieces",
         39,
-        5680207
+        6312283
+      ],
+      [
+        "Trench",
+        29,
+        6152750
+      ],
+      [
+        "Moon Music",
+        25,
+        5575295
+      ],
+      [
+        "Sting",
+        30,
+        5518201
+      ],
+      [
+        "Play",
+        29,
+        5259231
+      ],
+      [
+        "Insubordinate Ingerland",
+        32,
+        5250571
+      ],
+      [
+        "Folie à Deux",
+        27,
+        5219663
+      ],
+      [
+        "Everything In Transit",
+        27,
+        5098976
       ],
       [
         "So Much (For) Stardust",
@@ -11832,14 +11887,14 @@
         5036338
       ],
       [
-        "Insubordinate Ingerland",
+        "Below",
         27,
-        4772769
+        5010625
       ],
       [
-        "Play",
-        25,
-        4683290
+        "FATHER FIGURE",
+        26,
+        4602693
       ],
       [
         "Hello, Good Friend.",
@@ -11847,19 +11902,24 @@
         4572134
       ],
       [
-        "A Fever You Can't Sweat Out",
-        27,
-        4552304
-      ],
-      [
         "Bleachers",
         24,
         4420767
       ],
       [
-        "Trench",
+        "Such That I May Glow",
+        24,
+        4208718
+      ],
+      [
+        "Euphoria",
+        23,
+        4207289
+      ],
+      [
+        "The Contract",
         21,
-        4268753
+        4166394
       ],
       [
         "lost americana",
@@ -11867,9 +11927,19 @@
         4150414
       ],
       [
-        "FATHER FIGURE",
-        23,
-        3909216
+        "Technology",
+        21,
+        4143583
+      ],
+      [
+        "Better Days",
+        24,
+        3941846
+      ],
+      [
+        "Greatest Hits",
+        30,
+        3939144
       ],
       [
         "Corporation P.O.P",
@@ -11877,24 +11947,29 @@
         3883202
       ],
       [
-        "The Contract",
-        19,
-        3876757
+        "Too Late to Start Over (Deluxe)",
+        20,
+        3818704
       ],
       [
-        "Everything In Transit",
-        21,
-        3859701
+        "Everyone's Talking!",
+        29,
+        3677930
       ],
       [
-        "Moon Music",
-        16,
-        3836708
+        "American Beauty/American Psycho",
+        18,
+        3647923
       ],
       [
-        "Better Days",
+        "The Epilogue",
+        22,
+        3634364
+      ],
+      [
+        "R.I.P.",
         23,
-        3795143
+        3546115
       ],
       [
         "Too Late to Start Over",
@@ -11902,14 +11977,9 @@
         3524577
       ],
       [
-        "Greatest Hits",
-        27,
-        3498415
-      ],
-      [
-        "Such That I May Glow",
-        20,
-        3475813
+        "Page Avenue",
+        17,
+        3514060
       ],
       [
         "A Father's Lullaby",
@@ -11920,114 +11990,68 @@
         "Burn The Ships",
         15,
         3465767
-      ],
-      [
-        "The Epilogue",
-        21,
-        3440968
-      ],
-      [
-        "Life Will Write the Words",
-        17,
-        3387613
-      ],
-      [
-        "Too Late to Start Over (Deluxe)",
-        18,
-        3351095
-      ],
-      [
-        "R.I.P.",
-        20,
-        3196224
-      ],
-      [
-        "American Beauty/American Psycho",
-        16,
-        3194188
-      ],
-      [
-        "Cheat Codes, Pt. 2",
-        17,
-        2944385
-      ],
-      [
-        "Looking Up",
-        14,
-        2896221
-      ],
-      [
-        "ONE MORE TIME...",
-        18,
-        2883766
-      ],
-      [
-        "Sting",
-        15,
-        2788097
-      ],
-      [
-        "HYPERVIOLENCE",
-        17,
-        2732162
-      ],
-      [
-        "Conspiracy Of One",
-        13,
-        2568652
-      ],
-      [
-        "Nevertake",
-        14,
-        2548220
-      ],
-      [
-        "Chase This Light",
-        11,
-        2493435
-      ],
-      [
-        "Human",
-        14,
-        2459625
       ]
     ],
     "top_album_artists": [
       [
         "Breach",
-        146,
+        198,
         "Twenty One Pilots",
-        28031189
+        38492323
       ],
       [
         "The Hart",
-        103,
+        107,
         "Grayscale",
-        18297613
+        18989317
       ],
       [
         "Wild Spirit",
-        98,
+        99,
         "The National Parks",
-        16679551
+        16858926
       ],
       [
         "Persona",
-        92,
+        102,
         "half•alive",
-        14828528
+        16015047
       ],
       [
         "Clancy",
-        72,
+        74,
         "Twenty One Pilots",
-        13997070
+        14422310
+      ],
+      [
+        "A Fever You Can't Sweat Out",
+        77,
+        "Panic! At The Disco",
+        13138890
       ],
       [
         "Sunrise City",
-        67,
+        77,
         "Sub-Radio",
-        10202892
+        11651675
+      ],
+      [
+        "The Surface",
+        58,
+        "Beartooth",
+        10993308
+      ],
+      [
+        "Big Ole Album Vol. 1",
+        61,
+        "A Day To Remember",
+        10234145
+      ],
+      [
+        "Golden",
+        48,
+        "HAPPY LANDING",
+        9735930
       ],
       [
         "Going, Going, Gone",
@@ -12036,16 +12060,22 @@
         9585698
       ],
       [
-        "Golden",
-        44,
-        "HAPPY LANDING",
-        9073434
+        "Motel Du Cap",
+        53,
+        "Good Charlotte",
+        9151619
       ],
       [
         "Haven",
-        46,
+        47,
         "Marianas Trench",
-        8193227
+        8341113
+      ],
+      [
+        "The Process",
+        45,
+        "Judah & the Lion",
+        8280956
       ],
       [
         "Futures",
@@ -12054,22 +12084,28 @@
         8174374
       ],
       [
-        "The Process",
-        44,
-        "Judah & the Lion",
-        8044431
-      ],
-      [
-        "The Surface",
-        40,
-        "Beartooth",
-        7468265
-      ],
-      [
         "Meet Me At The Record Store",
-        44,
+        48,
         "The Summer Set",
-        7445449
+        8013180
+      ],
+      [
+        "A Kiss for the Whole World",
+        50,
+        "Enter Shikari",
+        7557137
+      ],
+      [
+        "Darkbloom",
+        43,
+        "We Came As Romans",
+        7532425
+      ],
+      [
+        "SUPERCHARGED",
+        47,
+        "The Offspring",
+        7165608
       ],
       [
         "So Far So Good",
@@ -12078,22 +12114,52 @@
         6480858
       ],
       [
-        "SUPERCHARGED",
-        43,
-        "The Offspring",
-        6378888
-      ],
-      [
-        "Darkbloom",
-        34,
-        "We Came As Romans",
-        6044313
-      ],
-      [
-        "A Kiss for the Whole World",
+        "Tear Me to Pieces",
         39,
-        "Enter Shikari",
-        5680207
+        "Story Of The Year",
+        6312283
+      ],
+      [
+        "Trench",
+        29,
+        "Twenty One Pilots",
+        6152750
+      ],
+      [
+        "Moon Music",
+        25,
+        "Coldplay",
+        5575295
+      ],
+      [
+        "Sting",
+        30,
+        "Emarosa",
+        5518201
+      ],
+      [
+        "Play",
+        29,
+        "Ed Sheeran",
+        5259231
+      ],
+      [
+        "Insubordinate Ingerland",
+        32,
+        "Hot Milk",
+        5250571
+      ],
+      [
+        "Folie à Deux",
+        27,
+        "Fall Out Boy",
+        5219663
+      ],
+      [
+        "Everything In Transit",
+        27,
+        "Jack's Mannequin",
+        5098976
       ],
       [
         "So Much (For) Stardust",
@@ -12102,16 +12168,16 @@
         5036338
       ],
       [
-        "Insubordinate Ingerland",
+        "Below",
         27,
-        "Hot Milk",
-        4772769
+        "Beartooth",
+        5010625
       ],
       [
-        "Play",
-        25,
-        "Ed Sheeran",
-        4683290
+        "FATHER FIGURE",
+        26,
+        "Jon Bellion",
+        4602693
       ],
       [
         "Hello, Good Friend.",
@@ -12120,22 +12186,22 @@
         4572134
       ],
       [
-        "A Fever You Can't Sweat Out",
-        27,
-        "Panic! At The Disco",
-        4552304
-      ],
-      [
         "Bleachers",
         24,
         "Bleachers",
         4420767
       ],
       [
-        "Trench",
+        "Such That I May Glow",
+        24,
+        "Foreign Air",
+        4208718
+      ],
+      [
+        "The Contract",
         21,
         "Twenty One Pilots",
-        4268753
+        4166394
       ],
       [
         "lost americana",
@@ -12144,10 +12210,22 @@
         4150414
       ],
       [
-        "FATHER FIGURE",
-        23,
-        "Jon Bellion",
-        3909216
+        "Technology",
+        21,
+        "DON BROCO",
+        4143583
+      ],
+      [
+        "Euphoria",
+        22,
+        "DON BROCO",
+        3993378
+      ],
+      [
+        "Better Days",
+        24,
+        "Yellowcard",
+        3941846
       ],
       [
         "Corporation P.O.P",
@@ -12156,28 +12234,40 @@
         3883202
       ],
       [
-        "The Contract",
-        19,
-        "Twenty One Pilots",
-        3876757
+        "Too Late to Start Over (Deluxe)",
+        20,
+        "Arrested Youth",
+        3818704
       ],
       [
-        "Everything In Transit",
-        21,
-        "Jack's Mannequin",
-        3859701
+        "Everyone's Talking!",
+        29,
+        "All Time Low",
+        3677930
       ],
       [
-        "Moon Music",
-        16,
-        "Coldplay",
-        3836708
+        "American Beauty/American Psycho",
+        18,
+        "Fall Out Boy",
+        3647923
       ],
       [
-        "Better Days",
+        "The Epilogue",
+        22,
+        "Dean Lewis",
+        3634364
+      ],
+      [
+        "Greatest Hits",
+        27,
+        "Waterparks",
+        3553330
+      ],
+      [
+        "R.I.P.",
         23,
-        "Yellowcard",
-        3795143
+        "half•alive",
+        3546115
       ],
       [
         "Too Late to Start Over",
@@ -12186,10 +12276,10 @@
         3524577
       ],
       [
-        "Such That I May Glow",
-        20,
-        "Foreign Air",
-        3475813
+        "Page Avenue",
+        17,
+        "Story Of The Year",
+        3514060
       ],
       [
         "A Father's Lullaby",
@@ -12202,131 +12292,41 @@
         15,
         "for KING & COUNTRY",
         3465767
-      ],
-      [
-        "The Epilogue",
-        21,
-        "Dean Lewis",
-        3440968
-      ],
-      [
-        "Life Will Write the Words",
-        17,
-        "The Rocket Summer",
-        3387613
-      ],
-      [
-        "Too Late to Start Over (Deluxe)",
-        18,
-        "Arrested Youth",
-        3351095
-      ],
-      [
-        "R.I.P.",
-        20,
-        "half•alive",
-        3196224
-      ],
-      [
-        "American Beauty/American Psycho",
-        16,
-        "Fall Out Boy",
-        3194188
-      ],
-      [
-        "Greatest Hits",
-        24,
-        "Waterparks",
-        3112601
-      ],
-      [
-        "Cheat Codes, Pt. 2",
-        17,
-        "Zayde Wølf",
-        2944385
-      ],
-      [
-        "Looking Up",
-        14,
-        "Sidewalk Prophets",
-        2896221
-      ],
-      [
-        "ONE MORE TIME...",
-        18,
-        "blink-182",
-        2883766
-      ],
-      [
-        "Sting",
-        15,
-        "Emarosa",
-        2788097
-      ],
-      [
-        "HYPERVIOLENCE",
-        17,
-        "Windwaker",
-        2732162
-      ],
-      [
-        "Conspiracy Of One",
-        13,
-        "The Offspring",
-        2568652
-      ],
-      [
-        "Nevertake",
-        14,
-        "Anberlin",
-        2548220
-      ],
-      [
-        "Chase This Light",
-        11,
-        "Jimmy Eat World",
-        2493435
-      ],
-      [
-        "Hell Is What You Make It: Reloaded",
-        12,
-        "Breathe Carolina",
-        2381273
       ]
     ],
     "year_stats": {
-      "total_plays": 3672,
-      "total_minutes": 10456.808583333333,
-      "total_hours": 174.28014305555556,
-      "unique_artists": 398,
-      "unique_tracks": 1454,
-      "unique_albums": 847,
-      "unique_days_with_listening": 263,
-      "average_track_length_minutes": 2.8477147558097315,
-      "average_daily_minutes": 39.75972845373891,
-      "skip_rate_percentage": 15.005446623093682,
-      "completion_rate_percentage": 72.93028322440087,
-      "offline_percentage": 14.215686274509803,
-      "shuffle_percentage": 4.9564270152505445,
+      "total_plays": 4700,
+      "total_minutes": 13440.812600000001,
+      "total_hours": 224.01354333333336,
+      "unique_artists": 451,
+      "unique_tracks": 1764,
+      "unique_albums": 977,
+      "unique_days_with_listening": 325,
+      "average_track_length_minutes": 2.859747361702128,
+      "average_daily_minutes": 41.356346461538465,
+      "skip_rate_percentage": 14.702127659574469,
+      "completion_rate_percentage": 73.31914893617021,
+      "offline_percentage": 11.340425531914894,
+      "shuffle_percentage": 4.319148936170213,
       "first_play": "2025-01-02T02:39:50",
-      "last_play": "2025-10-25T15:01:21",
+      "last_play": "2025-12-31T22:02:51",
       "peak_month": "January",
       "peak_month_plays": 552,
       "top_platform": [
         "iOS",
-        2636
+        3396
       ],
       "top_provider": [
         "Spotify",
-        3672
+        4700
       ],
       "provider_breakdown": {
-        "Spotify": 3672
+        "Spotify": 4700
       },
       "platform_breakdown": {
-        "macOS": 759,
-        "iOS": 2636,
-        "Other": 277
+        "macOS": 1017,
+        "iOS": 3396,
+        "Other": 287
       },
       "monthly_breakdown": {
         "January": {
@@ -12375,9 +12375,19 @@
           "hours": 14.868530555555555
         },
         "October": {
-          "plays": 330,
-          "minutes": 934.4778833333334,
-          "hours": 15.57463138888889
+          "plays": 458,
+          "minutes": 1283.2277833333333,
+          "hours": 21.38712972222222
+        },
+        "November": {
+          "plays": 451,
+          "minutes": 1382.011,
+          "hours": 23.033516666666667
+        },
+        "December": {
+          "plays": 449,
+          "minutes": 1253.2431166666668,
+          "hours": 20.887385277777778
         }
       }
     }

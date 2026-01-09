@@ -17,6 +17,10 @@ from collections import defaultdict, Counter
 import re
 
 
+# Years to exclude entirely from stats (incomplete years)
+EXCLUDED_YEARS = {2026}
+
+
 def parse_timestamp(ts_str: str) -> datetime:
     """Parse timestamp string to datetime object."""
     try:
@@ -195,6 +199,12 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
         print(f"Error loading file: {e}")
         return {}
     
+    # Filter out excluded years
+    original_count = len(records)
+    records = [r for r in records if parse_timestamp(r.get('ts', '')).year not in EXCLUDED_YEARS]
+    if original_count != len(records):
+        print(f"Filtered out {original_count - len(records)} records from excluded years: {EXCLUDED_YEARS}")
+    
     print(f"Processing {len(records)} records...")
     
     # Initialize stats structure
@@ -226,9 +236,13 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     platforms = defaultdict(int)
     countries = defaultdict(int)
     artists = defaultdict(int)
+    artists_minutes = defaultdict(float)  # minutes streamed per artist
     tracks = defaultdict(int)  # track name only (for backward compatibility)
+    tracks_minutes = defaultdict(float)  # minutes streamed per track
     track_artists = defaultdict(int)  # track+artist combinations
+    track_artists_minutes = defaultdict(float)  # minutes streamed per track+artist
     albums = defaultdict(int)
+    albums_minutes = defaultdict(float)  # minutes streamed per album
     
     # Time-based analysis
     yearly_stats = defaultdict(lambda: {'plays': 0, 'ms_played': 0})
@@ -247,6 +261,9 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     # Date tracking
     earliest_date = None
     latest_date = None
+    
+    # Years to exclude from album stats (90%+ Apple Music)
+    EXCLUDED_ALBUM_YEARS = {2016, 2017, 2020, 2021}
     
     # Process each record
     for record in records:
@@ -268,14 +285,30 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
         
         if artist and artist != 'Unknown':
             artists[artist] += 1
+            artists_minutes[artist] += ms_played / 1000 / 60  # Convert ms to minutes
         if track and track != 'Unknown':
             tracks[track] += 1
+            tracks_minutes[track] += ms_played / 1000 / 60
             # Also track track+artist combinations
             if artist and artist != 'Unknown':
                 track_artist_key = f"{track}|{artist}"
                 track_artists[track_artist_key] += 1
-        if album and album != 'Unknown':
-            albums[album] += 1
+                track_artists_minutes[track_artist_key] += ms_played / 1000 / 60
+        
+        # Only track albums from Spotify (Apple Music has no album data)
+        # Also exclude years that are 90%+ Apple Music
+        if album and album != 'Unknown' and provider == 'Spotify':
+            # Check the year for this record
+            year = None
+            ts_check = record.get('ts')
+            if ts_check:
+                dt_check = parse_timestamp(ts_check)
+                if dt_check != datetime.min:
+                    year = dt_check.year
+            
+            if year is None or year not in EXCLUDED_ALBUM_YEARS:
+                albums[album] += 1
+                albums_minutes[album] += ms_played / 1000 / 60
         
         # Behavioral tracking
         if record.get('skipped', False):
@@ -407,18 +440,47 @@ def generate_lifetime_stats(consolidated_file: str) -> Dict[str, Any]:
     # Diversity metrics
     stats['diversity_metrics'] = calculate_diversity_metrics(records)
     
-    # Top lists
-    # Convert track+artist combinations back to readable format
+    # Top lists with plays and ms_played
+    # Format: [name, plays, ms_played, artist (if applicable)]
+    
+    # Artists: [name, plays, ms_played] - sort by ms_played (hours)
+    top_artists = []
+    artist_data = []
+    for artist_name, plays in artists.items():
+        ms = int(artists_minutes.get(artist_name, 0) * 60 * 1000)
+        artist_data.append([artist_name, plays, ms])
+    top_artists = sorted(artist_data, key=lambda x: x[2], reverse=True)[:50]
+    
+    # Albums: [name, plays, ms_played] - sort by ms_played (hours)
+    top_albums = []
+    album_data = []
+    for album_name, plays in albums.items():
+        ms = int(albums_minutes.get(album_name, 0) * 60 * 1000)
+        album_data.append([album_name, plays, ms])
+    top_albums = sorted(album_data, key=lambda x: x[2], reverse=True)[:50]
+    
+    # Tracks: [name, plays, artist, ms_played] - sort by plays
     top_track_artists = []
-    for track_artist_key, play_count in sorted(track_artists.items(), key=lambda x: x[1], reverse=True)[:50]:
+    track_data = []
+    for track_artist_key, plays in track_artists.items():
         track, artist = track_artist_key.split('|', 1)
-        top_track_artists.append([track, play_count, artist])
+        ms = int(track_artists_minutes.get(track_artist_key, 0) * 60 * 1000)
+        track_data.append([track, plays, artist, ms])
+    top_track_artists = sorted(track_data, key=lambda x: x[1], reverse=True)[:50]
+    
+    # Legacy tracks format (track name only): [name, plays, ms_played] - sort by plays
+    top_tracks = []
+    tracks_data = []
+    for track_name, plays in tracks.items():
+        ms = int(tracks_minutes.get(track_name, 0) * 60 * 1000)
+        tracks_data.append([track_name, plays, ms])
+    top_tracks = sorted(tracks_data, key=lambda x: x[1], reverse=True)[:50]
     
     stats['top_lists'] = {
-        'top_artists': sorted(artists.items(), key=lambda x: x[1], reverse=True)[:50],
-        'top_tracks': sorted(tracks.items(), key=lambda x: x[1], reverse=True)[:50],  # Legacy format
+        'top_artists': top_artists,
+        'top_tracks': top_tracks,  # Legacy format
         'top_track_artists': top_track_artists,  # New format with proper track+artist combinations
-        'top_albums': sorted(albums.items(), key=lambda x: x[1], reverse=True)[:50] if albums else [],
+        'top_albums': top_albums,
         'top_platforms': sorted(platforms.items(), key=lambda x: x[1], reverse=True),
         'top_countries': sorted(countries.items(), key=lambda x: x[1], reverse=True)
     }

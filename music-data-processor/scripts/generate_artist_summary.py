@@ -16,6 +16,10 @@ from datetime import datetime, timedelta
 from collections import defaultdict, Counter
 
 
+# Years to exclude entirely from summaries (incomplete years)
+EXCLUDED_YEARS = {2026}
+
+
 def parse_timestamp(ts_str: str) -> datetime:
     """Parse timestamp string to datetime object."""
     try:
@@ -124,8 +128,8 @@ def generate_artist_summary(consolidated_file: str) -> Dict[str, Any]:
             
         year = dt.year
         
-        # Skip future years or very old years that might be data errors
-        if year < 2008 or year > datetime.now().year:
+        # Skip future years, very old years, or excluded years
+        if year < 2008 or year > datetime.now().year or year in EXCLUDED_YEARS:
             continue
         
         year_str = str(year)
