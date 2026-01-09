@@ -16,6 +16,10 @@ from datetime import datetime, timedelta
 from collections import defaultdict, Counter
 
 
+# Years to exclude entirely from recaps (incomplete years)
+EXCLUDED_YEARS = {2026}
+
+
 def parse_timestamp(ts_str: str) -> datetime:
     """Parse timestamp string to datetime object."""
     try:
@@ -88,10 +92,15 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
     # Initialize yearly data structure
     yearly_data = defaultdict(lambda: {
         'artists': defaultdict(int),
+        'artists_minutes': defaultdict(float),
         'tracks': defaultdict(int),
+        'tracks_minutes': defaultdict(float),
         'track_artists': defaultdict(int),  # track+artist combinations
+        'track_artists_minutes': defaultdict(float),
         'albums': defaultdict(int),
+        'albums_minutes': defaultdict(float),
         'album_artists': defaultdict(int),  # album+artist combinations
+        'album_artists_minutes': defaultdict(float),
         'platforms': defaultdict(int),
         'providers': defaultdict(int),
         'countries': defaultdict(int),
@@ -120,8 +129,8 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
         year = dt.year
         month = dt.month
         
-        # Skip future years or very old years that might be data errors
-        if year < 2008 or year > datetime.now().year:
+        # Skip future years, very old years, or excluded years
+        if year < 2008 or year > datetime.now().year or year in EXCLUDED_YEARS:
             continue
         
         year_str = str(year)
@@ -140,20 +149,31 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
         platform = clean_platform_name(record.get('platform', 'Unknown'))
         country = record.get('conn_country', 'Unknown')
         
+        # Years to exclude from album stats (90%+ Apple Music)
+        EXCLUDED_ALBUM_YEARS = {2016, 2017, 2020, 2021}
+        
         if artist:
             year_data['artists'][artist] += 1
+            year_data['artists_minutes'][artist] += ms_played / 1000 / 60
         if track:
             year_data['tracks'][track] += 1
+            year_data['tracks_minutes'][track] += ms_played / 1000 / 60
             # Track+artist combinations for accurate aggregation
             if artist:
                 track_artist_key = f"{track}|{artist}"
                 year_data['track_artists'][track_artist_key] += 1
-        if album:
+                year_data['track_artists_minutes'][track_artist_key] += ms_played / 1000 / 60
+        
+        # Only track albums from Spotify (Apple Music has no album data)
+        # Also exclude years that are 90%+ Apple Music
+        if album and provider == 'Spotify' and year not in EXCLUDED_ALBUM_YEARS:
             year_data['albums'][album] += 1
+            year_data['albums_minutes'][album] += ms_played / 1000 / 60
             # Album+artist combinations for accurate aggregation
             if artist:
                 album_artist_key = f"{album}|{artist}"
                 year_data['album_artists'][album_artist_key] += 1
+                year_data['album_artists_minutes'][album_artist_key] += ms_played / 1000 / 60
         
         year_data['providers'][provider] += 1
         year_data['platforms'][platform] += 1
@@ -244,25 +264,50 @@ def generate_annual_recaps(consolidated_file: str) -> Dict[str, Any]:
             }
         year_stats['monthly_breakdown'] = monthly_breakdown
         
-        # Create top track+artist combinations
-        top_track_artists = []
-        for track_artist_key, play_count in sorted(data['track_artists'].items(), key=lambda x: x[1], reverse=True)[:50]:
-            track_name, artist_name = track_artist_key.split('|', 1)
-            top_track_artists.append([track_name, play_count, artist_name])
+        # Create top artists with ms_played: [name, plays, ms_played] - sort by ms (hours)
+        artist_data = []
+        for name, plays in data['artists'].items():
+            ms = int(data['artists_minutes'].get(name, 0) * 60 * 1000)
+            artist_data.append([name, plays, ms])
+        top_artists = sorted(artist_data, key=lambda x: x[2], reverse=True)[:50]
         
-        # Create top album+artist combinations
-        top_album_artists = []
-        for album_artist_key, play_count in sorted(data['album_artists'].items(), key=lambda x: x[1], reverse=True)[:50]:
+        # Create top tracks with ms_played: [name, plays, ms_played] - sort by plays
+        track_data = []
+        for name, plays in data['tracks'].items():
+            ms = int(data['tracks_minutes'].get(name, 0) * 60 * 1000)
+            track_data.append([name, plays, ms])
+        top_tracks = sorted(track_data, key=lambda x: x[1], reverse=True)[:50]
+        
+        # Create top track+artist combinations: [name, plays, artist, ms_played] - sort by plays
+        track_artist_data = []
+        for track_artist_key, play_count in data['track_artists'].items():
+            track_name, artist_name = track_artist_key.split('|', 1)
+            ms = int(data['track_artists_minutes'].get(track_artist_key, 0) * 60 * 1000)
+            track_artist_data.append([track_name, play_count, artist_name, ms])
+        top_track_artists = sorted(track_artist_data, key=lambda x: x[1], reverse=True)[:50]
+        
+        # Create top albums with ms_played: [name, plays, ms_played] - sort by ms (hours)
+        album_data = []
+        for name, plays in data['albums'].items():
+            ms = int(data['albums_minutes'].get(name, 0) * 60 * 1000)
+            album_data.append([name, plays, ms])
+        top_albums = sorted(album_data, key=lambda x: x[2], reverse=True)[:50]
+        
+        # Create top album+artist combinations: [name, plays, artist, ms_played] - sort by ms (hours)
+        album_artist_data = []
+        for album_artist_key, play_count in data['album_artists'].items():
             album_name, artist_name = album_artist_key.split('|', 1)
-            top_album_artists.append([album_name, play_count, artist_name])
+            ms = int(data['album_artists_minutes'].get(album_artist_key, 0) * 60 * 1000)
+            album_artist_data.append([album_name, play_count, artist_name, ms])
+        top_album_artists = sorted(album_artist_data, key=lambda x: x[3], reverse=True)[:50]
         
         # Create the annual recap entry
         annual_recaps[year_str] = {
             'year': year,
-            'top_artists': sorted(data['artists'].items(), key=lambda x: x[1], reverse=True)[:50],
-            'top_tracks': sorted(data['tracks'].items(), key=lambda x: x[1], reverse=True)[:50],
+            'top_artists': top_artists,
+            'top_tracks': top_tracks,
             'top_track_artists': top_track_artists,  # New format with track+artist combinations
-            'top_albums': sorted(data['albums'].items(), key=lambda x: x[1], reverse=True)[:50],
+            'top_albums': top_albums,
             'top_album_artists': top_album_artists,  # New format with album+artist combinations
             'year_stats': year_stats
         }
