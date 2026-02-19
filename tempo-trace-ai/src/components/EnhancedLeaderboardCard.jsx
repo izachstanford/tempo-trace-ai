@@ -8,7 +8,15 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
   useEffect(() => {
     const fetchEnrichedData = async () => {
       try {
-        const response = await fetch('./data/spotify_enriched_data.json');
+        // Use live API endpoint instead of static file
+        const API_BASE = 'https://aiwithzach.com/api';
+        const useStaticFallback = false;
+        
+        const response = await fetch(
+          useStaticFallback
+            ? './data/spotify_enriched_data.json'
+            : `${API_BASE}/tempo-api-enriched-data`
+        );
         if (!response.ok) {
           throw new Error('Failed to fetch enriched data');
         }
