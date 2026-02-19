@@ -25,9 +25,7 @@ ChartJS.register(
 );
 
 const HoursListenedChart = ({ data }) => {
-  const currentYear = new Date().getFullYear();
   const years = Object.keys(data)
-    .filter(year => parseInt(year) < currentYear) // Exclude current year
     .sort();
   const hoursData = years.map(year => Math.round(data[year].year_stats.total_hours));
 
