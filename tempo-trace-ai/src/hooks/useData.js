@@ -53,8 +53,12 @@ export const useData = () => {
         const artistJson = await artistResponse.json();
         setArtistSummary(artistJson);
         
-        // Load concert data (for Concert Compass tab) - still static
-        let concertResponse = await fetch('./data/concerts.json');
+        // Load concert data (for Concert Compass tab)
+        let concertResponse = await fetch(
+          useStaticFallback
+            ? './data/concerts.json'
+            : `${API_BASE}/tempo-api-concerts`
+        );
         if (!concertResponse.ok) {
           throw new Error('Failed to load concert data');
         }
