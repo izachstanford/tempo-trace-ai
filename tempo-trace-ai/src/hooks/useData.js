@@ -13,36 +13,39 @@ export const useData = () => {
       try {
         setLoading(true);
         
-        // Load lifetime streaming stats (for The Pulse tab)
-        let lifetimeResponse = await fetch('./data/lifetime_streaming_stats.json');
-        if (!lifetimeResponse.ok) {
-          throw new Error('Failed to load lifetime streaming stats');
-        }
-        const lifetimeJson = await lifetimeResponse.json();
+        // API base URL - use main website for live data, fallback to static files
+        const API_BASE = 'https://aiwithzach.com/api';
+        
+        // Helper function to try API first, fallback to static file
+        const fetchWithFallback = async (apiEndpoint, staticFile) => {
+          try {
+            const apiResponse = await fetch(`${API_BASE}${apiEndpoint}`);
+            if (apiResponse.ok) {
+              return await apiResponse.json();
+            }
+          } catch (error) {
+            console.log(`API not available (${apiEndpoint}), using static fallback`);
+          }
+          
+          // Fallback to static file
+          const staticResponse = await fetch(staticFile);
+          if (!staticResponse.ok) {
+            throw new Error(`Failed to load ${staticFile}`);
+          }
+          return await staticResponse.json();
+        };
+        
+        // Load all data with automatic fallback
+        const [lifetimeJson, recapsJson, artistJson, concertJson] = await Promise.all([
+          fetchWithFallback('/tempo-api-lifetime-stats', './data/lifetime_streaming_stats.json'),
+          fetchWithFallback('/tempo-api-annual-recaps', './data/annual_recaps.json'),
+          fetchWithFallback('/tempo-api-artist-summary', './data/artist_summary.json'),
+          fetchWithFallback('/tempo-api-concerts', './data/concerts.json')
+        ]);
+        
         setLifetimeStats(lifetimeJson);
-        
-        // Load annual recaps (for Leaderboard tab)
-        let recapsResponse = await fetch('./data/annual_recaps.json');
-        if (!recapsResponse.ok) {
-          throw new Error('Failed to load annual recaps');
-        }
-        const recapsJson = await recapsResponse.json();
         setAnnualRecaps(recapsJson);
-        
-        // Load artist summary (for Concert Compass tab)
-        let artistResponse = await fetch('./data/artist_summary.json');
-        if (!artistResponse.ok) {
-          throw new Error('Failed to load artist summary');
-        }
-        const artistJson = await artistResponse.json();
         setArtistSummary(artistJson);
-        
-        // Load concert data (for Concert Compass tab)
-        let concertResponse = await fetch('./data/concerts.json');
-        if (!concertResponse.ok) {
-          throw new Error('Failed to load concert data');
-        }
-        const concertJson = await concertResponse.json();
         setConcertData(concertJson);
         
       } catch (err) {

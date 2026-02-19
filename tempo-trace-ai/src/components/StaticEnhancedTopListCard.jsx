@@ -12,12 +12,26 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
         setLoading(true);
         setError(null);
 
-        const response = await fetch('./data/spotify_enriched_data.json');
-        if (!response.ok) {
-          throw new Error(`Failed to load Spotify data: ${response.status}`);
+        // Try API first, fallback to static file if not available
+        const API_BASE = 'https://aiwithzach.com/api';
+        let data;
+        
+        try {
+          const apiResponse = await fetch(`${API_BASE}/tempo-api-enriched-data`);
+          if (apiResponse.ok) {
+            data = await apiResponse.json();
+          } else {
+            throw new Error('API not available');
+          }
+        } catch (apiError) {
+          console.log('API not available, using static fallback');
+          const staticResponse = await fetch('./data/spotify_enriched_data.json');
+          if (!staticResponse.ok) {
+            throw new Error(`Failed to load Spotify data: ${staticResponse.status}`);
+          }
+          data = await staticResponse.json();
         }
 
-        const data = await response.json();
         setEnrichedData(data);
       } catch (err) {
         console.error('Error loading enriched data:', err);
