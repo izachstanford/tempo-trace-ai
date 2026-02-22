@@ -24,10 +24,9 @@ export const useData = () => {
               return await apiResponse.json();
             }
           } catch (error) {
-            console.log(`API not available (${apiEndpoint}), using static fallback`);
+            console.warn(`API unavailable (${apiEndpoint}), using static fallback`);
           }
-          
-          // Fallback to static file
+
           const staticResponse = await fetch(staticFile);
           if (!staticResponse.ok) {
             throw new Error(`Failed to load ${staticFile}`);
