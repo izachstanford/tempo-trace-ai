@@ -40,52 +40,31 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
     fetchEnrichedData();
   }, []);
 
-  const getEnrichedItem = (itemName, year = null) => {
+  const extractImage = (found) => {
+    if (!found?.spotifyData) return found?.image || null;
+    if (type === 'artists') return found.spotifyData.images?.[0]?.url || found.image || null;
+    if (type === 'tracks')  return found.spotifyData.album?.images?.[0]?.url || found.image || null;
+    if (type === 'albums')  return found.spotifyData.images?.[0]?.url || found.image || null;
+    return null;
+  };
+
+  const getEnrichedItem = (itemName) => {
     if (!enrichedData) return null;
 
-    try {
-      // Try to find in yearly data if year is provided
-      if (year && enrichedData.yearly && enrichedData.yearly[year]) {
-        const yearData = enrichedData.yearly[year];
-        if (yearData[type]) {
-          const found = yearData[type].find(item => 
-            item.name.toLowerCase() === itemName.toLowerCase()
-          );
-          if (found) {
-            // Extract image URL based on type
-            let imageUrl = null;
-            if (found.spotifyData) {
-              if (type === 'artists') {
-                // For artists, use spotifyData.images[0].url
-                imageUrl = found.spotifyData.images?.[0]?.url;
-              } else if (type === 'tracks') {
-                // For tracks, use spotifyData.album.images[0].url
-                imageUrl = found.spotifyData.album?.images?.[0]?.url;
-              } else if (type === 'albums') {
-                // For albums, use spotifyData.images[0].url
-                imageUrl = found.spotifyData.images?.[0]?.url;
-              }
-            }
-            
-            // For albums, extract artist from Spotify data if not already present
-            let finalArtist = found.artist;
-            if (type === 'albums' && !finalArtist && found.spotifyData?.artists?.[0]?.name) {
-              finalArtist = found.spotifyData.artists[0].name;
-            }
-            
-            return {
-              ...found,
-              artist: finalArtist,
-              image: imageUrl
-            };
-          }
-        }
-      }
-    } catch (error) {
-      console.error('Error finding enriched item:', error);
-    }
+    // Map type → lifetime key in enriched data response
+    const lifetimeKey = type === 'artists' ? 'artists' : type === 'tracks' ? 'tracks' : 'albums';
+    const lifetimeItems = enrichedData.lifetime?.[lifetimeKey] || [];
 
-    return null;
+    const found = lifetimeItems.find(
+      item => item.name?.toLowerCase() === itemName?.toLowerCase()
+    );
+    if (!found) return null;
+
+    const image = extractImage(found);
+    const artist = found.artist ||
+      (type === 'albums' ? found.spotifyData?.artists?.[0]?.name : null);
+
+    return { ...found, image, artist };
   };
 
   if (loading) {
@@ -141,11 +120,15 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
             playCount = item[1];
             
             if (type === 'tracks') {
-              // Track Artists format: [name, plays, artist, ms]
+              // Tracks: [name, plays, artist, ms_played]
               artist = item[2] || null;
               msPlayed = item[3] || 0;
+            } else if (type === 'albums') {
+              // Albums: [name, plays, ms_played, artist]
+              msPlayed = item[2] || 0;
+              artist = item[3] || null;
             } else {
-              // Artists/Albums format: [name, plays, ms]
+              // Artists: [name, plays, ms_played]
               artist = null;
               msPlayed = item[2] || 0;
             }
@@ -160,7 +143,7 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
           const displayValue = type === 'tracks' ? playCount : msPlayed / (1000 * 60 * 60);
           const displayUnit = type === 'tracks' ? 'plays' : 'hours';
           
-          const enrichedItem = getEnrichedItem(itemName, year);
+          const enrichedItem = getEnrichedItem(itemName);
           const hasSpotifyData = enrichedItem && enrichedItem.spotifyUrl;
           
           const ItemComponent = hasSpotifyData ? 'a' : 'div';
