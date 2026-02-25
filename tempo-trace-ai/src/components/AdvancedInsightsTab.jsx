@@ -12,12 +12,12 @@ import EmotionalListeningLandscape from './charts/EmotionalListeningLandscape';
 import ArtistRankingSankey from './charts/ArtistRankingSankey';
 
 const ChartCard = ({ title, children, className = "" }) => (
-  <div className={`cyber-card p-6 w-full h-auto flex flex-col justify-start items-stretch my-8 ${className}`}> 
+  <div className={`cyber-card p-6 w-full min-h-[480px] flex flex-col justify-start items-stretch my-8 ${className}`}> 
     <h3 className="text-lg font-bold text-cyber-blue mb-4 flex items-center gap-2">
       <Activity className="w-5 h-5 text-cyber-blue" />
       {title}
     </h3>
-    <div className="flex-1 w-full h-full">{children}</div>
+    <div className="flex-1 w-full min-h-[380px]">{children}</div>
   </div>
 );
 
