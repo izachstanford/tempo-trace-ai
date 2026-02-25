@@ -28,6 +28,12 @@ export const useData = () => {
   const [concertData, setConcertData]     = useState(null);
   const [loading, setLoading]             = useState(true);
   const [liveDataLoaded, setLiveDataLoaded] = useState(false);
+  const [liveStatus, setLiveStatus] = useState({
+    lifetimeStats: 'idle',
+    annualRecaps: 'idle',
+    artistSummary: 'idle',
+    concertData: 'idle',
+  });
   const [error, setError]                 = useState(null);
 
   useEffect(() => {
@@ -54,22 +60,34 @@ export const useData = () => {
         // ── Phase 2: fetch live API in background ─────────────────────────
         // Each endpoint updates state independently as it resolves
         const tryLive = async (key, setter) => {
+          if (!cancelled) {
+            setLiveStatus(prev => ({ ...prev, [key]: 'loading' }));
+          }
           try {
             const data = await fetchApi(ENDPOINTS[key].api);
-            if (!cancelled) setter(data);
-          } catch {
-            // Keep static data if API fails — no-op
+            if (!cancelled) {
+              setter(data);
+              setLiveStatus(prev => ({ ...prev, [key]: 'success' }));
+            }
+            return true;
+          } catch (err) {
+            if (!cancelled) {
+              setLiveStatus(prev => ({ ...prev, [key]: 'error' }));
+              console.warn(`Live fetch failed for ${key}:`, err?.message || err);
+            }
+            // Keep static data if API fails.
+            return false;
           }
         };
 
-        await Promise.all([
+        const results = await Promise.all([
           tryLive('lifetimeStats',  setLifetimeStats),
           tryLive('annualRecaps',   setAnnualRecaps),
           tryLive('artistSummary',  setArtistSummary),
           tryLive('concertData',    setConcertData),
         ]);
 
-        if (!cancelled) setLiveDataLoaded(true);
+        if (!cancelled) setLiveDataLoaded(results.some(Boolean));
 
       } catch (err) {
         if (!cancelled) {
@@ -84,5 +102,5 @@ export const useData = () => {
     return () => { cancelled = true; };
   }, []);
 
-  return { lifetimeStats, annualRecaps, artistSummary, concertData, loading, liveDataLoaded, error };
+  return { lifetimeStats, annualRecaps, artistSummary, concertData, loading, liveDataLoaded, liveStatus, error };
 };
