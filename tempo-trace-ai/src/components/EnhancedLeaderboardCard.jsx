@@ -1,31 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useEnrichedData } from '../hooks/useEnrichedData';
 
 const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
-  const [enrichedData, setEnrichedData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const fetchEnrichedData = async () => {
-      try {
-        const API_BASE = 'https://aiwithzach.com/api';
-        let data;
-        try {
-          const res = await fetch(`${API_BASE}/tempo-api-enriched-data`);
-          if (res.ok) data = await res.json();
-          else throw new Error('API not available');
-        } catch {
-          const res = await fetch('./data/spotify_enriched_data.json');
-          if (res.ok) data = await res.json();
-        }
-        setEnrichedData(data);
-      } catch (err) {
-        console.warn('Could not load enriched data:', err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchEnrichedData();
-  }, []);
+  const { enrichedData, loading } = useEnrichedData();
 
   // Pull artwork + Spotify URL from lifetime enriched data by name
   const getEnrichedItem = (itemName) => {
