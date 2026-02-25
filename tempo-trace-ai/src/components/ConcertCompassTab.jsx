@@ -131,10 +131,8 @@ const ConcertCompassTab = ({ streamingData, concertData, artistSummary }) => {
     );
   }, [concertData]);
 
-  // Get unique artists from concerts for the dropdown (only those with streaming data)
-  const uniqueConcertArtists = [...new Set(concertArtists.map(c => c.artist))]
-    .filter(artist => artistSummary && artistSummary[artist] && artistSummary[artist].yearly_breakdown)
-    .sort();
+  // Get unique artists from concerts for the dropdown (show all; chart uses yearly_breakdown when present)
+  const uniqueConcertArtists = [...new Set(concertArtists.map(c => c.artist))].sort();
 
   // Default to Fall Out Boy when tab is activated
   React.useEffect(() => {
@@ -338,22 +336,29 @@ const ConcertCompassTab = ({ streamingData, concertData, artistSummary }) => {
             </select>
           </div>
 
-          {selectedArtist && (
-            <div className="space-y-4">
-              <div className="chart-container" style={{ height: '300px' }}>
-                <Line 
-                  data={createArtistChartData(selectedArtist)} 
-                  options={chartOptions}
-                />
+          {selectedArtist && (() => {
+            const chartData = createArtistChartData(selectedArtist);
+            const safeData = chartData && chartData.labels ? chartData : null;
+            return (
+              <div className="space-y-4">
+                {safeData ? (
+                  <>
+                    <div className="chart-container" style={{ height: '300px' }}>
+                      <Line data={safeData} options={chartOptions} />
+                    </div>
+                    <div className="text-sm text-gray-400 flex items-center gap-2">
+                      <Circle className="w-3 h-3 text-cyber-blue" />
+                      <span>Regular listening</span>
+                      <div className="w-3 h-3 bg-cyber-pink rotate-45 ml-4"></div>
+                      <span>Concert year</span>
+                    </div>
+                  </>
+                ) : (
+                  <p className="text-gray-400 py-8">No streaming data for this artist yet.</p>
+                )}
               </div>
-              <div className="text-sm text-gray-400 flex items-center gap-2">
-                <Circle className="w-3 h-3 text-cyber-blue" />
-                <span>Regular listening</span>
-                <div className="w-3 h-3 bg-cyber-pink rotate-45 ml-4"></div>
-                <span>Concert year</span>
-              </div>
-            </div>
-          )}
+            );
+          })()}
         </div>
 
         {/* Bucket List */}
