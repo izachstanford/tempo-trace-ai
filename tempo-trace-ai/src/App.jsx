@@ -37,16 +37,7 @@ const ErrorScreen = ({ error }) => (
 
 function App() {
   const [activeTab, setActiveTab] = useState('pulse');
-  const { lifetimeStats, annualRecaps, artistSummary, concertData, loading, error } = useData();
-
-  console.log('App render state:', { 
-    loading, 
-    error, 
-    hasLifetimeStats: !!lifetimeStats,
-    hasAnnualRecaps: !!annualRecaps,
-    hasArtistSummary: !!artistSummary,
-    hasConcertData: !!concertData
-  });
+  const { lifetimeStats, annualRecaps, artistSummary, concertData, loading, liveDataLoaded, error } = useData();
 
   if (loading) {
     return <LoadingScreen />;
@@ -70,13 +61,27 @@ function App() {
       <header className="sticky top-0 z-30 bg-gradient-to-r from-card-bg/80 to-border-glow/80 backdrop-blur-lg border-b border-cyber-blue/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
+            <div className="flex items-center gap-3">
               <div className="flex-shrink-0">
                 <h1 className="text-2xl font-bold font-cyber">
                   <span className="bg-gradient-to-r from-cyber-blue to-cyber-purple bg-clip-text text-transparent">
                     TempoTraceAI
                   </span>
                 </h1>
+              </div>
+              {/* Live data status indicator */}
+              <div className="flex items-center gap-1.5 text-xs">
+                {liveDataLoaded ? (
+                  <>
+                    <span className="w-2 h-2 rounded-full bg-cyber-blue animate-pulse inline-block"></span>
+                    <span className="text-cyber-blue hidden sm:inline">Live</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="w-2 h-2 rounded-full bg-gray-500 inline-block"></span>
+                    <span className="text-gray-500 hidden sm:inline">Syncing…</span>
+                  </>
+                )}
               </div>
             </div>
             
