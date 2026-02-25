@@ -1,48 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { ExternalLink, Music, Users, Award } from 'lucide-react';
+import React from 'react';
+import { Music, Users, Award } from 'lucide-react';
+import { useEnrichedData } from '../hooks/useEnrichedData';
 
 const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true }) => {
-  const [enrichedData, setEnrichedData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const loadEnrichedData = async () => {
-      try {
-        setLoading(true);
-        setError(null);
-
-        // Try API first, fallback to static file if not available
-        const API_BASE = 'https://aiwithzach.com/api';
-        let data;
-        
-        try {
-          const apiResponse = await fetch(`${API_BASE}/tempo-api-enriched-data`);
-          if (apiResponse.ok) {
-            data = await apiResponse.json();
-          } else {
-            throw new Error('API not available');
-          }
-        } catch (apiError) {
-          console.log('API not available, using static fallback');
-          const staticResponse = await fetch('./data/spotify_enriched_data.json');
-          if (!staticResponse.ok) {
-            throw new Error(`Failed to load Spotify data: ${staticResponse.status}`);
-          }
-          data = await staticResponse.json();
-        }
-
-        setEnrichedData(data);
-      } catch (err) {
-        console.error('Error loading enriched data:', err);
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadEnrichedData();
-  }, []);
+  const { enrichedData, loading, error } = useEnrichedData();
 
   const getDefaultIcon = () => {
     if (title === 'Top Artists') return Users;
