@@ -11,9 +11,9 @@ const EmotionalListeningLandscape = ({ data, artistSummary }) => {
       return { landscape: [], contours: [], peaks: [], valleys: [] };
     }
 
-    const hourlyData = data.temporal_patterns.hourly_breakdown;
-    const seasonalData = data.temporal_patterns.seasonal_breakdown;
-    const weekdayData = data.temporal_patterns.weekday_breakdown;
+    const hourlyData = data.temporal_patterns.hourly_breakdown || {};
+    const seasonalData = data.temporal_patterns.seasonal_breakdown || {};
+    const weekdayData = data.temporal_patterns.weekday_breakdown || {};
 
     // Create a 24x7 grid (hours x days) for emotional landscape
     const landscape = [];
@@ -21,13 +21,18 @@ const EmotionalListeningLandscape = ({ data, artistSummary }) => {
     const valleys = [];
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
+    const dayPlayValues = Object.values(weekdayData).map(d => (d && d.plays) || 0);
+    const maxDayPlays = dayPlayValues.length ? Math.max(...dayPlayValues, 1) : 1;
+    const hourPlayValues = Object.values(hourlyData).map(h => (h && h.plays) || 0);
+    const maxHourPlays = hourPlayValues.length ? Math.max(...hourPlayValues, 1) : 1;
+
     days.forEach((day, dayIndex) => {
       const dayData = weekdayData[day] || { plays: 0, ms_played: 0 };
-      const dayIntensity = dayData.plays / Math.max(...Object.values(weekdayData).map(d => d.plays));
+      const dayIntensity = maxDayPlays ? (dayData.plays / maxDayPlays) : 0;
 
       Array.from({ length: 24 }, (_, hour) => {
         const hourData = hourlyData[hour] || { plays: 0, ms_played: 0 };
-        const hourIntensity = hourData.plays / Math.max(...Object.values(hourlyData).map(h => h.plays));
+        const hourIntensity = maxHourPlays ? (hourData.plays / maxHourPlays) : 0;
 
         // Calculate emotional metrics
         let emotionalValence = 0.5; // neutral baseline

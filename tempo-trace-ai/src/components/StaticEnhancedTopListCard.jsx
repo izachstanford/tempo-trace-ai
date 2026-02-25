@@ -79,7 +79,7 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
       enrichedItems = enrichedData.lifetime?.albums || [];
     }
 
-    // New format: Artists [name, plays, ms], Albums [name, plays, ms], Track Artists [name, plays, artist, ms]
+    // New format: Artists [name, plays, ms], Albums [name, plays, ms, artist?], Track Artists [name, plays, artist, ms]
     const mergedItems = items.map(item => {
       let name, plays, artist, msPlayed;
       if (Array.isArray(item)) {
@@ -90,8 +90,12 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
           // Track Artists format: [name, plays, artist, ms]
           artist = item[2] || null;
           msPlayed = item[3] || 0;
+        } else if (title === 'Top Albums') {
+          // Albums format: [name, plays, ms, artist?]
+          msPlayed = item[2] || 0;
+          artist = item[3] || null;
         } else {
-          // Artists/Albums format: [name, plays, ms]
+          // Artists format: [name, plays, ms]
           artist = null;
           msPlayed = item[2] || 0;
         }
@@ -239,10 +243,10 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
                 <p className="text-white font-medium truncate">{item.name}</p>
                 {title === 'Top Artists' ? (
                   <p className="text-xs text-gray-500 truncate">&nbsp;</p>
+                ) : item.artist ? (
+                  <p className="text-xs text-gray-500 truncate">by {item.artist}</p>
                 ) : (
-                  item.artist && (
-                    <p className="text-xs text-gray-500 truncate">by {item.artist}</p>
-                  )
+                  <p className="text-xs text-gray-500 truncate">&nbsp;</p>
                 )}
               </div>
 

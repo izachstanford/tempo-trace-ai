@@ -46,22 +46,31 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
     return { ...found, image, artist };
   };
 
-  // Parse item array into named fields
-  // Artists:  [name, plays, ms_played]
-  // Tracks:   [name, plays, artist, ms_played, track_url]
-  // Albums:   [name, plays, ms_played, artist, album_url]
+  // Parse item array into named fields (API may include embedded image/url)
+  // Artists:  [name, plays, ms_played, artist_url?, artist_image_url?]
+  // Tracks:   [name, plays, artist, ms_played, track_url?, album_image_url?]
+  // Albums:   [name, plays, ms_played, artist, album_url?, album_image_url?]
   const parseItem = (item) => {
     if (!Array.isArray(item)) {
-      return { name: item.name, plays: item.plays, artist: item.artist, msPlayed: item.ms_played || 0, url: null };
+      return { name: item.name, plays: item.plays, artist: item.artist, msPlayed: item.ms_played || 0, url: null, image: null };
     }
     if (type === 'tracks') {
-      return { name: item[0], plays: item[1], artist: item[2] || null, msPlayed: item[3] || 0, url: item[4] || null };
+      return {
+        name: item[0], plays: item[1], artist: item[2] || null, msPlayed: item[3] || 0,
+        url: item[4] || null, image: item[5] || null
+      };
     }
     if (type === 'albums') {
-      return { name: item[0], plays: item[1], msPlayed: item[2] || 0, artist: item[3] || null, url: item[4] || null };
+      return {
+        name: item[0], plays: item[1], msPlayed: item[2] || 0, artist: item[3] || null,
+        url: item[4] || null, image: item[5] || null
+      };
     }
-    // artists
-    return { name: item[0], plays: item[1], msPlayed: item[2] || 0, artist: null, url: null };
+    // artists: [name, plays, ms_played, artist_url?, artist_image_url?]
+    return {
+      name: item[0], plays: item[1], msPlayed: item[2] || 0, artist: null,
+      url: item[3] || null, image: item[4] || null
+    };
   };
 
   if (loading) {
@@ -96,12 +105,13 @@ const EnhancedLeaderboardCard = ({ title, items, icon: Icon, type, year }) => {
       </div>
       <div className="space-y-3">
         {items.slice(0, 10).map((item, index) => {
-          const { name, plays, artist, msPlayed, url: embeddedUrl } = parseItem(item);
+          const parsed = parseItem(item);
+          const { name, plays, artist, msPlayed, url: embeddedUrl, image: embeddedImage } = parsed;
           const enriched = getEnrichedItem(name);
 
-          // Prefer enriched artwork; embedded url as link fallback for items outside lifetime top
-          const image = enriched?.image || null;
-          const spotifyUrl = enriched?.spotifyUrl || embeddedUrl || null;
+          // Use embedded image/url from API when present (e.g. annual recaps); fall back to enriched lookup
+          const image = embeddedImage || enriched?.image || null;
+          const spotifyUrl = embeddedUrl || enriched?.spotifyUrl || null;
           const displayArtist = artist || enriched?.artist || null;
 
           const displayValue = type === 'tracks' ? plays : msPlayed / (1000 * 60 * 60);
