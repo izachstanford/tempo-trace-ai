@@ -62,12 +62,16 @@ if [ $? -eq 0 ]; then
         exit 1
     fi
     
-    # Copy data directory
-    if [ -d "dist/data" ]; then
+    # Preserve existing data directory — static JSON snapshots are managed by
+    # the GitHub Actions weekly refresh workflow, not by deploys. Only copy
+    # data files from source if none exist yet in the target.
+    if [ -d "$TARGET_DIR/data" ] && [ "$(ls -A "$TARGET_DIR/data" 2>/dev/null)" ]; then
+        echo -e "${YELLOW}⚠ Skipping data directory — keeping existing static snapshots${NC}"
+    elif [ -d "dist/data" ]; then
         cp -r dist/data "$TARGET_DIR/"
-        echo -e "${GREEN}✓ Copied data directory${NC}"
+        echo -e "${GREEN}✓ Copied data directory (first-time seed)${NC}"
     else
-        echo -e "${RED}✗ data directory not found in dist${NC}"
+        echo -e "${RED}✗ data directory not found in dist and no existing data${NC}"
         exit 1
     fi
     
