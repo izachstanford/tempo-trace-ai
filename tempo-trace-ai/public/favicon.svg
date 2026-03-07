@@ -1,39 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-  <defs>
-    <linearGradient id="neonGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#88ff00;stop-opacity:1" />
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge> 
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-  
-  <!-- Dark background circle -->
-  <circle cx="50" cy="50" r="48" fill="#0a0a0a" stroke="url(#neonGlow)" stroke-width="2"/>
-  
-  <!-- Futuristic music notes -->
-  <!-- Note 1 -->
-  <ellipse cx="30" cy="65" rx="4" ry="3" fill="url(#neonGlow)" filter="url(#glow)"/>
-  <rect x="34" y="40" width="2" height="25" fill="url(#neonGlow)" filter="url(#glow)"/>
-  <path d="M36 40 Q45 35 50 40 L50 42 Q45 37 36 42 Z" fill="url(#neonGlow)" filter="url(#glow)"/>
-  
-  <!-- Note 2 -->
-  <ellipse cx="55" cy="70" rx="4" ry="3" fill="url(#neonGlow)" filter="url(#glow)"/>
-  <rect x="59" y="45" width="2" height="25" fill="url(#neonGlow)" filter="url(#glow)"/>
-  <path d="M61 45 Q70 40 75 45 L75 47 Q70 42 61 47 Z" fill="url(#neonGlow)" filter="url(#glow)"/>
-  
-  <!-- Equalizer bars -->
-  <rect x="20" y="55" width="3" height="8" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.6"/>
-  <rect x="25" y="50" width="3" height="18" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.8"/>
-  <rect x="72" y="52" width="3" height="14" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.7"/>
-  <rect x="77" y="48" width="3" height="22" fill="url(#neonGlow)" filter="url(#glow)" opacity="0.9"/>
-  
-  <!-- Waveform accent -->
-  <path d="M15 30 Q25 25 35 30 T55 30 T75 30 T85 30" stroke="url(#neonGlow)" stroke-width="2" fill="none" opacity="0.5" filter="url(#glow)"/>
+  <circle cx="50" cy="50" r="50" fill="#0a0a0a"/>
+  <text x="50" y="62" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="white" text-anchor="middle">Z+</text>
 </svg>

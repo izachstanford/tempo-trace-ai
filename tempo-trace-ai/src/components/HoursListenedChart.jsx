@@ -24,34 +24,52 @@ ChartJS.register(
   Filler
 );
 
-const HoursListenedChart = ({ data }) => {
+// Accepts either:
+//   lifetimeStats  — preferred; uses temporal_patterns.yearly_breakdown (live, always current)
+//   recapData      — legacy fallback; uses annualRecaps year_stats.total_hours (static)
+const HoursListenedChart = ({ lifetimeStats, recapData }) => {
   const currentYear = new Date().getFullYear();
-  const years = Object.keys(data).sort();
 
-  const hoursData = years.map(year => Math.round(data[year].year_stats.total_hours));
+  // Build { year: hours } from lifetimeStats if available, else fall back to recapData
+  const yearHours = (() => {
+    const yd = lifetimeStats?.temporal_patterns?.yearly_breakdown;
+    if (yd && Object.keys(yd).length > 0) {
+      const result = {};
+      Object.entries(yd).forEach(([yr, v]) => {
+        result[yr] = Math.round((v.ms_played || 0) / 3600000);
+      });
+      return result;
+    }
+    if (recapData) {
+      const result = {};
+      Object.entries(recapData).forEach(([yr, v]) => {
+        result[yr] = Math.round(v?.year_stats?.total_hours || 0);
+      });
+      return result;
+    }
+    return {};
+  })();
+
+  const years = Object.keys(yearHours).sort();
+
+  if (years.length === 0) return null;
+
+  const hoursData = years.map(y => yearHours[y]);
 
   // Projected hours for current year: (hours so far / days elapsed) * 365
-  const currentYearData = data[currentYear];
+  const currentYearHours = yearHours[currentYear];
   let projectedHours = null;
-  if (currentYearData) {
-    const firstPlay = new Date(currentYearData.year_stats.first_play);
-    const lastPlay = new Date(currentYearData.year_stats.last_play);
+  if (currentYearHours != null) {
     const jan1 = new Date(currentYear, 0, 1);
-    const daysElapsed = Math.max(1, (lastPlay - jan1) / (1000 * 60 * 60 * 24));
-    const hoursThisYear = currentYearData.year_stats.total_hours;
-    projectedHours = Math.round((hoursThisYear / daysElapsed) * 365);
+    const today = new Date();
+    const daysElapsed = Math.max(1, (today - jan1) / (1000 * 60 * 60 * 24));
+    projectedHours = Math.round((currentYearHours / daysElapsed) * 365);
   }
 
-  // Projected dataset: null for all past years, projected value for current year
-  const projectedData = years.map(year =>
-    parseInt(year) === currentYear ? projectedHours : null
-  );
-
-  // Connect projected line from last full year to current year
   const lastFullYearIdx = years.findIndex(y => parseInt(y) === currentYear) - 1;
   const projectedWithBridge = years.map((year, idx) => {
     if (parseInt(year) === currentYear) return projectedHours;
-    if (idx === lastFullYearIdx) return hoursData[idx]; // bridge point
+    if (idx === lastFullYearIdx) return hoursData[idx];
     return null;
   });
 
@@ -105,8 +123,7 @@ const HoursListenedChart = ({ data }) => {
         callbacks: {
           label: (context) => {
             if (context.parsed.y === null) return null;
-            const label = context.dataset.label;
-            return `${label}: ${context.parsed.y.toLocaleString()} hours`;
+            return `${context.dataset.label}: ${context.parsed.y.toLocaleString()} hours`;
           }
         }
       }

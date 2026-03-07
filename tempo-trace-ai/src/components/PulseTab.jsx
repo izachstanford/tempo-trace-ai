@@ -181,8 +181,8 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
         </p>
       </div>
 
-      {/* Listening Hours Chart */}
-      {recapData && <HoursListenedChart data={recapData} />}
+      {/* Listening Hours Chart — uses live lifetimeStats.temporal_patterns.yearly_breakdown */}
+      {data && <HoursListenedChart lifetimeStats={data} recapData={recapData} />}
 
       {/* Listening Overview */}
       <div className="cyber-card p-6">
