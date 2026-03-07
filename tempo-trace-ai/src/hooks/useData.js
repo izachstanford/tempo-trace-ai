@@ -2,11 +2,15 @@ import { useState, useEffect } from 'react';
 
 const API_BASE = 'https://aiwithzach.com/api';
 
-const ENDPOINTS = {
-  lifetimeStats:  { api: '/tempo-api-lifetime-stats',  static: './data/lifetime_streaming_stats.json' },
-  annualRecaps:   { api: '/tempo-api-annual-recaps',   static: './data/annual_recaps.json' },
-  artistSummary:  { api: '/tempo-api-artist-summary',  static: './data/artist_summary.json' },
-  concertData:    { api: '/tempo-api-concerts',        static: './data/concerts.json' },
+// Static snapshots refreshed weekly by GitHub Actions (.github/workflows/refresh-static-snapshots.yml).
+// Only lifetimeStats fetches live data — for real-time stats (total plays, most recent track,
+// yearly_breakdown for the hours chart). All other datasets are static-only to avoid
+// intermittent Supabase view failures that previously blanked the UI.
+const STATIC_FILES = {
+  lifetimeStats: './data/lifetime_streaming_stats.json',
+  annualRecaps:  './data/annual_recaps.json',
+  artistSummary: './data/artist_summary.json',
+  concertData:   './data/concerts.json',
 };
 
 const fetchStatic = async (path) => {
@@ -28,12 +32,6 @@ export const useData = () => {
   const [concertData, setConcertData]     = useState(null);
   const [loading, setLoading]             = useState(true);
   const [liveDataLoaded, setLiveDataLoaded] = useState(false);
-  const [liveStatus, setLiveStatus] = useState({
-    lifetimeStats: 'idle',
-    annualRecaps: 'idle',
-    artistSummary: 'idle',
-    concertData: 'idle',
-  });
   const [error, setError]                 = useState(null);
 
   useEffect(() => {
@@ -41,13 +39,13 @@ export const useData = () => {
 
     const run = async () => {
       try {
-        // ── Phase 1: load static files immediately ───────────────────────
+        // ── Phase 1: load all static snapshots immediately ───────────────────
         const [staticLifetime, staticRecaps, staticArtists, staticConcerts] =
           await Promise.all([
-            fetchStatic(ENDPOINTS.lifetimeStats.static),
-            fetchStatic(ENDPOINTS.annualRecaps.static),
-            fetchStatic(ENDPOINTS.artistSummary.static),
-            fetchStatic(ENDPOINTS.concertData.static),
+            fetchStatic(STATIC_FILES.lifetimeStats),
+            fetchStatic(STATIC_FILES.annualRecaps),
+            fetchStatic(STATIC_FILES.artistSummary),
+            fetchStatic(STATIC_FILES.concertData),
           ]);
 
         if (cancelled) return;
@@ -55,43 +53,35 @@ export const useData = () => {
         setAnnualRecaps(staticRecaps);
         setArtistSummary(staticArtists);
         setConcertData(staticConcerts);
-        setLoading(false); // show UI immediately with static data
+        setLoading(false);
 
-        // ── Phase 2: fetch live API in background ─────────────────────────
-        // Each endpoint updates state independently as it resolves
-        const tryLive = async (key, setter) => {
+        // ── Phase 2: live fetch for lifetimeStats only ────────────────────────
+        // Provides: real-time total plays, most recent track, current-year
+        // hours (temporal_patterns.yearly_breakdown) for the trend chart.
+        try {
+          const liveData = await fetchApi('/tempo-api-lifetime-stats');
           if (!cancelled) {
-            setLiveStatus(prev => ({ ...prev, [key]: 'loading' }));
+            setLifetimeStats(prev => {
+              // Always preserve top_lists from the static weekly snapshot.
+              // Live data updates real-time stats (total plays, most recent track,
+              // yearly_breakdown for the hours chart) but rankings and the
+              // top-artist/track/album tables stay stable and image-rich.
+              const staticTopLists = prev?.top_lists;
+              return staticTopLists
+                ? { ...liveData, top_lists: staticTopLists }
+                : liveData;
+            });
+            setLiveDataLoaded(true);
           }
-          try {
-            const data = await fetchApi(ENDPOINTS[key].api);
-            if (!cancelled) {
-              setter(data);
-              setLiveStatus(prev => ({ ...prev, [key]: 'success' }));
-            }
-            return true;
-          } catch (err) {
-            if (!cancelled) {
-              setLiveStatus(prev => ({ ...prev, [key]: 'error' }));
-              console.warn(`Live fetch failed for ${key}:`, err?.message || err);
-            }
-            // Keep static data if API fails.
-            return false;
+        } catch (err) {
+          if (!cancelled) {
+            console.warn('Live lifetimeStats fetch failed, using static data:', err?.message || err);
           }
-        };
-
-        const results = await Promise.all([
-          tryLive('lifetimeStats',  setLifetimeStats),
-          tryLive('annualRecaps',   setAnnualRecaps),
-          tryLive('artistSummary',  setArtistSummary),
-          tryLive('concertData',    setConcertData),
-        ]);
-
-        if (!cancelled) setLiveDataLoaded(results.some(Boolean));
+        }
 
       } catch (err) {
         if (!cancelled) {
-          console.error('Error loading data:', err);
+          console.error('Error loading static data:', err);
           setError(err.message);
           setLoading(false);
         }
@@ -102,5 +92,5 @@ export const useData = () => {
     return () => { cancelled = true; };
   }, []);
 
-  return { lifetimeStats, annualRecaps, artistSummary, concertData, loading, liveDataLoaded, liveStatus, error };
+  return { lifetimeStats, annualRecaps, artistSummary, concertData, loading, liveDataLoaded, error };
 };

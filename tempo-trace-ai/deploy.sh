@@ -71,10 +71,18 @@ if [ $? -eq 0 ]; then
         exit 1
     fi
     
-    # Copy only the essential favicon (SVG version)
+    # Copy favicon files (SVG + PNG variants)
     if [ -f "dist/favicon.svg" ]; then
         cp dist/favicon.svg "$TARGET_DIR/"
         echo -e "${GREEN}✓ Copied favicon.svg${NC}"
+    fi
+    if [ -f "dist/favicon.png" ]; then
+        cp dist/favicon.png "$TARGET_DIR/"
+        echo -e "${GREEN}✓ Copied favicon.png${NC}"
+    fi
+    if [ -f "dist/favicon-32x32.png" ]; then
+        cp dist/favicon-32x32.png "$TARGET_DIR/"
+        echo -e "${GREEN}✓ Copied favicon-32x32.png${NC}"
     fi
     
     # Copy any other essential files (like apple-touch-icon if needed)
