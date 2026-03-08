@@ -297,7 +297,7 @@ const PulseTab = ({ data, artistSummary, concertData = [], recapData }) => {
         />
         <StaticEnhancedTopListCard
           title="Top Tracks"
-          items={data.top_lists.top_track_artists || data.top_lists.top_tracks}
+          items={data.top_lists.top_tracks}
           icon={Music}
         />
         <StaticEnhancedTopListCard
