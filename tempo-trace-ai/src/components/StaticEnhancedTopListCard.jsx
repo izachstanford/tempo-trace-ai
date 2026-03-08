@@ -1,10 +1,7 @@
 import React from 'react';
 import { Music, Users, Award } from 'lucide-react';
-import { useEnrichedData } from '../hooks/useEnrichedData';
 
 const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true }) => {
-  const { enrichedData, loading, error } = useEnrichedData();
-
   const getDefaultIcon = () => {
     if (title === 'Top Artists') return Users;
     if (title === 'Top Tracks') return Music;
@@ -15,139 +12,57 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
   const DefaultIcon = getDefaultIcon();
 
   const getEnrichedItems = () => {
-    if (!enrichedData) {
-      // Handle both old format [name, plays] and new format [name, plays, artist]
-      return items.map(item => {
-        if (Array.isArray(item)) {
-          return { 
-            name: item[0], 
-            plays: item[1], 
-            artist: item[2] || null,
-            image: null, 
-            spotifyUrl: null 
-          };
-        }
-        return item;
-      });
-    }
-
-    let enrichedItems = [];
-    if (title === 'Top Artists') {
-      enrichedItems = enrichedData.lifetime?.artists || [];
-    } else if (title === 'Top Tracks') {
-      enrichedItems = enrichedData.lifetime?.tracks || [];
-    } else if (title === 'Top Albums') {
-      enrichedItems = enrichedData.lifetime?.albums || [];
-    }
-
-    // New format: Artists [name, plays, ms], Albums [name, plays, ms, artist?], Track Artists [name, plays, artist, ms]
+    // Parse array items. Supported formats (all include optional spotify_url + image_url at the end):
+    //   Artists: [name, plays, ms, spotify_url?, image_url?]
+    //   Tracks:  [name, plays, artist, ms, spotify_url?, image_url?]
+    //   Albums:  [name, plays, ms, artist, spotify_url?, image_url?]
     const mergedItems = items.map(item => {
-      let name, plays, artist, msPlayed;
-      if (Array.isArray(item)) {
-        name = item[0];
-        plays = item[1];
-        
-        if (title === 'Top Tracks') {
-          // Track Artists format: [name, plays, artist, ms]
-          artist = item[2] || null;
-          msPlayed = item[3] || 0;
-        } else if (title === 'Top Albums') {
-          // Albums format: [name, plays, ms, artist?]
-          msPlayed = item[2] || 0;
-          artist = item[3] || null;
-        } else {
-          // Artists format: [name, plays, ms]
-          artist = null;
-          msPlayed = item[2] || 0;
-        }
+      if (!Array.isArray(item)) return item;
+
+      let name, plays, artist, msPlayed, spotifyUrl, imageUrl;
+      name   = item[0];
+      plays  = item[1];
+
+      if (title === 'Top Tracks') {
+        artist     = item[2] || null;
+        msPlayed   = item[3] || 0;
+        spotifyUrl = item[4] || null;
+        imageUrl   = item[5] || null;
+      } else if (title === 'Top Albums') {
+        msPlayed   = item[2] || 0;
+        artist     = item[3] || null;
+        spotifyUrl = item[4] || null;
+        imageUrl   = item[5] || null;
       } else {
-        name = item.name;
-        plays = item.plays;
-        artist = item.artist;
-        msPlayed = item.ms_played || 0;
+        // Artists: [name, plays, ms, spotify_url?, image_url?]
+        msPlayed   = item[2] || 0;
+        spotifyUrl = item[3] || null;
+        imageUrl   = item[4] || null;
       }
-      
-      const enriched = enrichedItems.find(enrichedItem => enrichedItem.name === name);
-      if (enriched) {
-        // Extract image URL based on type
-        let imageUrl = null;
-        if (enriched.spotifyData) {
-          if (title === 'Top Artists') {
-            // For artists, use spotifyData.images[0].url
-            imageUrl = enriched.spotifyData.images?.[0]?.url;
-          } else if (title === 'Top Tracks') {
-            // For tracks, use spotifyData.album.images[0].url
-            imageUrl = enriched.spotifyData.album?.images?.[0]?.url;
-          } else if (title === 'Top Albums') {
-            // For albums, use spotifyData.images[0].url
-            imageUrl = enriched.spotifyData.images?.[0]?.url;
-          }
-        }
-        
-        // For albums, extract artist from Spotify data if not already present
-        let finalArtist = artist;
-        if (title === 'Top Albums' && !finalArtist && enriched.spotifyData?.artists?.[0]?.name) {
-          finalArtist = enriched.spotifyData.artists[0].name;
-        }
-        
-        return {
-          name,
-          plays,
-          artist: finalArtist,
-          image: imageUrl,
-          spotifyUrl: enriched.spotifyUrl,
-          msPlayed
-        };
-      }
-      
-      return { name, plays, artist, image: null, spotifyUrl: null, msPlayed };
+
+      return { name, plays, artist, msPlayed, image: imageUrl, spotifyUrl };
     });
 
     return mergedItems;
   };
 
-  if (loading) {
-    return (
-      <div className="cyber-card p-6">
-        <div className="flex items-center gap-3 mb-4">
-          <DefaultIcon className="w-5 h-5 text-cyber-blue" />
-          <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
-        </div>
-        <div className="space-y-3">
-          {Array.from({ length: 7 }).map((_, index) => (
-            <div key={index} className="flex items-center gap-3 p-3 bg-card-bg/50 rounded-lg animate-pulse">
-              <div className="w-6 h-6 bg-gray-700 rounded"></div>
-              <div className="w-8 h-8 bg-gray-700 rounded"></div>
-              <div className="flex-1">
-                <div className="h-4 bg-gray-700 rounded mb-2"></div>
-                <div className="h-3 bg-gray-700 rounded w-1/2"></div>
-              </div>
-              <div className="w-12 h-2 bg-gray-700 rounded"></div>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
-
+  // No loading state needed — all data is embedded in the items array
   const enrichedItems = getEnrichedItems();
 
+  // Kept for compatibility in case a parent still passes a dummy enriched block
+  const error = null;
+      if (enriched) {
   return (
     <div className="cyber-card p-6">
       <div className="flex items-center gap-3 mb-4">
         <DefaultIcon className="w-5 h-5 text-cyber-blue" />
         <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
-        {enrichedData && (
-          <span className="text-xs text-gray-500">
-            Updated: {new Date(enrichedData.lastUpdated).toLocaleDateString()}
-          </span>
-        )}
       </div>
-      
+
       {error && (
         <div className="mb-4 p-3 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
           <p className="text-yellow-400 text-sm">
-            Spotify data unavailable: {error}. Showing basic data.
+            Data unavailable: {error}
           </p>
         </div>
       )}
