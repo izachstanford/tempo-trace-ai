@@ -49,23 +49,12 @@ const StaticEnhancedTopListCard = ({ title, items, icon: Icon, showIndex = true 
   // No loading state needed — all data is embedded in the items array
   const enrichedItems = getEnrichedItems();
 
-  // Kept for compatibility in case a parent still passes a dummy enriched block
-  const error = null;
-      if (enriched) {
   return (
     <div className="cyber-card p-6">
       <div className="flex items-center gap-3 mb-4">
         <DefaultIcon className="w-5 h-5 text-cyber-blue" />
         <h3 className="text-lg font-bold text-cyber-blue">{title}</h3>
       </div>
-
-      {error && (
-        <div className="mb-4 p-3 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
-          <p className="text-yellow-400 text-sm">
-            Data unavailable: {error}
-          </p>
-        </div>
-      )}
 
       <div className="space-y-3">
         {enrichedItems.slice(0, 10).map((item, index) => {

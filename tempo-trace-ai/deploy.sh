@@ -38,8 +38,10 @@ if [ $? -eq 0 ]; then
     # Create target directory if it doesn't exist
     mkdir -p "$TARGET_DIR"
     
-    # Clean the target directory first
-    rm -rf "$TARGET_DIR"/*
+    # Clean code assets but preserve the data directory (managed by GitHub Actions)
+    rm -rf "$TARGET_DIR"/assets
+    rm -f "$TARGET_DIR"/index.html
+    rm -f "$TARGET_DIR"/favicon* "$TARGET_DIR"/.DS_Store
     
     # Copy only the essential built files
     echo -e "${BLUE}Copying built files...${NC}"
